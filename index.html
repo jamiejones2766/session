@@ -81,6 +81,19 @@ nav{position:fixed;bottom:0;left:0;right:0;max-width:520px;margin:0 auto;display
 .chip.istoday{border-color:var(--go);color:var(--ink)}
 .chip.on{background:var(--go);border-color:var(--go);color:#0A0E13}
 
+
+.stepcard{display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:8px;align-items:flex-start}
+.stepcard.ticked{border-color:var(--go);background:#10231D}
+.steptick{flex:0 0 auto;width:46px;height:46px;border-radius:8px;border:2px solid var(--line);background:var(--hi);color:var(--go);font-size:22px;font-weight:800}
+.stepcard.ticked .steptick{border-color:var(--go);background:var(--go);color:#0A0E13}
+.stepbody{flex:1;min-width:0}
+.steplabel{font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.stepsecs{font-family:ui-monospace,monospace;font-size:12px;color:var(--dim);font-weight:400}
+.amrapitems{margin:8px 0 2px}
+.amrapitem{display:flex;gap:10px;align-items:baseline;font-size:13.5px;color:var(--mut);padding:5px 0;border-bottom:1px solid var(--line)}
+.amrapitem:last-child{border-bottom:none}
+.stepnumsm{flex:0 0 auto;width:20px;height:20px;border-radius:4px;background:var(--hi);color:var(--dim);font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;font-family:ui-monospace,monospace}
+
 </style>
 </head>
 <body>

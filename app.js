@@ -26,7 +26,7 @@ let blockState = load("jj-block-state", SEED);
 let history = load("jj-sessions", []);
 let plan = load("jj-plan", null);
 let cfg = load("jj-sync-cfg", { owner: "jamiejones2766", repo: "session", token: "" });
-let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], rpe: null, back: null, notes: "" };
+let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], steps: [], rpe: null, back: null, notes: "" };
 let tab = "today";
 let openMove = null;
 let timerMode = null, timer = null;
@@ -192,6 +192,16 @@ window.A = {
   exitTimer() { timer = null; timerMode = null; stopTick(); unlockScreen(); render(); },
   setupField(id, delta) { setupVals[id] = Math.max(id === "rounds" || id === "amrap" ? 1 : 5, (setupVals[id] || 0) + delta); render(); },
 
+  tickStep(key, label, spinal) {
+    const i = session.steps.findIndex((x) => x.key === key);
+    if (i >= 0) session.steps.splice(i, 1);
+    else session.steps.push({ key, label, spinal: !!spinal, rpe: null, t: Date.now() });
+    render();
+  },
+  stepRpe(key, n) {
+    const st = session.steps.find((x) => x.key === key);
+    if (st) { st.rpe = n; render(); }
+  },
   finRpe(n) { session.rpe = n; render(); },
   finBack(b) { session.back = b; render(); },
   finNotes(el) { session.notes = el.value; },
@@ -203,7 +213,7 @@ window.A = {
     done.synced = res.ok;
     history = [done, ...history].slice(0, 100);
     save("jj-sessions", history);
-    session = { date: todayISO(), sets: [], rounds: [], rpe: null, back: null, notes: "" };
+    session = { date: todayISO(), sets: [], rounds: [], steps: [], rpe: null, back: null, notes: "" };
     editKg = {}; editReps = {}; editRpe = {};
     toast(res.ok ? "Saved + synced to GitHub ✓" : cfg.token ? "Saved locally — sync failed, retry from Log" : "Saved locally (no token set)");
     render();
@@ -227,15 +237,24 @@ function buildReport(d) {
   return [
     `SESSION REPORT — ${d.date}`,
     `Session RPE: ${d.rpe} · Back: ${d.back}`,
-    d.sets.length ? "Sets:" : "Sets: none logged",
+    d.steps?.length ? "Steps:" : null,
+    ...(d.steps || []).map((s2) => `  ✓ ${s2.label}${s2.rpe ? ` @ RPE ${s2.rpe}` : ""}${s2.spinal ? " ▲" : ""}`),
+    d.sets.length ? "Sets:" : "Sets logged: none",
     ...d.sets.map((s) => `  ${s.name}: ${s.kg}kg × ${s.reps}${s.rpe ? ` @ RPE ${s.rpe}` : ""}${s.spinal ? " ▲" : ""}`),
     d.rounds.length ? `AMRAP rounds: ${d.rounds.map((r) => `R${r.n}@${fmt(r.at)}`).join(", ")}` : null,
     d.notes ? `Notes: ${d.notes}` : null,
   ].filter(Boolean).join("\n");
 }
 
-/* ── movement logger (shared by TODAY & LIFT) ── */
-function moveCard(m) {
+/* ── movement logger (shared by TODAY & LIFTS) ── */
+function lastFor(id) {
+  for (const h of history) {
+    const st = (h.sets || []).filter((x) => x.id === id);
+    if (st.length) return { kg: st[st.length - 1].kg, date: h.date };
+  }
+  return null;
+}
+function moveCard(m, showLast) {
   const done = session.sets.filter((s) => s.id === m.id).length;
   const kg = editKg[m.id] ?? m.kg, reps = editReps[m.id] ?? m.reps, rpe = editRpe[m.id];
   const pips = Array.from({ length: m.sets }).map((_, i) => `<span class="pip ${i < done ? "done" : ""}"></span>`).join("");
@@ -243,7 +262,7 @@ function moveCard(m) {
   return `
   <button class="row" onclick="A.open('${m.id}')">
     <span><span class="mname">${m.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(m.name)}</span>
-    <span class="msub">${m.kg} kg · ${m.reps} reps · ${done}/${m.sets} sets</span></span>
+    <span class="msub">${m.kg} kg · ${m.reps} reps · ${done}/${m.sets} sets${showLast ? (() => { const L = lastFor(m.id); return L ? ` · last ${L.kg}kg on ${L.date.slice(5)}` : " · not yet logged"; })() : ""}</span></span>
     <span class="pips">${pips}</span>
   </button>
   ${openMove === m.id ? `
@@ -291,13 +310,28 @@ function vToday() {
   return `<div class="page">${head}${chips}${dayLabel}
     <div class="daytitle">${esc(day.title)}</div>
     ${day.rpe ? `<div class="msub" style="margin-bottom:12px">Target RPE ${esc(day.rpe)}</div>` : ""}
-    ${(day.blocks || []).map((b) => {
+    ${(day.blocks || []).map((b, bi) => {
       if (b.type === "note") return `<div class="noteblock">${esc(b.text)}</div>`;
+      if (b.type === "step") {
+        const key = selectedDate + ":" + bi;
+        const st = session.steps.find((x) => x.key === key);
+        const sel = (n) => st && st.rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
+        return `<div class="stepcard ${st ? "ticked" : ""}">
+          <button class="steptick" onclick="A.tickStep('${key}',\`${esc(b.label)}\`,${b.spinal ? "true" : "false"})">${st ? "✓" : ""}</button>
+          <div class="stepbody">
+            <div class="steplabel">${b.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(b.label)}${b.secs ? `<span class="stepsecs">${fmt(b.secs)}</span>` : ""}</div>
+            ${b.detail ? `<div class="msub">${esc(b.detail)}</div>` : ""}
+            ${st && b.rpe ? `<div class="rperow" style="margin-top:8px">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
+            ${b.spinal && !st.rpe ? `<div class="msub" style="color:var(--rest);margin-top:4px">RPE required — spinal</div>` : ""}` : ""}
+          </div>
+        </div>`;
+      }
       if (b.type === "interval") return `<div class="hist"><div class="mname">${esc(b.label || "Intervals")}</div>
         <div class="msub">${b.rounds} × ${fmt(b.work)} work / ${fmt(b.rest)} rest</div>
         <button class="big" onclick="A.startInterval(${b.work},${b.rest},${b.rounds})">START</button></div>`;
       if (b.type === "amrap") return `<div class="hist"><div class="mname">${esc(b.label || "AMRAP")}</div>
         <div class="msub">${b.mins} minutes</div>
+        ${b.items ? `<div class="amrapitems">${b.items.map((it, n2) => `<div class="amrapitem"><span class="stepnumsm">${n2 + 1}</span>${esc(it)}</div>`).join("")}</div>` : ""}
         <button class="big" onclick="A.startAmrap(${b.mins})">START</button></div>`;
       if (b.type === "movement") {
         const m = blockState.movements.find((x) => x.id === b.id);
@@ -324,8 +358,8 @@ function vSettings() {
 
 function vLift() {
   return `<div class="page">
-    <p class="hint">Full movement library · working loads persist. ▲ = spinal — station RPE required.</p>
-    ${blockState.movements.map(moveCard).join("")}
+    <p class="hint">Working loads + last logged. Sessions in TODAY pull from these; use this tab for unplanned work. ▲ = spinal.</p>
+    ${blockState.movements.map((m) => moveCard(m, true)).join("")}
   </div>`;
 }
 
@@ -437,7 +471,7 @@ function render() {
       <span class="date">${new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" })}</span>
     </span></header>
     ${views[tab]()}
-    <nav>${[["today", "TODAY"], ["lift", "LIFT"], ["timers", "TIMERS"], ["finish", "FINISH"], ["log", "LOG"]].map(([id, l]) =>
+    <nav>${[["today", "TODAY"], ["lift", "LIFTS"], ["timers", "TIMERS"], ["finish", "FINISH"], ["log", "LOG"]].map(([id, l]) =>
       `<button class="nav ${tab === id ? "on" : ""}" onclick="A.tab('${id}')">${l}</button>`).join("")}</nav>`;
 }
 
