@@ -1,5 +1,5 @@
 {
-  "week": "w/c 13 Jul · hold-flat week · generated 16 Jul",
+  "week": "w/c 13 Jul (live) + w/c 20 Jul DRAFT deload — confirmed Sun 19th",
   "days": {
     "2026-07-17": {
       "title": "Compromised pacing session",
@@ -27,6 +27,60 @@
       "rpe": "3-5",
       "blocks": [
         { "type": "note", "text": "On the Garmin, HR ≤148, heat = slower not harder. 50 minutes, not 60 — agreed cap, ACWR still above band. Evening: first Sunday planning session — sync today's log, then open the chat." }
+      ]
+    },
+    "2026-07-20": {
+      "title": "DRAFT · Threshold (deload trim)",
+      "rpe": "7-8",
+      "blocks": [
+        { "type": "note", "text": "DELOAD WEEK (draft — confirmed at Sunday planning). 3 × 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut." }
+      ]
+    },
+    "2026-07-21": {
+      "title": "DRAFT · Active recovery",
+      "rpe": "3-4",
+      "blocks": [
+        { "type": "note", "text": "40 min easy bike, HR under 140. Genuinely easy — deload only works if the easy days are." }
+      ]
+    },
+    "2026-07-22": {
+      "title": "DRAFT · Strength (maintenance)",
+      "rpe": "6-7",
+      "blocks": [
+        { "type": "note", "text": "Same loads as last week, ONE set each instead of two. Loads hold, fatigue drains. No progression this week by design." },
+        { "type": "movement", "id": "beltsquat" },
+        { "type": "movement", "id": "revlunge" },
+        { "type": "movement", "id": "rdl" },
+        { "type": "movement", "id": "pullup" },
+        { "type": "movement", "id": "press" },
+        { "type": "movement", "id": "sledpush" }
+      ]
+    },
+    "2026-07-23": {
+      "title": "DRAFT · Rest",
+      "blocks": [
+        { "type": "note", "text": "Full rest. Walk the dogs, stretch, nothing with a training load." }
+      ]
+    },
+    "2026-07-24": {
+      "title": "DRAFT · Easy run 25 min",
+      "rpe": "3-4",
+      "blocks": [
+        { "type": "note", "text": "HR ≤148 on the Garmin. No sim this week — deload means one hard session. Six more Fridays before Tenerife; this one costs nothing." }
+      ]
+    },
+    "2026-07-25": {
+      "title": "DRAFT · Easy bike 40 min (optional)",
+      "rpe": "3-4",
+      "blocks": [
+        { "type": "note", "text": "Optional movement day. Skip freely if life intervenes — that is the point of a deload." }
+      ]
+    },
+    "2026-07-26": {
+      "title": "DRAFT · Easy run 40 min",
+      "rpe": "3-5",
+      "blocks": [
+        { "type": "note", "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers." }
       ]
     }
   }
