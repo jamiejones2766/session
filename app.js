@@ -1,6 +1,8 @@
-/* SESSION — HYROX gym logger · vanilla JS PWA
-   Storage: localStorage jj-block-state / jj-sessions
-   Wake lock held while any timer runs; re-acquired on visibility return. */
+/* SESSION v2 — HYROX gym logger · vanilla JS PWA
+   New in v2: TODAY tab (pulls data/plan.json from the repo),
+   GitHub sync (session logs committed to data/sessions/),
+   settings (token, repo, sync status).
+   Storage: jj-block-state / jj-sessions / jj-plan / jj-sync-cfg */
 
 const SEED = {
   movements: [
@@ -17,29 +19,26 @@ const SEED = {
   ],
 };
 
-/* ── state ── */
 const load = (k, fb) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch { return fb; } };
 const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } };
 
 let blockState = load("jj-block-state", SEED);
 let history = load("jj-sessions", []);
+let plan = load("jj-plan", null);
+let cfg = load("jj-sync-cfg", { owner: "jamiejones2766", repo: "session", token: "" });
 let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], rpe: null, back: null, notes: "" };
-let tab = "lift";
+let tab = "today";
 let openMove = null;
-let timerMode = null;        // null | interval | amrap | rest
-let timer = null;            // active timer state object
-let finishReport = null;
+let timerMode = null, timer = null;
+let finishReport = null, showSettings = false, syncMsg = "";
 let editKg = {}, editReps = {}, editRpe = {};
+let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
 
 /* ── wake lock ── */
 let wakeLock = null;
-async function lockScreen() {
-  try { if ("wakeLock" in navigator) { wakeLock = await navigator.wakeLock.request("screen"); } } catch (e) {}
-}
+async function lockScreen() { try { if ("wakeLock" in navigator) wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {} }
 function unlockScreen() { try { wakeLock && wakeLock.release(); } catch (e) {} wakeLock = null; }
-document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && timer) lockScreen();
-});
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && timer) lockScreen(); });
 
 /* ── audio ── */
 let actx = null;
@@ -59,56 +58,100 @@ const triple = () => { beep(880, 150, 0); beep(880, 150, .22); beep(1320, 420, .
 
 /* ── helpers ── */
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
-const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const todayISO = () => new Date().toISOString().slice(0, 10);
 let toastTimeout = null;
 function toast(msg) {
   const t = document.createElement("div");
   t.className = "toast"; t.textContent = msg;
   document.body.appendChild(t);
   clearTimeout(toastTimeout);
-  toastTimeout = setTimeout(() => t.remove(), 1800);
+  toastTimeout = setTimeout(() => t.remove(), 2000);
 }
 
-/* ── timer engine (timestamp-based: survives throttling) ── */
+/* ── plan fetch (raw, public repo — no token needed) ── */
+async function fetchPlan(silent) {
+  try {
+    const url = `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/main/data/plan.json?t=${Date.now()}`;
+    const r = await fetch(url, { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    plan = await r.json();
+    save("jj-plan", plan);
+    if (!silent) toast("Plan updated");
+    render();
+  } catch (e) {
+    if (!silent) toast("No plan found in repo yet");
+  }
+}
+
+/* ── GitHub sync (contents API, unique filenames → no SHA dance) ── */
+async function pushSession(done) {
+  if (!cfg.token) return { ok: false, why: "no token" };
+  const stamp = done.finished.replace(/[:T]/g, "-").slice(0, 16);
+  const path = `data/sessions/${stamp}.json`;
+  const body = {
+    message: `session log ${done.date}`,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(done, null, 1)))),
+  };
+  try {
+    const r = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}`, {
+      method: "PUT",
+      headers: { Authorization: `Bearer ${cfg.token}`, Accept: "application/vnd.github+json" },
+      body: JSON.stringify(body),
+    });
+    return { ok: r.ok, why: r.ok ? "" : `HTTP ${r.status}` };
+  } catch (e) { return { ok: false, why: "offline" }; }
+}
+async function syncUnsent() {
+  const pending = history.filter((h) => !h.synced);
+  if (!pending.length) { syncMsg = "All sessions synced"; render(); return; }
+  syncMsg = `Syncing ${pending.length}…`; render();
+  let n = 0;
+  for (const h of pending) {
+    const res = await pushSession(h);
+    if (res.ok) { h.synced = true; n++; }
+  }
+  save("jj-sessions", history);
+  syncMsg = n === pending.length ? `Synced ${n} ✓` : `Synced ${n}, ${pending.length - n} still pending`;
+  render();
+}
+
+/* ── timer engine ── */
 let tickId = null;
 function startTick() { stopTick(); tickId = setInterval(onTick, 250); }
 function stopTick() { if (tickId) clearInterval(tickId); tickId = null; }
-
 function onTick() {
   if (!timer) return;
   const now = Date.now();
   const left = Math.max(0, (timer.endAt - now) / 1000);
   timer.left = left;
-
   if (left <= 3.2 && left > 2.8 && !timer.warned) { beep(660, 120); timer.warned = true; }
   if (left > 3.2) timer.warned = false;
-
   if (left <= 0) {
     if (timer.kind === "interval") {
       if (timer.phase === "work") {
         if (timer.round >= timer.rounds) { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
         else { triple(); timer.phase = "rest"; timer.endAt = now + timer.restS * 1000; }
-      } else {
-        beep(1320, 400); timer.round++; timer.phase = "work"; timer.endAt = now + timer.workS * 1000;
-      }
-    } else if (timer.kind === "amrap") {
-      timer.phase = "done"; triple(); stopTick(); unlockScreen();
-    } else { // rest
-      triple(); timer = null; stopTick(); unlockScreen();
-    }
+      } else { beep(1320, 400); timer.round++; timer.phase = "work"; timer.endAt = now + timer.workS * 1000; }
+    } else if (timer.kind === "amrap") { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
+    else { triple(); timer = null; stopTick(); unlockScreen(); }
   }
   render();
 }
 
 /* ── actions ── */
 window.A = {
-  tab(t) { tab = t; render(); },
+  tab(t) { tab = t; showSettings = false; render(); },
+  settings() { showSettings = !showSettings; render(); },
+  cfgField(f, el) { cfg[f] = el.value.trim(); save("jj-sync-cfg", cfg); },
+  refreshPlan() { fetchPlan(false); },
+  syncNow() { syncUnsent(); },
+
   open(id) { openMove = openMove === id ? null : id; render(); },
   bump(id, field, delta) {
     const store = field === "kg" ? editKg : editReps;
     const m = blockState.movements.find((x) => x.id === id);
-    const cur = store[id] ?? m[field];
-    store[id] = Math.max(0, +(cur + delta).toFixed(1));
+    store[id] = Math.max(0, +((store[id] ?? m[field]) + delta).toFixed(1));
     render();
   },
   rpe(id, n) { editRpe[id] = n; render(); },
@@ -121,12 +164,15 @@ window.A = {
     toast(`${m.name} — ${kg} kg × ${reps} logged`);
     render();
   },
-  timers(mode) { timerMode = mode; timer = null; render(); },
+
+  timers(mode) { timerMode = mode; timer = null; tab = "timers"; render(); },
   startInterval(workS, restS, rounds) {
+    tab = "timers"; timerMode = "interval";
     timer = { kind: "interval", phase: "work", workS, restS, rounds, round: 1, endAt: Date.now() + workS * 1000, left: workS };
     lockScreen(); beep(1320, 300); startTick(); render();
   },
   startAmrap(mins) {
+    tab = "timers"; timerMode = "amrap";
     timer = { kind: "amrap", phase: "run", startedAt: Date.now(), endAt: Date.now() + mins * 60000, left: mins * 60, count: 0 };
     lockScreen(); beep(1320, 300); startTick(); render();
   },
@@ -137,27 +183,31 @@ window.A = {
     beep(1100, 120); render();
   },
   startRest(s) {
+    tab = "timers"; timerMode = "rest";
     timer = { kind: "rest", phase: "run", endAt: Date.now() + s * 1000, left: s };
     lockScreen(); startTick(); render();
   },
   exitTimer() { timer = null; timerMode = null; stopTick(); unlockScreen(); render(); },
-  setupField(id, delta) { setupVals[id] = Math.max(id === "rounds" ? 1 : 5, (setupVals[id] || 0) + delta); render(); },
+  setupField(id, delta) { setupVals[id] = Math.max(id === "rounds" || id === "amrap" ? 1 : 5, (setupVals[id] || 0) + delta); render(); },
+
   finRpe(n) { session.rpe = n; render(); },
   finBack(b) { session.back = b; render(); },
   finNotes(el) { session.notes = el.value; },
-  saveSession() {
+  async saveSession() {
     if (!session.rpe || !session.back) return;
-    const done = { ...session, finished: new Date().toISOString() };
-    history = [done, ...history].slice(0, 100);
-    const ok = save("jj-sessions", history);
+    const done = { ...session, finished: new Date().toISOString(), synced: false };
     finishReport = buildReport(done);
-    session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], rpe: null, back: null, notes: "" };
+    const res = await pushSession(done);
+    done.synced = res.ok;
+    history = [done, ...history].slice(0, 100);
+    save("jj-sessions", history);
+    session = { date: todayISO(), sets: [], rounds: [], rpe: null, back: null, notes: "" };
     editKg = {}; editReps = {}; editRpe = {};
-    toast(ok ? "Session saved" : "Save failed — copy report now");
+    toast(res.ok ? "Saved + synced to GitHub ✓" : cfg.token ? "Saved locally — sync failed, retry from Log" : "Saved locally (no token set)");
     render();
   },
   async copyReport() {
-    try { await navigator.clipboard.writeText(finishReport); toast("Copied — paste to Claude"); }
+    try { await navigator.clipboard.writeText(finishReport); toast("Copied"); }
     catch { toast("Long-press the text to copy"); }
   },
   closeReport() { finishReport = null; tab = "log"; render(); },
@@ -166,12 +216,10 @@ window.A = {
     const blob = new Blob([JSON.stringify({ blockState, history }, null, 1)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `session-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `session-backup-${todayISO()}.json`;
     a.click();
   },
 };
-
-let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
 
 function buildReport(d) {
   return [
@@ -184,41 +232,86 @@ function buildReport(d) {
   ].filter(Boolean).join("\n");
 }
 
+/* ── movement logger (shared by TODAY & LIFT) ── */
+function moveCard(m) {
+  const done = session.sets.filter((s) => s.id === m.id).length;
+  const kg = editKg[m.id] ?? m.kg, reps = editReps[m.id] ?? m.reps, rpe = editRpe[m.id];
+  const pips = Array.from({ length: m.sets }).map((_, i) => `<span class="pip ${i < done ? "done" : ""}"></span>`).join("");
+  const sel = (n) => rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
+  return `
+  <button class="row" onclick="A.open('${m.id}')">
+    <span><span class="mname">${m.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(m.name)}</span>
+    <span class="msub">${m.kg} kg · ${m.reps} reps · ${done}/${m.sets} sets</span></span>
+    <span class="pips">${pips}</span>
+  </button>
+  ${openMove === m.id ? `
+  <div class="logger">
+    <div class="steprow">
+      <div class="stepper">
+        <button class="stepbtn" onclick="A.bump('${m.id}','kg',${m.kg < 10 ? -0.5 : -2.5})">−</button>
+        <div><div class="stepval">${kg}</div><div class="steplbl">kg</div></div>
+        <button class="stepbtn" onclick="A.bump('${m.id}','kg',${m.kg < 10 ? 0.5 : 2.5})">+</button>
+      </div>
+      <div class="stepper">
+        <button class="stepbtn" onclick="A.bump('${m.id}','reps',-1)">−</button>
+        <div><div class="stepval">${reps}</div><div class="steplbl">reps</div></div>
+        <button class="stepbtn" onclick="A.bump('${m.id}','reps',1)">+</button>
+      </div>
+    </div>
+    ${m.spinal ? `
+    <div class="small">Station RPE — required</div>
+    <div class="rperow">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" onclick="A.rpe('${m.id}',${n})">${n}</button>`).join("")}</div>` : ""}
+    <button class="big" ${m.spinal && rpe == null ? "disabled" : ""} onclick="A.logSet('${m.id}')">LOG SET — ${kg} kg × ${reps}</button>
+  </div>` : ""}`;
+}
+
 /* ── views ── */
+function vToday() {
+  if (showSettings) return vSettings();
+  const day = plan?.days?.[todayISO()];
+  const head = plan ? `<p class="hint">Plan week: ${esc(plan.week || "—")} · <button class="link" onclick="A.refreshPlan()">refresh plan</button></p>`
+    : `<p class="hint">No plan loaded. <button class="link" onclick="A.refreshPlan()">Pull plan from repo</button> once data/plan.json exists.</p>`;
+  if (!day) return `<div class="page">${head}<div class="hist" style="text-align:center;padding:28px 14px">
+    <div class="mname">Nothing scheduled today</div>
+    <div class="msub" style="margin-top:6px">Rest day, or no plan yet. The Lift tab has the full library.</div></div></div>`;
+  return `<div class="page">${head}
+    <div class="daytitle">${esc(day.title)}</div>
+    ${day.rpe ? `<div class="msub" style="margin-bottom:12px">Target RPE ${esc(day.rpe)}</div>` : ""}
+    ${(day.blocks || []).map((b) => {
+      if (b.type === "note") return `<div class="noteblock">${esc(b.text)}</div>`;
+      if (b.type === "interval") return `<div class="hist"><div class="mname">${esc(b.label || "Intervals")}</div>
+        <div class="msub">${b.rounds} × ${fmt(b.work)} work / ${fmt(b.rest)} rest</div>
+        <button class="big" onclick="A.startInterval(${b.work},${b.rest},${b.rounds})">START</button></div>`;
+      if (b.type === "amrap") return `<div class="hist"><div class="mname">${esc(b.label || "AMRAP")}</div>
+        <div class="msub">${b.mins} minutes</div>
+        <button class="big" onclick="A.startAmrap(${b.mins})">START</button></div>`;
+      if (b.type === "movement") {
+        const m = blockState.movements.find((x) => x.id === b.id);
+        return m ? moveCard(m) : "";
+      }
+      return "";
+    }).join("")}
+  </div>`;
+}
+
+function vSettings() {
+  const pending = history.filter((h) => !h.synced).length;
+  return `<div class="page">
+    <div class="small">GitHub sync</div>
+    <p class="hint">Fine-grained token · this repo only · Contents read/write. Stored on this phone only. Repo is public — synced logs are publicly visible.</p>
+    <input class="field" placeholder="owner" value="${esc(cfg.owner)}" oninput="A.cfgField('owner',this)">
+    <input class="field" placeholder="repo" value="${esc(cfg.repo)}" oninput="A.cfgField('repo',this)">
+    <input class="field" type="password" placeholder="github token (fine-grained)" value="${esc(cfg.token)}" oninput="A.cfgField('token',this)">
+    <button class="big" onclick="A.syncNow()">SYNC NOW${pending ? ` (${pending} pending)` : ""}</button>
+    <p class="hint">${esc(syncMsg)}</p>
+    <button class="back" onclick="A.settings()">← back</button>
+  </div>`;
+}
+
 function vLift() {
   return `<div class="page">
-    <p class="hint">Tap a movement · adjust · log each set. ▲ = spinal — station RPE required.</p>
-    ${blockState.movements.map((m) => {
-      const done = session.sets.filter((s) => s.id === m.id).length;
-      const kg = editKg[m.id] ?? m.kg, reps = editReps[m.id] ?? m.reps, rpe = editRpe[m.id];
-      const pips = Array.from({ length: m.sets }).map((_, i) => `<span class="pip ${i < done ? "done" : ""}"></span>`).join("");
-      const sel = (n) => rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
-      return `
-      <button class="row" onclick="A.open('${m.id}')">
-        <span><span class="mname">${m.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(m.name)}</span>
-        <span class="msub">${m.kg} kg · ${m.reps} reps · ${done}/${m.sets} sets</span></span>
-        <span class="pips">${pips}</span>
-      </button>
-      ${openMove === m.id ? `
-      <div class="logger">
-        <div class="steprow">
-          <div><div class="stepper">
-            <button class="stepbtn" onclick="A.bump('${m.id}','kg',${m.kg < 10 ? -0.5 : -2.5})">−</button>
-            <div><div class="stepval">${kg}</div><div class="steplbl">kg</div></div>
-            <button class="stepbtn" onclick="A.bump('${m.id}','kg',${m.kg < 10 ? 0.5 : 2.5})">+</button>
-          </div></div>
-          <div><div class="stepper">
-            <button class="stepbtn" onclick="A.bump('${m.id}','reps',-1)">−</button>
-            <div><div class="stepval">${reps}</div><div class="steplbl">reps</div></div>
-            <button class="stepbtn" onclick="A.bump('${m.id}','reps',1)">+</button>
-          </div></div>
-        </div>
-        ${m.spinal ? `
-        <div class="small">Station RPE — required</div>
-        <div class="rperow">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" onclick="A.rpe('${m.id}',${n})">${n}</button>`).join("")}</div>` : ""}
-        <button class="big" ${m.spinal && rpe == null ? "disabled" : ""} onclick="A.logSet('${m.id}')">LOG SET — ${kg} kg × ${reps}</button>
-      </div>` : ""}`;
-    }).join("")}
+    <p class="hint">Full movement library · working loads persist. ▲ = spinal — station RPE required.</p>
+    ${blockState.movements.map(moveCard).join("")}
   </div>`;
 }
 
@@ -228,7 +321,7 @@ function vTimers() {
     ${["work", "rest", "rounds"].map((f) => `
       <div style="display:flex;justify-content:center;padding:10px 0"><div class="stepper">
         <button class="stepbtn" onclick="A.setupField('${f}',${f === "rounds" ? -1 : -15})">−</button>
-        <div><div class="stepval">${f === "rounds" ? setupVals[f] : fmt(setupVals[f])}</div><div class="steplbl">${f}${f === "rounds" ? "" : " (m:ss)"}</div></div>
+        <div><div class="stepval">${f === "rounds" ? setupVals[f] : fmt(setupVals[f])}</div><div class="steplbl">${f}</div></div>
         <button class="stepbtn" onclick="A.setupField('${f}',${f === "rounds" ? 1 : 15})">+</button>
       </div></div>`).join("")}
     <button class="big" onclick="A.startInterval(${setupVals.work},${setupVals.rest},${setupVals.rounds})">START — ${setupVals.rounds} × ${fmt(setupVals.work)} / ${fmt(setupVals.rest)}</button>
@@ -270,10 +363,10 @@ function vTimers() {
   }
 
   return `<div class="page">
-    <p class="hint">Runs & run intervals: use the Garmin — structured workouts beep on your wrist. These timers are for the gym floor.</p>
-    ${[["interval", "INTERVALS", "work / rest × rounds — stations, circuits"],
-       ["amrap", "AMRAP", "countdown + round counter with splits"],
-       ["rest", "REST", "quick 60 / 90 / 120 between sets"]].map(([id, name, sub]) => `
+    <p class="hint">Run intervals live on the Garmin. These are for the gym floor.</p>
+    ${[["interval", "INTERVALS", "work / rest × rounds"],
+       ["amrap", "AMRAP", "countdown + round counter"],
+       ["rest", "REST", "60 / 90 / 120 between sets"]].map(([id, name, sub]) => `
       <button class="row" onclick="A.timers('${id}')" style="display:block">
         <span class="mname" style="font-size:22px">${name}</span><span class="msub">${sub}</span>
       </button>`).join("")}
@@ -282,7 +375,7 @@ function vTimers() {
 
 function vFinish() {
   if (finishReport) return `<div class="page">
-    <p class="hint">Paste this into the Claude chat — it's the Sunday planning input.</p>
+    <p class="hint">Synced sessions land in the repo automatically. Copy below only as backup / if sync failed.</p>
     <textarea class="report" readonly onclick="this.select()">${esc(finishReport)}</textarea>
     <button class="big" onclick="A.copyReport()">COPY REPORT</button>
     <button class="big quiet" onclick="A.closeReport()">DONE</button>
@@ -297,18 +390,20 @@ function vFinish() {
     <div class="small">Notes</div>
     <textarea placeholder="swaps, niggles, anything moved" oninput="A.finNotes(this)">${esc(session.notes)}</textarea>
     <button class="big" ${session.rpe && session.back ? "" : "disabled"} onclick="A.saveSession()">SAVE SESSION</button>
-    <p class="hint" style="margin-top:10px">${session.sets.length} sets · ${session.rounds.length} AMRAP rounds logged this session.</p>
+    <p class="hint" style="margin-top:10px">${session.sets.length} sets · ${session.rounds.length} AMRAP rounds this session.</p>
   </div>`;
 }
 
 function vLog() {
   const col = { fine: "var(--go)", grumble: "var(--rest)", stop: "var(--danger)" };
+  const pending = history.filter((h) => !h.synced).length;
   return `<div class="page">
-    ${history.length === 0 ? `<p class="hint">No sessions yet. Finish one and it lands here.</p>` : ""}
+    ${pending ? `<button class="big quiet" onclick="A.syncNow()">SYNC ${pending} PENDING SESSION${pending > 1 ? "S" : ""}</button><p class="hint">${esc(syncMsg)}</p>` : ""}
+    ${history.length === 0 ? `<p class="hint">No sessions yet.</p>` : ""}
     ${history.map((h) => `
       <div class="hist">
         <div style="display:flex;justify-content:space-between;align-items:baseline">
-          <span class="mname" style="font-size:15px">${esc(h.date)}</span>
+          <span class="mname" style="font-size:15px">${esc(h.date)} ${h.synced ? "✓" : "⏳"}</span>
           <span style="font-family:ui-monospace,monospace;font-size:12px;color:${col[h.back] || "var(--mut)"}">RPE ${h.rpe ?? "—"} · ${esc(h.back ?? "—")}</span>
         </div>
         <div class="msub">${h.sets.length} sets${h.rounds?.length ? ` · ${h.rounds.length} AMRAP rounds` : ""}${h.notes ? ` · ${esc(h.notes)}` : ""}</div>
@@ -320,12 +415,17 @@ function vLog() {
 }
 
 function render() {
-  const views = { lift: vLift, timers: vTimers, finish: vFinish, log: vLog };
+  const views = { today: vToday, lift: vLift, timers: vTimers, finish: vFinish, log: vLog };
   document.getElementById("app").innerHTML = `
     <header><span class="brand">SESSION</span>
-    <span class="date">${new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" })}</span></header>
+    <span style="display:flex;align-items:center;gap:12px">
+      <button class="gear" onclick="A.tab('today');A.settings()">⚙</button>
+      <span class="date">${new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" })}</span>
+    </span></header>
     ${views[tab]()}
-    <nav>${[["lift", "LIFT"], ["timers", "TIMERS"], ["finish", "FINISH"], ["log", "LOG"]].map(([id, l]) =>
+    <nav>${[["today", "TODAY"], ["lift", "LIFT"], ["timers", "TIMERS"], ["finish", "FINISH"], ["log", "LOG"]].map(([id, l]) =>
       `<button class="nav ${tab === id ? "on" : ""}" onclick="A.tab('${id}')">${l}</button>`).join("")}</nav>`;
 }
+
 render();
+fetchPlan(true);

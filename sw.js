@@ -1,4 +1,4 @@
-const CACHE = "session-v1";
+const CACHE = "session-v2";
 const ASSETS = ["./", "./index.html", "./app.js", "./manifest.json", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -10,5 +10,6 @@ self.addEventListener("activate", (e) => {
   );
 });
 self.addEventListener("fetch", (e) => {
+  if (e.request.url.includes("raw.githubusercontent.com") || e.request.url.includes("api.github.com")) return;
   e.respondWith(caches.match(e.request).then((hit) => hit || fetch(e.request)));
 });
