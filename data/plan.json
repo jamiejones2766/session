@@ -1,0 +1,33 @@
+{
+  "week": "w/c 13 Jul · hold-flat week · generated 16 Jul",
+  "days": {
+    "2026-07-17": {
+      "title": "Compromised pacing session",
+      "rpe": "8-9",
+      "blocks": [
+        { "type": "note", "text": "RACE RULE: runs controlled, stations attacked. Run intervals on the GARMIN (6 × 3:00 / 1:00) — not the phone. Back three-plus weeks post-rehab: carries and lunges honest RPE." },
+        { "type": "amrap", "mins": 36, "label": "36-min timed sim — tap ROUND DONE each lap" },
+        { "type": "movement", "id": "kbcarry" },
+        { "type": "movement", "id": "sblunge" },
+        { "type": "movement", "id": "wallball" }
+      ]
+    },
+    "2026-07-18": {
+      "title": "Hybrid engine",
+      "rpe": "5-6",
+      "blocks": [
+        { "type": "note", "text": "Aerobic power, not a race. Row is the flush station. HR oscillating 145–175 is the target shape." },
+        { "type": "amrap", "mins": 30, "label": "Hybrid engine AMRAP" },
+        { "type": "movement", "id": "wallball" },
+        { "type": "movement", "id": "kbcarry" }
+      ]
+    },
+    "2026-07-19": {
+      "title": "Long easy run — CAPPED AT 50 MIN",
+      "rpe": "3-5",
+      "blocks": [
+        { "type": "note", "text": "On the Garmin, HR ≤148, heat = slower not harder. 50 minutes, not 60 — agreed cap, ACWR still above band. Evening: first Sunday planning session — sync today's log, then open the chat." }
+      ]
+    }
+  }
+}
