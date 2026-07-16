@@ -1,87 +1,164 @@
 {
-  "week": "w/c 13 Jul (live) + w/c 20 Jul DRAFT deload — confirmed Sun 19th",
-  "days": {
-    "2026-07-17": {
-      "title": "Compromised pacing session",
-      "rpe": "8-9",
-      "blocks": [
-        { "type": "note", "text": "RACE RULE: runs controlled, stations attacked. Run intervals on the GARMIN (6 × 3:00 / 1:00) — not the phone. Back three-plus weeks post-rehab: carries and lunges honest RPE." },
-        { "type": "amrap", "mins": 36, "label": "36-min timed sim — tap ROUND DONE each lap" },
-        { "type": "movement", "id": "kbcarry" },
-        { "type": "movement", "id": "sblunge" },
-        { "type": "movement", "id": "wallball" }
-      ]
+ "week": "w/c 13 Jul (live) + w/c 20 Jul DRAFT deload — confirmed Sun 19th",
+ "days": {
+  "2026-07-17": {
+   "title": "Comp pacing — 36-min alternation",
+   "rpe": "8-9",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WU: 10 min easy run + 3×30s strides (60s rest). Then 6 pairs of 3-min RUN @ 10.6 / 3-min STATION: ski erg → sled push 152 (RACE WEIGHT — the Birmingham station, attack it, first exposure not benchmark) → sled pull 103 (race weight, spinal — honest RPE) → BBJ → row 2:04–2:10/500 → wall balls 6 kg. 10 min easy cool down. RACE RULE: runs held at 10.6, no banking."
     },
-    "2026-07-18": {
-      "title": "Hybrid engine",
-      "rpe": "5-6",
-      "blocks": [
-        { "type": "note", "text": "Aerobic power, not a race. Row is the flush station. HR oscillating 145–175 is the target shape." },
-        { "type": "amrap", "mins": 30, "label": "Hybrid engine AMRAP" },
-        { "type": "movement", "id": "wallball" },
-        { "type": "movement", "id": "kbcarry" }
-      ]
+    {
+     "type": "note",
+     "text": "Record whole session on Garmin HIIT profile. Timer below beeps every 3:00 — work = run, rest = station."
     },
-    "2026-07-19": {
-      "title": "Long easy run — CAPPED AT 50 MIN",
-      "rpe": "3-5",
-      "blocks": [
-        { "type": "note", "text": "On the Garmin, HR ≤148, heat = slower not harder. 50 minutes, not 60 — agreed cap, ACWR still above band. Evening: first Sunday planning session — sync today's log, then open the chat." }
-      ]
+    {
+     "type": "interval",
+     "work": 180,
+     "rest": 180,
+     "rounds": 6,
+     "label": "36-min alternation clock"
     },
-    "2026-07-20": {
-      "title": "DRAFT · Threshold (deload trim)",
-      "rpe": "7-8",
-      "blocks": [
-        { "type": "note", "text": "DELOAD WEEK (draft — confirmed at Sunday planning). 3 × 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut." }
-      ]
+    {
+     "type": "movement",
+     "id": "sledpush"
     },
-    "2026-07-21": {
-      "title": "DRAFT · Active recovery",
-      "rpe": "3-4",
-      "blocks": [
-        { "type": "note", "text": "40 min easy bike, HR under 140. Genuinely easy — deload only works if the easy days are." }
-      ]
+    {
+     "type": "movement",
+     "id": "sledpull"
     },
-    "2026-07-22": {
-      "title": "DRAFT · Strength (maintenance)",
-      "rpe": "6-7",
-      "blocks": [
-        { "type": "note", "text": "Same loads as last week, ONE set each instead of two. Loads hold, fatigue drains. No progression this week by design." },
-        { "type": "movement", "id": "beltsquat" },
-        { "type": "movement", "id": "revlunge" },
-        { "type": "movement", "id": "rdl" },
-        { "type": "movement", "id": "pullup" },
-        { "type": "movement", "id": "press" },
-        { "type": "movement", "id": "sledpush" }
-      ]
-    },
-    "2026-07-23": {
-      "title": "DRAFT · Rest",
-      "blocks": [
-        { "type": "note", "text": "Full rest. Walk the dogs, stretch, nothing with a training load." }
-      ]
-    },
-    "2026-07-24": {
-      "title": "DRAFT · Easy run 25 min",
-      "rpe": "3-4",
-      "blocks": [
-        { "type": "note", "text": "HR ≤148 on the Garmin. No sim this week — deload means one hard session. Six more Fridays before Tenerife; this one costs nothing." }
-      ]
-    },
-    "2026-07-25": {
-      "title": "DRAFT · Easy bike 40 min (optional)",
-      "rpe": "3-4",
-      "blocks": [
-        { "type": "note", "text": "Optional movement day. Skip freely if life intervenes — that is the point of a deload." }
-      ]
-    },
-    "2026-07-26": {
-      "title": "DRAFT · Easy run 40 min",
-      "rpe": "3-5",
-      "blocks": [
-        { "type": "note", "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers." }
-      ]
+    {
+     "type": "movement",
+     "id": "wallball"
     }
+   ]
+  },
+  "2026-07-18": {
+   "title": "Hybrid engine",
+   "rpe": "5-6",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "30 min easy run first (Garmin, HR ≤148). Then 30-min AMRAP: row 500 @ 2:15 → sandbag lunge 20 kg × 10 (spinal — honest RPE) → air bike 2 min → wall balls 6 kg × 10 → 15 sit-ups. Aerobic power, not a race — row and air bike are the flush stations."
+    },
+    {
+     "type": "amrap",
+     "mins": 30,
+     "label": "Hybrid AMRAP — tap ROUND DONE each lap"
+    },
+    {
+     "type": "movement",
+     "id": "sblunge"
+    },
+    {
+     "type": "movement",
+     "id": "wallball"
+    }
+   ]
+  },
+  "2026-07-19": {
+   "title": "Long easy run — 50 MIN (agreed cap)",
+   "rpe": "3-5",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Repz says 60 — we agreed 50, ACWR still above band. Garmin, HR ≤148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
+    }
+   ]
+  },
+  "2026-07-20": {
+   "title": "DRAFT · Threshold (deload trim)",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "DELOAD WEEK (draft — confirmed at Sunday planning). 3 × 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut."
+    }
+   ]
+  },
+  "2026-07-21": {
+   "title": "DRAFT · Active recovery",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "40 min easy bike, HR under 140. Genuinely easy — deload only works if the easy days are."
+    }
+   ]
+  },
+  "2026-07-22": {
+   "title": "DRAFT · Strength (maintenance)",
+   "rpe": "6-7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Same loads as last week, ONE set each instead of two. Loads hold, fatigue drains. No progression this week by design."
+    },
+    {
+     "type": "movement",
+     "id": "beltsquat"
+    },
+    {
+     "type": "movement",
+     "id": "revlunge"
+    },
+    {
+     "type": "movement",
+     "id": "rdl"
+    },
+    {
+     "type": "movement",
+     "id": "pullup"
+    },
+    {
+     "type": "movement",
+     "id": "press"
+    },
+    {
+     "type": "movement",
+     "id": "sledpush"
+    }
+   ]
+  },
+  "2026-07-23": {
+   "title": "DRAFT · Rest",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Full rest. Walk the dogs, stretch, nothing with a training load."
+    }
+   ]
+  },
+  "2026-07-24": {
+   "title": "DRAFT · Easy run 25 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "HR ≤148 on the Garmin. No sim this week — deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
+    }
+   ]
+  },
+  "2026-07-25": {
+   "title": "DRAFT · Easy bike 40 min (optional)",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Optional movement day. Skip freely if life intervenes — that is the point of a deload."
+    }
+   ]
+  },
+  "2026-07-26": {
+   "title": "DRAFT · Easy run 40 min",
+   "rpe": "3-5",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers."
+    }
+   ]
   }
+ }
 }
