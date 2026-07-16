@@ -75,6 +75,12 @@ nav{position:fixed;bottom:0;left:0;right:0;max-width:520px;margin:0 auto;display
 .daytitle{font-weight:800;font-size:26px;margin:2px 0 2px}
 .noteblock{background:var(--hi);border-left:3px solid var(--go);border-radius:0 8px 8px 0;padding:12px 14px;margin-bottom:10px;font-size:13.5px;color:var(--mut);line-height:1.5}
 
+
+.daychips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;padding:10px 14px;border-radius:8px;background:var(--panel);border:1px solid var(--line);color:var(--mut);font-size:13px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.chip.istoday{border-color:var(--go);color:var(--ink)}
+.chip.on{background:var(--go);border-color:var(--go);color:#0A0E13}
+
 </style>
 </head>
 <body>

@@ -31,6 +31,7 @@ let tab = "today";
 let openMove = null;
 let timerMode = null, timer = null;
 let finishReport = null, showSettings = false, syncMsg = "";
+let selectedDate = new Date().toISOString().slice(0, 10);
 let editKg = {}, editReps = {}, editRpe = {};
 let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
 
@@ -142,6 +143,7 @@ function onTick() {
 /* ── actions ── */
 window.A = {
   tab(t) { tab = t; showSettings = false; render(); },
+  pickDay(d) { selectedDate = d; render(); },
   settings() { showSettings = !showSettings; render(); },
   cfgField(f, el) { cfg[f] = el.value.trim(); save("jj-sync-cfg", cfg); },
   refreshPlan() { fetchPlan(false); },
@@ -268,13 +270,25 @@ function moveCard(m) {
 /* ── views ── */
 function vToday() {
   if (showSettings) return vSettings();
-  const day = plan?.days?.[todayISO()];
-  const head = plan ? `<p class="hint">Plan week: ${esc(plan.week || "—")} · <button class="link" onclick="A.refreshPlan()">refresh plan</button></p>`
+  const head = plan ? `<p class="hint">Plan: ${esc(plan.week || "—")} · <button class="link" onclick="A.refreshPlan()">refresh</button></p>`
     : `<p class="hint">No plan loaded. <button class="link" onclick="A.refreshPlan()">Pull plan from repo</button> once data/plan.json exists.</p>`;
-  if (!day) return `<div class="page">${head}<div class="hist" style="text-align:center;padding:28px 14px">
-    <div class="mname">Nothing scheduled today</div>
-    <div class="msub" style="margin-top:6px">Rest day, or no plan yet. The Lift tab has the full library.</div></div></div>`;
-  return `<div class="page">${head}
+
+  const dates = plan?.days ? Object.keys(plan.days).sort() : [];
+  const t = todayISO();
+  const chips = dates.length ? `<div class="daychips">${dates.map((d) => {
+    const dt = new Date(d + "T12:00:00");
+    const lbl = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric" });
+    return `<button class="chip ${d === selectedDate ? "on" : ""} ${d === t ? "istoday" : ""}" onclick="A.pickDay('${d}')">${lbl}</button>`;
+  }).join("")}</div>` : "";
+
+  const day = plan?.days?.[selectedDate];
+  const dayLabel = selectedDate === t ? "" : `<div class="msub" style="margin-bottom:6px">Viewing ${new Date(selectedDate + "T12:00:00").toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "short" })}${selectedDate > t ? " (upcoming)" : ""}</div>`;
+
+  if (!day) return `<div class="page">${head}${chips}<div class="hist" style="text-align:center;padding:28px 14px">
+    <div class="mname">Nothing scheduled</div>
+    <div class="msub" style="margin-top:6px">Rest day, or no plan for this date. The Lift tab has the full library.</div></div></div>`;
+
+  return `<div class="page">${head}${chips}${dayLabel}
     <div class="daytitle">${esc(day.title)}</div>
     ${day.rpe ? `<div class="msub" style="margin-bottom:12px">Target RPE ${esc(day.rpe)}</div>` : ""}
     ${(day.blocks || []).map((b) => {
