@@ -1,13 +1,13 @@
 {
- "week": "w/c 13 Jul (live) + w/c 20 Jul DRAFT deload — confirmed Sun 19th",
+ "week": "w/c 13 Jul (complete) + w/c 20 Jul (confirmed 19 Jul \u2014 deload, comeback week 3)",
  "days": {
   "2026-07-17": {
-   "title": "Comp pacing — 36-min alternation",
+   "title": "Comp pacing \u2014 36-min alternation",
    "rpe": "8-9",
    "blocks": [
     {
      "type": "note",
-     "text": "RACE RULE: runs held at 10.6 km/h — no banking. Record whole session on Garmin HIIT profile. Clock below beeps every 3:00."
+     "text": "RACE RULE: runs held at 10.6 km/h \u2014 no banking. Record whole session on Garmin HIIT profile. Clock below beeps every 3:00."
     },
     {
      "type": "interval",
@@ -24,7 +24,7 @@
     },
     {
      "type": "step",
-     "label": "Strides ×3",
+     "label": "Strides \u00d73",
      "detail": "30s each, 60s rest between"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
      "type": "step",
-     "label": "Sled push — 152 kg",
+     "label": "Sled push \u2014 152 kg",
      "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
      "secs": 180,
      "rpe": true
@@ -61,8 +61,8 @@
     },
     {
      "type": "step",
-     "label": "Sled pull — 103 kg",
-     "detail": "Race weight. Spinal — honest RPE.",
+     "label": "Sled pull \u2014 103 kg",
+     "detail": "Race weight. Spinal \u2014 honest RPE.",
      "secs": 180,
      "rpe": true,
      "spinal": true
@@ -89,7 +89,7 @@
     {
      "type": "step",
      "label": "Row",
-     "detail": "3:00 @ 2:04–2:10 /500m",
+     "detail": "3:00 @ 2:04\u20132:10 /500m",
      "secs": 180,
      "rpe": true
     },
@@ -101,7 +101,7 @@
     },
     {
      "type": "step",
-     "label": "Wall balls — 6 kg",
+     "label": "Wall balls \u2014 6 kg",
      "detail": "3:00. Birmingham cost you 1:47 here. Rhythm, no staring at the ball.",
      "secs": 180,
      "rpe": true
@@ -109,7 +109,7 @@
     {
      "type": "step",
      "label": "Cool down",
-     "detail": "10 min easy — do the boring bit",
+     "detail": "10 min easy \u2014 do the boring bit",
      "secs": 600
     }
    ]
@@ -120,29 +120,29 @@
    "blocks": [
     {
      "type": "note",
-     "text": "Aerobic power, not a race. Row and air bike are the flush stations — HR oscillating 145–175 is the target shape."
+     "text": "Aerobic power, not a race. Row and air bike are the flush stations \u2014 HR oscillating 145\u2013175 is the target shape."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "30 min, Garmin, HR ≤148",
+     "detail": "30 min, Garmin, HR \u2264148",
      "secs": 1800
     },
     {
      "type": "amrap",
      "mins": 30,
-     "label": "Hybrid AMRAP — tap ROUND DONE each lap",
+     "label": "Hybrid AMRAP \u2014 tap ROUND DONE each lap",
      "items": [
       "Row 500m @ 2:15",
-      "Sandbag lunge 20 kg × 10 ▲",
+      "Sandbag lunge 20 kg \u00d7 10 \u25b2",
       "Air bike 2 min",
-      "Wall balls 6 kg × 10",
-      "Sit-ups × 15"
+      "Wall balls 6 kg \u00d7 10",
+      "Sit-ups \u00d7 15"
      ]
     },
     {
      "type": "step",
-     "label": "Sandbag lunges — spinal check",
+     "label": "Sandbag lunges \u2014 spinal check",
      "detail": "One RPE for the lunges across the AMRAP",
      "rpe": true,
      "spinal": true
@@ -150,37 +150,37 @@
    ]
   },
   "2026-07-19": {
-   "title": "Long easy run — 50 MIN (agreed cap)",
+   "title": "Long easy run \u2014 50 MIN (agreed cap)",
    "rpe": "3-5",
    "blocks": [
     {
      "type": "note",
-     "text": "Repz says 60 — we agreed 50, ACWR still above band. Garmin, HR ≤148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
+     "text": "Repz says 60 \u2014 we agreed 50, ACWR still above band. Garmin, HR \u2264148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
     }
    ]
   },
   "2026-07-20": {
-   "title": "DRAFT · Threshold (deload trim)",
+   "title": "Threshold (deload trim)",
    "rpe": "7-8",
    "blocks": [
     {
      "type": "note",
-     "text": "DELOAD WEEK (draft — confirmed at Sunday planning). 3 × 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut."
+     "text": "DELOAD WEEK (confirmed). 3 \u00d7 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut."
     }
    ]
   },
   "2026-07-21": {
-   "title": "DRAFT · Active recovery",
+   "title": "Active recovery",
    "rpe": "3-4",
    "blocks": [
     {
      "type": "note",
-     "text": "40 min easy bike, HR under 140. Genuinely easy — deload only works if the easy days are."
+     "text": "40 min easy bike, HR under 140. Genuinely easy \u2014 deload only works if the easy days are."
     }
    ]
   },
   "2026-07-22": {
-   "title": "DRAFT · Strength (maintenance)",
+   "title": "Strength (maintenance)",
    "rpe": "6-7",
    "blocks": [
     {
@@ -214,7 +214,7 @@
    ]
   },
   "2026-07-23": {
-   "title": "DRAFT · Rest",
+   "title": "Rest",
    "blocks": [
     {
      "type": "note",
@@ -223,32 +223,32 @@
    ]
   },
   "2026-07-24": {
-   "title": "DRAFT · Easy run 25 min",
+   "title": "Easy run 25 min",
    "rpe": "3-4",
    "blocks": [
     {
      "type": "note",
-     "text": "HR ≤148 on the Garmin. No sim this week — deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
+     "text": "HR \u2264148 on the Garmin. No sim this week \u2014 deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
     }
    ]
   },
   "2026-07-25": {
-   "title": "DRAFT · Easy bike 40 min (optional)",
+   "title": "Easy bike 40 min (optional)",
    "rpe": "3-4",
    "blocks": [
     {
      "type": "note",
-     "text": "Optional movement day. Skip freely if life intervenes — that is the point of a deload."
+     "text": "Optional movement day. Skip freely if life intervenes \u2014 that is the point of a deload."
     }
    ]
   },
   "2026-07-26": {
-   "title": "DRAFT · Easy run 40 min",
+   "title": "Easy run 40 min",
    "rpe": "3-5",
    "blocks": [
     {
      "type": "note",
-     "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers."
+     "text": "HR \u2264148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening \u2014 build week generated off green numbers."
     }
    ]
   }
