@@ -1,256 +1,62 @@
-{
- "week": "w/c 13 Jul (complete) + w/c 20 Jul (confirmed 19 Jul \u2014 deload, comeback week 3)",
- "days": {
-  "2026-07-17": {
-   "title": "Comp pacing \u2014 36-min alternation",
-   "rpe": "8-9",
-   "blocks": [
+"2026-07-22": {
+  "title": "Compound chain intro — stations 5-8 (race weight, half volume)",
+  "rpe": "7-8",
+  "blocks": [
     {
-     "type": "note",
-     "text": "RACE RULE: runs held at 10.6 km/h \u2014 no banking. Record whole session on Garmin HIIT profile. Clock below beeps every 3:00."
+      "type": "note",
+      "text": "Diagnostic session — first time chaining full race weight. Half volume throughout. This is the London cramp zone (runs 6-7-8) and the Birmingham collapse zone (lunges, wall balls). Spinal RPE (effort + symptom, separate) logged immediately after Farmers Carry, Lunge, and Wall Balls — not end of session. If symptom RPE climbs progressively across the three checkpoints, that's the chained-fatigue signal. Don't push to full volume even if it feels fine — next week's decision depends on what these three checkpoints say."
     },
     {
-     "type": "interval",
-     "work": 180,
-     "rest": 180,
-     "rounds": 6,
-     "label": "36-min alternation clock"
+      "type": "step",
+      "label": "Run — in",
+      "detail": "800m controlled, not race pace",
+      "secs": 480
     },
     {
-     "type": "step",
-     "label": "Warm-up run",
-     "detail": "10 min easy",
-     "secs": 600
+      "type": "step",
+      "label": "Row",
+      "detail": "500m (half distance), steady, seated throughout",
+      "secs": 150,
+      "rpe": true
     },
     {
-     "type": "step",
-     "label": "Strides \u00d73",
-     "detail": "30s each, 60s rest between"
+      "type": "step",
+      "label": "Run 6 spot",
+      "detail": "1km controlled — this is where London cramping started",
+      "secs": 360
     },
     {
-     "type": "step",
-     "label": "Run 1",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
+      "type": "step",
+      "label": "Farmers Carry — 2x24kg",
+      "detail": "100m (half distance), arms extended per standard. SPINAL RPE CHECK NOW — effort + symptom, separate.",
+      "rpe": true,
+      "spinal": true
     },
     {
-     "type": "step",
-     "label": "Ski erg",
-     "detail": "3:00 steady-strong",
-     "secs": 180,
-     "rpe": true
+      "type": "step",
+      "label": "Run 7 spot",
+      "detail": "1km controlled",
+      "secs": 360
     },
     {
-     "type": "step",
-     "label": "Run 2",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
+      "type": "step",
+      "label": "Sandbag Lunge — 20kg",
+      "detail": "50m (half distance), trailing knee to ground, stand tall between reps. SPINAL RPE CHECK NOW.",
+      "rpe": true,
+      "spinal": true
     },
     {
-     "type": "step",
-     "label": "Sled push \u2014 152 kg",
-     "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
-     "secs": 180,
-     "rpe": true
+      "type": "step",
+      "label": "Run 8 spot",
+      "detail": "1km controlled — where London cramping fully hit",
+      "secs": 360
     },
     {
-     "type": "step",
-     "label": "Run 3",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
-    },
-    {
-     "type": "step",
-     "label": "Sled pull \u2014 103 kg",
-     "detail": "Race weight. Spinal \u2014 honest RPE.",
-     "secs": 180,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "Run 4",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
-    },
-    {
-     "type": "step",
-     "label": "Burpee broad jumps",
-     "detail": "3:00 continuous",
-     "secs": 180,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Run 5",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
-    },
-    {
-     "type": "step",
-     "label": "Row",
-     "detail": "3:00 @ 2:04\u20132:10 /500m",
-     "secs": 180,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Run 6",
-     "detail": "3:00 @ 10.6",
-     "secs": 180
-    },
-    {
-     "type": "step",
-     "label": "Wall balls \u2014 6 kg",
-     "detail": "3:00. Birmingham cost you 1:47 here. Rhythm, no staring at the ball.",
-     "secs": 180,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Cool down",
-     "detail": "10 min easy \u2014 do the boring bit",
-     "secs": 600
+      "type": "step",
+      "label": "Wall Balls — 6kg",
+      "detail": "50 reps (half of 100), full squat hips below knees, 3.00m target. SPINAL RPE CHECK NOW.",
+      "rpe": true,
+      "spinal": true
     }
-   ]
-  },
-  "2026-07-18": {
-   "title": "Hybrid engine",
-   "rpe": "5-6",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "Aerobic power, not a race. Row and air bike are the flush stations \u2014 HR oscillating 145\u2013175 is the target shape."
-    },
-    {
-     "type": "step",
-     "label": "Easy run",
-     "detail": "30 min, Garmin, HR \u2264148",
-     "secs": 1800
-    },
-    {
-     "type": "amrap",
-     "mins": 30,
-     "label": "Hybrid AMRAP \u2014 tap ROUND DONE each lap",
-     "items": [
-      "Row 500m @ 2:15",
-      "Sandbag lunge 20 kg \u00d7 10 \u25b2",
-      "Air bike 2 min",
-      "Wall balls 6 kg \u00d7 10",
-      "Sit-ups \u00d7 15"
-     ]
-    },
-    {
-     "type": "step",
-     "label": "Sandbag lunges \u2014 spinal check",
-     "detail": "One RPE for the lunges across the AMRAP",
-     "rpe": true,
-     "spinal": true
-    }
-   ]
-  },
-  "2026-07-19": {
-   "title": "Long easy run \u2014 50 MIN (agreed cap)",
-   "rpe": "3-5",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "Repz says 60 \u2014 we agreed 50, ACWR still above band. Garmin, HR \u2264148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
-    }
-   ]
-  },
-  "2026-07-20": {
-   "title": "Threshold (deload trim)",
-   "rpe": "7-8",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "DELOAD WEEK (confirmed). 3 \u00d7 1.6 km @ 10.8 km/h on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut."
-    }
-   ]
-  },
-  "2026-07-21": {
-   "title": "Active recovery",
-   "rpe": "3-4",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "40 min easy bike, HR under 140. Genuinely easy \u2014 deload only works if the easy days are."
-    }
-   ]
-  },
-  "2026-07-22": {
-   "title": "Strength (maintenance)",
-   "rpe": "6-7",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "Same loads as last week, ONE set each instead of two. Loads hold, fatigue drains. No progression this week by design."
-    },
-    {
-     "type": "movement",
-     "id": "beltsquat"
-    },
-    {
-     "type": "movement",
-     "id": "revlunge"
-    },
-    {
-     "type": "movement",
-     "id": "rdl"
-    },
-    {
-     "type": "movement",
-     "id": "pullup"
-    },
-    {
-     "type": "movement",
-     "id": "press"
-    },
-    {
-     "type": "movement",
-     "id": "sledpush"
-    }
-   ]
-  },
-  "2026-07-23": {
-   "title": "Rest",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "Full rest. Walk the dogs, stretch, nothing with a training load."
-    }
-   ]
-  },
-  "2026-07-24": {
-   "title": "Easy run 25 min",
-   "rpe": "3-4",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "HR \u2264148 on the Garmin. No sim this week \u2014 deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
-    }
-   ]
-  },
-  "2026-07-25": {
-   "title": "Easy bike 40 min (optional)",
-   "rpe": "3-4",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "Optional movement day. Skip freely if life intervenes \u2014 that is the point of a deload."
-    }
-   ]
-  },
-  "2026-07-26": {
-   "title": "Easy run 40 min",
-   "rpe": "3-5",
-   "blocks": [
-    {
-     "type": "note",
-     "text": "HR \u2264148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening \u2014 build week generated off green numbers."
-    }
-   ]
-  }
- }
+  ]
 }
