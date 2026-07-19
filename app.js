@@ -26,7 +26,7 @@ let blockState = load("jj-block-state", SEED);
 let history = load("jj-sessions", []);
 let plan = load("jj-plan", null);
 let cfg = load("jj-sync-cfg", { owner: "jamiejones2766", repo: "session", token: "" });
-let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], steps: [], rpe: null, back: null, notes: "" };
+let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], steps: [], pauses: [], rpe: null, back: null, notes: "" };
 let tab = "today";
 let openMove = null;
 let timerMode = null, timer = null;
@@ -34,6 +34,9 @@ let finishReport = null, showSettings = false, syncMsg = "";
 let selectedDate = new Date().toISOString().slice(0, 10);
 let editKg = {}, editReps = {}, editRpe = {};
 let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
+let chipScrollX = 0;
+const COUNTDOWN_S = 15;
+const TRANSITION_S = 15;
 
 /* ── wake lock ── */
 let wakeLock = null;
@@ -121,8 +124,24 @@ async function syncUnsent() {
 let tickId = null;
 function startTick() { stopTick(); tickId = setInterval(onTick, 250); }
 function stopTick() { if (tickId) clearInterval(tickId); tickId = null; }
+function stepAt(dayKey, bi) { return plan?.days?.[dayKey]?.blocks?.[bi]; }
+function markStepDone(dayKey, bi) {
+  const b = stepAt(dayKey, bi);
+  if (!b) return;
+  const key = dayKey + ":" + bi;
+  if (!session.steps.find((x) => x.key === key)) session.steps.push({ key, label: b.label, spinal: !!b.spinal, rpe: null, t: Date.now() });
+}
+function enterStepWork(now) {
+  const bi = timer.blockIdxs[timer.pos];
+  const b = stepAt(timer.dayKey, bi);
+  timer.phase = "work";
+  timer.endAt = now + b.secs * 1000;
+  timer.left = b.secs;
+  timer.warned = false;
+}
 function onTick() {
   if (!timer) return;
+  if (timer.paused) { render(); return; }
   const now = Date.now();
   const left = Math.max(0, (timer.endAt - now) / 1000);
   timer.left = left;
@@ -130,11 +149,23 @@ function onTick() {
   if (left > 3.2) timer.warned = false;
   if (left <= 0) {
     if (timer.kind === "interval") {
-      if (timer.phase === "work") {
+      if (timer.phase === "countdown") { beep(1320, 300); timer.phase = "work"; timer.endAt = now + timer.workS * 1000; }
+      else if (timer.phase === "work") {
         if (timer.round >= timer.rounds) { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
         else { triple(); timer.phase = "rest"; timer.endAt = now + timer.restS * 1000; }
       } else { beep(1320, 400); timer.round++; timer.phase = "work"; timer.endAt = now + timer.workS * 1000; }
-    } else if (timer.kind === "amrap") { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
+    } else if (timer.kind === "amrap") {
+      if (timer.phase === "countdown") { beep(1320, 300); timer.phase = "run"; timer.startedAt = now; timer.endAt = now + timer.mins * 60000; }
+      else { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
+    } else if (timer.kind === "stepchain") {
+      if (timer.phase === "countdown") { beep(1320, 300); enterStepWork(now); }
+      else if (timer.phase === "work") {
+        markStepDone(timer.dayKey, timer.blockIdxs[timer.pos]);
+        timer.pos++;
+        if (timer.pos >= timer.blockIdxs.length) { timer.phase = "done"; triple(); stopTick(); unlockScreen(); }
+        else { triple(); timer.phase = "transition"; timer.endAt = now + TRANSITION_S * 1000; }
+      } else { beep(1320, 400); enterStepWork(now); }
+    } else if (timer.kind === "rest") { triple(); timer = null; stopTick(); unlockScreen(); }
     else { triple(); timer = null; stopTick(); unlockScreen(); }
   }
   render();
@@ -170,14 +201,45 @@ window.A = {
   timers(mode) { timerMode = mode; timer = null; tab = "timers"; render(); },
   startInterval(workS, restS, rounds) {
     tab = "timers"; timerMode = "interval";
-    timer = { kind: "interval", phase: "work", workS, restS, rounds, round: 1, endAt: Date.now() + workS * 1000, left: workS };
-    lockScreen(); beep(1320, 300); startTick(); render();
+    timer = { kind: "interval", phase: "countdown", workS, restS, rounds, round: 1, endAt: Date.now() + COUNTDOWN_S * 1000, left: COUNTDOWN_S, paused: false, pauseTotal: 0, pauseLog: [] };
+    lockScreen(); beep(880, 200); startTick(); render();
   },
   startAmrap(mins) {
     tab = "timers"; timerMode = "amrap";
-    timer = { kind: "amrap", phase: "run", startedAt: Date.now(), endAt: Date.now() + mins * 60000, left: mins * 60, count: 0 };
-    lockScreen(); beep(1320, 300); startTick(); render();
+    timer = { kind: "amrap", phase: "countdown", mins, endAt: Date.now() + COUNTDOWN_S * 1000, left: COUNTDOWN_S, count: 0, paused: false, pauseTotal: 0, pauseLog: [] };
+    lockScreen(); beep(880, 200); startTick(); render();
   },
+  startStepChain(bi) {
+    const day = plan?.days?.[selectedDate];
+    if (!day) return;
+    const blocks = day.blocks || [];
+    const idxs = [];
+    for (let i = bi; i < blocks.length; i++) {
+      const b = blocks[i];
+      if (b.type === "step" && b.secs) idxs.push(i); else break;
+    }
+    if (!idxs.length) return;
+    tab = "timers"; timerMode = "stepchain";
+    timer = { kind: "stepchain", dayKey: selectedDate, blockIdxs: idxs, pos: 0, phase: "countdown", endAt: Date.now() + COUNTDOWN_S * 1000, left: COUNTDOWN_S, paused: false, pauseTotal: 0, pauseLog: [] };
+    lockScreen(); beep(880, 200); startTick(); render();
+  },
+  pauseTimer() {
+    if (!timer || timer.phase === "done") return;
+    const now = Date.now();
+    if (timer.paused) {
+      const dur = Math.round((now - timer.pausedAt) / 1000);
+      timer.endAt += (now - timer.pausedAt);
+      timer.pauseTotal += dur;
+      timer.pauseLog.push({ atPhase: timer.phase, durS: dur });
+      timer.paused = false; timer.pausedAt = null;
+      beep(1100, 150);
+    } else {
+      timer.paused = true; timer.pausedAt = now;
+      beep(440, 150);
+    }
+    render();
+  },
+  chipScroll(el) { chipScrollX = el.scrollLeft; },
   amrapRound() {
     if (!timer) return;
     timer.count++;
@@ -189,7 +251,13 @@ window.A = {
     timer = { kind: "rest", phase: "run", endAt: Date.now() + s * 1000, left: s };
     lockScreen(); startTick(); render();
   },
-  exitTimer() { timer = null; timerMode = null; stopTick(); unlockScreen(); render(); },
+  exitTimer() {
+    if (timer && timer.pauseLog && timer.pauseLog.length) {
+      const label = timer.kind === "stepchain" ? "step sequence" : timer.kind === "interval" ? "interval session" : timer.kind === "amrap" ? "AMRAP" : "timer";
+      session.pauses.push({ label, at: new Date().toISOString(), entries: timer.pauseLog, totalS: timer.pauseTotal, completed: timer.phase === "done" });
+    }
+    timer = null; timerMode = null; stopTick(); unlockScreen(); render();
+  },
   setupField(id, delta) { setupVals[id] = Math.max(id === "rounds" || id === "amrap" ? 1 : 5, (setupVals[id] || 0) + delta); render(); },
 
   tickStep(key, label, spinal) {
@@ -213,7 +281,7 @@ window.A = {
     done.synced = res.ok;
     history = [done, ...history].slice(0, 100);
     save("jj-sessions", history);
-    session = { date: todayISO(), sets: [], rounds: [], steps: [], rpe: null, back: null, notes: "" };
+    session = { date: todayISO(), sets: [], rounds: [], steps: [], pauses: [], rpe: null, back: null, notes: "" };
     editKg = {}; editReps = {}; editRpe = {};
     toast(res.ok ? "Saved + synced to GitHub ✓" : cfg.token ? "Saved locally — sync failed, retry from Log" : "Saved locally (no token set)");
     render();
@@ -242,6 +310,7 @@ function buildReport(d) {
     d.sets.length ? "Sets:" : "Sets logged: none",
     ...d.sets.map((s) => `  ${s.name}: ${s.kg}kg × ${s.reps}${s.rpe ? ` @ RPE ${s.rpe}` : ""}${s.spinal ? " ▲" : ""}`),
     d.rounds.length ? `AMRAP rounds: ${d.rounds.map((r) => `R${r.n}@${fmt(r.at)}`).join(", ")}` : null,
+    d.pauses?.length ? `Pauses: ${d.pauses.map((p) => `${p.label} — ${p.totalS}s total (${p.entries.length} pause${p.entries.length > 1 ? "s" : ""})`).join("; ")}` : null,
     d.notes ? `Notes: ${d.notes}` : null,
   ].filter(Boolean).join("\n");
 }
@@ -294,7 +363,7 @@ function vToday() {
 
   const dates = plan?.days ? Object.keys(plan.days).sort() : [];
   const t = todayISO();
-  const chips = dates.length ? `<div class="daychips">${dates.map((d) => {
+  const chips = dates.length ? `<div class="daychips" onscroll="A.chipScroll(this)">${dates.map((d) => {
     const dt = new Date(d + "T12:00:00");
     const lbl = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric" });
     return `<button class="chip ${d === selectedDate ? "on" : ""} ${d === t ? "istoday" : ""}" onclick="A.pickDay('${d}')">${lbl}</button>`;
@@ -321,6 +390,7 @@ function vToday() {
           <div class="stepbody">
             <div class="steplabel">${b.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(b.label)}${b.secs ? `<span class="stepsecs">${fmt(b.secs)}</span>` : ""}</div>
             ${b.detail ? `<div class="msub">${esc(b.detail)}</div>` : ""}
+            ${b.secs && !st ? `<button class="chipstart" onclick="A.startStepChain(${bi})">▶ START (auto-advances through timed steps)</button>` : ""}
             ${st && b.rpe ? `<div class="rperow" style="margin-top:8px">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
             ${b.spinal && !st.rpe ? `<div class="msub" style="color:var(--rest);margin-top:4px">RPE required — spinal</div>` : ""}` : ""}
           </div>
@@ -397,14 +467,25 @@ function vTimers() {
   </div>`;
 
   if (timer) {
-    const bg = timer.phase === "done" ? "#0F2A20" : timer.kind === "rest" || timer.phase === "rest" ? "#2A2410" : timer.kind === "amrap" ? "#101826" : "#2A1510";
-    const col = timer.phase === "done" ? "var(--go)" : timer.phase === "rest" || timer.kind === "rest" ? "var(--rest)" : timer.kind === "amrap" ? "var(--ink)" : "var(--work)";
-    const label = timer.kind === "interval" ? `${timer.phase === "done" ? "DONE" : timer.phase.toUpperCase()} · ROUND ${Math.min(timer.round, timer.rounds)}/${timer.rounds}`
-      : timer.kind === "amrap" ? `${timer.phase === "done" ? "TIME" : "AMRAP"} · ${timer.count} ROUNDS` : "REST";
+    const isCountdown = timer.phase === "countdown";
+    const isTransition = timer.phase === "transition";
+    const bg = timer.phase === "done" ? "#0F2A20" : isCountdown ? "#101826" : isTransition || timer.phase === "rest" || timer.kind === "rest" ? "#2A2410" : timer.kind === "amrap" ? "#101826" : "#2A1510";
+    const col = timer.phase === "done" ? "var(--go)" : isCountdown ? "var(--ink)" : isTransition || timer.phase === "rest" || timer.kind === "rest" ? "var(--rest)" : timer.kind === "amrap" ? "var(--ink)" : "var(--work)";
+    let label;
+    if (isCountdown) label = "GET READY";
+    else if (timer.kind === "interval") label = `${timer.phase === "done" ? "DONE" : timer.phase.toUpperCase()} · ROUND ${Math.min(timer.round, timer.rounds)}/${timer.rounds}`;
+    else if (timer.kind === "amrap") label = `${timer.phase === "done" ? "TIME" : "AMRAP"} · ${timer.count} ROUNDS`;
+    else if (timer.kind === "stepchain") {
+      if (timer.phase === "done") label = "SEQUENCE DONE";
+      else if (isTransition) label = "TRANSITION";
+      else { const b = stepAt(timer.dayKey, timer.blockIdxs[timer.pos]); label = `${(b?.label || "STEP").toUpperCase()} · ${timer.pos + 1}/${timer.blockIdxs.length}`; }
+    } else label = "REST";
     return `<div class="timerfull" style="background:${bg}">
       <div class="phase" style="color:${col}">${label}</div>
       <div class="clock">${timer.phase === "done" ? "✓" : fmt(Math.ceil(timer.left))}</div>
+      ${timer.paused ? `<div class="pausedbadge">PAUSED</div>` : ""}
       ${timer.kind === "amrap" && timer.phase === "run" ? `<button class="big huge" onclick="A.amrapRound()">ROUND ${timer.count + 1} DONE</button>` : ""}
+      ${timer.phase !== "done" ? `<button class="pausebtn" onclick="A.pauseTimer()">${timer.paused ? "RESUME" : "PAUSE"}</button>` : ""}
       <button class="big ${timer.phase === "done" ? "" : "quiet"}" onclick="A.exitTimer()">${timer.phase === "done" ? "FINISH" : "ABANDON"}</button>
       ${session.rounds.length ? `<div class="splits">${session.rounds.map((r) => `R${r.n} @ ${fmt(r.at)}`).join(" · ")}</div>` : ""}
     </div>`;
@@ -473,6 +554,8 @@ function render() {
     ${views[tab]()}
     <nav>${[["today", "TODAY"], ["lift", "LIFTS"], ["timers", "TIMERS"], ["finish", "FINISH"], ["log", "LOG"]].map(([id, l]) =>
       `<button class="nav ${tab === id ? "on" : ""}" onclick="A.tab('${id}')">${l}</button>`).join("")}</nav>`;
+  const dc = document.querySelector(".daychips");
+  if (dc) dc.scrollLeft = chipScrollX;
 }
 
 render();
