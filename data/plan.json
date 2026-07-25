@@ -1,5 +1,5 @@
 {
- "week": "w/c 13 Jul (complete) + w/c 20 Jul (confirmed 19 Jul — deload, comeback week 3)",
+ "week": "w/c 13 Jul (complete) + w/c 20 Jul (complete — deload, comeback week 3) + w/c 27 Jul (confirmed 25 Jul — build week 1 post-deload, comeback week 4). Office 9-5 all w/c 27 Jul, evening sessions. Compound chain extended to 75% on green diagnostic (22 Jul: effort 6, spinal symptom 1, flat across all three checkpoints).",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -239,7 +239,26 @@
      "rpe": true,
      "spinal": true
     }
-   ]
+   ],
+   "actual": {
+    "completed": true,
+    "note": "Completed as prescribed. Wall ball count uncertain — at least 45, target was 50.",
+    "spinal_rpe": {
+     "farmers_carry": {
+      "effort": 6,
+      "symptom": 1
+     },
+     "sandbag_lunge": {
+      "effort": 6,
+      "symptom": 1
+     },
+     "wall_balls": {
+      "effort": 6,
+      "symptom": 1
+     }
+    },
+    "read": "No progressive symptom escalation across the three checkpoints — green light to extend volume w/c 27 Jul."
+   }
   },
   "2026-07-23": {
    "title": "Rest",
@@ -277,6 +296,240 @@
     {
      "type": "note",
      "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers."
+    }
+   ]
+  },
+  "2026-07-27": {
+   "title": "Threshold — 4 × 1.6 km",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Rep restored from deload's 3. Intensity unchanged at 10.5 km/h (5:44/km). If rep 4 needs more than 90s before you can start, reps 1-2 were too hot — log it, don't chase it. Finish by 19:30 so HR is down before the 20:00 cutoff."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Strides ×3",
+     "detail": "30s each, 60s walk between"
+    },
+    {
+     "type": "interval",
+     "work": 550,
+     "rest": 90,
+     "rounds": 4,
+     "label": "1.6 km @ 10.5 km/h (5:44/km)"
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-07-28": {
+   "title": "Easy run 30 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Run, not the bike, this week. After 8 hours seated the Wattbike is more hip flexion and spinal loading — upright and moving is the better stimulus on an office week. HR ≤148 on the Garmin."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "30 min, HR ≤148",
+     "secs": 1800
+    }
+   ]
+  },
+  "2026-07-29": {
+   "title": "Compound chain — stations 5-8, race weight, 75% volume",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Extended from half volume on the 22 Jul diagnostic (effort 6, spinal symptom 1, flat across all three checkpoints — no progressive escalation). Spinal RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session, and effort + symptom separately. If symptom climbs across the three this time, that's the signal the extension was too early: stop the session, log it, we hold at 75% next week."
+    },
+    {
+     "type": "step",
+     "label": "Run — in",
+     "detail": "1 km controlled, not race pace",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Row",
+     "detail": "750m steady, seated throughout",
+     "secs": 225,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6 spot",
+     "detail": "1 km controlled — where London cramping started",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Farmers Carry — 2×24 kg",
+     "detail": "150m, arms extended per standard. SPINAL RPE CHECK NOW — effort + symptom, separate.",
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7 spot",
+     "detail": "1 km controlled",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Sandbag Lunge — 20 kg",
+     "detail": "75m, trailing knee to ground, stand tall between reps, no shuffles. SPINAL RPE CHECK NOW.",
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 8 spot",
+     "detail": "1 km controlled — where London cramping fully hit",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls — 6 kg",
+     "detail": "75 reps, full squat hips below knees, 3.00m target. SPINAL RPE CHECK NOW.",
+     "rpe": true,
+     "spinal": true
+    }
+   ]
+  },
+  "2026-07-30": {
+   "title": "Rest",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Full rest. Walk, stretch, nothing with a training load."
+    }
+   ]
+  },
+  "2026-07-31": {
+   "title": "Race sim — stations 1-4 (front half)",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h — no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Front half this week; with Wednesday's chain you've patterned all eight stations across the week."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Strides ×3",
+     "detail": "30s each, 60s rest between"
+    },
+    {
+     "type": "interval",
+     "work": 180,
+     "rest": 180,
+     "rounds": 4,
+     "label": "24-min alternation clock"
+    },
+    {
+     "type": "step",
+     "label": "Run 1",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "SkiErg",
+     "detail": "3:00 steady-strong",
+     "secs": 180,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Sled Push — 152 kg",
+     "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
+     "secs": 180,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight. Spinal — honest RPE, effort + symptom separate.",
+     "secs": 180,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Burpee Broad Jumps",
+     "detail": "3:00 continuous, chest to ground, both feet take off and land together",
+     "secs": 180,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy — do the boring bit",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-01": {
+   "title": "Easy — your call",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "30 min easy run or 40 min bike, HR ≤148. Pick by feel — the bike is fine here, it's not an office day."
+    }
+   ]
+  },
+  "2026-08-02": {
+   "title": "Long easy run — 55 min",
+   "rpe": "3-5",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "+1 km on 19 Jul, resuming the long-run thread. HR ≤148 — heat means slower, not harder. Sunday planning in the evening: sync the week's logs and we build w/c 3 Aug off the Wednesday spinal checkpoints."
+    },
+    {
+     "type": "step",
+     "label": "Long easy run",
+     "detail": "55 min, HR ≤148",
+     "secs": 3300
     }
    ]
   }
