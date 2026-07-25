@@ -1,5 +1,5 @@
 {
- "week": "w/c 13 Jul (complete) + w/c 20 Jul (complete — deload, comeback week 3) + w/c 27 Jul (confirmed 25 Jul — build week 1 post-deload, comeback week 4). Office 9-5 all w/c 27 Jul, evening sessions. Compound chain extended to 75% on green diagnostic (22 Jul: effort 6, spinal symptom 1, flat across all three checkpoints).",
+ "week": "w/c 13 Jul (complete) + w/c 20 Jul (complete — deload, comeback week 3) + w/c 27 Jul (confirmed 25 Jul — build week 1 post-deload, comeback week 4). Office 9-5 all w/c 27 Jul, evening sessions. Threshold pace recalibrated 5:44 -> ~5:30/km (25 Jul, from 20 Jul lap evidence). Compound chain extended to 75% on green diagnostic (22 Jul: effort 6, spinal symptom 1, flat across all three checkpoints).",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -300,12 +300,20 @@
    ]
   },
   "2026-07-27": {
-   "title": "Threshold — 4 × 1.6 km",
+   "title": "Threshold — 4 × 1.6 km (pace recalibrated)",
    "rpe": "7-8",
    "blocks": [
     {
      "type": "note",
-     "text": "Rep restored from deload's 3. Intensity unchanged at 10.5 km/h (5:44/km). If rep 4 needs more than 90s before you can start, reps 1-2 were too hot — log it, don't chase it. Finish by 19:30 so HR is down before the 20:00 cutoff."
+     "text": "PACE CHANGED 25 Jul. 5:44/km was too slow — disproved by the 20 Jul lap data (ran 5:41/5:34/5:36 unprompted, negative split, HR peaked 170 vs LTHR 174, self-logged RPE 4, all during a deload). New target 5:30/km. Running OUTDOORS this week, so no treadmill speed — HR governs, pace follows."
+    },
+    {
+     "type": "note",
+     "text": "HOW TO RUN IT: reps should FINISH at HR 168-172, hard cap 175. Start rep 1 at 5:30/km and read the HR. If rep 1 finishes at 165 and feels like RPE 6, take reps 3-4 toward 5:25. If it finishes above 175, back off to 5:35. The pace target is a starting guess, not the instruction — the HR is the instruction."
+    },
+    {
+     "type": "note",
+     "text": "LOG THESE: pace each rep landed at, avg power each rep, and whether rep 4 held rep 1's pace or drifted. That's what sets the real threshold number. Flattest route available — not the one with the climb at the end. Reps by distance (1.6 km), 90s standing recovery. Finish by 19:30 for the 20:00 cutoff."
     },
     {
      "type": "step",
@@ -320,10 +328,10 @@
     },
     {
      "type": "interval",
-     "work": 550,
+     "work": 528,
      "rest": 90,
      "rounds": 4,
-     "label": "1.6 km @ 10.5 km/h (5:44/km)"
+     "label": "1.6 km @ ~5:30/km — HR 168-172 finishing, cap 175"
     },
     {
      "type": "step",
