@@ -1,6 +1,6 @@
 # BLOCK DOCUMENT — JJ · HYROX Build
 **Version 1.2 · 25 Jul 2026 · Update every Sunday planning session. This document overrides memory.**
-*v1.2: thresholds corrected (5:44/km, CP 237W) · MRI-confirmed disc finding · Community Games cancelled, half downgraded to 10k · deload w/c 20 Jul completed · compound chain intervention added · athletedata bug/fix logged · week template updated*
+*v1.2: thresholds corrected (5:44/km, CP 237W) · MRI-confirmed disc finding · **Corporate Games football WITHDRAWN** · Community Games cancelled, half downgraded to 10k · deload w/c 20 Jul completed · compound chain intervention added · VO2max hill on-ramp agreed · athletedata bug/fix logged · week template updated*
 *v1.1: full event calendar added · Birmingham station-collapse analysis · race pacing rule · Tenerife confirmed 4 Sep · phase map*
 
 ---
@@ -20,13 +20,13 @@
 
 | Date | Event | Treatment |
 |---|---|---|
-| 20–23 Aug | Corporate Games (2 days 6-a-side football) | **Highest injury risk on calendar.** Sprint/COD prep from early Aug. That week's plan built AROUND it. 24–25 Aug recovery. |
+| ~~20–23 Aug~~ | ~~Corporate Games (2 days 6-a-side football)~~ | **WITHDRAWN** (23 Jul). Clinician advised against the 5-a-side given the confirmed annular tear; JJ attended solely to play. 11 straight years, 4 wins — this one cost something. No training built around it. August is now clear. |
 | **4 Sep** | **HYROX Tenerife** — doubles w/ Chris | Dress rehearsal. Chris ~26-27 5k fresh (~5:45-6:15/km compromised) — JJ cannot be run-limited. JJ takes heavier station share (doubles as Birmingham training). Mini-taper only. Chris pacing/coaching strategy still to be detailed. |
 | ~~19 Sep~~ | ~~Community Games~~ | **CANCELLED** (19 Jul). Event quality not worth the association; sat in the tightest pinch of the Birmingham build. |
 | 27 Sep | **Preston 10k** (downgraded from Half, 19 Jul) | **CRUISE.** Reduced recovery burden before Birmingham. Long-run thread no longer needs to reach 16–18 k — rebuild target relaxed accordingly. |
 | **31 Oct** | **HYROX Birmingham** — solo | **Sub-1:28 working** · PB 1:25:29 good-day · beat 1:31:27 floor. 1:20 is off the table this block. |
 
-**Phase map:** pre-Tenerife = **patterning only, not full conditioning** · football week reduced · mini-taper → Tenerife (4 Sep) · post-Tenerife 8-week Birmingham build: wk1 recovery → wk2–4 progressive build → wk5 race simulation → wk6 sharpen → 13-day taper to ~80% effort.
+**Phase map:** pre-Tenerife = **patterning only, not full conditioning** · build w/c 27 Jul, 3 Aug, 10 Aug · deload w/c 17 Aug (4-week cadence) · sharpen w/c 24 Aug · mini-taper w/c 31 Aug → Tenerife (4 Sep) · post-Tenerife 8-week Birmingham build: wk1 recovery → wk2–4 progressive build → wk5 race simulation → wk6 sharpen → 13-day taper to ~80% effort.
 
 ## 2b · BIRMINGHAM 2025 AUTOPSY (drives this block's emphasis)
 
@@ -47,7 +47,7 @@ Cardiff PB vs Birmingham, station by station: ergs IMPROVED (ski −9s, row −1
 - **Ankle** — flared Jul 2025 and Sep 2025 under high running load. Watch on volume jumps.
 - **Standing rules:**
   - Spinal stations (RDL, lunges, carries, sandbag work): never to failure. Stop 2 reps short of grind. Any back signal = full stop, log it.
-  - "Fine now ≠ fine tomorrow": morning-after stiffness is data, log it.
+  - "Fine now ≠ fine tomorrow": morning-after stiffness is data, log it. **Applies to the ankle as well as the back from Aug**, once hill work starts.
   - Hinge loads progress only after 2 consecutive clean sessions at current load.
   - **Per-station RPE on spinal stations every session — effort and symptom logged SEPARATELY.** Now has a confirmed structural rationale, not a precautionary one.
 
@@ -89,8 +89,14 @@ Rest day always buffers the hardest session. Move rest, not sessions, when life 
 5. One TRUE full sim (8×1 km, all stations, race loads, timed) ~3 wks pre-Tenerife, another ~2–3 wks pre-Birmingham. These are the only sessions that predict finish time.
 6. Sleep: 7.5 h target, vape cutoff 20:00. Watch worn overnight or the day's data is blind.
 7. **Long-run thread:** ~+1 km/wk. Currently ~50–55 min. Target relaxed since the half became a 10k.
-8. **Sprint/COD prep (for football, from ~early Aug):** extend strides, add short hill accelerations / gentle change-of-direction weekly. Zero→football is the injury scenario; dose it first.
-9. **Post-Tenerife additions (committed, not yet programmed):** VO2max session slot as a tracked marker — this block has been threshold-heavy with no VO2max work due to back caution. Unilateral movements (split squats, single-leg, single-arm carries) once programming leaves the patterning-only phase.
+8. ~~Sprint/COD prep for football~~ — **removed 25 Jul, football withdrawn.** Short hill work survives, but as the VO2max on-ramp (rule 9), not as COD prep. No change-of-direction work is programmed.
+9. **VO2max on-ramp (agreed 25 Jul).** Block has been threshold-heavy with zero work above threshold. The original rationale (back caution) is weak now: MRI came back conservative-management-only, and 22 Jul returned spinal symptom 1 at race weight. **The real risk here is the ankle, not the back** — flared Jul and Sep 2025 under running load, and fast running raises ground reaction force and eccentric ankle demand. Hard running is a poor spinal loader; the 152 kg sled push already loads that disc far more.
+   - Hills, not flat intervals, for the introduction: VO2max HR via gradient rather than turnover, lower impact and eccentric cost.
+   - Appended **before** Monday's threshold reps, after warm-up — fresh legs, better quality, lower risk than fast work on tired legs. Costs a little threshold sharpness; acceptable at this dose.
+   - Ramp: w/c 3 Aug 6 × 30s · w/c 10 Aug 8 × 30s or 6 × 45s · w/c 17 Aug deload, drop it · w/c 24 Aug 8 × 45s · w/c 31 Aug taper, drop.
+   - **First flat VO2max lands post-Tenerife, not before.** Pre-Tenerife is tolerance-building only — three exposures cannot move an aerobic ceiling, and introducing a new stimulus 11 days out is a bad trade for a dress rehearsal.
+   - **STOP RULE: any ankle or Achilles signal — including morning-after stiffness — and hills come out for a week.** Logged like spinal RPE.
+10. **Unilateral movements** (split squats, single-leg, single-arm carries) once programming leaves the patterning-only phase, post-Tenerife.
 
 ## 7 · LOGGING RITUAL (what JJ reports)
 
