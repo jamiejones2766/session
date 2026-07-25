@@ -1,5 +1,6 @@
 # BLOCK DOCUMENT — JJ · HYROX Build
-**Version 1.2 · 25 Jul 2026 · Update every Sunday planning session. This document overrides memory.**
+**Version 1.3 · 25 Jul 2026 · Update every Sunday planning session. This document overrides memory.**
+*v1.3: threshold pace flagged as likely-too-slow (self-confirming loop) · Max HR 195 / RHR corrected · flat 5k-10k pace added as post-Tenerife commitment · athletedata load confirmed Garmin-sourced · LTHR 173 sport-blind bug logged*
 *v1.2: thresholds corrected (5:44/km, CP 237W) · MRI-confirmed disc finding · **Corporate Games football WITHDRAWN** · Community Games cancelled, half downgraded to 10k · deload w/c 20 Jul completed · compound chain intervention added · VO2max hill on-ramp agreed · athletedata bug/fix logged · week template updated*
 *v1.1: full event calendar added · Birmingham station-collapse analysis · race pacing rule · Tenerife confirmed 4 Sep · phase map*
 
@@ -9,8 +10,11 @@
 
 - 79–81 kg (bioimpedance, morning). Lean: ~14% BF, stable 2yrs. Fuel the build; no cut before October.
 - Max HR 195 (Garmin, measured) · LTHR 174 (run — matches Garmin) · RHR 43–49, 60-day mean 46.1 (Garmin device profile was carrying 51 — corrected 25 Jul) · HRV 60-day baseline 59.6 ms
-- **Threshold pace 5:44/km** — corrected 19 Jul. The old 5:22/km was wrong and prescribed sessions too fast. Recheck after 2 more threshold sessions.
-- **Stryd CP: 237 W** (3.00 W/kg, Training Level 2) — Stryd app Auto CP, last updated 20 Jul. This is Stryd's rolling calc, not a single-session test. The old "285 W set / held 305–312 W" figures were on a wrong power scale — do not use them.
+- **Threshold pace 5:44/km — UNDER REVIEW, likely too slow (flagged 25 Jul).** Compromised 1 km race splits average **5:09/km at Birmingham, 5:29/km at Cardiff** — threshold should not be slower than compromised race pace. Some gap is expected at CTL 22 in comeback wk 4; 35 s/km the wrong way is not.
+  - **Suspected cause: a self-confirming loop.** Threshold set slow → only easy + threshold gets run → Stryd Auto CP has no fast efforts in the power-duration curve → CP returns low → corroborates the slow threshold. Neither number is a measurement; both are inferences from a training distribution JJ chose.
+  - Corroborating: 24 Jul easy run averaged 227 W vs CP 237 = **96% of CP at RPE 2, HR 145.** Easy running should sit 70–80% of CP. Also 3.00 W/kg is low for someone running 5:09/km inside a race.
+  - **Resolution: Mon 27 Jul run to HR not pace** (reps finish 165–172, cap 175) and log the resulting pace. If ≤5:25, formal **3 × 2 km test** (3 min recoveries; final rep within 3% of first = sustainable pace) in w/c 3 Aug.
+- **Stryd CP: 237 W** (3.00 W/kg, Training Level 2) — Stryd app Auto CP, last updated 20 Jul. **Likely understated for the same reason as threshold pace — see above.** Auto CP is only as good as the hardest efforts in the recent power-duration curve, and there have been none. This is Stryd's rolling calc, not a single-session test. The old "285 W set / held 305–312 W" figures were on a wrong power scale — do not use them.
 - **Cycling FTP: 210 W provisional** (Wattbike 20-min test when convenient; low priority). *This is the genuine figure — see §11 for why it matters.*
 - Devices: Forerunner 265 + Stryd (power via Strava, free tier is full-fidelity) · MZ-Switch (pair ANT+ to watch) · Wattbike · bioimpedance scale
 - **Data authority: Garmin Connect > Strava > athletedata** when values conflict. Nuance: Garmin FIT webhooks are unreliable for *file delivery*, so Strava often has the file first — but Garmin remains authoritative for *values*. Don't read "Strava has the file" as "Strava is right."
@@ -96,7 +100,8 @@ Rest day always buffers the hardest session. Move rest, not sessions, when life 
    - Ramp: w/c 3 Aug 6 × 30s · w/c 10 Aug 8 × 30s or 6 × 45s · w/c 17 Aug deload, drop it · w/c 24 Aug 8 × 45s · w/c 31 Aug taper, drop.
    - **First flat VO2max lands post-Tenerife, not before.** Pre-Tenerife is tolerance-building only — three exposures cannot move an aerobic ceiling, and introducing a new stimulus 11 days out is a bad trade for a dress rehearsal.
    - **STOP RULE: any ankle or Achilles signal — including morning-after stiffness — and hills come out for a week.** Logged like spinal RPE.
-10. **Unilateral movements** (split squats, single-leg, single-arm carries) once programming leaves the patterning-only phase, post-Tenerife.
+10. **Flat 5k–10k pace running — post-Tenerife commitment (added 25 Jul).** Current range is threshold (5:44) or easy (6:27) and nothing between, a ~40 s/km hole that has been there since 2 Jul. Hills close the VO2max gap but not this one — gradient changes the mechanics, which is the whole reason they're ankle-safer. Race runs at Birmingham were 5:09/km; JJ currently never trains that pace. Also means Preston 10k (27 Sep) yields no useful data as things stand.
+11. **Unilateral movements** (split squats, single-leg, single-arm carries) once programming leaves the patterning-only phase, post-Tenerife.
 
 ## 7 · LOGGING RITUAL (what JJ reports)
 
@@ -152,7 +157,9 @@ Weekly (Sunday): weight trend, anything Claude should pull.
 
 **Trust tiers for athletedata output:**
 1. **Raw sensor** (HRV, RHR, sleep, HR, pace, power, cadence) — Garmin passthrough, never affected by any of this. Trust it.
-2. **Load maths** (CTL/ATL/TSB/ACWR/ramp) — athletedata's own scale, internally consistent. Trust trends, not absolute cross-platform comparison.
+2. **Load maths** (CTL/ATL/TSB/ACWR/ramp) — **sourced from Garmin's training load, not computed by athletedata** (per athletedata, 25 Jul; corrects an earlier claim in this section that it was their own model). Scaled to roughly half Garmin's raw figures. Editing FTP/CP/pace in athletedata therefore does NOT move the PMC chart. Trust trends, not absolute cross-platform comparison.
 3. **Anchor-dependent** (IF, TSS, power zones) — only as good as the two fields above. **Always check `derived_metrics.basis` before believing an IF number.**
+
+**Open bug (25 Jul):** athletedata bulk-recomputed 299 activities using **LTHR 173** — that is the *cycling* LTHR. Run LTHR is 174 and Garmin holds 174. Same sport-blind field selection as the original FTP bug, in a different field, appearing *after* the fix shipped. Numerically trivial (one beat); the pattern is not. Report to support.
 
 Other known behaviours: `get_readiness_today` often returns "not computed" early morning — substitute `garmin_get_hrv` with explicit dates plus `get_daily_metrics` for trend. `get_performance_estimates` is unreliable for confirming saved thresholds; use `get_activity_detail` and read `derived_metrics.basis`.
