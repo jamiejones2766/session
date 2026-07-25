@@ -1,5 +1,6 @@
 # BLOCK DOCUMENT — JJ · HYROX Build
-**Version 1.3 · 25 Jul 2026 · Update every Sunday planning session. This document overrides memory.**
+**Version 1.4 · 25 Jul 2026 · Update every Sunday planning session. This document overrides memory.**
+*v1.4: threshold pace 5:44 disproved by 20 Jul lap data (3 reps @ 5:34-5:41, HR below LTHR, negative split, RPE 4) → ~5:30 provisional · CP 237 confirmed understated, 255-275 likely · Stryd HR gap diagnosed (pod records no HR) · Stryd pairing hypothesis dead, power complete throughout*
 *v1.3: threshold pace flagged as likely-too-slow (self-confirming loop) · Max HR 195 / RHR corrected · flat 5k-10k pace added as post-Tenerife commitment · athletedata load confirmed Garmin-sourced · LTHR 173 sport-blind bug logged*
 *v1.2: thresholds corrected (5:44/km, CP 237W) · MRI-confirmed disc finding · **Corporate Games football WITHDRAWN** · Community Games cancelled, half downgraded to 10k · deload w/c 20 Jul completed · compound chain intervention added · VO2max hill on-ramp agreed · athletedata bug/fix logged · week template updated*
 *v1.1: full event calendar added · Birmingham station-collapse analysis · race pacing rule · Tenerife confirmed 4 Sep · phase map*
@@ -10,11 +11,22 @@
 
 - 79–81 kg (bioimpedance, morning). Lean: ~14% BF, stable 2yrs. Fuel the build; no cut before October.
 - Max HR 195 (Garmin, measured) · LTHR 174 (run — matches Garmin) · RHR 43–49, 60-day mean 46.1 (Garmin device profile was carrying 51 — corrected 25 Jul) · HRV 60-day baseline 59.6 ms
-- **Threshold pace 5:44/km — UNDER REVIEW, likely too slow (flagged 25 Jul).** Compromised 1 km race splits average **5:09/km at Birmingham, 5:29/km at Cardiff** — threshold should not be slower than compromised race pace. Some gap is expected at CTL 22 in comeback wk 4; 35 s/km the wrong way is not.
-  - **Suspected cause: a self-confirming loop.** Threshold set slow → only easy + threshold gets run → Stryd Auto CP has no fast efforts in the power-duration curve → CP returns low → corroborates the slow threshold. Neither number is a measurement; both are inferences from a training distribution JJ chose.
-  - Corroborating: 24 Jul easy run averaged 227 W vs CP 237 = **96% of CP at RPE 2, HR 145.** Easy running should sit 70–80% of CP. Also 3.00 W/kg is low for someone running 5:09/km inside a race.
-  - **Resolution: Mon 27 Jul run to HR not pace** (reps finish 165–172, cap 175) and log the resulting pace. If ≤5:25, formal **3 × 2 km test** (3 min recoveries; final rep within 3% of first = sustainable pace) in w/c 3 Aug.
-- **Stryd CP: 237 W** (3.00 W/kg, Training Level 2) — Stryd app Auto CP, last updated 20 Jul. **Likely understated for the same reason as threshold pace — see above.** Auto CP is only as good as the hardest efforts in the recent power-duration curve, and there have been none. This is Stryd's rolling calc, not a single-session test. The old "285 W set / held 305–312 W" figures were on a wrong power scale — do not use them.
+- **Threshold pace: ~5:30/km provisional (was 5:44 — disproved 25 Jul by lap data from the 20 Jul session).** 5:44 was too slow and the evidence is not marginal.
+  - **20 Jul, 3 × 1.6 km outdoors, 90s standing rests** — the deload-trimmed threshold session, which turns out to have been an accidental threshold test:
+
+    | Rep | Time | Pace | Power | HR avg / max |
+    |---|---|---|---|---|
+    | 1 | 9:05 | 5:41/km | 246 W | 157 / 164 |
+    | 2 | 8:54 | 5:34/km | 250 W | 161 / 167 |
+    | 3 | 8:57 | 5:36/km | 248 W | 164 / 170 |
+
+  - Four independent signals, all pointing the same way: **(1)** ran 5:34–5:41 unprompted against a 5:44 prescription — the legs found the pace, the number was wrong; **(2)** negative split, rep 3 five sec/km faster than rep 1, where a threshold test asks only that the last rep hold within 3% of the first; **(3)** **HR never reached LTHR** — session max 170 vs LTHR 174, and only rep 3 entered the 165–172 target band at all; **(4)** self-logged **RPE 4** in the .fit file. All during a deload week.
+  - Compromised 1 km race splits average 5:09/km at Birmingham, 5:29/km at Cardiff — a threshold slower than compromised race pace was always implausible.
+  - **Resolution: Mon 27 Jul, 4 × 1.6 km @ 5:30/km target, HR-governed** (reps finish 168–172, cap 175). If 5:30 finishes at 165 and feels like RPE 6, take reps 3–4 toward 5:25. Update this figure Monday night from actual lap data.
+- **Stryd CP: 237 W stored, but UNDERSTATED — true value likely 255–275 W (25 Jul).** The 20 Jul reps held 246 / 250 / 248 W for ~9 min each, at heart rates below LTHR, with a negative split. You cannot sustain above critical power for 27 min of work at sub-threshold HR and getting faster. CP is below the athlete's demonstrated sustained power, which is the wrong way round.
+  - **Cause: a self-confirming loop.** Auto CP fits its power-duration curve to what was actually run. Threshold was set slow → only easy and slow-"threshold" running got done → the curve had no honest fast anchor → CP came back low → corroborated the slow threshold. Neither number was a measurement.
+  - Stryd showed ~300 W at one point and it was written off as wrong. It probably sits above the true value, but it was not the outlier it was labelled as — 237 was the worse error. Do not reinstate 300; wait for real data.
+  - **Do not hand-set CP.** Let Auto CP re-fit once Monday's session puts genuine hard efforts into the curve. Recheck the app after 2–3 sessions at corrected pace. This is Stryd's rolling calc, not a single-session test. The old "285 W set / held 305–312 W" figures were on a wrong power scale — do not use them.
 - **Cycling FTP: 210 W provisional** (Wattbike 20-min test when convenient; low priority). *This is the genuine figure — see §11 for why it matters.*
 - Devices: Forerunner 265 + Stryd (power via Strava, free tier is full-fidelity) · MZ-Switch (pair ANT+ to watch) · Wattbike · bioimpedance scale
 - **Data authority: Garmin Connect > Strava > athletedata** when values conflict. Nuance: Garmin FIT webhooks are unreliable for *file delivery*, so Strava often has the file first — but Garmin remains authoritative for *values*. Don't read "Strava has the file" as "Strava is right."
@@ -161,5 +173,7 @@ Weekly (Sunday): weight trend, anything Claude should pull.
 3. **Anchor-dependent** (IF, TSS, power zones) — only as good as the two fields above. **Always check `derived_metrics.basis` before believing an IF number.**
 
 **Open bug (25 Jul):** athletedata bulk-recomputed 299 activities using **LTHR 173** — that is the *cycling* LTHR. Run LTHR is 174 and Garmin holds 174. Same sport-blind field selection as the original FTP bug, in a different field, appearing *after* the fix shipped. Numerically trivial (one beat); the pattern is not. Report to support.
+
+**Stryd has no heart rate (found 25 Jul).** Every split of the 20 Jul session reads 0 bpm in the Stryd app, while Garmin holds the full trace (avg 155, max 170). Cause: **the Stryd pod does not record heart rate at all** — if the workout reaches the app by offline sync straight from the pod, HR is absent by design. Fix: in Stryd PowerCenter → Settings → *Import from Garmin Connect* (green = connected, grey = not). Once connected, the watch's FIT file carries HR through on every sync. Consequence while broken: Stryd's view of every session is blind to the one signal that would have flagged the threshold pace as too easy. Power is unaffected — CP is power-derived, and the pod's power record has been complete and clean throughout.
 
 Other known behaviours: `get_readiness_today` often returns "not computed" early morning — substitute `garmin_get_hrv` with explicit dates plus `get_daily_metrics` for trend. `get_performance_estimates` is unreliable for confirming saved thresholds; use `get_activity_detail` and read `derived_metrics.basis`.
