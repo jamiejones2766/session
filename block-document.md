@@ -8,7 +8,7 @@
 ## 1 · ATHLETE
 
 - 79–81 kg (bioimpedance, morning). Lean: ~14% BF, stable 2yrs. Fuel the build; no cut before October.
-- Max HR ~192 · **LTHR 174** (run) · RHR 43–49 · HRV 60-day baseline **59.6 ms** (flat or above = green)
+- Max HR 195 (Garmin, measured) · LTHR 174 (run — matches Garmin) · RHR 43–49, 60-day mean 46.1 (Garmin device profile was carrying 51 — corrected 25 Jul) · HRV 60-day baseline 59.6 ms
 - **Threshold pace 5:44/km** — corrected 19 Jul. The old 5:22/km was wrong and prescribed sessions too fast. Recheck after 2 more threshold sessions.
 - **Stryd CP: 237 W** (3.00 W/kg, Training Level 2) — Stryd app Auto CP, last updated 20 Jul. This is Stryd's rolling calc, not a single-session test. The old "285 W set / held 305–312 W" figures were on a wrong power scale — do not use them.
 - **Cycling FTP: 210 W provisional** (Wattbike 20-min test when convenient; low priority). *This is the genuine figure — see §11 for why it matters.*
