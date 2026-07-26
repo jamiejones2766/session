@@ -82,6 +82,15 @@ nav{position:fixed;bottom:0;left:0;right:0;max-width:520px;margin:0 auto;display
 .chip.on{background:var(--go);border-color:var(--go);color:#0A0E13}
 
 
+.grpcard{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:8px;overflow:hidden}
+.grpcard.grpdone{border-color:var(--go)}
+.grphead{display:flex;align-items:center;gap:10px;width:100%;background:none;border:none;padding:14px 12px;text-align:left;color:var(--ink)}
+.grpchev{flex:0 0 auto;font-size:20px;font-weight:800;color:var(--go);transition:transform .15s;display:inline-block}
+.grpchev.open{transform:rotate(90deg)}
+.grpname{flex:1 1 auto;font-size:14px;font-weight:800;letter-spacing:.03em}
+.grpmeta{flex:0 0 auto;font-size:12px;color:var(--mut);font-family:ui-monospace,monospace}
+.grpbody{padding:0 10px 10px}
+.grpbody .stepcard{background:var(--hi)}
 .stepcard{display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:8px;align-items:flex-start}
 .stepcard.ticked{border-color:var(--go);background:#10231D}
 .steptick{flex:0 0 auto;width:46px;height:46px;border-radius:8px;border:2px solid var(--line);background:var(--hi);color:var(--go);font-size:22px;font-weight:800}
