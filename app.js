@@ -24,7 +24,7 @@ const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); retur
 
 let blockState = load("jj-block-state", SEED);
 let history = load("jj-sessions", []);
-let plan = load("jj-plan", null);
+let plan = expandRoutines(load("jj-plan", null));
 let cfg = load("jj-sync-cfg", { owner: "jamiejones2766", repo: "session", token: "" });
 let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], steps: [], pauses: [], rpe: null, back: null, notes: "" };
 let tab = "today";
@@ -73,13 +73,35 @@ function toast(msg) {
   toastTimeout = setTimeout(() => t.remove(), 2000);
 }
 
+/* ── routine expansion (plan.routines -> inline steps) ──
+   A block {"type":"routine","ref":"prerun"} is replaced in place by the
+   steps in plan.routines.prerun. Done at load time so block indices —
+   and therefore step keys (date:index) and startStepChain — are unchanged. */
+function expandRoutines(p) {
+  if (!p || !p.days || !p.routines) return p;
+  for (const d of Object.keys(p.days)) {
+    const day = p.days[d];
+    if (!day || !Array.isArray(day.blocks)) continue;
+    if (!day.blocks.some((b) => b && b.type === "routine")) continue;
+    const out = [];
+    for (const b of day.blocks) {
+      if (b && b.type === "routine") {
+        const r = p.routines[b.ref];
+        if (Array.isArray(r)) out.push(...r.map((s) => ({ ...s })));
+      } else out.push(b);
+    }
+    day.blocks = out;
+  }
+  return p;
+}
+
 /* ── plan fetch (raw, public repo — no token needed) ── */
 async function fetchPlan(silent) {
   try {
     const url = `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/main/data/plan.json?t=${Date.now()}`;
     const r = await fetch(url, { cache: "no-store" });
     if (!r.ok) throw new Error(r.status);
-    plan = await r.json();
+    plan = expandRoutines(await r.json());
     save("jj-plan", plan);
     if (!silent) toast("Plan updated");
     render();
