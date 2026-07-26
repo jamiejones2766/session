@@ -125,20 +125,37 @@ async function pushSession(done) {
       headers: { Authorization: `Bearer ${cfg.token}`, Accept: "application/vnd.github+json" },
       body: JSON.stringify(body),
     });
-    return { ok: r.ok, why: r.ok ? "" : `HTTP ${r.status}` };
-  } catch (e) { return { ok: false, why: "offline" }; }
+    if (r.ok) return { ok: true, why: "" };
+    let detail = "";
+    try { const j = await r.json(); detail = j.message ? ` — ${j.message}` : ""; } catch (e) {}
+    const hint = r.status === 401 ? " (token expired or invalid)"
+      : r.status === 403 ? " (token lacks Contents write)"
+      : r.status === 404 ? " (token not granted to this repo, or owner/repo wrong)"
+      : r.status === 422 ? " (file already exists at this path)" : "";
+    return { ok: false, why: `HTTP ${r.status}${hint}${detail}`, status: r.status, path };
+  } catch (e) { return { ok: false, why: `network: ${e.message || "offline"}` }; }
 }
 async function syncUnsent() {
   const pending = history.filter((h) => !h.synced);
   if (!pending.length) { syncMsg = "All sessions synced"; render(); return; }
   syncMsg = `Syncing ${pending.length}…`; render();
   let n = 0;
+  const fails = [];
   for (const h of pending) {
     const res = await pushSession(h);
     if (res.ok) { h.synced = true; n++; }
+    else {
+      // 422 = file already on the remote. The push landed, the local flag never
+      // flipped (dropped response). Treat as synced rather than retrying forever.
+      if (res.status === 422) { h.synced = true; n++; fails.push(`${h.date}: already on remote, marked synced`); }
+      else fails.push(`${h.date}: ${res.why}`);
+    }
   }
   save("jj-sessions", history);
-  syncMsg = n === pending.length ? `Synced ${n} ✓` : `Synced ${n}, ${pending.length - n} still pending`;
+  const stuck = pending.length - n;
+  syncMsg = stuck === 0
+    ? `Synced ${n} ✓${fails.length ? ` · ${fails.join(" · ")}` : ""}`
+    : `Synced ${n}, ${stuck} failed · ${fails.join(" · ")}`;
   render();
 }
 
