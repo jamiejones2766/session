@@ -294,6 +294,10 @@
    "rpe": "3-5",
    "blocks": [
     {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
      "type": "note",
      "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers."
     }
@@ -303,6 +307,10 @@
    "title": "Threshold — 4 × 1.6 km (pace recalibrated)",
    "rpe": "7-8",
    "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
     {
      "type": "note",
      "text": "PACE CHANGED 25 Jul. 5:44/km was too slow — disproved by the 20 Jul lap data (ran 5:41/5:34/5:36 unprompted, negative split, HR peaked 170 vs LTHR 174, self-logged RPE 4, all during a deload). New target 5:30/km. Running OUTDOORS this week, so no treadmill speed — HR governs, pace follows."
@@ -346,6 +354,10 @@
    "rpe": "3-4",
    "blocks": [
     {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
      "type": "note",
      "text": "Run, not the bike, this week. After 8 hours seated the Wattbike is more hip flexion and spinal loading — upright and moving is the better stimulus on an office week. HR ≤148 on the Garmin."
     },
@@ -361,6 +373,10 @@
    "title": "Compound chain — stations 5-8, race weight, 75% volume",
    "rpe": "7-8",
    "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
     {
      "type": "note",
      "text": "Extended from half volume on the 22 Jul diagnostic (effort 6, spinal symptom 1, flat across all three checkpoints — no progressive escalation). Spinal RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session, and effort + symptom separately. If symptom climbs across the three this time, that's the signal the extension was too early: stop the session, log it, we hold at 75% next week."
@@ -432,6 +448,10 @@
    "title": "Race sim — stations 1-4 (front half)",
    "rpe": "8",
    "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
     {
      "type": "note",
      "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h — no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Front half this week; with Wednesday's chain you've patterned all eight stations across the week."
@@ -520,6 +540,10 @@
    "rpe": "3-4",
    "blocks": [
     {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
      "type": "note",
      "text": "30 min easy run or 40 min bike, HR ≤148. Pick by feel — the bike is fine here, it's not an office day."
     }
@@ -529,6 +553,10 @@
    "title": "Long easy run — 55 min",
    "rpe": "3-5",
    "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
     {
      "type": "note",
      "text": "+1 km on 19 Jul, resuming the long-run thread. HR ≤148 — heat means slower, not harder. Sunday planning in the evening: sync the week's logs and we build w/c 3 Aug off the Wednesday spinal checkpoints."
@@ -541,5 +569,79 @@
     }
    ]
   }
+ },
+ "routines": {
+  "prerun": [
+   {
+    "type": "note",
+    "text": "PRE-RUN — ~9 min, in order. Spine-neutral throughout: no standing toe touches, no seated forward folds, no supine knees-to-chest. Press START on the first step, it auto-advances the whole routine."
+   },
+   {
+    "type": "step",
+    "label": "Knee-to-wall dorsiflexion",
+    "detail": "10 reps/side, 2s hold at end range. Heel down, knee over 2nd toe. Switch at halfway. Note the L/R gap difference.",
+    "secs": 60
+   },
+   {
+    "type": "step",
+    "label": "Ankle circles",
+    "detail": "20 each direction, both sides. Slow, full range.",
+    "secs": 40
+   },
+   {
+    "type": "step",
+    "label": "Straight-leg heel raise",
+    "detail": "15 reps, 2s lower. Gastroc.",
+    "secs": 45
+   },
+   {
+    "type": "step",
+    "label": "Bent-knee heel raise",
+    "detail": "15 reps, 2s lower. Soleus — takes the running load, don't skip it.",
+    "secs": 45
+   },
+   {
+    "type": "step",
+    "label": "Single-leg balance hold",
+    "detail": "20s on the weaker ankle only. Eyes open.",
+    "secs": 20
+   },
+   {
+    "type": "step",
+    "label": "Half-kneeling hip flexor",
+    "detail": "30s/side. Squeeze the down-leg glute, tuck the pelvis. Do NOT arch the back to feel it.",
+    "secs": 60
+   },
+   {
+    "type": "step",
+    "label": "90/90 hip switches",
+    "detail": "8 slow reps. Sit tall, hands behind, chest up. Stop short if the low back rounds to get there.",
+    "secs": 45
+   },
+   {
+    "type": "step",
+    "label": "Leg swings (wall support)",
+    "detail": "12 front/back then 12 lateral per side. Small range first 4, then build. Swing from the hip, trunk braced.",
+    "secs": 80
+   },
+   {
+    "type": "step",
+    "label": "Glute bridge",
+    "detail": "15 reps, 2s squeeze at top, ribs down.",
+    "secs": 45
+   },
+   {
+    "type": "step",
+    "label": "Banded lateral walk",
+    "detail": "10 steps each direction x2. Band above knees, soft knees, no torso lean.",
+    "secs": 50
+   },
+   {
+    "type": "step",
+    "label": "Pogo hops",
+    "detail": "2 x 15. Stiff ankles, minimal knee bend, short ground contact. SKIP on easy days or if flat.",
+    "secs": 40
+   }
+  ]
  }
 }
