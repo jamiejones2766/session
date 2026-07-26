@@ -87,7 +87,7 @@ function expandRoutines(p) {
     for (const b of day.blocks) {
       if (b && b.type === "routine") {
         const r = p.routines[b.ref];
-        if (Array.isArray(r)) out.push(...r.map((s) => ({ ...s })));
+        if (Array.isArray(r)) out.push(...r.map((s) => ({ ...s, grp: b.ref })));
       } else out.push(b);
     }
     day.blocks = out;
@@ -217,6 +217,7 @@ window.A = {
   settings() { showSettings = !showSettings; render(); },
   cfgField(f, el) { cfg[f] = el.value.trim(); save("jj-sync-cfg", cfg); },
   refreshPlan() { fetchPlan(false); },
+  toggleGrp(g) { const k = grpKey(g); grpOpen[k] = !grpOpen[k]; render(); },
   syncNow() { syncUnsent(); },
 
   open(id) { openMove = openMove === id ? null : id; render(); },
@@ -394,6 +395,78 @@ function moveCard(m, showLast) {
   </div>` : ""}`;
 }
 
+/* ── block rendering (grouped routines collapse into one card) ── */
+function renderBlock(b, bi) {
+if (b.type === "note") return `<div class="noteblock">${esc(b.text)}</div>`;
+  if (b.type === "step") {
+    const key = selectedDate + ":" + bi;
+    const st = session.steps.find((x) => x.key === key);
+    const sel = (n) => st && st.rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
+    return `<div class="stepcard ${st ? "ticked" : ""}">
+      <button class="steptick" onclick="A.tickStep('${key}',\`${esc(b.label)}\`,${b.spinal ? "true" : "false"})">${st ? "✓" : ""}</button>
+      <div class="stepbody">
+        <div class="steplabel">${b.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(b.label)}${b.secs ? `<span class="stepsecs">${fmt(b.secs)}</span>` : ""}</div>
+        ${b.detail ? `<div class="msub">${esc(b.detail)}</div>` : ""}
+        ${b.secs && !st ? `<button class="chipstart" onclick="A.startStepChain(${bi})">▶ START (auto-advances through timed steps)</button>` : ""}
+        ${st && b.rpe ? `<div class="rperow" style="margin-top:8px">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
+        ${b.spinal && !st.rpe ? `<div class="msub" style="color:var(--rest);margin-top:4px">RPE required — spinal</div>` : ""}` : ""}
+      </div>
+    </div>`;
+  }
+  if (b.type === "interval") return `<div class="hist"><div class="mname">${esc(b.label || "Intervals")}</div>
+    <div class="msub">${b.rounds} × ${fmt(b.work)} work / ${fmt(b.rest)} rest</div>
+    <button class="big" onclick="A.startInterval(${b.work},${b.rest},${b.rounds})">START</button></div>`;
+  if (b.type === "amrap") return `<div class="hist"><div class="mname">${esc(b.label || "AMRAP")}</div>
+    <div class="msub">${b.mins} minutes</div>
+    ${b.items ? `<div class="amrapitems">${b.items.map((it, n2) => `<div class="amrapitem"><span class="stepnumsm">${n2 + 1}</span>${esc(it)}</div>`).join("")}</div>` : ""}
+    <button class="big" onclick="A.startAmrap(${b.mins})">START</button></div>`;
+  if (b.type === "movement") {
+    const m = blockState.movements.find((x) => x.id === b.id);
+    return m ? moveCard(m) : "";
+  }
+  return "";
+}
+
+function renderGroup(g, blocks, start) {
+  const key = grpKey(g);
+  const open = !!grpOpen[key];
+  const steps = blocks.filter((b) => b.type === "step");
+  const secs = steps.reduce((a, b) => a + (b.secs || 0), 0);
+  const done = steps.filter((b, n) => session.steps.some((x) => x.key === selectedDate + ":" + (start + blocks.indexOf(b)))).length;
+  const all = done === steps.length && steps.length > 0;
+  const firstTimed = blocks.findIndex((b) => b.type === "step" && b.secs);
+  const label = GRP_LABEL[g] || g;
+  return `<div class="grpcard ${all ? "grpdone" : ""}">
+    <button class="grphead" onclick="A.toggleGrp('${g}')">
+      <span class="grpchev ${open ? "open" : ""}">\u203A</span>
+      <span class="grpname">${esc(label)}${all ? " \u2713" : ""}</span>
+      <span class="grpmeta">${done}/${steps.length}${secs ? " \u00b7 " + fmt(secs) : ""}</span>
+    </button>
+    ${!open && !all && firstTimed >= 0 ? `<button class="chipstart" style="margin:0 12px 12px" onclick="event.stopPropagation();A.startStepChain(${start + firstTimed})">\u25b6 START ALL</button>` : ""}
+    ${open ? `<div class="grpbody">${blocks.map((b, n) => renderBlock(b, start + n)).join("")}</div>` : ""}
+  </div>`;
+}
+
+function renderBlocks(day) {
+  const blocks = day.blocks || [];
+  const out = [];
+  let i = 0;
+  while (i < blocks.length) {
+    const g = blocks[i].grp;
+    if (!g) { out.push(renderBlock(blocks[i], i)); i++; continue; }
+    const s = i;
+    while (i < blocks.length && blocks[i].grp === g) i++;
+    out.push(renderGroup(g, blocks.slice(s, i), s));
+  }
+  return out.join("");
+}
+
+
+/* ── collapsible routine groups ── */
+const GRP_LABEL = { prerun: "Pre-run warm-up" };
+let grpOpen = {};
+function grpKey(g) { return selectedDate + ":" + g; }
+
 /* ── views ── */
 function vToday() {
   if (showSettings) return vSettings();
@@ -418,36 +491,7 @@ function vToday() {
   return `<div class="page">${head}${chips}${dayLabel}
     <div class="daytitle">${esc(day.title)}</div>
     ${day.rpe ? `<div class="msub" style="margin-bottom:12px">Target RPE ${esc(day.rpe)}</div>` : ""}
-    ${(day.blocks || []).map((b, bi) => {
-      if (b.type === "note") return `<div class="noteblock">${esc(b.text)}</div>`;
-      if (b.type === "step") {
-        const key = selectedDate + ":" + bi;
-        const st = session.steps.find((x) => x.key === key);
-        const sel = (n) => st && st.rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
-        return `<div class="stepcard ${st ? "ticked" : ""}">
-          <button class="steptick" onclick="A.tickStep('${key}',\`${esc(b.label)}\`,${b.spinal ? "true" : "false"})">${st ? "✓" : ""}</button>
-          <div class="stepbody">
-            <div class="steplabel">${b.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(b.label)}${b.secs ? `<span class="stepsecs">${fmt(b.secs)}</span>` : ""}</div>
-            ${b.detail ? `<div class="msub">${esc(b.detail)}</div>` : ""}
-            ${b.secs && !st ? `<button class="chipstart" onclick="A.startStepChain(${bi})">▶ START (auto-advances through timed steps)</button>` : ""}
-            ${st && b.rpe ? `<div class="rperow" style="margin-top:8px">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
-            ${b.spinal && !st.rpe ? `<div class="msub" style="color:var(--rest);margin-top:4px">RPE required — spinal</div>` : ""}` : ""}
-          </div>
-        </div>`;
-      }
-      if (b.type === "interval") return `<div class="hist"><div class="mname">${esc(b.label || "Intervals")}</div>
-        <div class="msub">${b.rounds} × ${fmt(b.work)} work / ${fmt(b.rest)} rest</div>
-        <button class="big" onclick="A.startInterval(${b.work},${b.rest},${b.rounds})">START</button></div>`;
-      if (b.type === "amrap") return `<div class="hist"><div class="mname">${esc(b.label || "AMRAP")}</div>
-        <div class="msub">${b.mins} minutes</div>
-        ${b.items ? `<div class="amrapitems">${b.items.map((it, n2) => `<div class="amrapitem"><span class="stepnumsm">${n2 + 1}</span>${esc(it)}</div>`).join("")}</div>` : ""}
-        <button class="big" onclick="A.startAmrap(${b.mins})">START</button></div>`;
-      if (b.type === "movement") {
-        const m = blockState.movements.find((x) => x.id === b.id);
-        return m ? moveCard(m) : "";
-      }
-      return "";
-    }).join("")}
+    ${renderBlocks(day)}
   </div>`;
 }
 
