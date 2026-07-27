@@ -1,0 +1,40 @@
+{
+ "date": "2026-07-27",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-07-27:15",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785136039481
+  },
+  {
+   "key": "2026-07-27:18",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785136048649
+  }
+ ],
+ "pauses": [
+  {
+   "label": "interval session",
+   "at": "2026-07-27T07:07:24.323Z",
+   "entries": [
+    {
+     "atPhase": "countdown",
+     "durS": 1
+    }
+   ],
+   "totalS": 1,
+   "completed": false
+  }
+ ],
+ "rpe": 8,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-07-27T07:07:37.550Z",
+ "synced": false
+}
