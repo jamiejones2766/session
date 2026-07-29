@@ -1,0 +1,69 @@
+{
+ "date": "2026-07-29",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-07-29:13",
+   "label": "Run — in",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785340082665
+  },
+  {
+   "key": "2026-07-29:14",
+   "label": "Row",
+   "spinal": false,
+   "rpe": 5,
+   "t": 1785340302197
+  },
+  {
+   "key": "2026-07-29:15",
+   "label": "Run 6 spot",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785340692314
+  },
+  {
+   "key": "2026-07-29:16",
+   "label": "Farmers Carry — 2×24 kg",
+   "spinal": true,
+   "rpe": 5,
+   "t": 1785340769939
+  },
+  {
+   "key": "2026-07-29:17",
+   "label": "Run 7 spot",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785341160066
+  },
+  {
+   "key": "2026-07-29:18",
+   "label": "Sandbag Lunge — 20 kg",
+   "spinal": true,
+   "rpe": 5,
+   "t": 1785341416163
+  },
+  {
+   "key": "2026-07-29:19",
+   "label": "Run 8 spot",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785341815923
+  },
+  {
+   "key": "2026-07-29:20",
+   "label": "Wall Balls — 6 kg",
+   "spinal": true,
+   "rpe": null,
+   "t": 1785342283443
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Session rpe 7 \nBack rpe 2 (5 was the lowest) \n",
+ "finished": "2026-07-29T16:25:30.804Z",
+ "synced": false
+}
