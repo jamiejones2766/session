@@ -1,0 +1,83 @@
+{
+ "date": "2026-07-31",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-07-31:13",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785477916738
+  },
+  {
+   "key": "2026-07-31:16",
+   "label": "Run 1",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785478225895
+  },
+  {
+   "key": "2026-07-31:17",
+   "label": "SkiErg",
+   "spinal": false,
+   "rpe": 5,
+   "t": 1785478421195
+  },
+  {
+   "key": "2026-07-31:18",
+   "label": "Run 2",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785478616496
+  },
+  {
+   "key": "2026-07-31:19",
+   "label": "Sled Push — 152 kg",
+   "spinal": false,
+   "rpe": 6,
+   "t": 1785478811797
+  },
+  {
+   "key": "2026-07-31:20",
+   "label": "Run 3",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785479007097
+  },
+  {
+   "key": "2026-07-31:21",
+   "label": "Sled Pull — 103 kg",
+   "spinal": true,
+   "rpe": 5,
+   "t": 1785479202398
+  },
+  {
+   "key": "2026-07-31:22",
+   "label": "Run 4",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785479397698
+  },
+  {
+   "key": "2026-07-31:23",
+   "label": "Burpee Broad Jumps",
+   "spinal": false,
+   "rpe": 5,
+   "t": 1785479593000
+  },
+  {
+   "key": "2026-07-31:24",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "t": 1785480149241
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "700m ski \n3.2 lengths push \n2.8 pull \n40m Bbj ",
+ "finished": "2026-07-31T06:43:09.327Z",
+ "synced": false
+}
