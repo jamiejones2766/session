@@ -11,9 +11,9 @@ const SEED = {
     { id: "rdl", name: "BB Romanian Deadlift", kg: 60, reps: 6, sets: 2, spinal: true },
     { id: "pullup", name: "Weighted Pull Up", kg: 3.8, reps: 6, sets: 2, spinal: false },
     { id: "press", name: "BB Shoulder Press", kg: 30, reps: 6, sets: 2, spinal: false },
-    { id: "sledpush", name: "Sled Push (per 12.5m)", kg: 155, reps: 1, sets: 2, spinal: false },
-    { id: "sledpull", name: "Sled Pull (per 12.5m)", kg: 125, reps: 1, sets: 2, spinal: true },
-    { id: "wallball", name: "Wall Ball", kg: 9, reps: 12, sets: 2, spinal: false },
+    { id: "sledpush", name: "Sled Push (per 12.5m)", kg: 152, reps: 1, sets: 2, spinal: false },
+    { id: "sledpull", name: "Sled Pull (per 12.5m)", kg: 103, reps: 1, sets: 2, spinal: true },
+    { id: "wallball", name: "Wall Ball", kg: 6, reps: 12, sets: 2, spinal: false },
     { id: "kbcarry", name: "KB Farmers Carry (per 25m)", kg: 24, reps: 1, sets: 2, spinal: true },
     { id: "sblunge", name: "Sandbag Lunge (per 10m)", kg: 20, reps: 1, sets: 2, spinal: true },
   ],
@@ -32,7 +32,7 @@ let openMove = null;
 let timerMode = null, timer = null;
 let finishReport = null, showSettings = false, syncMsg = "";
 let selectedDate = new Date().toISOString().slice(0, 10);
-let editKg = {}, editReps = {}, editRpe = {};
+let editKg = {}, editReps = {}, editRpe = {}, editSym = {};
 let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
 let chipScrollX = 0;
 const COUNTDOWN_S = 15;
@@ -168,7 +168,7 @@ function markStepDone(dayKey, bi) {
   const b = stepAt(dayKey, bi);
   if (!b) return;
   const key = dayKey + ":" + bi;
-  if (!session.steps.find((x) => x.key === key)) session.steps.push({ key, label: b.label, spinal: !!b.spinal, rpe: null, t: Date.now() });
+  if (!session.steps.find((x) => x.key === key)) session.steps.push({ key, label: b.label, spinal: !!b.spinal, rpe: null, sym: null, t: Date.now() });
 }
 function enterStepWork(now) {
   const bi = timer.blockIdxs[timer.pos];
@@ -228,11 +228,12 @@ window.A = {
     render();
   },
   rpe(id, n) { editRpe[id] = n; render(); },
+  sym(id, n) { editSym[id] = n; render(); },
   logSet(id) {
     const m = blockState.movements.find((x) => x.id === id);
-    const kg = editKg[id] ?? m.kg, reps = editReps[id] ?? m.reps, rpe = editRpe[id] ?? null;
-    if (m.spinal && rpe === null) return;
-    session.sets.push({ id, name: m.name, kg, reps, rpe, spinal: m.spinal, t: Date.now() });
+    const kg = editKg[id] ?? m.kg, reps = editReps[id] ?? m.reps, rpe = editRpe[id] ?? null, sym = editSym[id] ?? null;
+    if (m.spinal && (rpe === null || sym === null)) return;
+    session.sets.push({ id, name: m.name, kg, reps, rpe, sym, spinal: m.spinal, t: Date.now() });
     if (kg !== m.kg) { m.kg = kg; save("jj-block-state", blockState); }
     toast(`${m.name} — ${kg} kg × ${reps} logged`);
     render();
@@ -303,12 +304,16 @@ window.A = {
   tickStep(key, label, spinal) {
     const i = session.steps.findIndex((x) => x.key === key);
     if (i >= 0) session.steps.splice(i, 1);
-    else session.steps.push({ key, label, spinal: !!spinal, rpe: null, t: Date.now() });
+    else session.steps.push({ key, label, spinal: !!spinal, rpe: null, sym: null, t: Date.now() });
     render();
   },
   stepRpe(key, n) {
     const st = session.steps.find((x) => x.key === key);
     if (st) { st.rpe = n; render(); }
+  },
+  stepSym(key, n) {
+    const st = session.steps.find((x) => x.key === key);
+    if (st) { st.sym = n; render(); }
   },
   finRpe(n) { session.rpe = n; render(); },
   finBack(b) { session.back = b; render(); },
@@ -346,9 +351,9 @@ function buildReport(d) {
     `SESSION REPORT — ${d.date}`,
     `Session RPE: ${d.rpe} · Back: ${d.back}`,
     d.steps?.length ? "Steps:" : null,
-    ...(d.steps || []).map((s2) => `  ✓ ${s2.label}${s2.rpe ? ` @ RPE ${s2.rpe}` : ""}${s2.spinal ? " ▲" : ""}`),
+    ...(d.steps || []).map((s2) => `  ✓ ${s2.label}${s2.rpe ? ` @ eff ${s2.rpe}` : ""}${s2.sym != null ? ` sym ${s2.sym}` : ""}${s2.spinal ? " ▲" : ""}`),
     d.sets.length ? "Sets:" : "Sets logged: none",
-    ...d.sets.map((s) => `  ${s.name}: ${s.kg}kg × ${s.reps}${s.rpe ? ` @ RPE ${s.rpe}` : ""}${s.spinal ? " ▲" : ""}`),
+    ...d.sets.map((s) => `  ${s.name}: ${s.kg}kg × ${s.reps}${s.rpe ? ` @ eff ${s.rpe}` : ""}${s.sym != null ? ` sym ${s.sym}` : ""}${s.spinal ? " ▲" : ""}`),
     d.rounds.length ? `AMRAP rounds: ${d.rounds.map((r) => `R${r.n}@${fmt(r.at)}`).join(", ")}` : null,
     d.pauses?.length ? `Pauses: ${d.pauses.map((p) => `${p.label} — ${p.totalS}s total (${p.entries.length} pause${p.entries.length > 1 ? "s" : ""})`).join("; ")}` : null,
     d.notes ? `Notes: ${d.notes}` : null,
@@ -365,9 +370,10 @@ function lastFor(id) {
 }
 function moveCard(m, showLast) {
   const done = session.sets.filter((s) => s.id === m.id).length;
-  const kg = editKg[m.id] ?? m.kg, reps = editReps[m.id] ?? m.reps, rpe = editRpe[m.id];
+  const kg = editKg[m.id] ?? m.kg, reps = editReps[m.id] ?? m.reps, rpe = editRpe[m.id], sym = editSym[m.id];
   const pips = Array.from({ length: m.sets }).map((_, i) => `<span class="pip ${i < done ? "done" : ""}"></span>`).join("");
   const sel = (n) => rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
+  const selSym = (n) => sym === n ? (n >= 4 ? "sel-hi" : n >= 2 ? "sel-mid" : "sel-lo") : "";
   return `
   <button class="row" onclick="A.open('${m.id}')">
     <span><span class="mname">${m.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(m.name)}</span>
@@ -389,9 +395,11 @@ function moveCard(m, showLast) {
       </div>
     </div>
     ${m.spinal ? `
-    <div class="small">Station RPE — required</div>
-    <div class="rperow">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" onclick="A.rpe('${m.id}',${n})">${n}</button>`).join("")}</div>` : ""}
-    <button class="big" ${m.spinal && rpe == null ? "disabled" : ""} onclick="A.logSet('${m.id}')">LOG SET — ${kg} kg × ${reps}</button>
+    <div class="rpelab">Effort — required</div>
+    <div class="rperow">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" onclick="A.rpe('${m.id}',${n})">${n}</button>`).join("")}</div>
+    <div class="rpelab">Symptom — required <span class="rpehint">0 = nothing</span></div>
+    <div class="rperow">${[0, 1, 2, 3, 4, 5].map((n) => `<button class="rpebtn ${selSym(n)}" onclick="A.sym('${m.id}',${n})">${n}</button>`).join("")}</div>` : ""}
+    <button class="big" ${m.spinal && (rpe == null || sym == null) ? "disabled" : ""} onclick="A.logSet('${m.id}')">LOG SET — ${kg} kg × ${reps}</button>
   </div>` : ""}`;
 }
 
@@ -402,14 +410,20 @@ if (b.type === "note") return `<div class="noteblock">${esc(b.text)}</div>`;
     const key = selectedDate + ":" + bi;
     const st = session.steps.find((x) => x.key === key);
     const sel = (n) => st && st.rpe === n ? (n >= 9 ? "sel-hi" : n >= 7 ? "sel-mid" : "sel-lo") : "";
+    const selSym = (n) => st && st.sym === n ? (n >= 4 ? "sel-hi" : n >= 2 ? "sel-mid" : "sel-lo") : "";
     return `<div class="stepcard ${st ? "ticked" : ""}">
       <button class="steptick" onclick="A.tickStep('${key}',\`${esc(b.label)}\`,${b.spinal ? "true" : "false"})">${st ? "✓" : ""}</button>
       <div class="stepbody">
         <div class="steplabel">${b.spinal ? '<span style="color:var(--rest)">▲ </span>' : ""}${esc(b.label)}${b.secs ? `<span class="stepsecs">${fmt(b.secs)}</span>` : ""}</div>
         ${b.detail ? `<div class="msub">${esc(b.detail)}</div>` : ""}
         ${b.secs && !st ? `<button class="chipstart" onclick="A.startStepChain(${bi})">▶ START (auto-advances through timed steps)</button>` : ""}
-        ${st && b.rpe ? `<div class="rperow" style="margin-top:8px">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
-        ${b.spinal && !st.rpe ? `<div class="msub" style="color:var(--rest);margin-top:4px">RPE required — spinal</div>` : ""}` : ""}
+        ${st && b.rpe ? `
+        <div class="rpelab">Effort</div>
+        <div class="rperow">${[5, 6, 7, 8, 9, 10].map((n) => `<button class="rpebtn ${sel(n)}" style="height:40px" onclick="A.stepRpe('${key}',${n})">${n}</button>`).join("")}</div>
+        ${b.spinal ? `
+        <div class="rpelab">Symptom <span class="rpehint">0 = nothing</span></div>
+        <div class="rperow">${[0, 1, 2, 3, 4, 5].map((n) => `<button class="rpebtn ${selSym(n)}" style="height:40px" onclick="A.stepSym('${key}',${n})">${n}</button>`).join("")}</div>` : ""}
+        ${b.spinal && (!st.rpe || st.sym == null) ? `<div class="msub" style="color:var(--rest);margin-top:4px">Both required — effort and symptom</div>` : ""}` : ""}
       </div>
     </div>`;
   }
