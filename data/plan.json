@@ -1,5 +1,5 @@
 {
- "week": "w/c 13 Jul (complete) + w/c 20 Jul (complete — deload, comeback week 3) + w/c 27 Jul (confirmed 25 Jul — build week 1 post-deload, comeback week 4). Office 9-5 all w/c 27 Jul, evening sessions. Threshold pace recalibrated 5:44 -> ~5:30/km (25 Jul, from 20 Jul lap evidence). Compound chain extended to 75% on green diagnostic (22 Jul: effort 6, spinal symptom 1, flat across all three checkpoints).",
+ "week": "w/c 3 Aug (confirmed 1 Aug — build week 2 post-deload, comeback week 5). THE WEEK IS THE TT: Monday 3 Aug 30-min time trial pins LTHR and LT pace, replacing the 5:30/km working estimate and the untested LTHR 174. Cal factor resets 101.7 → 100.0 before it. VO2max hills deliberately NOT this week — moved to w/c 10 Aug so the TT anchor stays clean (decided 1 Aug). Hills ramp: 6×30s (10 Aug) → 8×30s (17 Aug) → 8×30s hold (24 Aug) → out for the 31 Aug taper. Ankle exit moved right one week; 24 Aug holds rather than progressing to 45s because sharpen weeks don't introduce novel stimuli. Wall balls confirmed 6 kg race weight — app's stored 9 kg is stale. Load ~262 vs 224 last week (+17%, on the ceiling). Run volume 26.5 km vs ~25 (+6%) — the bike days are doing that work. Tenerife 4 Sep. Remaining: 10 Aug build 3, 17 Aug build 4, 24 Aug sharpen, 31 Aug merged deload+taper.",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -550,8 +550,8 @@
    ]
   },
   "2026-08-02": {
-   "title": "Long easy run — 55 min",
-   "rpe": "3-5",
+   "title": "Easy run — 30 min (long run moved to Sat 1 Aug)",
+   "rpe": "3-4",
    "blocks": [
     {
      "type": "routine",
@@ -559,13 +559,313 @@
     },
     {
      "type": "note",
-     "text": "+1 km on 19 Jul, resuming the long-run thread. HR ≤148 — heat means slower, not harder. Sunday planning in the evening: sync the week's logs and we build w/c 3 Aug off the Wednesday spinal checkpoints."
+     "text": "CHANGED: this was a 55-min long run. The long run moved to Saturday 1 Aug to clear Monday's TT slot. Keep this genuinely easy — HR under 148. Tomorrow's time trial sets the threshold anchor for the whole block and it only works on fresh legs."
     },
     {
      "type": "step",
-     "label": "Long easy run",
-     "detail": "55 min, HR ≤148",
-     "secs": 3300
+     "label": "Easy run",
+     "detail": "30 min, HR ≤148",
+     "secs": 1800
+    }
+   ]
+  },
+  "2026-08-03": {
+   "title": "30-MIN TIME TRIAL — threshold anchor",
+   "rpe": "9",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "THE POINT: this pins LTHR and LT pace properly. Avg HR from minutes 10-30 = LTHR. Avg pace across the 30 ≈ LT pace. Everything downstream in this block inherits these numbers, so a compromised TT is worse than no TT. No hills this week — they start w/c 10 Aug precisely so this stays clean."
+    },
+    {
+     "type": "note",
+     "text": "BEFORE YOU GO: reset Stryd cal factor 101.7 → 100.0. Comparability with July sessions matters less than a clean anchor. Post-session, compare Garmin distance vs Stryd app distance as the confirmation check. Chest strap on. Same 1km flat straight as 20 Jul — five turnarounds, not the 250m loop."
+    },
+    {
+     "type": "note",
+     "text": "SCREEN SETUP: HR, 3-second power, elapsed time. HIDE INSTANT PACE. You will chase it otherwise and the first two minutes decide whether the other 28 are any good."
+    },
+    {
+     "type": "note",
+     "text": "PACING: cap 250W for the first two minutes — cardiac lag is real, the 20 Jul file showed HR at 147 thirty seconds into rep 2 against a 165 steady state, taking ~150s to arrive. First km no faster than 5:40. Then HR-governed: 158-164 to min 5, 164-169 to min 10, 169-173 to min 20, 172-176 to min 27, empty the tank the last three minutes."
+    },
+    {
+     "type": "note",
+     "text": "EXPECTED: 5.2-5.5 km, power 245W+. If you finish and could have gone harder, log that honestly — it changes how we read the number."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "15 min easy",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "Strides ×4",
+     "detail": "20s each, full recovery between",
+     "secs": 240
+    },
+    {
+     "type": "step",
+     "label": "TIME TRIAL",
+     "detail": "30 min continuous, hardest sustainable. HR ladder as noted.",
+     "secs": 1800,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-04": {
+   "title": "Active recovery",
+   "rpe": "2-3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "30-40 min easy bike, HR under 140. Off feet deliberately — the week runs 26.5 run km and Wednesday is the heavy one. Genuinely easy. If this drifts into a session the week's ramp breaks."
+    }
+   ]
+  },
+  "2026-08-05": {
+   "title": "Compound chain — stations 5-8, race weight, 90% volume",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "Step up from 75% on 29 Jul. Runs stay at 1 km — they're already race spec, so 90% scales the STATIONS only. Run pace held flat: pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
+    },
+    {
+     "type": "note",
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session — effort and symptom as separate numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom climbs progressively across the three, stop and log it — that's the signal 90% was too early and we hold."
+    },
+    {
+     "type": "note",
+     "text": "STANDING METRICS: transition time delta, and run-1 to run-4 HR delta at identical pace. The HR ratchet is a cleaner progression read than station times."
+    },
+    {
+     "type": "step",
+     "label": "Run — in",
+     "detail": "1 km controlled, not race pace",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Row",
+     "detail": "900m steady, seated throughout. Cardiff rate ~4:35.",
+     "secs": 275,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6 spot",
+     "detail": "1 km controlled — where London cramping started",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Farmers Carry — 2×24 kg",
+     "detail": "180m, arms extended per standard. Cardiff rate ~1:46. SPINAL RPE CHECK NOW — effort + symptom, separate.",
+     "secs": 106,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7 spot",
+     "detail": "1 km controlled",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Sandbag Lunge — 20 kg",
+     "detail": "90m, trailing knee to ground, stand tall between reps, no shuffles. Cardiff rate ~3:57. SPINAL RPE CHECK NOW.",
+     "secs": 237,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 8 spot",
+     "detail": "1 km controlled — where London cramping fully hit",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls — 6 kg",
+     "detail": "90 reps, full squat hips below knees, 3.00m target. RACE WEIGHT 6kg — app has 9kg stored, ignore it. Cardiff rate ~6:03. SPINAL RPE CHECK NOW.",
+     "secs": 363,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-06": {
+   "title": "Easy run — 25 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "Genuinely easy, HR ≤148. Sandwiched between the chain and Friday's race sim — this is a recovery run, not a session. Log as a RUN activity, not HIIT."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "25 min, HR ≤148",
+     "secs": 1500
+    },
+    {
+     "type": "step",
+     "label": "Strides ×4",
+     "detail": "20s each, relaxed, full recovery. Absent three weeks — log them as a run so they're visible.",
+     "secs": 240
+    }
+   ]
+  },
+  "2026-08-07": {
+   "title": "Race sim — stations 1-4 (front half)",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h — no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Repeat of 31 Jul structure — holding, not extending, because the TT and the chain are both progressions this week already."
+    },
+    {
+     "type": "note",
+     "text": "SkiErg into Sled Push is the Birmingham failure sequence. Ski at steady-strong, NOT hard. Arriving at the sled in oxygen debt is the exact mechanism that cost you the race."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Strides ×3",
+     "detail": "30s each, 60s rest between"
+    },
+    {
+     "type": "interval",
+     "work": 180,
+     "rest": 180,
+     "rounds": 4,
+     "label": "24-min alternation clock"
+    },
+    {
+     "type": "step",
+     "label": "Run 1",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "SkiErg",
+     "detail": "3:00 steady-strong — deliberately not hard",
+     "secs": 180,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Sled Push — 152 kg",
+     "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
+     "secs": 180,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight. Spinal — honest RPE, effort + symptom separate.",
+     "secs": 180,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4",
+     "detail": "3:00 @ 10.6",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Burpee Broad Jumps",
+     "detail": "3:00 continuous, chest to ground, both feet take off and land together. Spinal checkpoint.",
+     "secs": 180,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy — do the boring bit",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-08": {
+   "title": "Easy bike — 30 min",
+   "rpe": "2-3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "30 min easy bike, HR under 140. Off feet by design — keeps the week's run volume at +6% on last week rather than +18%. With a confirmed annular tear, impact volume is the constraint that binds before load does."
+    }
+   ]
+  },
+  "2026-08-09": {
+   "title": "Easy run — 40 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "40 min easy, HR ≤148. Trimmed from 50 to keep the week at ~262 against a 258 ceiling. If Monday's TT went well and the week has felt fine, 50 is available — but the ramp rule wins over feel."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "40 min, HR ≤148",
+     "secs": 2400
     }
    ]
   }
