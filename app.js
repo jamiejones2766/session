@@ -33,6 +33,7 @@ let timerMode = null, timer = null;
 let finishReport = null, showSettings = false, syncMsg = "";
 let selectedDate = new Date().toISOString().slice(0, 10);
 let editKg = {}, editReps = {}, editRpe = {}, editSym = {};
+let planOpen = false;
 let setupVals = { work: 180, rest: 60, rounds: 6, amrap: 14 };
 let chipScrollX = 0;
 const COUNTDOWN_S = 15;
@@ -227,6 +228,7 @@ window.A = {
     store[id] = Math.max(0, +((store[id] ?? m[field]) + delta).toFixed(1));
     render();
   },
+  togglePlan() { planOpen = !planOpen; render(); },
   rpe(id, n) { editRpe[id] = n; render(); },
   sym(id, n) { editSym[id] = n; render(); },
   logSet(id) {
@@ -484,11 +486,33 @@ function grpKey(g) { return selectedDate + ":" + g; }
 /* ── views ── */
 function vToday() {
   if (showSettings) return vSettings();
-  const head = plan ? `<p class="hint">Plan: ${esc(plan.week || "—")} · <button class="link" onclick="A.refreshPlan()">refresh</button></p>`
+  const wk = plan?.week || "—";
+  const wkShort = wk.length > 70 ? wk.slice(0, 70).replace(/[\s,.;—-]+$/, "") + "…" : wk;
+  const head = plan ? `<div class="planbar">
+      <button class="planhead" onclick="A.togglePlan()">
+        <span class="chev ${planOpen ? "open" : ""}">›</span>
+        <span class="planline">Plan: ${esc(planOpen ? "this block" : wkShort)}</span>
+      </button>
+      ${planOpen ? `<p class="hint planbody">${esc(wk)}</p>` : ""}
+      <button class="link" onclick="A.refreshPlan()">refresh</button>
+    </div>`
     : `<p class="hint">No plan loaded. <button class="link" onclick="A.refreshPlan()">Pull plan from repo</button> once data/plan.json exists.</p>`;
 
-  const dates = plan?.days ? Object.keys(plan.days).sort() : [];
   const t = todayISO();
+  // Horizon: this week's Monday through +13 days. Past weeks stay in the file
+  // as history but don't clutter the picker.
+  const mon = (() => {
+    const d = new Date(t + "T12:00:00");
+    d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    return d.toISOString().slice(0, 10);
+  })();
+  const horizonEnd = (() => {
+    const d = new Date(mon + "T12:00:00");
+    d.setDate(d.getDate() + 13);
+    return d.toISOString().slice(0, 10);
+  })();
+  const allDates = plan?.days ? Object.keys(plan.days).sort() : [];
+  const dates = allDates.filter((d) => d >= mon && d <= horizonEnd);
   const chips = dates.length ? `<div class="daychips" onscroll="A.chipScroll(this)">${dates.map((d) => {
     const dt = new Date(d + "T12:00:00");
     const lbl = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric" });
