@@ -43,6 +43,12 @@ header{display:flex;justify-content:space-between;align-items:center;padding:cal
 .stepval{font-family:ui-monospace,Menlo,monospace;font-size:26px;text-align:center;min-width:76px}
 .steplbl{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.14em;text-align:center}
 .rperow{display:flex;gap:6px}
+.planbar{margin:0 0 12px}
+.planhead{display:flex;align-items:center;gap:8px;width:100%;background:none;border:none;padding:6px 0;text-align:left;color:var(--mut);font-size:13px;cursor:pointer}
+.planhead .chev{font-family:ui-monospace,monospace;font-size:14px;display:inline-block;transition:transform .18s ease;flex:0 0 auto}
+.planhead .chev.open{transform:rotate(90deg)}
+.planline{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.planbody{margin:2px 0 6px;line-height:1.5}
 .rpelab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:10px 0 5px}
 .rpehint{text-transform:none;letter-spacing:0;opacity:.65}
 .rpebtn{flex:1;height:50px;border-radius:8px;font-family:ui-monospace,monospace;font-size:17px;background:var(--hi);color:var(--mut)}
