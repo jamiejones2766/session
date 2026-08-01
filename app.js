@@ -328,8 +328,9 @@ window.A = {
     done.synced = res.ok;
     history = [done, ...history].slice(0, 100);
     save("jj-sessions", history);
+    publishFuel(done);
     session = { date: todayISO(), sets: [], rounds: [], steps: [], pauses: [], rpe: null, back: null, notes: "" };
-    editKg = {}; editReps = {}; editRpe = {};
+    editKg = {}; editReps = {}; editRpe = {}; editSym = {};
     toast(res.ok ? "Saved + synced to GitHub ✓" : cfg.token ? "Saved locally — sync failed, retry from Log" : "Saved locally (no token set)");
     render();
   },
@@ -482,6 +483,29 @@ function renderBlocks(day) {
 const GRP_LABEL = { prerun: "Pre-run warm-up" };
 let grpOpen = {};
 function grpKey(g) { return selectedDate + ":" + g; }
+
+
+/* ── fuel bridge ──────────────────────────────────────────────
+   Both apps live on jamiejones2766.github.io, so they share one
+   localStorage origin. The food log reads this key to set its
+   rest/normal/hard target without being told twice. ───────── */
+function publishFuel(done) {
+  try {
+    const mins = Math.round(
+      ((done.steps || []).reduce((a, x) => a + (x.secs || 0), 0) +
+       (done.rounds || []).reduce((a, x) => a + (x.secs || 0), 0)) / 60
+    );
+    const planned = plan?.days?.[done.date];
+    localStorage.setItem("jj.fuel.session", JSON.stringify({
+      date: done.date,
+      title: planned?.title || "Session",
+      rpe: done.rpe || null,
+      mins: mins || null,
+      back: done.back || null,
+      at: Date.now()
+    }));
+  } catch (e) { /* bridge is a nicety, never block a save on it */ }
+}
 
 /* ── views ── */
 function vToday() {
