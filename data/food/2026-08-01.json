@@ -1,0 +1,1005 @@
+{
+ "date": "2026-08-01",
+ "dayType": "normal",
+ "dayTypeWhy": "planned: Easy — your call",
+ "dayTypeManual": false,
+ "targets": {
+  "kcal": 2500,
+  "protein": 155,
+  "carbs": 300,
+  "fat": 75
+ },
+ "totals": {
+  "kcal": 2538,
+  "protein": 169,
+  "carbs": 250,
+  "fat": 71
+ },
+ "entries": [
+  {
+   "name": "Biscoff Biscuit",
+   "qty": "1 small biscuit (~9g)",
+   "kcal": 90,
+   "protein": 2,
+   "carbs": 12,
+   "fat": 4,
+   "confidence": "high",
+   "note": "",
+   "id": "1785575289980-0",
+   "ts": "10:08",
+   "cached": false,
+   "amount": 2,
+   "unit": "",
+   "base": {
+    "amount": 1,
+    "kcal": 45,
+    "protein": 1,
+    "carbs": 6,
+    "fat": 2
+   }
+  },
+  {
+   "name": "Cacaolat Chocolate Milk",
+   "qty": "275ml",
+   "amount": 275,
+   "unit": "ml",
+   "kcal": 184,
+   "protein": 7,
+   "carbs": 29,
+   "fat": 4,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 275,
+    "kcal": 184,
+    "protein": 7,
+    "carbs": 29,
+    "fat": 4
+   },
+   "id": "1785582270826-0",
+   "ts": "12:04",
+   "cached": false
+  },
+  {
+   "name": "Fuel Flakes",
+   "qty": "35g",
+   "amount": 85,
+   "unit": "g",
+   "kcal": 384,
+   "protein": 24,
+   "carbs": 49,
+   "fat": 5,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 35,
+    "kcal": 158,
+    "protein": 10,
+    "carbs": 20,
+    "fat": 2
+   },
+   "id": "1785583053285-0",
+   "ts": "12:17",
+   "cached": false
+  },
+  {
+   "name": "Ufit Chocolate Protein Shake",
+   "qty": "500ml bottle",
+   "amount": 450,
+   "unit": "ml",
+   "kcal": 270,
+   "protein": 45,
+   "carbs": 16,
+   "fat": 2,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 500,
+    "kcal": 300,
+    "protein": 50,
+    "carbs": 18,
+    "fat": 2
+   },
+   "id": "1785583249764-0",
+   "ts": "12:20",
+   "cached": false
+  },
+  {
+   "name": "Tesco Ham, Egg and Coleslaw Salad",
+   "qty": "1 pack (235g)",
+   "amount": 235,
+   "unit": "g",
+   "kcal": 201,
+   "protein": 16,
+   "carbs": 11,
+   "fat": 10,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 235,
+    "kcal": 201,
+    "protein": 16,
+    "carbs": 11,
+    "fat": 10
+   },
+   "id": "1785595306125-0",
+   "ts": "15:41",
+   "cached": false
+  },
+  {
+   "name": "Tesco Pineapple",
+   "qty": "145g pack",
+   "amount": 145,
+   "unit": "g",
+   "kcal": 72,
+   "protein": 1,
+   "carbs": 16,
+   "fat": 0,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 145,
+    "kcal": 72,
+    "protein": 1,
+    "carbs": 16,
+    "fat": 0
+   },
+   "id": "1785595375055-0",
+   "ts": "15:42",
+   "cached": false
+  },
+  {
+   "name": "Discos Salt & Vinegar Flavour Wheat Snack",
+   "qty": "50g pack",
+   "amount": 50,
+   "unit": "g",
+   "kcal": 261,
+   "protein": 2,
+   "carbs": 29,
+   "fat": 15,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 50,
+    "kcal": 261,
+    "protein": 2,
+    "carbs": 29,
+    "fat": 15
+   },
+   "id": "1785595428274-0",
+   "ts": "15:43",
+   "cached": false
+  },
+  {
+   "name": "Kind Bar",
+   "qty": "40g bar",
+   "amount": 40,
+   "unit": "g",
+   "kcal": 217,
+   "protein": 7,
+   "carbs": 11,
+   "fat": 15,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 40,
+    "kcal": 217,
+    "protein": 7,
+    "carbs": 11,
+    "fat": 15
+   },
+   "id": "1785595552772-0",
+   "ts": "15:45",
+   "cached": false
+  },
+  {
+   "name": "Kinder Happy Hippo",
+   "qty": "1 bar (20.7g)",
+   "amount": 20.7,
+   "unit": "g",
+   "kcal": 111,
+   "protein": 2,
+   "carbs": 13,
+   "fat": 6,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 20.7,
+    "kcal": 111,
+    "protein": 2,
+    "carbs": 13,
+    "fat": 6
+   },
+   "id": "1785603426877-0",
+   "ts": "17:57",
+   "cached": false
+  },
+  {
+   "name": "Madrí Lager",
+   "qty": "1 pint (568ml)",
+   "amount": 568,
+   "unit": "ml",
+   "kcal": 215,
+   "protein": 2,
+   "carbs": 12,
+   "fat": 0,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 568,
+    "kcal": 215,
+    "protein": 2,
+    "carbs": 12,
+    "fat": 0
+   },
+   "id": "1785608223150-0",
+   "ts": "19:17",
+   "cached": false
+  },
+  {
+   "name": "Piri Piri Chicken",
+   "qty": "160g (full pack)",
+   "amount": 160,
+   "unit": "g",
+   "kcal": 205,
+   "protein": 37,
+   "carbs": 5,
+   "fat": 4,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 160,
+    "kcal": 205,
+    "protein": 37,
+    "carbs": 5,
+    "fat": 4
+   },
+   "id": "1785616950706-0",
+   "ts": "21:42",
+   "cached": false
+  },
+  {
+   "name": "Protein Pudding (Chocolate, Skyr-style)",
+   "qty": "200g pot",
+   "amount": 200,
+   "unit": "g",
+   "kcal": 152,
+   "protein": 20,
+   "carbs": 16,
+   "fat": 3,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 200,
+    "kcal": 152,
+    "protein": 20,
+    "carbs": 16,
+    "fat": 3
+   },
+   "id": "1785617056656-0",
+   "ts": "21:44",
+   "cached": false
+  },
+  {
+   "name": "Uncle Ben's Steamed Rice with Beans and Vegetables",
+   "qty": "110g portion",
+   "amount": 110,
+   "unit": "g",
+   "kcal": 176,
+   "protein": 4,
+   "carbs": 31,
+   "fat": 3,
+   "confidence": "high",
+   "note": "",
+   "base": {
+    "amount": 110,
+    "kcal": 176,
+    "protein": 4,
+    "carbs": 31,
+    "fat": 3
+   },
+   "id": "1785617164617-0",
+   "ts": "21:46",
+   "cached": false
+  }
+ ],
+ "settings": {
+  "weight": 80,
+  "kcal": 2500,
+  "protein": 155,
+  "carbs": 300,
+  "fat": 75,
+  "model": "claude-haiku-4-5-20251001"
+ },
+ "library": {
+  "chocolate huel 500ml": [
+   {
+    "name": "Huel Chocolate Ready-to-Drink",
+    "qty": "500ml bottle",
+    "kcal": 500,
+    "protein": 20,
+    "carbs": 56,
+    "fat": 15,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "chocolate huel 400ml": [
+   {
+    "name": "Huel Chocolate Ready-to-Drink",
+    "qty": "400ml",
+    "kcal": 400,
+    "protein": 16,
+    "carbs": 45,
+    "fat": 12,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "kfc twister and small chips": [
+   {
+    "name": "KFC Twister (Grilled Chicken)",
+    "qty": "1 twister",
+    "kcal": 420,
+    "protein": 32,
+    "carbs": 42,
+    "fat": 18,
+    "confidence": "medium",
+    "note": "estimated high side for oil/mayo in wrap"
+   },
+   {
+    "name": "KFC Small Chips",
+    "qty": "small portion (~110g)",
+    "kcal": 290,
+    "protein": 4,
+    "carbs": 36,
+    "fat": 14,
+    "confidence": "medium",
+    "note": "estimated high side for cooking oil"
+   }
+  ],
+  "wispa duo": [
+   {
+    "name": "Cadbury Wispa Duo",
+    "qty": "1 bar (37g)",
+    "kcal": 200,
+    "protein": 3,
+    "carbs": 23,
+    "fat": 11,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "sainsbury's giraffe bread 100g": [
+   {
+    "name": "Sainsbury's Giraffe Bread",
+    "qty": "100g",
+    "kcal": 265,
+    "protein": 9,
+    "carbs": 49,
+    "fat": 3,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "40g ham": [
+   {
+    "name": "Ham (sliced)",
+    "qty": "40g",
+    "kcal": 62,
+    "protein": 11,
+    "carbs": 0,
+    "fat": 3,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "cheese spread 20g": [
+   {
+    "name": "Cheese Spread",
+    "qty": "20g",
+    "kcal": 65,
+    "protein": 3,
+    "carbs": 1,
+    "fat": 5,
+    "confidence": "medium",
+    "note": "assumes typical full-fat cheese spread like Dairylea or supermarket own-brand"
+   }
+  ],
+  "light cheese spread 20g": [
+   {
+    "name": "Light Cheese Spread",
+    "qty": "20g",
+    "kcal": 45,
+    "protein": 3,
+    "carbs": 1,
+    "fat": 3,
+    "confidence": "high",
+    "note": "reduced fat vs standard cheese spread"
+   }
+  ],
+  "70% dark chocolate \n22g wotsits": [
+   {
+    "name": "Dark Chocolate 70%",
+    "qty": "30g (typical bar serving)~",
+    "kcal": 170,
+    "protein": 3,
+    "carbs": 13,
+    "fat": 13,
+    "confidence": "medium",
+    "note": "assumed 30g portion; weight not specified"
+   },
+   {
+    "name": "Wotsits",
+    "qty": "22g",
+    "kcal": 120,
+    "protein": 1,
+    "carbs": 12,
+    "fat": 7,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "10g 70% dark chocolate \n22g wotsits": [
+   {
+    "name": "Dark Chocolate 70%",
+    "qty": "10g",
+    "kcal": 57,
+    "protein": 1,
+    "carbs": 4,
+    "fat": 4,
+    "confidence": "high",
+    "note": ""
+   },
+   {
+    "name": "Wotsits",
+    "qty": "22g",
+    "kcal": 120,
+    "protein": 1,
+    "carbs": 12,
+    "fat": 7,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "small biscoff biscuit": [
+   {
+    "name": "Biscoff Biscuit",
+    "qty": "1 small biscuit (~9g)",
+    "kcal": 45,
+    "protein": 1,
+    "carbs": 6,
+    "fat": 2,
+    "confidence": "high",
+    "note": ""
+   }
+  ],
+  "cacaolat- 275ml chocolate milk 184 cals c 29.4 f 4.1 p7.4": [
+   {
+    "name": "Cacaolat Chocolate Milk",
+    "qty": "275ml",
+    "amount": 275,
+    "unit": "ml",
+    "kcal": 184,
+    "protein": 7,
+    "carbs": 29,
+    "fat": 4,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 275,
+     "kcal": 184,
+     "protein": 7,
+     "carbs": 29,
+     "fat": 4
+    }
+   }
+  ],
+  "fuel flakes - 35g - f1.6 -c19.6)of which sugars)  -p9.6 fibre 2.2": [
+   {
+    "name": "Fuel Flakes",
+    "qty": "35g",
+    "amount": 35,
+    "unit": "g",
+    "kcal": 158,
+    "protein": 10,
+    "carbs": 20,
+    "fat": 2,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 35,
+     "kcal": 158,
+     "protein": 10,
+     "carbs": 20,
+     "fat": 2
+    }
+   }
+  ],
+  "ufit chocolate shake 50g - 500ml": [
+   {
+    "name": "Ufit Chocolate Protein Shake",
+    "qty": "500ml bottle",
+    "amount": 500,
+    "unit": "ml",
+    "kcal": 300,
+    "protein": 50,
+    "carbs": 18,
+    "fat": 2,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 500,
+     "kcal": 300,
+     "protein": 50,
+     "carbs": 18,
+     "fat": 2
+    }
+   }
+  ],
+  "tesco ham egg and coleslaw salad": [
+   {
+    "name": "Tesco Ham, Egg and Coleslaw Salad",
+    "qty": "1 pack (235g)",
+    "amount": 235,
+    "unit": "g",
+    "kcal": 201,
+    "protein": 16,
+    "carbs": 11,
+    "fat": 10,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 235,
+     "kcal": 201,
+     "protein": 16,
+     "carbs": 11,
+     "fat": 10
+    }
+   }
+  ],
+  "tesco pineapple": [
+   {
+    "name": "Tesco Pineapple",
+    "qty": "145g pack",
+    "amount": 145,
+    "unit": "g",
+    "kcal": 72,
+    "protein": 1,
+    "carbs": 16,
+    "fat": 0,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 145,
+     "kcal": 72,
+     "protein": 1,
+     "carbs": 16,
+     "fat": 0
+    }
+   }
+  ],
+  "discos 50g": [
+   {
+    "name": "Discos Salt & Vinegar Flavour Wheat Snack",
+    "qty": "50g pack",
+    "amount": 50,
+    "unit": "g",
+    "kcal": 261,
+    "protein": 2,
+    "carbs": 29,
+    "fat": 15,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 50,
+     "kcal": 261,
+     "protein": 2,
+     "carbs": 29,
+     "fat": 15
+    }
+   }
+  ],
+  "kind bar 40g": [
+   {
+    "name": "Kind Bar",
+    "qty": "40g bar",
+    "amount": 40,
+    "unit": "g",
+    "kcal": 217,
+    "protein": 7,
+    "carbs": 11,
+    "fat": 15,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 40,
+     "kcal": 217,
+     "protein": 7,
+     "carbs": 11,
+     "fat": 15
+    }
+   }
+  ],
+  "kinder happy hippo 20.7g": [
+   {
+    "name": "Kinder Happy Hippo",
+    "qty": "1 bar (20.7g)",
+    "amount": 20.7,
+    "unit": "g",
+    "kcal": 111,
+    "protein": 2,
+    "carbs": 13,
+    "fat": 6,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 20.7,
+     "kcal": 111,
+     "protein": 2,
+     "carbs": 13,
+     "fat": 6
+    }
+   }
+  ],
+  "madri lager 1 pint": [
+   {
+    "name": "Madrí Lager",
+    "qty": "1 pint (568ml)",
+    "amount": 568,
+    "unit": "ml",
+    "kcal": 215,
+    "protein": 2,
+    "carbs": 12,
+    "fat": 0,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 568,
+     "kcal": 215,
+     "protein": 2,
+     "carbs": 12,
+     "fat": 0
+    }
+   }
+  ],
+  "160g piri piri chicken": [
+   {
+    "name": "Piri Piri Chicken",
+    "qty": "160g (full pack)",
+    "amount": 160,
+    "unit": "g",
+    "kcal": 205,
+    "protein": 37,
+    "carbs": 5,
+    "fat": 4,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 160,
+     "kcal": 205,
+     "protein": 37,
+     "carbs": 5,
+     "fat": 4
+    }
+   }
+  ],
+  "200g protein pud": [
+   {
+    "name": "Protein Pudding (Chocolate, Skyr-style)",
+    "qty": "200g pot",
+    "amount": 200,
+    "unit": "g",
+    "kcal": 152,
+    "protein": 20,
+    "carbs": 16,
+    "fat": 3,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 200,
+     "kcal": 152,
+     "protein": 20,
+     "carbs": 16,
+     "fat": 3
+    }
+   }
+  ],
+  "uncle ben 110g": [
+   {
+    "name": "Uncle Ben's Steamed Rice with Beans and Vegetables",
+    "qty": "110g portion",
+    "amount": 110,
+    "unit": "g",
+    "kcal": 176,
+    "protein": 4,
+    "carbs": 31,
+    "fat": 3,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 110,
+     "kcal": 176,
+     "protein": 4,
+     "carbs": 31,
+     "fat": 3
+    }
+   }
+  ],
+  "heinz beans and cheese toastie": [
+   {
+    "name": "Costa Beans and Cheese Toastie",
+    "qty": "1 pack (as sold)",
+    "amount": 1,
+    "unit": "",
+    "kcal": 321,
+    "protein": 14,
+    "carbs": 46,
+    "fat": 8,
+    "confidence": "high",
+    "note": "Read directly from Costa Ltd pack label, per pack (1 serving) figures",
+    "base": {
+     "amount": 1,
+     "kcal": 321,
+     "protein": 14,
+     "carbs": 46,
+     "fat": 8
+    }
+   }
+  ],
+  "skinny latte costa medium": [
+   {
+    "name": "Costa Skinny Latte",
+    "qty": "medium (12oz / 355ml)",
+    "amount": 355,
+    "unit": "ml",
+    "kcal": 120,
+    "protein": 11,
+    "carbs": 11,
+    "fat": 1,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 355,
+     "kcal": 120,
+     "protein": 11,
+     "carbs": 11,
+     "fat": 1
+    }
+   }
+  ],
+  "chicken breast 275 uncooked": [
+   {
+    "name": "Chicken Breast",
+    "qty": "275g uncooked",
+    "amount": 275,
+    "unit": "g",
+    "kcal": 330,
+    "protein": 70,
+    "carbs": 0,
+    "fat": 4,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 275,
+     "kcal": 330,
+     "protein": 70,
+     "carbs": 0,
+     "fat": 4
+    }
+   }
+  ],
+  "125g peri peri rice": [
+   {
+    "name": "Peri Peri Rice",
+    "qty": "125g",
+    "amount": 125,
+    "unit": "g",
+    "kcal": 163,
+    "protein": 3,
+    "carbs": 29,
+    "fat": 3,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 125,
+     "kcal": 163,
+     "protein": 3,
+     "carbs": 29,
+     "fat": 3
+    }
+   }
+  ],
+  "250g 5% mince": [
+   {
+    "name": "Beef Mince (5% fat)",
+    "qty": "250g",
+    "amount": 250,
+    "unit": "g",
+    "kcal": 325,
+    "protein": 50,
+    "carbs": 0,
+    "fat": 13,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 250,
+     "kcal": 325,
+     "protein": 50,
+     "carbs": 0,
+     "fat": 13
+    }
+   }
+  ],
+  "1 bridge bun (50g)": [
+   {
+    "name": "Bridge Bun",
+    "qty": "1 bun (50g)",
+    "amount": 50,
+    "unit": "g",
+    "kcal": 158,
+    "protein": 5,
+    "carbs": 26,
+    "fat": 4,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 50,
+     "kcal": 158,
+     "protein": 5,
+     "carbs": 26,
+     "fat": 4
+    }
+   }
+  ],
+  "1 slice fake cheese": [
+   {
+    "name": "Processed Cheese Slice",
+    "qty": "1 slice (20g)",
+    "amount": 20,
+    "unit": "g",
+    "kcal": 55,
+    "protein": 3,
+    "carbs": 1,
+    "fat": 4,
+    "confidence": "high",
+    "note": "Read from pack label per-slice figures",
+    "base": {
+     "amount": 20,
+     "kcal": 55,
+     "protein": 3,
+     "carbs": 1,
+     "fat": 4
+    }
+   }
+  ],
+  "air fry potato 200g": [
+   {
+    "name": "Air-Fried Potato",
+    "qty": "200g",
+    "amount": 200,
+    "unit": "g",
+    "kcal": 245,
+    "protein": 4,
+    "carbs": 34,
+    "fat": 10,
+    "confidence": "medium",
+    "note": "Label shown is for potatoes boiled in unsalted water (66kcal/100g); air frying with a typical amount of oil increases calories and fat, estimated based on ~1 tbsp oil per 200g potato",
+    "base": {
+     "amount": 200,
+     "kcal": 245,
+     "protein": 4,
+     "carbs": 34,
+     "fat": 10
+    }
+   }
+  ],
+  "2% fage 250g": [
+   {
+    "name": "Fage Total 2% Greek Yoghurt",
+    "qty": "250g",
+    "amount": 250,
+    "unit": "g",
+    "kcal": 175,
+    "protein": 25,
+    "carbs": 8,
+    "fat": 5,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 250,
+     "kcal": 175,
+     "protein": 25,
+     "carbs": 8,
+     "fat": 5
+    }
+   }
+  ],
+  "1 scoop milkshake whey - 1.6g carb 1.6g fat 20g protein": [
+   {
+    "name": "Whey Protein Powder (Milkshake flavour)",
+    "qty": "1 scoop",
+    "amount": 1,
+    "unit": "",
+    "kcal": 96,
+    "protein": 20,
+    "carbs": 2,
+    "fat": 2,
+    "confidence": "high",
+    "note": "",
+    "base": {
+     "amount": 1,
+     "kcal": 96,
+     "protein": 20,
+     "carbs": 2,
+     "fat": 2
+    }
+   }
+  ],
+  "two squares dark choc": [
+   {
+    "name": "Dark Chocolate 70%",
+    "qty": "20g (two squares)",
+    "amount": 20,
+    "unit": "g",
+    "kcal": 114,
+    "protein": 2,
+    "carbs": 8,
+    "fat": 8,
+    "confidence": "medium",
+    "note": "assumed 70% cocoa; ~10g per square",
+    "base": {
+     "amount": 20,
+     "kcal": 114,
+     "protein": 2,
+     "carbs": 8,
+     "fat": 8
+    }
+   }
+  ],
+  "2 squares dark choc": [
+   {
+    "name": "Belgian Dark Chocolate (70% min)",
+    "qty": "2 squares (~20g)",
+    "amount": 20,
+    "unit": "g",
+    "kcal": 99,
+    "protein": 1,
+    "carbs": 7,
+    "fat": 7,
+    "confidence": "high",
+    "note": "scaled from pack label figure of 148kcal/10.8g fat per 3 squares",
+    "base": {
+     "amount": 20,
+     "kcal": 99,
+     "protein": 1,
+     "carbs": 7,
+     "fat": 7
+    }
+   }
+  ],
+  "nomadic choc pud": [
+   {
+    "name": "Nomadic Chocolate Protein Pudding",
+    "qty": "200g pot",
+    "amount": 200,
+    "unit": "g",
+    "kcal": 162,
+    "protein": 20,
+    "carbs": 13,
+    "fat": 3,
+    "confidence": "medium",
+    "note": "Per-100g label figures read directly (81kcal, 10g protein, 6.4g carbs, 1.6g fat); pot size assumed at typical 200g as not stated on label",
+    "base": {
+     "amount": 200,
+     "kcal": 162,
+     "protein": 20,
+     "carbs": 13,
+     "fat": 3
+    }
+   }
+  ]
+ },
+ "written": "2026-08-02T15:46:02.572Z",
+ "restoreHint": "entries are this day only; settings and library are a snapshot of the whole app at write time"
+}
