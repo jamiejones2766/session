@@ -1,5 +1,5 @@
 {
- "week": "Build week 3 of the Tenerife phase. RESHUFFLED 6 Aug: Wednesday lost (unavailable) — compound chain moved Wed->Thu 6 Aug; easy run Thu->Fri 7 Aug; race sim moved to Sat 8 Aug because there is no sled access on Thursday and stations 1-4 require sleds; Saturday's easy bike dropped. 48h between the two hard sessions preserved. Run volume unchanged at ~26.5 km; net loss for the week is the 30-min easy bike only. TT completed 3 Aug (5.71 km / 30:00). LTHR from mins 10-30 = 178 bpm (previous working figure 174 is superseded). Remaining: 10 Aug build 3 with VO2max hills starting (6x30s), 17 Aug build 4, 24 Aug sharpen, 31 Aug combined deload+taper into Tenerife 4 Sep. SLED OVERLOAD (logged 6 Aug): sandbag friction overload added to sled push and pull on 3 Jul 2026, sandbag mass [TBC] kg. Calibrated by feel — JJ's judgement across 12 races is that overloaded gym sled ≈ race sled on competition carpet. Sled splits from 3 Jul onward are comparable session-to-session and to race feel, but were NOT measured against a race sled; treat as indicative, not a benchmark. Remove or re-record before any split comparison is used as evidence.",
+ "week": "Build week 3 of the Tenerife phase. RESHUFFLED 6 Aug: Wednesday lost (unavailable) — compound chain moved Wed->Thu 6 Aug; easy run Thu->Fri 7 Aug; race sim moved to Sat 8 Aug because there is no sled access on Thursday and stations 1-4 require sleds; Saturday's easy bike dropped. 48h between the two hard sessions preserved. Run volume unchanged at ~26.5 km; net loss for the week is the 30-min easy bike only. TT completed 3 Aug (5.71 km / 30:00). LTHR from mins 10-30 = 178 bpm (previous working figure 174 is superseded). Remaining: 10 Aug build 3 with VO2max hills starting (6x30s), 17 Aug build 4, 24 Aug sharpen, 31 Aug combined deload+taper into Tenerife 4 Sep. SLED OVERLOAD (logged 6 Aug): sandbag friction overload added to sled push and pull on 3 Jul 2026, sandbag mass 10 kg. Calibrated by feel — JJ's judgement across 12 races is that overloaded gym sled ≈ race sled on competition carpet. Sled splits from 3 Jul onward are comparable session-to-session and to race feel, but were NOT measured against a race sled; treat as indicative, not a benchmark. Remove or re-record before any split comparison is used as evidence.",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -774,6 +774,10 @@
      "text": "SkiErg into Sled Push is the Birmingham failure sequence. Ski at steady-strong, NOT hard. Arriving at the sled in oxygen debt is the exact mechanism that cost you the race."
     },
     {
+     "type": "note",
+     "text": "RUN PACE (agreed 6 Aug): 5:25-5:35/km = 10.8-11.1 km/h on the treadmill, ~248-256W on Stryd at CP 261 (95-98%). START RUN 1 AT 10.8 (slow end). The test is run-to-run consistency, NOT the average: four flat 5:33s beats a 5:35 followed by a 5:22. Cal factor still 101.7, so Stryd reads ~1.7% long — a true 5:30 shows as ~5:24 on the pod. Steer by the treadmill setting or by power, not by Stryd pace."
+    },
+    {
      "type": "step",
      "label": "Warm-up",
      "detail": "10 min easy",
@@ -794,7 +798,7 @@
     {
      "type": "step",
      "label": "Run 1",
-     "detail": "3:00 @ 10.6",
+     "detail": "3:00 @ 10.8-11.1 (5:25-5:35/km). Run 1 at 10.8.",
      "secs": 180
     },
     {
@@ -807,7 +811,7 @@
     {
      "type": "step",
      "label": "Run 2",
-     "detail": "3:00 @ 10.6",
+     "detail": "3:00 @ 10.8-11.1 (5:25-5:35/km). Run 1 at 10.8.",
      "secs": 180
     },
     {
@@ -820,7 +824,7 @@
     {
      "type": "step",
      "label": "Run 3",
-     "detail": "3:00 @ 10.6",
+     "detail": "3:00 @ 10.8-11.1 (5:25-5:35/km). Run 1 at 10.8.",
      "secs": 180
     },
     {
@@ -834,7 +838,7 @@
     {
      "type": "step",
      "label": "Run 4",
-     "detail": "3:00 @ 10.6",
+     "detail": "3:00 @ 10.8-11.1 (5:25-5:35/km). Run 1 at 10.8.",
      "secs": 180
     },
     {
@@ -947,5 +951,3 @@
     "secs": 40
    }
   ]
- }
-}
