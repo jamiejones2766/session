@@ -1,5 +1,5 @@
 {
- "week": "Build week 3 of the Tenerife phase. RESHUFFLED 6 Aug: Wednesday lost (unavailable) — compound chain moved Wed->Thu 6 Aug; easy run Thu->Fri 7 Aug; race sim moved to Sat 8 Aug because there is no sled access on Thursday and stations 1-4 require sleds; Saturday's easy bike dropped. 48h between the two hard sessions preserved. Run volume unchanged at ~26.5 km; net loss for the week is the 30-min easy bike only. TT completed 3 Aug (5.71 km / 30:00). LTHR from mins 10-30 = 178 bpm (previous working figure 174 is superseded). Remaining: 10 Aug build 3 with VO2max hills starting (6x30s), 17 Aug build 4, 24 Aug sharpen, 31 Aug combined deload+taper into Tenerife 4 Sep.",
+ "week": "Build week 3 of the Tenerife phase. RESHUFFLED 6 Aug: Wednesday lost (unavailable) — compound chain moved Wed->Thu 6 Aug; easy run Thu->Fri 7 Aug; race sim moved to Sat 8 Aug because there is no sled access on Thursday and stations 1-4 require sleds; Saturday's easy bike dropped. 48h between the two hard sessions preserved. Run volume unchanged at ~26.5 km; net loss for the week is the 30-min easy bike only. TT completed 3 Aug (5.71 km / 30:00). LTHR from mins 10-30 = 178 bpm (previous working figure 174 is superseded). Remaining: 10 Aug build 3 with VO2max hills starting (6x30s), 17 Aug build 4, 24 Aug sharpen, 31 Aug combined deload+taper into Tenerife 4 Sep. SLED OVERLOAD (logged 6 Aug): sandbag friction overload added to sled push and pull on 3 Jul 2026, sandbag mass [TBC] kg. Calibrated by feel — JJ's judgement across 12 races is that overloaded gym sled ≈ race sled on competition carpet. Sled splits from 3 Jul onward are comparable session-to-session and to race feel, but were NOT measured against a race sled; treat as indicative, not a benchmark. Remove or re-record before any split comparison is used as evidence.",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -767,7 +767,7 @@
     },
     {
      "type": "note",
-     "text": "SAT 8 AUG. Moved off Thursday — no sled access Thursday, and stations 1-4 are SkiErg / Sled Push / Sled Pull / Burpee Broad Jump, so the session cannot run without sleds. Sled push and pull remain sandbag friction-overloaded: splits NOT comparable to race benchmarks."
+     "text": "SAT 8 AUG. Moved off Thursday — no sled access Thursday, and stations 1-4 are SkiErg / Sled Push / Sled Pull / Burpee Broad Jump, so the session cannot run without sleds. Sled push and pull remain sandbag friction-overloaded (on since 3 Jul). Athlete-calibrated by feel across 12 races as comparable to race-carpet resistance — splits are directionally usable across sessions, but not a numeric benchmark against race splits."
     },
     {
      "type": "note",
