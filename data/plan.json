@@ -1,5 +1,5 @@
 {
- "week": "w/c 3 Aug (confirmed 1 Aug — build week 2 post-deload, comeback week 5). THE WEEK IS THE TT: Monday 3 Aug 30-min time trial pins LTHR and LT pace, replacing the 5:30/km working estimate and the untested LTHR 174. Cal factor resets 101.7 → 100.0 before it. VO2max hills deliberately NOT this week — moved to w/c 10 Aug so the TT anchor stays clean (decided 1 Aug). Hills ramp: 6×30s (10 Aug) → 8×30s (17 Aug) → 8×30s hold (24 Aug) → out for the 31 Aug taper. Ankle exit moved right one week; 24 Aug holds rather than progressing to 45s because sharpen weeks don't introduce novel stimuli. Wall balls confirmed 6 kg race weight — app's stored 9 kg is stale. Load ~262 vs 224 last week (+17%, on the ceiling). Run volume 26.5 km vs ~25 (+6%) — the bike days are doing that work. Tenerife 4 Sep. Remaining: 10 Aug build 3, 17 Aug build 4, 24 Aug sharpen, 31 Aug merged deload+taper.",
+ "week": "w/c 3 Aug (confirmed 1 Aug — build week 2 post-deload, comeback week 5). THE WEEK IS THE TT: Monday 3 Aug 30-min time trial pins LTHR and LT pace, replacing the 5:30/km working estimate and the untested LTHR 174. Cal factor resets 101.7 → 100.0 before it. VO2max hills deliberately NOT this week — moved to w/c 10 Aug so the TT anchor stays clean (decided 1 Aug). Hills ramp: 6×30s (10 Aug) → 8×30s (17 Aug) → 8×30s hold (24 Aug) → out for the 31 Aug taper. Ankle exit moved right one week; 24 Aug holds rather than progressing to 45s because sharpen weeks don't introduce novel stimuli. Wall balls confirmed 6 kg race weight — app's stored 9 kg is stale. Load ~262 vs 224 last week (+17%, on the ceiling). Run volume 26.5 km vs ~25 (+6%) — the bike days are doing that work. Tenerife 4 Sep. RESHUFFLED 4 Aug (two changes): (1) Wednesday unavailable — chain moved off Wed, easy run Thu→Fri, Saturday's easy bike dropped. (2) Gym availability — race sim and compound chain swapped, so sim is Thu 6 Aug and chain is Sat 8 Aug. Consequence: the 90% chain step now falls on the more fatigued day AND in the slot flagged as availability-constrained. 48h preserved between the two hard sessions, run volume unchanged at 26.5 km, load unchanged bar the lost bike. TT completed 3 Aug (5.71 km / 30:00, avg HR 173) — LTHR to be pinned from the .fit file. Remaining: 10 Aug build 3, 17 Aug build 4, 24 Aug sharpen, 31 Aug merged deload+taper.",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -635,115 +635,16 @@
    ]
   },
   "2026-08-05": {
-   "title": "Compound chain — stations 5-8, race weight, 90% volume",
-   "rpe": "7-8",
+   "title": "Off — optional easy bike",
+   "rpe": "0-2",
    "blocks": [
     {
-     "type": "routine",
-     "ref": "prerun"
-    },
-    {
      "type": "note",
-     "text": "Step up from 75% on 29 Jul. Runs stay at 1 km — they're already race spec, so 90% scales the STATIONS only. Run pace held flat: pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
-    },
-    {
-     "type": "note",
-     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session — effort and symptom as separate numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom climbs progressively across the three, stop and log it — that's the signal 90% was too early and we hold."
-    },
-    {
-     "type": "note",
-     "text": "STANDING METRICS: transition time delta, and run-1 to run-4 HR delta at identical pace. The HR ratchet is a cleaner progression read than station times."
-    },
-    {
-     "type": "step",
-     "label": "Run — in",
-     "detail": "1 km controlled, not race pace",
-     "secs": 360
-    },
-    {
-     "type": "step",
-     "label": "Row",
-     "detail": "900m steady, seated throughout. Cardiff rate ~4:35.",
-     "secs": 275,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Run 6 spot",
-     "detail": "1 km controlled — where London cramping started",
-     "secs": 360
-    },
-    {
-     "type": "step",
-     "label": "Farmers Carry — 2×24 kg",
-     "detail": "180m, arms extended per standard. Cardiff rate ~1:46. SPINAL RPE CHECK NOW — effort + symptom, separate.",
-     "secs": 106,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "Run 7 spot",
-     "detail": "1 km controlled",
-     "secs": 360
-    },
-    {
-     "type": "step",
-     "label": "Sandbag Lunge — 20 kg",
-     "detail": "90m, trailing knee to ground, stand tall between reps, no shuffles. Cardiff rate ~3:57. SPINAL RPE CHECK NOW.",
-     "secs": 237,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "Run 8 spot",
-     "detail": "1 km controlled — where London cramping fully hit",
-     "secs": 360
-    },
-    {
-     "type": "step",
-     "label": "Wall Balls — 6 kg",
-     "detail": "90 reps, full squat hips below knees, 3.00m target. RACE WEIGHT 6kg — app has 9kg stored, ignore it. Cardiff rate ~6:03. SPINAL RPE CHECK NOW.",
-     "secs": 363,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "Cool down",
-     "detail": "10 min easy",
-     "secs": 600
+     "text": "CHANGED 4 Aug: the compound chain moved to Thursday 6 Aug — Wednesday unavailable. Nothing owed today. If a 20-30 min window appears, easy bike HR under 140, off feet. If it doesn't, take the rest — the chain lands on fresher legs tomorrow either way and the week's run volume is unchanged."
     }
    ]
   },
   "2026-08-06": {
-   "title": "Easy run — 25 min",
-   "rpe": "3-4",
-   "blocks": [
-    {
-     "type": "routine",
-     "ref": "prerun"
-    },
-    {
-     "type": "note",
-     "text": "Genuinely easy, HR ≤148. Sandwiched between the chain and Friday's race sim — this is a recovery run, not a session. Log as a RUN activity, not HIIT."
-    },
-    {
-     "type": "step",
-     "label": "Easy run",
-     "detail": "25 min, HR ≤148",
-     "secs": 1500
-    },
-    {
-     "type": "step",
-     "label": "Strides ×4",
-     "detail": "20s each, relaxed, full recovery. Absent three weeks — log them as a run so they're visible.",
-     "secs": 240
-    }
-   ]
-  },
-  "2026-08-07": {
    "title": "Race sim — stations 1-4 (front half)",
    "rpe": "8",
    "blocks": [
@@ -753,7 +654,7 @@
     },
     {
      "type": "note",
-     "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h — no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Repeat of 31 Jul structure — holding, not extending, because the TT and the chain are both progressions this week already."
+     "text": "MOVED to Thursday 6 Aug (gym availability). Unchanged content — repeat of 31 Jul structure. Runs at 10.6 km/h, stations attacked. Sled push and pull remain sandbag-overloaded, so splits are NOT comparable to race benchmarks."
     },
     {
      "type": "note",
@@ -839,13 +740,116 @@
     }
    ]
   },
-  "2026-08-08": {
-   "title": "Easy bike — 30 min",
-   "rpe": "2-3",
+  "2026-08-07": {
+   "title": "Easy run — 25 min",
+   "rpe": "3-4",
    "blocks": [
     {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
      "type": "note",
-     "text": "30 min easy bike, HR under 140. Off feet by design — keeps the week's run volume at +6% on last week rather than +18%. With a confirmed annular tear, impact volume is the constraint that binds before load does."
+     "text": "Genuinely easy, HR ≤148. MOVED from Thursday. Sits between the chain and Saturday's race sim — this is a recovery run, not a session. Log as a RUN activity, not HIIT."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "25 min, HR ≤148",
+     "secs": 1500
+    },
+    {
+     "type": "step",
+     "label": "Strides ×4",
+     "detail": "20s each, relaxed, full recovery. Absent three weeks — log them as a run so they're visible.",
+     "secs": 240
+    }
+   ]
+  },
+  "2026-08-08": {
+   "title": "Compound chain — stations 5-8, race weight, 90% volume",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "MOVED to Saturday 8 Aug (gym availability). Still the 90% step from 75% on 29 Jul, unscaled. NOTE: this now lands on the more fatigued end of the week rather than on fresh legs. Spinal RPE checkpoints after Farmers Carry, Sandbag Lunge and Wall Balls matter more here than they did on a Thursday slot — if symptom RPE climbs, cut volume in-session rather than completing 90% for the sake of the number. Effort and symptom logged as separate figures."
+    },
+    {
+     "type": "note",
+     "text": "Step up from 75% on 29 Jul. Runs stay at 1 km — they're already race spec, so 90% scales the STATIONS only. Run pace held flat: pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
+    },
+    {
+     "type": "note",
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session — effort and symptom as separate numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom climbs progressively across the three, stop and log it — that's the signal 90% was too early and we hold."
+    },
+    {
+     "type": "note",
+     "text": "STANDING METRICS: transition time delta, and run-1 to run-4 HR delta at identical pace. The HR ratchet is a cleaner progression read than station times."
+    },
+    {
+     "type": "step",
+     "label": "Run — in",
+     "detail": "1 km controlled, not race pace",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Row",
+     "detail": "900m steady, seated throughout. Cardiff rate ~4:35.",
+     "secs": 275,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6 spot",
+     "detail": "1 km controlled — where London cramping started",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Farmers Carry — 2×24 kg",
+     "detail": "180m, arms extended per standard. Cardiff rate ~1:46. SPINAL RPE CHECK NOW — effort + symptom, separate.",
+     "secs": 106,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7 spot",
+     "detail": "1 km controlled",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Sandbag Lunge — 20 kg",
+     "detail": "90m, trailing knee to ground, stand tall between reps, no shuffles. Cardiff rate ~3:57. SPINAL RPE CHECK NOW.",
+     "secs": 237,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 8 spot",
+     "detail": "1 km controlled — where London cramping fully hit",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls — 6 kg",
+     "detail": "90 reps, full squat hips below knees, 3.00m target. RACE WEIGHT 6kg — app has 9kg stored, ignore it. Cardiff rate ~6:03. SPINAL RPE CHECK NOW.",
+     "secs": 363,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
     }
    ]
   },
