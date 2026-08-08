@@ -1,0 +1,101 @@
+{
+ "date": "2026-08-08",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-08-08:14",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786178482347
+  },
+  {
+   "key": "2026-08-08:15",
+   "label": "Strides ×3",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786178483129
+  },
+  {
+   "key": "2026-08-08:17",
+   "label": "Run 1",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786178689518
+  },
+  {
+   "key": "2026-08-08:18",
+   "label": "SkiErg",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1786178890551
+  },
+  {
+   "key": "2026-08-08:19",
+   "label": "Run 2",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786179085855
+  },
+  {
+   "key": "2026-08-08:20",
+   "label": "Sled Push — 152 kg",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1786179281138
+  },
+  {
+   "key": "2026-08-08:21",
+   "label": "Run 3",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786179532482
+  },
+  {
+   "key": "2026-08-08:22",
+   "label": "Sled Pull — 103 kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1786179738502
+  },
+  {
+   "key": "2026-08-08:23",
+   "label": "Run 4",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786179933798
+  },
+  {
+   "key": "2026-08-08:24",
+   "label": "Burpee Broad Jumps",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1786180129093
+  },
+  {
+   "key": "2026-08-08:25",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786180642812
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-08-08T09:17:32.515Z",
+ "synced": false
+}
