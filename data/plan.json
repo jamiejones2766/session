@@ -1,5 +1,5 @@
 {
- "week": "Build week 3 of the Tenerife phase. RESHUFFLED 6 Aug: Wednesday lost (unavailable) — compound chain moved Wed->Thu 6 Aug; easy run Thu->Fri 7 Aug; race sim moved to Sat 8 Aug because there is no sled access on Thursday and stations 1-4 require sleds; Saturday's easy bike dropped. 48h between the two hard sessions preserved. Run volume unchanged at ~26.5 km; net loss for the week is the 30-min easy bike only. TT completed 3 Aug (5.71 km / 30:00). LTHR from mins 10-30 = 178 bpm (previous working figure 174 is superseded). Remaining: 10 Aug build 3 with VO2max hills starting (6x30s), 17 Aug build 4, 24 Aug sharpen, 31 Aug combined deload+taper into Tenerife 4 Sep. SLED OVERLOAD (logged 6 Aug): sandbag friction overload added to sled push and pull on 3 Jul 2026, sandbag mass 10 kg. Calibrated by feel — JJ's judgement across 12 races is that overloaded gym sled ≈ race sled on competition carpet. Sled splits from 3 Jul onward are comparable session-to-session and to race feel, but were NOT measured against a race sled; treat as indicative, not a benchmark. Remove or re-record before any split comparison is used as evidence.",
+ "week": "WEEK OF 10-16 AUG 2026 — Build week 4 of the Tenerife phase (renumbered: the previous file labelled BOTH w/c 3 Aug and w/c 10 Aug as 'build 3'. w/c 3 Aug = build 3, this week = build 4, w/c 17 Aug = build 5, w/c 24 Aug = sharpen, w/c 31 Aug = combined deload+taper into Tenerife 4 Sep). FILE REPAIR 8 Aug: the previous plan.json was truncated mid-'routines' (two unclosed braces, no root close) and would not parse. Repaired and re-issued. LOAD TARGET ~262 against a ~278 ceiling (15% on last week's ~242). Structure: hill sprints Mon, compound chain Wed at 100%, easy run Thu, off-feet Fri, race sim Sat, long easy Sun. Tuesday's bike is DROPPED — Friday's off-feet session replaces it on a better-placed day (48h after the chain, and low enough intensity to sit 24h before the sim). HILLS DISPLACE THRESHOLD, they do not stack — three quality touches is the ceiling at CTL 25.7. OPEN ACTION (do before Monday): athletedata still holds run_cp_watts 237 and threshold pace 343 s/km (5:43). The 3 Aug TT gave CP 261 and 5:15/km. Every run since 3 Aug has been scored ~10% too intense. Edit both fields, then verify via derived_metrics.basis on the next run rather than trusting the UI — this field has decoupled from the IF engine before. SLEEP: debt 129 min and climbing (51 -> 129 over 12 days). No HOLD trigger (no two consecutive sub-6h nights) but it is the reason Tuesday is off rather than a bike. 8 AUG SIM READ: runs 5:28 / 5:39 / 5:44 / 5:38, HR 146/158/162/162, max HR 169 vs LTHR 178, zero time in Z5, watch RPE 4 against a planned 8. Pacing discipline confirmed; recovery capability NOT tested because the SkiErg never created a debt to recover from. Run 1 started at 10.98 against a brief that said 10.8.",
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -876,6 +876,380 @@
      "secs": 2400
     }
    ]
+  },
+  "2026-08-10": {
+   "title": "Hill sprints — block session 1 of 4",
+   "rpe": "8 on the reps, 4 for the session",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "MON 10 AUG. First session of the hill block. This DISPLACES the threshold session, it does not stack on top of it — the week already carries the compound chain and the race sim, and three quality touches is the ceiling at CTL 25.7."
+    },
+    {
+     "type": "note",
+     "text": "PURPOSE: tissue priming and neuromuscular power. This is NOT a VO2max session and should not be run as one — genuine VO2max volume lands in the post-Tenerife Birmingham build. Reps are ~95% effort, not maximal. If you finish the set feeling you could have done four more, that is the correct outcome."
+    },
+    {
+     "type": "note",
+     "text": "SPINE: hills are spine-neutral — no loaded flexion, no station checkpoints needed. Form cues are still spinal: LEAN FROM THE ANKLES NOT THE WAIST, ribcage stacked over pelvis, eyes up the hill not at your feet. Log anything lumbar felt on the walk-backs as free text."
+    },
+    {
+     "type": "note",
+     "text": "HARD STOP RULES — any one of these ends the set on the spot, no negotiation: (1) ankle or Achilles pain of any kind, (2) power decay >10% below rep 1, (3) cadence collapse. Six reps is the CEILING this week, not a minimum. Progression across the block runs 6x30s -> 8x45s; there is no benefit to arriving there early."
+    },
+    {
+     "type": "note",
+     "text": "HILL: 4-6% gradient, ~150-200m of usable run-up. Walk-back recovery must be FULL — 2:30-3:00, and if you are still breathing hard, wait. Incomplete recovery turns this into a lactate session, which is exactly what it must not be."
+    },
+    {
+     "type": "step",
+     "label": "Easy jog to the hill",
+     "detail": "15 min, HR <=148. Flat, conversational.",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "A-skips",
+     "detail": "2 x 20m. Tall posture, quick ground contact.",
+     "secs": 90
+    },
+    {
+     "type": "step",
+     "label": "High knees",
+     "detail": "2 x 20m. Cadence over height.",
+     "secs": 90
+    },
+    {
+     "type": "step",
+     "label": "Bounding",
+     "detail": "2 x 20m. Drive from the ankle, land under the hip.",
+     "secs": 90
+    },
+    {
+     "type": "step",
+     "label": "Hill build-ups x3",
+     "detail": "3 x 15s on the hill @ ~85%, walk down between. These are the rehearsal — if the form cues fall apart here, do not start the main set.",
+     "secs": 300
+    },
+    {
+     "type": "interval",
+     "work": 30,
+     "rest": 165,
+     "rounds": 6,
+     "label": "6 x 30s hill sprints"
+    },
+    {
+     "type": "step",
+     "label": "Rep 1",
+     "detail": "30s @ ~95%. This rep sets the benchmark — everything after is measured against it. Do not make it a maximal.",
+     "secs": 30,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Walk down",
+     "detail": "2:30-3:00. Full recovery. Log any lumbar sensation here.",
+     "secs": 165
+    },
+    {
+     "type": "step",
+     "label": "Reps 2-6",
+     "detail": "Same effort, same form. Watch for cadence collapse and for the lean drifting from ankles to waist — that is the fatigue tell and the stop signal.",
+     "secs": 975,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Easy jog back",
+     "detail": "12 min, HR <=148.",
+     "secs": 720
+    },
+    {
+     "type": "note",
+     "text": "LOG: number of reps completed, whether you stopped early and why, peak power on rep 1 vs rep 6, and any ankle or lumbar sensation. The rep count is the progression variable for the rest of the block."
+    }
+   ]
+  },
+  "2026-08-11": {
+   "title": "Off",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 11 AUG. Fully off. The bike that sat here has been dropped and replaced by Friday's off-feet session, which is better placed (48h after the compound chain, low enough to sit 24h before the sim). Sleep debt is at 129 min and rising — this day is doing recovery work, not nothing."
+    },
+    {
+     "type": "note",
+     "text": "Optional: 15-20 min mobility, spine-neutral only. No standing toe touches, no seated forward folds, no supine knees-to-chest."
+    }
+   ]
+  },
+  "2026-08-12": {
+   "title": "Compound chain — stations 5-8, race weight, 100% volume",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "WED 12 AUG. Step from 90% (6 Aug) to 100%. This is the LAST step available before Tenerife — after this the week structure goes build 5, sharpen, taper. 90% on 6 Aug produced zero spinal signal at all three checkpoints, which is the evidence this step is earned."
+    },
+    {
+     "type": "note",
+     "text": "Runs stay at 1 km and stay CONTROLLED — they are already race spec, so 100% scales the STATIONS only. Run pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
+    },
+    {
+     "type": "note",
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls — not end of session — effort and symptom as SEPARATE numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom RPE climbs progressively across the three, cut volume in-session. There is no cost to stopping at 90% again — the step is optional, the rule is not."
+    },
+    {
+     "type": "note",
+     "text": "STANDING METRICS: transition time delta, and run-1 to run-4 HR delta at identical pace. The HR ratchet is a cleaner progression read than station times."
+    },
+    {
+     "type": "note",
+     "text": "STATION EXPOSURE: log minutes at race weight per station at the end. This is the number that tracks station progression — CTL cannot see it, because RSS scores station work at ~0W."
+    },
+    {
+     "type": "step",
+     "label": "Run — in",
+     "detail": "1 km controlled, ~6:00, not race pace",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Row — 1000m",
+     "detail": "Full race distance (up from 900m). Steady, seated throughout. Target ~5:05. Cardiff race rate was 4:35 — do NOT chase it here, this is the front of a chain not a standalone.",
+     "secs": 305,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run",
+     "detail": "1 km controlled, ~6:00",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Farmers Carry — 200m @ 2x24kg",
+     "detail": "Full race distance. Arms extended. SPINAL CHECKPOINT — log effort and symptom immediately on finishing, before you start the run.",
+     "secs": 150,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run",
+     "detail": "1 km controlled, ~6:00",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Sandbag Lunge — 100m @ 20kg",
+     "detail": "Full race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT — log immediately. This is the highest-risk station on the chain.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run",
+     "detail": "1 km controlled, ~6:00",
+     "secs": 360
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls — 100 @ 6kg",
+     "detail": "Full race distance (up from 90). Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT — log immediately. Break it into sets before form goes, not after.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-13": {
+   "title": "Easy run — 30 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "THU 13 AUG. Flat, no strides — Monday's hills already took the neuromuscular slot this week and the legs are 24h off the chain. HR <=148, and if HR drifts above that at conversational effort, walk it back rather than pushing through."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "30 min, HR <=148",
+     "secs": 1800
+    }
+   ]
+  },
+  "2026-08-14": {
+   "title": "Off-feet aerobic — 35 min",
+   "rpe": "2-3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 14 AUG. Replaces Tuesday's bike. SkiErg or Wattbike, athlete's choice. HR <=130, strictly conversational — this is aerobic volume with no impact and no spinal load, sitting 48h after the chain and 24h before the sim. If it feels like a session, it is too hard."
+    },
+    {
+     "type": "note",
+     "text": "If you take the SkiErg: this does NOT count as SkiErg practice. Damper wherever is comfortable, easy rate, no pacing intent. Race-specific ski work is Saturday's job."
+    },
+    {
+     "type": "step",
+     "label": "Off-feet aerobic",
+     "detail": "35 min steady, HR <=130. Cadence 85-90 if biking.",
+     "secs": 2100
+    }
+   ]
+  },
+  "2026-08-15": {
+   "title": "Race sim — stations 1-4 (front half), blocks extended",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "SAT 15 AUG. Sled access day. Sled push and pull remain sandbag friction-overloaded (on since 3 Jul) — splits are comparable to 8 Aug and to each other, but are NOT a numeric benchmark against race splits."
+    },
+    {
+     "type": "note",
+     "text": "CHANGE FROM 8 AUG: blocks extended 3:00 -> 4:00 for both runs and stations. Adds ~8 min total. Reason: the 8 Aug sim topped out at HR 169 against LTHR 178, with ZERO time in Z5 and a watch RPE of 4 against a planned 8. It confirmed pacing discipline but never tested recovery capability, because the SkiErg never created a debt to recover from."
+    },
+    {
+     "type": "note",
+     "text": "THE ONE THING TO CHANGE: the SkiErg. Go one notch harder — target HR into the LOW 170s by the end of the ski, then hold run pace off it. That is the actual rehearsal of the Birmingham mechanism. Low 170s, not high 170s: the point is to arrive at the sled with a manageable debt and prove you can clear it, not to reproduce the failure."
+    },
+    {
+     "type": "note",
+     "text": "RUN PACE: 5:25-5:35/km = 10.8-11.1 km/h, ~248-256W on Stryd at CP 261 (95-98%). START RUN 1 AT 10.8. On 8 Aug you started at 10.98 and the two slowest runs followed — 16s spread across four when the stated test was four flat. Four flat 5:33s beats a 5:28 followed by a 5:44. Cal factor still 101.7 so Stryd reads ~1.7% long; steer by the treadmill setting or by power, never by Stryd pace."
+    },
+    {
+     "type": "note",
+     "text": "STATION EXPOSURE: 8 Aug logged SkiErg 3:10 / Sled Push 2:52 / Sled Pull 3:06 / BBJ 3:00 = 12:08 total. This week should read ~16:00. Log it — athletedata scores these minutes at ~0W and cannot see them."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Strides x3",
+     "detail": "30s each, 60s rest between"
+    },
+    {
+     "type": "interval",
+     "work": 240,
+     "rest": 240,
+     "rounds": 4,
+     "label": "32-min alternation clock"
+    },
+    {
+     "type": "step",
+     "label": "Run 1",
+     "detail": "4:00 @ 10.8 (5:33/km). Slow end. Do not bank time.",
+     "secs": 240
+    },
+    {
+     "type": "step",
+     "label": "SkiErg",
+     "detail": "4:00 — one notch harder than 8 Aug. HR into the low 170s by the finish.",
+     "secs": 240,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2",
+     "detail": "4:00 @ 10.8-11.1. The test rep: can you hold run 1 pace straight off a ski that actually cost you something?",
+     "secs": 240
+    },
+    {
+     "type": "step",
+     "label": "Sled Push — 152 kg",
+     "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
+     "secs": 240,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3",
+     "detail": "4:00 @ 10.8-11.1",
+     "secs": 240
+    },
+    {
+     "type": "step",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight. Standing in the box. SPINAL — honest RPE, effort and symptom separate.",
+     "secs": 240,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4",
+     "detail": "4:00 @ 10.8-11.1. Four flat splits is the win condition.",
+     "secs": 240
+    },
+    {
+     "type": "step",
+     "label": "Burpee Broad Jumps",
+     "detail": "4:00 continuous. Chest to ground, both feet take off and land together. SPINAL CHECKPOINT. Cheapest available race-time improvement — count reps and log the number.",
+     "secs": 240,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy — do the boring bit",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-08-16": {
+   "title": "Long easy run — 55 min",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "SUN 16 AUG. 55 min easy, HR <=148. Holds the week at ~262 against a ~278 ceiling. Weekly planning session after this one — bring the hill rep count, the three spinal checkpoint numbers from Wednesday, the four run splits from Saturday, and the station exposure totals."
+    },
+    {
+     "type": "note",
+     "text": "If Wednesday's chain produced a symptom RPE above 2 at any checkpoint, cut this to 40 min. Injury rules over load targets, every time."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "55 min, HR <=148",
+     "secs": 3300
+    }
+   ]
   }
  },
  "routines": {
@@ -951,3 +1325,5 @@
     "secs": 40
    }
   ]
+ }
+}
