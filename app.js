@@ -25,6 +25,7 @@ const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); retur
 let blockState = load("jj-block-state", SEED);
 let history = load("jj-sessions", []);
 let plan = expandRoutines(load("jj-plan", null));
+let planMeta = load("jj-plan-meta", { at: null, ok: null, why: "" });
 let cfg = load("jj-sync-cfg", { owner: "jamiejones2766", repo: "session", token: "" });
 let session = { date: new Date().toISOString().slice(0, 10), sets: [], rounds: [], steps: [], pauses: [], rpe: null, back: null, notes: "" };
 let tab = "today";
@@ -96,18 +97,43 @@ function expandRoutines(p) {
   return p;
 }
 
+/* ── plan freshness ──
+   The old fetchPlan swallowed every failure when silent=true, so a stale plan
+   and a current one looked identical on screen. Now every attempt records its
+   outcome in jj-plan-meta, the plan bar shows it, and a silent failure still
+   says so. ── */
+function planAge() {
+  if (!planMeta.at) return null;
+  const mins = Math.floor((Date.now() - planMeta.at) / 60000);
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  return `${Math.floor(hrs / 24)}d ago`;
+}
+
 /* ── plan fetch (raw, public repo — no token needed) ── */
 async function fetchPlan(silent) {
   try {
     const url = `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/main/data/plan.json?t=${Date.now()}`;
     const r = await fetch(url, { cache: "no-store" });
-    if (!r.ok) throw new Error(r.status);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
     plan = expandRoutines(await r.json());
     save("jj-plan", plan);
+    planMeta = { at: Date.now(), ok: true, why: "" };
+    save("jj-plan-meta", planMeta);
     if (!silent) toast("Plan updated");
     render();
   } catch (e) {
-    if (!silent) toast("No plan found in repo yet");
+    const why = e.message || "offline";
+    planMeta = { at: planMeta.at, ok: false, why };
+    save("jj-plan-meta", planMeta);
+    // Toast on silent failures too. Offline in a gym is exactly when you can
+    // end up running last week's session without knowing it.
+    toast(planMeta.at
+      ? `Plan not refreshed (${why}) — showing last pull`
+      : `No plan found in repo (${why})`);
+    render();
   }
 }
 
@@ -518,7 +544,12 @@ function vToday() {
         <span class="planline">Plan: ${esc(planOpen ? "this block" : wkShort)}</span>
       </button>
       ${planOpen ? `<p class="hint planbody">${esc(wk)}</p>` : ""}
-      <button class="link" onclick="A.refreshPlan()">refresh</button>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:2px">
+        <button class="link" onclick="A.refreshPlan()">refresh</button>
+        ${planMeta.ok === false
+          ? `<span style="font-size:11.5px;color:var(--danger)">⚠ not refreshed${planAge() ? ` · last pull ${planAge()}` : ""}</span>`
+          : `<span style="font-size:11.5px;color:var(--dim)">pulled ${planAge() || "—"}</span>`}
+      </div>
     </div>`
     : `<p class="hint">No plan loaded. <button class="link" onclick="A.refreshPlan()">Pull plan from repo</button> once data/plan.json exists.</p>`;
 
@@ -705,3 +736,11 @@ function render() {
 
 render();
 fetchPlan(true);
+
+/* A PWA resumed from the background never re-runs boot, so the line above
+   fires once and then never again. Re-pull when the app becomes visible,
+   throttled to 5 min so tab-flicking doesn't hammer raw.githubusercontent. */
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState !== "visible") return;
+  if (!planMeta.at || Date.now() - planMeta.at > 5 * 60 * 1000) fetchPlan(true);
+});
