@@ -1,0 +1,85 @@
+{
+ "date": "2026-08-12",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-08-12:17",
+   "label": "Run — in",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786553268554
+  },
+  {
+   "key": "2026-08-12:18",
+   "label": "Row — 1000m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1786553269349
+  },
+  {
+   "key": "2026-08-12:19",
+   "label": "Run",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786553272861
+  },
+  {
+   "key": "2026-08-12:20",
+   "label": "Farmers Carry — 200m @ 2x24kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1786553274166
+  },
+  {
+   "key": "2026-08-12:21",
+   "label": "Run",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786553277874
+  },
+  {
+   "key": "2026-08-12:22",
+   "label": "Sandbag Lunge — 100m @ 20kg",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1786553279350
+  },
+  {
+   "key": "2026-08-12:23",
+   "label": "Run",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786553283154
+  },
+  {
+   "key": "2026-08-12:24",
+   "label": "Wall Balls — 100 @ 6kg",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1786553284014
+  },
+  {
+   "key": "2026-08-12:25",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786553287710
+  }
+ ],
+ "pauses": [],
+ "rpe": 9,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-08-12T16:48:15.588Z",
+ "synced": false
+}
