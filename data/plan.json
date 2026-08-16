@@ -1,5 +1,33 @@
 {
- "week": "WEEK OF 10-16 AUG 2026 — Build week 4 of the Tenerife phase. REVISION 9 AUG (supersedes the 8 Aug repair). Four changes, all evidence-led. (1) HILLS DROPPED. The session as written was neuromuscular priming, not VO2 (95% effort, full walk-back, 'could have done four more' as the pass condition) — so dropping it costs nothing on VO2, and a 4-session block never fitted the remaining calendar (only 10/17/24 Aug are available, and 24 Aug is sharpen). Replaced by THRESHOLD, because the 3 Aug TT reset CP to 261 and pace to 5:15/km and NOT ONE threshold session has been run at the new anchor. Genuine VO2 work lands post-Tenerife in the Birmingham build — that decision stands. (2) RPE SOURCE ERROR CORRECTED. The previous week note recorded the 8 Aug sim at 'watch RPE 4 against a planned 8'. That was the Garmin workout_rpe field, which is unreliable for JJ. The PWA log — which is authoritative — recorded session RPE 7, with SkiErg 6 / Sled Push 7 / Sled Pull 8 sym 0 / BBJ 7 sym 0. The sim was mildly under, not wildly under, and Saturday is dosed accordingly: ONE notch on the ski, not two. (3) BIRMINGHAM MECHANISM REVISED. Race-file HR (chest strap, reliable) through the ski sequence: Run 1 avg 143.5 -> SkiErg avg 128.1 -> roxzone avg 120.8 -> Run 2 avg 150.8 at 5:03/km, IDENTICAL to run 1 -> Sled Push 5:14 of work (vs 2:59 Cardiff, 2:47 Glasgow) at HR 165.9/181 -> Run 3 onward pinned 178-182. HR went DOWN through the ski. SkiErg is upper-body dominant and non-weight-bearing, so it generated a lactate cost the cardiac trace could not see. THE SKI LOADED IT; RUN 2 AT UNCHANGED PACE IS THE DECISION THAT SPENT IT; THE SLED PUSH IS WHERE THE TIME WENT. The old 8 Aug brief told JJ to hold run 1 pace off the ski — that instruction rehearsed the failure and has been removed. (4) PEAK HR RETIRED AS A SIM METRIC. On 8 Aug the runs held 253-258W against CP 261 (97-99% of threshold power) and still topped out at HR 162, because a 3:00 block never lets HR arrive — the 3 Aug TT hit 186 at almost identical power over 30 continuous minutes. Peak HR in an alternating sim measures block length, not effort. Replaced by (a) ratchet SHAPE and (b) restart HR at the top of each run. LOAD TARGET ~262. Ceiling is 283, not 278 — last week's actual was 246.4, not the ~242 previously assumed. CTL 46 TARGET RETIRED: best sustained block on record is Aug-Sep 2025 at 296-345/wk, which produced CTL ~30. Realistic peak for this block is 34-38. Do not pad easy volume to chase a number. RUN VOLUME is the live gap — 21.4 km last week against an aerobic-engine limiter. Thu bumped 30->35 min and Sun 55->60 min; the real step is September/October. ATHLETEDATA: CP fix VERIFIED LIVE 9 Aug via derived_metrics.basis (run_cp_watts 261, threshold_pace 315 s/km). That action is CLOSED. Still open: revert the cycling FTP field from the 217W workaround to ~210W. SLEEP: debt 119 min (peaked 134 on 8 Aug), 42-day average 6.7h against a 7.27h need. No HOLD trigger. This is the reason Tuesday stays fully off, and it is the veto on next week's load step. NEXT WEEK PROVISIONAL (w/c 17 Aug, build 5): load ~285, capped at 270 if sleep debt is still above 100 min on Sunday. Threshold 3×2km Mon; chain at 100% + 80m BBJ block Wed (BBJ is the new variable — volume is already at race spec, there is nothing left to add); FULL-FORMAT SIM Sat, all 8 stations, 8×500m runs, SkiErg at full 1000m. That Saturday session is the first time the race has been trained as one continuous thing rather than two halves. Running lands ~30 km, up from 21.4.",
+ "week": "WEEK OF 17-23 AUG 2026 - Build week 4 of the Tenerife phase. REVISION 16 AUG (supersedes the 9 Aug draft of this week). WHY IT CHANGED: the 10-16 Aug week landed at load 311 against a 262 target and a 283 ceiling - a 26% week-on-week step, outside both the 15% default and the 20% conditional. Nothing broke (injury index 0, HRV 70 at z +1.06, RHR 44, sleep debt down 119 -> 84, monotony 1.72 -> 1.23), but ACWR is sitting on 1.30, which is the HOLD line, and Saturday is the biggest single session of the block. So this week does NOT ramp. TARGET ~335, CEILING 357 (15% of 311). The 285 figure written on 9 Aug is dead - it was set against a 262 assumption and is now below what was actually done. THREE CHANGES, all restoring decisions agreed on 12 Aug that this file had drifted from. (1) WEDNESDAY BACK TO 80%, BBJ BLOCK REMOVED. The 12 Aug plan called for 80%; the file said 100% plus a new 80m BBJ block. Every station has been at race weight since 3 Jul, so a second 100% exposure proves nothing new, and Saturday covers all eight stations anyway. In a week containing a full-format sim, Wednesday is partly redundant. Saves ~33 load. (2) BBJ DIAGNOSTIC MOVED TO SATURDAY. Filming a 60-second block was agreed on 12 Aug. It belongs inside the sim, under fatigue and in sequence, not fresh on a Wednesday. Better data, no extra load. (3) FRIDAY OFF-FEET DROPPED TO FULL REST. 40 min at HR<=130 buys ~22 load of low-value aerobic volume the day before the block's key session. Freshness is worth more. COMPOSITION IS THE REAL POINT. Last week bought +65 load for +1.6 km of running (21.4 -> 23.0). Friday 14 Aug's easy run - moved there by the agreed Thu/Fri swap - did not happen, and that is where the running went. The aerobic engine is the limiter; load that does not become running km is not buying the thing that is short. This week targets ~28 km. Thursday's easy run is protected as a RUN, not a bike. HOLD TRIGGERS UNCHANGED and they outrank the load target: ACWR >1.3, injury index >60, any spinal symptom RPE >2, two consecutive nights under 6h, ankle stop rule.",
+ "anchors": {
+  "set_on": "2026-08-16",
+  "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
+  "stryd_cp_watts": 261,
+  "threshold_pace_sec_per_km": 315,
+  "threshold_pace_display": "5:15/km",
+  "lthr_bpm": 178,
+  "easy_run_hr_cap_bpm": 148,
+  "stryd_cal_factor": 101.7,
+  "cycling_ftp_watts": 210,
+  "cycling_ftp_source": "user (217W workaround reverted - closed, do not re-raise)",
+  "superseded_do_not_quote": {
+   "cp_watts": [
+    217,
+    237,
+    245,
+    300
+   ],
+   "pace_per_km": [
+    "5:22",
+    "5:44",
+    "5:45",
+    "6:05"
+   ],
+   "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
+  },
+  "next_review": "After Tenerife (4 Sep 2026)"
+ },
  "days": {
   "2026-07-17": {
    "title": "Comp pacing — 36-min alternation",
@@ -1208,12 +1236,12 @@
    ]
   },
   "2026-08-16": {
-   "title": "Long easy run — 60 min",
+   "title": "Long easy run - 75 min (executed; plan said 60)",
    "rpe": "3-4",
    "blocks": [
     {
      "type": "note",
-     "text": "SUN 16 AUG. Bumped 55 -> 60 min. Holds the week at ~262 against a 283 ceiling. Weekly planning session after this one — bring the five threshold splits and power figures from Monday, the three spinal checkpoint numbers from Wednesday, the sled push split plus the four restart HRs from Saturday, and the station exposure totals."
+     "text": "SUN 16 AUG - AS EXECUTED. Ran 75 min / 11.54 km at 6:30/km, HR 147 avg (149 max on any lap, cap held), 220W, RPE 4, back fine. Plan said 60 min; this file was not updated at the time. Logged here so the week's load reconciles: 73.2, week total 311."
     },
     {
      "type": "note",
@@ -1222,8 +1250,8 @@
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "60 min, HR <=148",
-     "secs": 3600
+     "detail": "75 min, HR <=148 (executed)",
+     "secs": 4500
     }
    ]
   },
@@ -1301,16 +1329,16 @@
    ]
   },
   "2026-08-19": {
-   "title": "Compound chain — stations 5-8, 100% volume + BBJ block",
-   "rpe": "8",
+   "title": "Compound chain - stations 5-8, 80% volume",
+   "rpe": "7",
    "blocks": [
     {
      "type": "note",
-     "text": "WED 19 AUG. Second exposure at 100%, NOT a further volume step. Volume is already at race spec, so there is nothing left to add there — the adaptation now comes from repeating it, and from one new variable."
+     "text": "WED 19 AUG. 80% VOLUME, NOT 100%. Restores the 12 Aug decision - this file had drifted to 100% plus a new BBJ block. Every station has been at race weight since 3 Jul and 12 Aug already ran the chain at 100%, so a second 100% exposure adds exposure, not adaptation. Saturday's sim covers all eight stations in race order; in that week this session's job is to keep the pattern warm, not to add load."
     },
     {
      "type": "note",
-     "text": "THE NEW VARIABLE IS THE BBJ BLOCK. 80m of burpee broad jumps, continuous, in the fatigued state, after wall balls. BBJ extrapolates to ~6:19/80m at race distance — the weakest station relative to race history, with no equipment confounds. Cheapest available minute of race time. It adds no spinal flexion load beyond what wall balls already did."
+     "text": "BBJ BLOCK REMOVED FROM HERE. The 60-second film agreed on 12 Aug moves to Saturday's sim, where BBJ happens under fatigue and in sequence. Fresh BBJ on a Wednesday would have measured something you never do in a race."
     },
     {
      "type": "note",
@@ -1332,9 +1360,9 @@
     },
     {
      "type": "step",
-     "label": "Row — 1000m",
-     "detail": "Full race distance. Steady, seated throughout. Target ~5:05.",
-     "secs": 305,
+     "label": "Row - 800m",
+     "detail": "80% of race distance. Steady, seated throughout. Target ~4:04.",
+     "secs": 244,
      "rpe": true
     },
     {
@@ -1345,9 +1373,9 @@
     },
     {
      "type": "step",
-     "label": "Farmers Carry — 200m @ 2×24kg",
-     "detail": "Full race distance. Arms extended. SPINAL CHECKPOINT — log before you start the run.",
-     "secs": 150,
+     "label": "Farmers Carry - 160m @ 2x24kg",
+     "detail": "80% of race distance. Arms extended. SPINAL CHECKPOINT - log before you start the run.",
+     "secs": 120,
      "rpe": true
     },
     {
@@ -1358,9 +1386,9 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge — 100m @ 20kg",
-     "detail": "Full race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT.",
-     "secs": 300,
+     "label": "Sandbag Lunge - 80m @ 20kg",
+     "detail": "80% of race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT.",
+     "secs": 240,
      "rpe": true
     },
     {
@@ -1371,16 +1399,9 @@
     },
     {
      "type": "step",
-     "label": "Wall Balls — 100 @ 6kg",
-     "detail": "Full race distance. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT. Break into sets before form goes, not after.",
-     "secs": 420,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "BBJ block — 80m",
-     "detail": "NEW. Continuous, in the fatigued state. Chest to ground, both feet take off and land together. TIME IT and count reps — this is the baseline the rest of the block measures against.",
-     "secs": 380,
+     "label": "Wall Balls - 80 @ 6kg",
+     "detail": "80% of race distance. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT. Break into sets before form goes, not after.",
+     "secs": 336,
      "rpe": true
     },
     {
@@ -1391,7 +1412,7 @@
     },
     {
      "type": "note",
-     "text": "LOG: minutes at race weight per station, plus the 80m BBJ time and rep count."
+     "text": "LOG: minutes at race weight per station, three spinal checkpoint pairs (effort and symptom separate), and the run-1 to run-4 HR delta for comparison against 12 Aug."
     }
    ]
   },
@@ -1412,22 +1433,12 @@
    ]
   },
   "2026-08-21": {
-   "title": "Off-feet aerobic — 40 min",
-   "rpe": "2-3",
+   "title": "Rest",
+   "rpe": "0",
    "blocks": [
     {
      "type": "note",
-     "text": "FRI 21 AUG. SkiErg or Wattbike, your choice. HR <=130, strictly conversational — aerobic volume with no impact and no spinal load, 48h after the chain and 24h before the sim. If it feels like a session, it is too hard."
-    },
-    {
-     "type": "note",
-     "text": "If you take the SkiErg this does NOT count as ski practice. Damper wherever is comfortable, easy rate, no pacing intent."
-    },
-    {
-     "type": "step",
-     "label": "Off-feet aerobic",
-     "detail": "40 min steady, HR <=130. Cadence 85-90 if biking.",
-     "secs": 2400
+     "text": "FRI 21 AUG. FULL REST - changed 16 Aug from 40 min off-feet. Saturday is the biggest single session of the block and 40 min at HR<=130 buys ~22 load of aerobic volume you do not need this week. Freshness into the sim is worth more than the volume. Optional 15-20 min mobility, spine-neutral only."
     }
    ]
   },
@@ -1437,7 +1448,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 22 AUG. THE SESSION YOU HAVE NEVER DONE. In six weeks of station work the race has been trained as two halves that never meet: stations 1-4 in the sims, 5-8 in the chain. Birmingham's collapse started in the front half and propagated into the back half. This tests the join."
+     "text": "SAT 22 AUG. THE SESSION YOU HAVE NEVER DONE. In seven weeks of station work since 2 Jul the race has been trained as two halves that never meet: stations 1-4 in the sims, 5-8 in the chain. Birmingham's collapse started in the front half and propagated into the back half. This tests the join."
     },
     {
      "type": "note",
@@ -1454,6 +1465,10 @@
     {
      "type": "note",
      "text": "SUCCESS CRITERIA: (1) completion without a symptom stop; (2) run 8 within 15 seconds of run 1; (3) the full 1000m ski split, for calibration; (4) where the HR trace plateaus — that number is your real race ceiling, and it is the one metric the 3:00 and 4:00 block sims could never produce."
+    },
+    {
+     "type": "note",
+     "text": "BBJ DIAGNOSTIC - moved here from Wednesday. Film a continuous 60-second block from the side at the Burpee Broad Jump station, phone on the floor, whole body in frame. Under fatigue and in race sequence, which is the only state worth measuring. Looking for: chest-to-floor consistency, whether the feet are landing together, and where in the 60 seconds the jump distance starts shrinking."
     },
     {
      "type": "note",
@@ -1513,7 +1528,7 @@
     {
      "type": "step",
      "label": "Burpee Broad Jumps — 40m",
-     "detail": "Half distance. Chest to ground, feet together on take-off and landing.",
+     "detail": "Half distance. Chest to ground, feet together on take-off and landing. FILM 60 SECONDS OF THIS.",
      "secs": 190,
      "rpe": true
     },
@@ -1587,11 +1602,11 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SUN 23 AUG. Longest of the block. HR <=148. Cut to 45 min if Saturday produced a symptom RPE above 2 at any checkpoint."
+     "text": "SUN 23 AUG. Longest of the block. HR <=148. Cut to 45 min if Saturday produced a symptom RPE above 2 at any checkpoint. RUN THE SOUTH RIBBLE ROUTE - the same loop as 12 Jul and 16 Aug. That makes it a three-point, six-week arc for the engine-builder case study instead of a five-week before/after. Log temperature and humidity at the start."
     },
     {
      "type": "note",
-     "text": "Weekly planning session after this. THREE OPEN DECISIONS: (1) whether anything from the dropped hill block carries into sharpen week or waits for the post-Tenerife VO2 slot; (2) confirm the retired CTL 46 target and the 34-38 replacement band; (3) whether the sharpen-week sim runs at full 1 km runs — the only piece the sims have still never tested."
+     "text": "Weekly planning session after this. OPEN DECISIONS: (1) whether anything from the dropped hill block carries into sharpen week or waits for the post-Tenerife VO2 slot; (2) whether the sharpen-week sim runs at full 1 km runs - the only piece the sims have still never tested; (3) whether the 148 easy cap is now conservative. NOT a decision to take off 16 Aug: that run was capped, hot (22C, dew point 15.4) and plateaued at 149 for six laps, which is as consistent with heat drift as with an aerobic ceiling. Wants a cool-morning uncapped run first. CLOSED, do not reopen: the CTL target. Locked 12 Aug at peak 39-41 on the athletedata scale by w/c 12 Oct, 43 as ceiling. The 34-38 band and the 46 figure are both dead."
     },
     {
      "type": "step",
