@@ -1,5 +1,5 @@
 {
- "week": "WEEK OF 17-23 AUG 2026 - Build week 4 of the Tenerife phase. REVISION 16 AUG (supersedes the 9 Aug draft of this week). WHY IT CHANGED: the 10-16 Aug week landed at load 311 against a 262 target and a 283 ceiling - a 26% week-on-week step, outside both the 15% default and the 20% conditional. Nothing broke (injury index 0, HRV 70 at z +1.06, RHR 44, sleep debt down 119 -> 84, monotony 1.72 -> 1.23), but ACWR is sitting on 1.30, which is the HOLD line, and Saturday is the biggest single session of the block. So this week does NOT ramp. TARGET ~335, CEILING 357 (15% of 311). The 285 figure written on 9 Aug is dead - it was set against a 262 assumption and is now below what was actually done. THREE CHANGES, all restoring decisions agreed on 12 Aug that this file had drifted from. (1) WEDNESDAY BACK TO 80%, BBJ BLOCK REMOVED. The 12 Aug plan called for 80%; the file said 100% plus a new 80m BBJ block. Every station has been at race weight since 3 Jul, so a second 100% exposure proves nothing new, and Saturday covers all eight stations anyway. In a week containing a full-format sim, Wednesday is partly redundant. Saves ~33 load. (2) BBJ DIAGNOSTIC MOVED TO SATURDAY. Filming a 60-second block was agreed on 12 Aug. It belongs inside the sim, under fatigue and in sequence, not fresh on a Wednesday. Better data, no extra load. (3) FRIDAY OFF-FEET DROPPED TO FULL REST. 40 min at HR<=130 buys ~22 load of low-value aerobic volume the day before the block's key session. Freshness is worth more. COMPOSITION IS THE REAL POINT. Last week bought +65 load for +1.6 km of running (21.4 -> 23.0). Friday 14 Aug's easy run - moved there by the agreed Thu/Fri swap - did not happen, and that is where the running went. The aerobic engine is the limiter; load that does not become running km is not buying the thing that is short. This week targets ~28 km. Thursday's easy run is protected as a RUN, not a bike. HOLD TRIGGERS UNCHANGED and they outrank the load target: ACWR >1.3, injury index >60, any spinal symptom RPE >2, two consecutive nights under 6h, ankle stop rule.",
+ "week": "WEEK OF 17-23 AUG 2026 - Build week 4 of the Tenerife phase. REVISION 16 AUG (supersedes the 9 Aug draft of this week). WHY IT CHANGED: the 10-16 Aug week landed at load 311 against a 262 target and a 283 ceiling - a 26% week-on-week step, outside both the 15% default and the 20% conditional. Nothing broke (injury index 0, HRV 70 at z +1.06, RHR 44, sleep debt down 119 -> 84, monotony 1.72 -> 1.23), but ACWR is sitting on 1.30, which is the HOLD line, and Saturday is the biggest single session of the block. TARGET ~355-360, CEILING 357 (15% of 311) - a full 15% ramp, taken deliberately. REVISED 16 AUG on athlete decision: Wednesday returns to 100%. The 285 figure written on 9 Aug is dead - it was set against a 262 assumption and is now below what was actually done. THREE CHANGES, all restoring decisions agreed on 12 Aug that this file had drifted from. (1) WEDNESDAY AT 100%, BBJ BLOCK REMOVED. The 80% proposal is withdrawn - the claim that Saturday made Wednesday redundant was wrong, because Saturday runs stations 5-8 at HALF distance and so supplies sequence, not volume. Wednesday is the last full-volume back-half exposure before Tenerife and the 12 Aug injury gate came back clean (sym 0 x3). The separate 80m BBJ block stays removed. (2) BBJ DIAGNOSTIC MOVED TO SATURDAY. Filming a 60-second block was agreed on 12 Aug. It belongs inside the sim, under fatigue and in sequence, not fresh on a Wednesday. Better data, no extra load. (3) FRIDAY OFF-FEET DROPPED TO FULL REST. 40 min at HR<=130 buys ~22 load of low-value aerobic volume the day before the block's key session. Freshness is worth more. COMPOSITION IS THE REAL POINT. Last week bought +65 load for +1.6 km of running (21.4 -> 23.0). Friday 14 Aug's easy run - moved there by the agreed Thu/Fri swap - did not happen, and that is where the running went. The aerobic engine is the limiter; load that does not become running km is not buying the thing that is short. This week targets ~28 km. Thursday's easy run is protected as a RUN, not a bike. HOLD TRIGGERS UNCHANGED and they outrank the load target: ACWR >1.3, injury index >60, any spinal symptom RPE >2, two consecutive nights under 6h, ankle stop rule. ACWR CONSEQUENCE, accepted in advance: a 15% ramp will likely push ACWR past 1.30 mid-week. Sharpen week absorbs it. The spinal symptom rule and the sleep gate are NOT relaxed by this decision.",
  "anchors": {
   "set_on": "2026-08-16",
   "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
@@ -1329,28 +1329,28 @@
    ]
   },
   "2026-08-19": {
-   "title": "Compound chain - stations 5-8, 80% volume",
-   "rpe": "7",
+   "title": "Compound chain - stations 5-8, race weight, 100% volume",
+   "rpe": "8",
    "blocks": [
     {
      "type": "note",
-     "text": "WED 19 AUG. 80% VOLUME, NOT 100%. Restores the 12 Aug decision - this file had drifted to 100% plus a new BBJ block. Every station has been at race weight since 3 Jul and 12 Aug already ran the chain at 100%, so a second 100% exposure adds exposure, not adaptation. Saturday's sim covers all eight stations in race order; in that week this session's job is to keep the pattern warm, not to add load."
+     "text": "WED 19 AUG. 100% VOLUME - athlete decision 16 Aug, taking both this and Saturday at full intensity. The case for it: 12 Aug at 100% returned sym 0 at all three spinal checkpoints, so the injury gate is clean; this is the LAST full-volume back-half exposure before Tenerife, because sharpen and taper follow; and Saturday's sim runs stations 5-8 at HALF distance, so it gives sequence, not volume - it does not replace this session."
     },
     {
      "type": "note",
-     "text": "BBJ BLOCK REMOVED FROM HERE. The 60-second film agreed on 12 Aug moves to Saturday's sim, where BBJ happens under fatigue and in sequence. Fresh BBJ on a Wednesday would have measured something you never do in a race."
+     "text": "WHAT THIS COSTS, stated up front. Week lands ~355-360 against 311 last week - a 15% ramp, right on the cap, not over it. ACWR will likely cross 1.30 mid-week, which is a HOLD trigger. That is a known and accepted consequence, not a surprise: sharpen week follows immediately and absorbs it. The trigger firing is NOT on its own a reason to stop - but a spinal symptom RPE above 2 still is, and that rule is unchanged. Note also that ACWR is probably running 4-6% high because CP 261 looks understated, so a computed 1.38 is nearer a true 1.32."
     },
     {
      "type": "note",
-     "text": "Runs stay at 1 km and stay CONTROLLED. Run pace progression belongs on threshold days."
+     "text": "12 AUG FOR COMPARISON: RPE 9, avg HR 169, max 180 against LTHR 178, Garmin load 219 - the hardest session of the block, and that was at 32C in an unventilated unit with no airflow. If Wednesday is cooler this costs less than that did. If the venue is hot again, take the RPE 9 as the ceiling and cut volume rather than grinding to the same number."
     },
     {
      "type": "note",
-     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls — effort and symptom as SEPARATE numbers, free-texted because of the app's floor defect: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom RPE climbs progressively across the three, cut the BBJ block and finish."
+     "text": "Runs stay at 1 km and stay CONTROLLED, ~6:00. 100% scales the STATIONS only. Run pace progression belongs on threshold days. Runs controlled, stations attacked."
     },
     {
      "type": "note",
-     "text": "STANDING METRIC: run-1 to run-4 HR delta at identical pace, compared against 12 Aug. The HR ratchet is a cleaner progression read than station times."
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls - effort and symptom as SEPARATE numbers, free-texted because of the app's floor defect: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. 12 Aug returned sym 0 at all three. If symptom RPE climbs progressively across the three, cut volume in-session - there is no cost to finishing at 90%."
     },
     {
      "type": "step",
@@ -1360,9 +1360,9 @@
     },
     {
      "type": "step",
-     "label": "Row - 800m",
-     "detail": "80% of race distance. Steady, seated throughout. Target ~4:04.",
-     "secs": 244,
+     "label": "Row - 1000m",
+     "detail": "Full race distance. Steady, seated throughout. Target ~5:05 (4:15 screen on 12 Aug at effort 7 - do NOT chase it, this is the front of a chain).",
+     "secs": 305,
      "rpe": true
     },
     {
@@ -1373,9 +1373,9 @@
     },
     {
      "type": "step",
-     "label": "Farmers Carry - 160m @ 2x24kg",
-     "detail": "80% of race distance. Arms extended. SPINAL CHECKPOINT - log before you start the run.",
-     "secs": 120,
+     "label": "Farmers Carry - 200m @ 2x24kg",
+     "detail": "Full race distance. Arms extended. SPINAL CHECKPOINT - log before you start the run.",
+     "secs": 150,
      "rpe": true
     },
     {
@@ -1386,9 +1386,9 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge - 80m @ 20kg",
-     "detail": "80% of race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT.",
-     "secs": 240,
+     "label": "Sandbag Lunge - 100m @ 20kg",
+     "detail": "Full race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT. 6:39 on 12 Aug - bag sat too high on the neck and restricted breathing, so set it lower this time.",
+     "secs": 300,
      "rpe": true
     },
     {
@@ -1399,9 +1399,9 @@
     },
     {
      "type": "step",
-     "label": "Wall Balls - 80 @ 6kg",
-     "detail": "80% of race distance. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT. Break into sets before form goes, not after.",
-     "secs": 336,
+     "label": "Wall Balls - 100 @ 6kg",
+     "detail": "Full race distance. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT. Break into sets before form goes, not after.",
+     "secs": 420,
      "rpe": true
     },
     {
@@ -1412,7 +1412,7 @@
     },
     {
      "type": "note",
-     "text": "LOG: minutes at race weight per station, three spinal checkpoint pairs (effort and symptom separate), and the run-1 to run-4 HR delta for comparison against 12 Aug."
+     "text": "LOG: minutes at race weight per station, three spinal checkpoint pairs (effort and symptom separate), transition-time delta, and the run-1 to run-4 HR delta against 12 Aug."
     }
    ]
   },
