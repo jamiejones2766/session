@@ -1342,7 +1342,7 @@
     },
     {
      "type": "note",
-     "text": "12 AUG FOR COMPARISON: RPE 9, avg HR 169, max 180 against LTHR 178, Garmin load 219 - the hardest session of the block, and that was at 32C in an unventilated unit with no airflow. If Wednesday is cooler this costs less than that did. If the venue is hot again, take the RPE 9 as the ceiling and cut volume rather than grinding to the same number."
+     "text": "12 AUG FOR COMPARISON: RPE 9, avg HR 169, max 180 against LTHR 178, Garmin load 219 - the hardest session of the block, and that was at 32C in an unventilated unit with no airflow. If Wednesday is cooler this costs less than that did, and the HR delta will show it. If the venue is hot again, take the RPE 9 as the ceiling and cut volume rather than grinding to the same number."
     },
     {
      "type": "note",
@@ -1350,13 +1350,17 @@
     },
     {
      "type": "note",
-     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls - effort and symptom as SEPARATE numbers, free-texted because of the app's floor defect: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. 12 Aug returned sym 0 at all three. If symptom RPE climbs progressively across the three, cut volume in-session - there is no cost to finishing at 90%."
+     "text": "RUN PACING RESTORED to the 12 Aug prescription: 5:35 / 5:35 / 6:00 / 6:00. The 6:00-across-the-board version briefly in this file was an unjustified regression - it would have made the session a novel hybrid and killed the one comparison worth having. This is now an EXACT REPEAT of 12 Aug: same station volume, same run pacing, same order. STANDING METRIC: run-1 to run-4 HR delta at identical pace vs 12 Aug (avg HR 169, max 180, RPE 9). The HR ratchet is a cleaner progression read than station times."
+    },
+    {
+     "type": "note",
+     "text": "TEMPERATURE IS THE UNCONTROLLED VARIABLE. 12 Aug ran at 32C in an unventilated unit. Log the temperature before you start - without it this repeat is uninterpretable, because a lower HR in cooler air proves nothing about fitness. If it is 32C again, RPE 9 is the ceiling: cut station volume rather than grinding to match 12 Aug's numbers. A repeat that costs you Saturday is a bad trade."
     },
     {
      "type": "step",
-     "label": "Run — in",
-     "detail": "1 km controlled, ~6:00, not race pace",
-     "secs": 360
+     "label": "Run 1 - in",
+     "detail": "1 km @ 5:35/km, ~250W. RACE PACE. Same prescription as 12 Aug (executed 5:36). Note HR at the top and at the finish.",
+     "secs": 335
     },
     {
      "type": "step",
@@ -1367,9 +1371,9 @@
     },
     {
      "type": "step",
-     "label": "Run",
-     "detail": "1 km controlled, ~6:00",
-     "secs": 360
+     "label": "Run 2",
+     "detail": "1 km @ 5:35/km. Held at run 1 pace regardless of how the row felt - same restraint rule as the sims. 12 Aug executed 5:37.",
+     "secs": 335
     },
     {
      "type": "step",
@@ -1380,8 +1384,8 @@
     },
     {
      "type": "step",
-     "label": "Run",
-     "detail": "1 km controlled, ~6:00",
+     "label": "Run 3",
+     "detail": "1 km @ 6:00/km controlled. Pace drops here by design, not by fatigue. 12 Aug executed 5:56.",
      "secs": 360
     },
     {
@@ -1393,8 +1397,8 @@
     },
     {
      "type": "step",
-     "label": "Run",
-     "detail": "1 km controlled, ~6:00",
+     "label": "Run 4",
+     "detail": "1 km @ 6:00/km controlled. THE READ: HR at the top of this run vs the top of run 1, against 12 Aug. 12 Aug executed 6:01.",
      "secs": 360
     },
     {
