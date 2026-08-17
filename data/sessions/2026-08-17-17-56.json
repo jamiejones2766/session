@@ -1,0 +1,61 @@
+{
+ "date": "2026-08-17",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-08-17:2",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786989362731
+  },
+  {
+   "key": "2026-08-17:3",
+   "label": "Strides ×4",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786989363805
+  },
+  {
+   "key": "2026-08-17:5",
+   "label": "Rep 1",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1786989365430
+  },
+  {
+   "key": "2026-08-17:6",
+   "label": "Recovery",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786989367630
+  },
+  {
+   "key": "2026-08-17:7",
+   "label": "Reps 2-3",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1786989368652
+  },
+  {
+   "key": "2026-08-17:8",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1786989370444
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "7.5 rpe ",
+ "finished": "2026-08-17T17:56:27.876Z",
+ "synced": false
+}
