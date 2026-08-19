@@ -1,0 +1,157 @@
+{
+ "date": "2026-08-19",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-08-19:20",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158140514
+  },
+  {
+   "key": "2026-08-19:21",
+   "label": "Run 1 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158141546
+  },
+  {
+   "key": "2026-08-19:22",
+   "label": "SkiErg - 1000m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1787158142337
+  },
+  {
+   "key": "2026-08-19:23",
+   "label": "Run 2 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158145921
+  },
+  {
+   "key": "2026-08-19:24",
+   "label": "Sled Push - 50m @ 152kg",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1787158146972
+  },
+  {
+   "key": "2026-08-19:25",
+   "label": "Run 3 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158150455
+  },
+  {
+   "key": "2026-08-19:26",
+   "label": "Sled Pull - 50m @ 103kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1787158151572
+  },
+  {
+   "key": "2026-08-19:27",
+   "label": "Run 4 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158155781
+  },
+  {
+   "key": "2026-08-19:28",
+   "label": "Burpee Broad Jumps - 80m",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1787158156765
+  },
+  {
+   "key": "2026-08-19:29",
+   "label": "Run 5 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158161049
+  },
+  {
+   "key": "2026-08-19:30",
+   "label": "Row - 1000m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1787158162149
+  },
+  {
+   "key": "2026-08-19:31",
+   "label": "Run 6 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158164274
+  },
+  {
+   "key": "2026-08-19:32",
+   "label": "Farmers Carry - 200m @ 2x24kg",
+   "spinal": true,
+   "rpe": 10,
+   "sym": 0,
+   "t": 1787158165158
+  },
+  {
+   "key": "2026-08-19:33",
+   "label": "Run 7 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158169188
+  },
+  {
+   "key": "2026-08-19:34",
+   "label": "Sandbag Lunge - 100m @ 20kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1787158170021
+  },
+  {
+   "key": "2026-08-19:35",
+   "label": "Run 8 - 1 km",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158175514
+  },
+  {
+   "key": "2026-08-19:36",
+   "label": "Wall Balls - 100 @ 6kg",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1787158176356
+  },
+  {
+   "key": "2026-08-19:37",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787158180623
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "7.5 rpe total \nFc was 10. Thought i was gonna vomit ",
+ "finished": "2026-08-19T16:50:12.684Z",
+ "synced": false
+}
