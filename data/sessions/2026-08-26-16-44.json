@@ -1,0 +1,53 @@
+{
+ "date": "2026-08-26",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-08-26:7",
+   "label": "Cool down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787762594800
+  },
+  {
+   "key": "2026-08-26:6",
+   "label": "Wall Balls - 4 x 25 @ 6kg",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1787762595302
+  },
+  {
+   "key": "2026-08-26:5",
+   "label": "BBJ - 3 x 25m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1787762599645
+  },
+  {
+   "key": "2026-08-26:4",
+   "label": "Sled Push - 5 x 12.5m @ 152kg",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1787762602026
+  },
+  {
+   "key": "2026-08-26:3",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1787762604960
+  }
+ ],
+ "pauses": [],
+ "rpe": 6,
+ "back": "fine",
+ "notes": "That session was stupid. Felt like such a waste. It didn't flow well json wasn't mega clear 3x25 makes it sound like 3 sets but it isn't. Missed the mark on this one",
+ "finished": "2026-08-26T16:44:25.116Z",
+ "synced": false
+}
