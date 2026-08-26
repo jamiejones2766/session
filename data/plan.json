@@ -1,7 +1,7 @@
 {
- "week": "WEEK OF 17-23 AUG 2026 - Build week 4. REVISION 16 AUG, THIRD PASS. Corporate Games Fri-Sun was not in the file; the week is rebuilt around it. THE BIG CHANGE: the full-format sim moves from Sat 22 Aug to WED 19 AUG, and goes to FULL RACE DISTANCE - built by extending Wednesday's 100% chain forwards with stations 1-4 rather than shrinking anything. All 8 stations at race weight, 8 x 1 km runs at 5:45-5:50 (compromise off 5:35). First time the two halves of the race have ever met in training. ~90 min of race work. WHAT IT COST: the exact-repeat-of-12-Aug lunge comparison is gone - the lunge now arrives with seven stations behind it, so a slower split is expected and there is no baseline to read it against. Accepted knowingly. LOAD: Mon ~85 + Wed ~160 + Fri ~50 + Sun ~30 = ~325, plus unscored softball. Roughly +4.5% on last week's 311, so the ramp problem the earlier drafts were wrestling with has gone away by itself. RUNNING ~33 km prescribed, up from ~28. The limiter still gets fed. HOLD TRIGGERS UNCHANGED and they outrank everything above: spinal symptom RPE >2 stops the session mid-station, ACWR >1.3, injury index >60, two consecutive nights under 6h, ankle stop rule. HEAT: if Wednesday is near 32C as 12 Aug was, stations 1-4 drop to half distance. 90+ min at 32C is a heat problem, not a training problem.",
+ "week": "PLAN 24 AUG - 6 SEP 2026. CLEAN REBUILD 26 AUG. WHY: the live file had run out at 23 Aug - the sharpen week was designed on 23 Aug but never landed in the repo, so the PWA had no current week. The same rewrite also silently dropped routines.core and its references on Tue 11 and Tue 18 Aug (written 11 Aug, lost when the file was rebuilt on 16 Aug from a pre-11-Aug base). Both restored here. == WEEK OF 24-30 AUG - SHARPEN WEEK == Last week of real work before Tenerife. Target ~350 load, 26.6 km running, ACWR ~1.26. Mon 80 threshold / Tue 60 South Ribble / Wed 80 station quality / Thu 0 rest+carb anchor / Fri 15 core, no run / Sat 115 solo doubles sim / Sun 0. ACTUALS TO DATE: Mon 24 came in at ~61 load (9.83 km, 10-min mean-max 5:11/km, max HR 170) - NOT flat, so the 'cut Wednesday' rule does not fire. Tue 25 came in at 51 load (8.22 km, EF 1.10) but ran in the EVENING with HR drifting 125-161, so it does NOT close the efficiency arc. Week is tracking ~30-40 load light against plan; that is acceptable eleven days out and is not a reason to add volume. DATA FAULT ACTIVE: athletedata logged Mon 24 at dailyLoad 4.2 because the run split into two Garmin files and it counted only the 1.04 km warm-up. Weekly km under-reports by ~8.8 km. Correct manually. == WEEK OF 31 AUG - 6 SEP - COMBINED DELOAD + TENERIFE TAPER == Deliberately SHALLOW. Tenerife is a dress rehearsal, not a target race - do not taper hard into it. Mon 50 South Ribble EF arc point 3 (HR HELD FLAT AT 148, cool morning - this is the rescheduled 25 Aug job) / Tue 0 core, held steady / Wed 40 sharpener + station touches + carb anchor 475 g / Thu 15 travel + shakeout + 400 g / Fri RACE 15:10 / Sat 0 / Sun optional shakeout + planning. Target ~250-265 load, ~24 km running. Exits into the w/c 7 Sep 25 km ladder start cleanly. HOLD TRIGGERS UNCHANGED and they outrank everything above: spinal symptom RPE >2 stops the session mid-station and applies ON RACE DAY TOO; ACWR >1.3; injury index >60; two consecutive nights under 6h. RAMP CAP: <=15% default, 20% only when prior week ACWR <=1.05, injury index zero, no spinal symptom RPE >2, and sleep gate clear. OPEN ITEMS CARRIED: (1) Garmin device LTHR still reads 175, correct is 178 - scheduled Mon 31 Aug, open since 6 Aug; (2) run_km_prescribed field still missing from the PWA, flagged 16 Aug; (3) no joint session with Chris has happened - largest uncontrolled variable in Tenerife; (4) close the loop with clinician/physio on movement patterns to avoid with the annular tear. CLOSED, DO NOT REOPEN: CTL target locked 12 Aug at peak 39-41, ceiling 43 (46 is superseded); hills deleted and rolled to the post-Tenerife VO2max slot; athletedata IF bug closed 16 Aug; 15 Aug BBJ heat explanation does not hold; cycling FTP 217W workaround reverted.",
  "anchors": {
-  "set_on": "2026-08-16",
+  "set_on": "2026-08-16 (re-verified 2026-08-26)",
   "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
   "stryd_cp_watts": 261,
   "threshold_pace_sec_per_km": 315,
@@ -26,7 +26,8 @@
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "After Tenerife (4 Sep 2026)"
+  "next_review": "After Tenerife (4 Sep 2026)",
+  "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT."
  },
  "days": {
   "2026-07-17": {
@@ -981,16 +982,24 @@
    ]
   },
   "2026-08-11": {
-   "title": "Off",
-   "rpe": "0",
+   "title": "Off - core block",
+   "rpe": "3",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 11 AUG. Fully off. Sleep debt is 119 min against a 42-day average of 6.7h — this day is doing recovery work, not nothing. Tuesday's bike was dropped and replaced by Friday's off-feet session, which sits better (48h after the chain, 24h before the sim)."
+     "text": "TUE 11 AUG. Otherwise fully off. Sleep debt is 119 min against a 42-day average of 6.7h - this day is doing recovery work, not nothing. Tuesday's bike was dropped and replaced by Friday's off-feet session, which sits better (48h after the chain, 24h before the sim)."
     },
     {
      "type": "note",
-     "text": "Optional: 15-20 min mobility, spine-neutral only. No standing toe touches, no seated forward folds, no supine knees-to-chest."
+     "text": "CORE BLOCK ADDED 11 AUG - RESTORED 26 AUG. This entry and routines.core were written on 11 Aug but were lost when the file was rewritten on 16 Aug from a pre-11-Aug base. Week 1 of 2 in the Tuesday-only isolation period, for clean attribution against the Wednesday chain and the Saturday sim."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    },
+    {
+     "type": "note",
+     "text": "Optional afterwards: 15-20 min mobility, spine-neutral only. No standing toe touches, no seated forward folds, no supine knees-to-chest."
     }
    ]
   },
@@ -1319,12 +1328,24 @@
    ]
   },
   "2026-08-18": {
-   "title": "Off",
-   "rpe": "0",
+   "title": "Off - core block",
+   "rpe": "3",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 18 AUG. Fully off. The week gets heavier from here — Saturday is the biggest single session of the block. Optional 15-20 min mobility, spine-neutral only. No standing toe touches, no seated forward folds, no supine knees-to-chest."
+     "text": "TUE 18 AUG. Otherwise fully off. The week gets heavier from here - Wednesday carries the full-distance sim."
+    },
+    {
+     "type": "note",
+     "text": "CORE BLOCK week 2 of 2, Tuesday-only isolation period. RESTORED 26 AUG - lost in the 16 Aug file rewrite. Do NOT progress the pyramid if 11 Aug produced any symptom RPE above 0 at any Part A checkpoint."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    },
+    {
+     "type": "note",
+     "text": "Optional afterwards: 15-20 min mobility, spine-neutral only."
     }
    ]
   },
@@ -1561,6 +1582,645 @@
      "secs": 2100
     }
    ]
+  },
+  "2026-08-24": {
+   "title": "Threshold - 3 x 2 km @ 5:15/km (REPEAT) - DONE",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 24 AUG. Sharpen week. REPEAT OF 17 AUG, NOT A PROGRESSION - five days without running since the 19 Aug sim. Same reps, same power band, same 8-second stop rule per 2 km rep. Anchors: 5:15/km, 255-265W, CP 261, LTHR 178. STEER BY POWER, not pace."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "15 min easy, HR <=148",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "Strides x4",
+     "detail": "20s each, 60s walk between",
+     "secs": 320
+    },
+    {
+     "type": "interval",
+     "label": "3 x 2 km @ threshold",
+     "work": 630,
+     "rest": 180,
+     "rounds": 3
+    },
+    {
+     "type": "step",
+     "label": "Rep 1",
+     "detail": "2 km @ 5:15/km, 255-265W. First km at the slow end.",
+     "secs": 630,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Recovery",
+     "detail": "3 min easy jog",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Rep 2",
+     "detail": "Same power band. HR 174-178 by the back half is correct.",
+     "secs": 630,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Recovery",
+     "detail": "3 min easy jog",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Rep 3",
+     "detail": "Same power band. Do not chase a negative split off a five-day layoff.",
+     "secs": 630,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    }
+   ],
+   "actual": {
+    "completed": true,
+    "note": "9.83 km total across TWO Garmin files (1.04 km warm-up piece + 8.79 km main, activity 24100286882). 52:42 on the main file, 6:00/km overall. Avg power 236W, NP 250W, max 397W. Avg HR 152, max 170. 15.2C, 54.5% humidity, 17.8 kph wind. Cadence 161, GCT 258ms. Reported rep average 268W at RPE 6.5.",
+    "read": "NOT FLAT. Session mean-max 10-min pace 5:11/km and 5-min 5:10/km - at or inside the 5:15 target off a five-day layoff. Max HR 170 against LTHR 178 means it was not maximal. The written rule 'cut Wednesday if Monday comes in flat' does NOT fire. Wednesday 26 Aug stands as prescribed.",
+    "data_fault": "athletedata logged dailyLoad 4.2 for this day - it counted only the 1.04 km warm-up file and dropped the 8.79 km main session. Known bug: two RUNNING-profile activities starting close together. Real load ~61 (56.8 + 4.2). Weekly km will under-report by ~8.8 km unless corrected manually."
+   }
+  },
+  "2026-08-25": {
+   "title": "South Ribble easy run - HR CAP OFF - DONE",
+   "rpe": "3-4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 25 AUG. Two jobs: (1) third point of the South Ribble efficiency arc (12 Jul -> 16 Aug -> today), same loop, no deviations; (2) the uncapped run needed to settle whether the 148 easy cap is now conservative."
+    },
+    {
+     "type": "note",
+     "text": "RUN IT UNCAPPED AND BY FEEL. Do not steer by HR. Read the trace afterwards. GO EARLY - cool morning is the whole point. LOG TEMPERATURE AND DEW POINT."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Easy run - South Ribble loop",
+     "detail": "45-50 min, self-paced by feel, no HR cap. Stryd on - pure running session, Stryd raw distance authoritative.",
+     "secs": 2850
+    }
+   ],
+   "actual": {
+    "completed": true,
+    "note": "8.22 km, 50:13, 6:07/km. Avg power 232W (89% CP), NP 234, VI 1.01. Avg HR 149, max 164. EF 1.10 m/min per bpm. Cadence 168, GCT 270ms. Load 51.1. Run EXECUTED IN THE EVENING, not the prescribed cool morning.",
+    "read": "Per-km HR ran 125 / 145 / 148 / 149 / 153 / 154 / 159 / 161 - a steady ramp of ~36 bpm across the run at essentially flat pace (5:55-6:04) and flat power (233-240W). That is a drifting session, not a capped-flat one. EF 1.10 is a valid training read and continues the arc numerically, but the SHAPE does not match 12 Jul or 16 Aug, so it is NOT clean enough for the marketing efficiency-arc graphic. The 148-cap question is also still open - an evening run does not answer it.",
+    "carry_forward": "Third comparable EF point still outstanding. Rescheduled to MON 31 AUG, cool morning, HR held FLAT at 148 by deliberate steering. That is the last realistic slot before Tenerife."
+   }
+  },
+  "2026-08-26": {
+   "title": "Station quality - doubles-shaped intensity + BBJ film",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 26 AUG. REBUILT 23 AUG. The earlier token version (3x12.5m sled, 2x40m BBJ, 3x20 wall balls, ~39 min) was cut - it did not justify the trip to RAW. Travel and setup cost is fixed, so the session has to earn it. This is doubles-shaped intensity: hard segments, clocked rest. That is the one demand Saturday will NOT give you, because Saturday's runs are easy and the whole thing is a rehearsal."
+    },
+    {
+     "type": "note",
+     "text": "GO/NO-GO CHECKED 26 AUG: Monday's threshold did NOT come in flat (10-min mean-max 5:11/km, max HR 170 vs LTHR 178). The cut rule does not fire. Session stands at full prescription."
+    },
+    {
+     "type": "note",
+     "text": "DELIBERATE HEAT EXPOSURE. Unventilated unit, not the cool. Tenerife south is ~26-28C at 68-82% humidity with a 15:10 start and your only heat exposure to date was accidental (32C, 12 Aug). LOG THE TEMPERATURE. Costs no load, buys plasma volume."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy + spine-neutral mobility",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Sled Push - 5 x 12.5m @ 152kg",
+     "detail": "62.5m total, ABOVE race distance. Friction-loaded as standard (sandbag in front, astroturf). 90s rest between lengths. Deliberate overload - this is the 96.5th-percentile station from Birmingham 2025 and the primary 2026 target, so it gets overload rather than a touch.",
+     "secs": 900,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "BBJ - 3 x 25m",
+     "detail": "75m total. 90s rest. FILM THE THIRD REP, NOT THE FIRST. Phone on the floor, side on, whole body in frame, 60 seconds. Footage of a fresh rep tells you nothing - 'where the jump distance starts shrinking' only exists when you are tired.",
+     "secs": 780,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls - 4 x 25 @ 6kg",
+     "detail": "100 reps, FULL race volume. 60s rest between sets. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT after the last set - effort and symptom as separate numbers.",
+     "secs": 900,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "8 min easy",
+     "secs": 480
+    },
+    {
+     "type": "note",
+     "text": "BBJ CONTEXT so the footage is read correctly. 19 Aug sim was 5:53 over full 80m in race sequence. Cardiff 5:20, Birmingham 5:49. The 15 Aug 6:32 figure was a 4-minute block extrapolated to 80m and overstated the gap - burpee rate decays past four minutes so extrapolation always flatters downward. The heat explanation for 15 Aug does NOT hold: HR that day was 152 avg / 170 max, matching the previous Saturday exactly; it was 12 Aug that was heat-inflated at 169 avg. CONDITION OFFSET: RAW BBJ is 12.5m lengths (5.5 turns) vs Cardiff 15m (~4.3 turns) - only ~1.2 extra turns, worth 4-6s, NOT the 8-13s previously estimated, and the RAW track surface is an ADVANTAGE over race concrete which partly cancels it. Net: the ~30s gap to Cardiff is close to real. Three candidate causes the clock cannot separate - jump distance decaying, chest-to-floor consistency, restart rhythm off each turn. That is what the film is for."
+    },
+    {
+     "type": "note",
+     "text": "LOG: sled time per length (5 numbers), BBJ time per rep (3 numbers), wall ball time per set of 25 (4 numbers), spinal checkpoint pair, temperature."
+    }
+   ]
+  },
+  "2026-08-27": {
+   "title": "FULL REST + CARB ANCHOR DAY (~475 g)",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 27 AUG. No running, no core, no station work. The session today is the eating."
+    },
+    {
+     "type": "note",
+     "text": "CARB ANCHOR PRACTICE - ~475 g carbohydrate. Mirrors Tenerife exactly: Wed 2 Sep anchor (~475 g) -> Thu 3 Sep (~400 g) -> Fri 4 Sep race. Here it is Thu 27 anchor -> Fri 28 (~400 g) -> Sat 29 sim. THE POINT IS GUT TOLERANCE, not fuelling this week's training. Find out on 27 Aug, not on 2 Sep."
+    },
+    {
+     "type": "note",
+     "text": "Protein held flat at 155 g as normal. Spread carbohydrate across 5-6 feeds rather than 3 - the failure mode is volume per sitting, not volume per day. No seafood in any of it. Log everything in the Food-Logger."
+    },
+    {
+     "type": "note",
+     "text": "LOG: total carbohydrate actually achieved, number of feeds, any GI symptoms with timing. If you fall short of 475 g, log the number you hit - that is the useful data point, not a failure."
+    },
+    {
+     "type": "note",
+     "text": "Optional 15-20 min mobility, spine-neutral only. No standing toe touches, no seated forward folds, no supine knees-to-chest."
+    }
+   ]
+  },
+  "2026-08-28": {
+   "title": "Core (optional) + ~400 g carbs - NO RUNNING",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 28 AUG. NO RUNNING. The 30 min easy run that sat here is GONE, cut 23 Aug when Wednesday was rebuilt upward. Wednesday at ~80 instead of ~50 put the week at ~385 and ACWR at ~1.31, which trips the gate. Removing Friday's run lands the week at ~350 and ACWR ~1.26."
+    },
+    {
+     "type": "note",
+     "text": "A rest-and-eat Friday also mirrors Tenerife better than a shakeout does - Thu 3 Sep is travel, Fri 4 Sep is the race. And it fixes the running ramp: 26.6 km this week instead of 31.5, which is +16% on the block's biggest week rather than well over the cap."
+    },
+    {
+     "type": "note",
+     "text": "CORE MOVED HERE from Thursday at JJ's request, THIS WEEK ONLY. Standing Thursday slot resumes in the Birmingham build. Spine-neutral throughout - no loaded flexion the day before a sim."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    },
+    {
+     "type": "note",
+     "text": "NUTRITION: ~400 g carbohydrate, mirroring Thu 3 Sep in Tenerife. Second day of the gut-training block. Log it."
+    }
+   ]
+  },
+  "2026-08-29": {
+   "title": "SOLO DOUBLES SIM (YGIG) - 8 x 1 km + 8 stations at 60%",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "note",
+     "text": "SAT 29 AUG @ RAW. START AT 15:10 to mirror the Tenerife race window. Unventilated unit. LOG THE TEMPERATURE BEFORE YOU START."
+    },
+    {
+     "type": "note",
+     "text": "NOT A REPEAT OF 19 AUG. That was the full solo format and it went clean (1:30:54, run 8 only 2.7s slower than run 1, station total 36:37 vs Birmingham 2025's 43:01). What has NEVER been trained is YGIG: partial station volume with real rest between segments. Different pacing problem - you go harder per segment because rest is coming, and misjudging that is the mistake available in Tenerife. Chris is unavailable, so this is solo."
+    },
+    {
+     "type": "note",
+     "text": "RUNS: 8 x 1 km at 6:10-6:20/km. REVISED UP from 6:30-6:50 after meeting Chris on 21 Aug - his repeatable ceiling now reads ~5:50/km, and race average is projected 6:15-6:45/km compromised in afternoon heat. 6:10-6:20 is the honest midpoint. DO NOT DRIFT DOWN TO 5:45 BECAUSE IT FEELS COMFORTABLE. Running your pace instead of his is the exact failure mode on the day, and the doubles rule is a 1-minute penalty per separation, out of competition after three. STANDING RACE RULE: Chris sets the pace on every run. JJ never leads."
+    },
+    {
+     "type": "note",
+     "text": "STATIONS AT ~60% OF RACE VOLUME. 60/40 not 50/50 - Chris is a first-timer and taking the larger share is the honest planning assumption. REST IS TIMED ON A CLOCK, STANDING, NEVER SITTING. Self-selected rest is always longer than a partner's segment and it makes the session worthless. Doubles rules require the resting athlete on their feet in the workout zone - practise that too."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy, HR <=148",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "Run 1 - 1 km",
+     "detail": "6:10-6:20/km. Note HR at the top.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "SkiErg - 2 x 300m",
+     "detail": "60s standing rest between and after. Log both splits - the second should match the first.",
+     "secs": 300,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 - 1 km",
+     "detail": "HOLD RUN 1 PACE. The run-2 rule applies in doubles too.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Sled Push - 2 lengths, rest, 1 length @ 152kg",
+     "detail": "45s standing rest. Friction-loaded. WATCH THE NEXT RUN SPLIT - that is where over-attacking a rested segment shows up.",
+     "secs": 270,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3 - 1 km",
+     "detail": "6:10-6:20/km. Compare against run 2 - this is the readout on sled segment pacing.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Sled Pull - 2 lengths, rest, 1 length @ 103kg",
+     "detail": "45s standing rest. Standing in the box. SPINAL CHECKPOINT.",
+     "secs": 270,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 - 1 km",
+     "detail": "6:10-6:20/km.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "BBJ - 2 x 24m",
+     "detail": "60s standing rest. Chest to ground, feet together on take-off and landing. Film again if Wednesday's footage was unusable.",
+     "secs": 240,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 5 - 1 km",
+     "detail": "6:10-6:20/km. Halfway.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Row - 2 x 300m",
+     "detail": "60s standing rest. Seated throughout. Log both splits.",
+     "secs": 300,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6 - 1 km",
+     "detail": "6:10-6:20/km.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Farmers Carry - 2 x 60m",
+     "detail": "40s standing rest. Arms extended. SPINAL CHECKPOINT. RAW track is 12.5m with 15 turns vs race ~50m with 3-4 - splits here are systematically slow by ~18-30s at full distance.",
+     "secs": 180,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7 - 1 km",
+     "detail": "6:10-6:20/km.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Sandbag Lunge - 2 x 30m",
+     "detail": "45s standing rest. Bag LOW across the shoulders. Trailing knee touches, stand tall, no shuffles. SPINAL CHECKPOINT.",
+     "secs": 240,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 8 - 1 km",
+     "detail": "6:10-6:20/km. Within 15s of run 1.",
+     "secs": 380
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls - 4 x 15 @ 6kg",
+     "detail": "30s standing rest between sets. Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy",
+     "secs": 600
+    },
+    {
+     "type": "note",
+     "text": "SUCCESS CRITERIA, in order - this is NOT a fitness test and the total time means nothing: (1) run pace held at 6:10-6:20 for all eight, no drift down; (2) segment 2 output matching segment 1 at every station; (3) no run split slower than the one before it following a station; (4) zero spinal symptom above 2; (5) gut clear after two days of carb loading."
+    },
+    {
+     "type": "note",
+     "text": "EQUIPMENT: use GARMIN'S OWN HIIT workout builder with press-lap end conditions if supported. RoxFit pushes as a Run profile and is unsuitable for sim sessions - confirmed on watch. Five-minute job on the sofa beforehand, not a venue job."
+    },
+    {
+     "type": "note",
+     "text": "DATA: HIIT profile records ZERO DISTANCE. Manual prescription is authoritative - log 8 km of running to data/sessions/2026-08-29.json by hand or athletedata under-reports this week by ~8 km. Stryd inflates chain/sim distance ~50% (counts station ground) - do not use Stryd raw here."
+    },
+    {
+     "type": "note",
+     "text": "LOG: all eight run splits, both segment times at every station, all rest durations actually taken, four spinal checkpoint pairs, temperature at start, total session time."
+    }
+   ]
+  },
+  "2026-08-30": {
+   "title": "Off",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 30 AUG. FULL REST. Optional 15-20 min mobility, spine-neutral only."
+    },
+    {
+     "type": "note",
+     "text": "Weekly planning session. The taper week (w/c 31 Aug) is now BUILT in this file - review it against Saturday's sim data rather than rebuilding it from scratch. TO SETTLE: (1) whether any joint session with Chris is possible before travel - you will otherwise arrive having never rehearsed a single transition together, which is the largest uncontrolled variable in the race; (2) Tenerife travel-day nutrition and flight hydration; (3) race-week arrival checks that cannot be answered before then - BBJ lane length, erg transit distances, venue floor surface."
+    },
+    {
+     "type": "note",
+     "text": "CLOSED, do not reopen: CTL target (locked 12 Aug, peak 39-41, ceiling 43 - 46 is superseded); hills (deleted, rolled to the post-Tenerife VO2max slot); the athletedata IF bug (closed 16 Aug); the 15 Aug BBJ heat explanation (does not hold)."
+    }
+   ]
+  },
+  "2026-08-31": {
+   "title": "South Ribble easy run - HR HELD FLAT AT 148 (EF arc point 3)",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 31 AUG (bank holiday). THIS IS THE THIRD EF ARC POINT and it is the last realistic slot before Tenerife. 25 Aug did not deliver it - that run went in the evening and HR ramped 125 -> 161 across the loop instead of sitting flat, so the session shape does not match 12 Jul or 16 Aug and it cannot go in the comparison."
+    },
+    {
+     "type": "note",
+     "text": "CONDITIONS ARE THE POINT. Go EARLY, cool morning. Same South Ribble loop, no deviations. HOLD HR FLAT AT 148 - steer it deliberately this time, walk the hills if you have to. A capped-flat trace is what makes it comparable; a drifting one is not. LOG TEMPERATURE AND DEW POINT at the start (12 Jul: 18C / DP 11.6. 16 Aug: 22C / DP 15.4)."
+    },
+    {
+     "type": "note",
+     "text": "Reference points: 12 Jul EF 0.95, 16 Aug EF 1.05. If this lands near 1.05-1.10 at 148 flat in cool air, the six-week arc closes and the case study publishes. GCT is the second read - down ~19ms across the block."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Easy run - South Ribble loop",
+     "detail": "45-50 min, HR CAPPED AT 148. Stryd on - pure running session, Stryd raw distance authoritative.",
+     "secs": 2850
+    },
+    {
+     "type": "note",
+     "text": "LOG: total time, avg pace, avg HR, avg power, EF, GCT, temperature, dew point."
+    },
+    {
+     "type": "note",
+     "text": "GARMIN HOUSEKEEPING - DO IT TODAY, it has been open since 6 Aug. Device LTHR still reads 175; correct value is 178 (3 Aug TT, minutes 10-30). Update it and confirm the HR zones recalculated on the watch, not just in Connect."
+    }
+   ]
+  },
+  "2026-09-01": {
+   "title": "Off - core block",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 1 SEP. Otherwise fully off. STRUCTURAL CONSTRAINT: fixed 05:00 rise for 06:00 coaching. Tuesday nights are judged by bedtime, not duration, and Tuesday NEVER carries a quality session."
+    },
+    {
+     "type": "note",
+     "text": "CORE HELD STEADY - do not progress the pyramid, do not add band tension. This is the deload+taper week and it is not the place for a new stimulus. Progression resumes w/c 7 Sep."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    },
+    {
+     "type": "note",
+     "text": "Optional 15-20 min mobility, spine-neutral only."
+    }
+   ]
+  },
+  "2026-09-02": {
+   "title": "Sharpener + station touches + CARB ANCHOR (~475 g)",
+   "rpe": "5",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 2 SEP @ RAW. LAST SESSION BEFORE THE RACE and the last RAW access before travel. SHORT. This is a nervous-system primer and an equipment rehearsal, not training - nothing here makes you fitter by Friday, and anything that fatigues you costs you."
+    },
+    {
+     "type": "note",
+     "text": "HARD CEILING: if any segment feels like it needs a second effort to get right, stop the session. Two days out, the only mistake available is doing too much."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "12 min easy, HR <=148",
+     "secs": 720
+    },
+    {
+     "type": "step",
+     "label": "Strides x6",
+     "detail": "20s at ~5:00/km feel, 60s walk between. Opening the legs, not a workout.",
+     "secs": 480
+    },
+    {
+     "type": "step",
+     "label": "SkiErg - 2 x 250m",
+     "detail": "At intended race feel, 90s rest. Confirming the damper setting and the pull rhythm, nothing more.",
+     "secs": 300
+    },
+    {
+     "type": "step",
+     "label": "Sled Push - 2 x 12.5m @ 152kg",
+     "detail": "Race weight, full recovery. Two lengths only. Body position rehearsal.",
+     "secs": 300,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Wall Balls - 2 x 15 @ 6kg",
+     "detail": "Target height rehearsal, 60s between. SPINAL CHECKPOINT - last one before the race, and it is a genuine go/no-go.",
+     "secs": 240,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "8 min easy",
+     "secs": 480
+    },
+    {
+     "type": "note",
+     "text": "CARB ANCHOR DAY - ~475 g carbohydrate, the real one. This is what Thu 27 Aug rehearsed. Protein flat at 155 g. 5-6 feeds, not 3. No seafood. If the 27 Aug practice threw any GI symptom, drop to the number you tolerated then rather than repeating a dose you know does not sit."
+    },
+    {
+     "type": "note",
+     "text": "PACK TONIGHT, not Thursday morning: Polar H10 + spare CR2032, Stryd + charger, FR265S charger, race kit, shoes, tape. Check the H10 is paired over ANT+ to the watch before it goes in the bag."
+    }
+   ]
+  },
+  "2026-09-03": {
+   "title": "TRAVEL DAY - shakeout + ~400 g carbs",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 3 SEP. Travel to Tenerife. The lumbar risk today is the flight and the transfer, not training - six hours seated is the load that matters with a confirmed annular tear."
+    },
+    {
+     "type": "note",
+     "text": "SEATED PROTOCOL: get up and walk every 45-60 min. On arrival, walk 10-15 min BEFORE you sit down again. No standing toe touches, no seated forward folds to 'stretch it out' - that is the exact mechanism to avoid."
+    },
+    {
+     "type": "step",
+     "label": "Shakeout jog",
+     "detail": "15-20 min very easy, HR <=140. Before travel if the timing allows, on arrival if it does not. Skip it entirely rather than squeezing it into a rushed morning.",
+     "secs": 1080
+    },
+    {
+     "type": "note",
+     "text": "NUTRITION: ~400 g carbohydrate. Second day of the load. Airport and in-flight food is the failure point - carry your own. No seafood."
+    },
+    {
+     "type": "note",
+     "text": "HYDRATION: flights are dehydrating and you are racing into 26-28C at 68-82% humidity. Add electrolytes today and tomorrow morning, not just water."
+    },
+    {
+     "type": "note",
+     "text": "ON ARRIVAL, CHECK IN PERSON - these could not be answered from the UK: BBJ lane length, SkiErg and Row entrance/exit mat transit distances, venue floor surface. All three change the split maths."
+    },
+    {
+     "type": "note",
+     "text": "IF ANY WINDOW WITH CHRIS EXISTS TONIGHT OR TOMORROW MORNING, TAKE IT. Even 20 minutes of YGIG on two stations to agree who calls the swap is worth more than anything else available. You have never rehearsed a single transition together and that is the largest uncontrolled variable in this race."
+    }
+   ]
+  },
+  "2026-09-04": {
+   "title": "RACE - HYROX TENERIFE DOUBLES (15:10 start)",
+   "rpe": "9",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 4 SEP. HYROX TENERIFE, DOUBLES with Chris. Start 15:10. THIS IS A DRESS REHEARSAL, NOT A TARGET RACE. Birmingham on 31 Oct is the priority. Projected team finish 1:30-1:36 and that number is not the point."
+    },
+    {
+     "type": "note",
+     "text": "STANDING RACE RULE, non-negotiable: CHRIS SETS THE PACE ON EVERY RUN. JJ NEVER LEADS. His repeatable ceiling is ~5:50/km and race average is projected 6:15-6:45/km compromised in the afternoon heat. Separation is a 1-minute penalty each time and out of competition after three."
+    },
+    {
+     "type": "note",
+     "text": "RUN-2 RULE STILL APPLIES, even in doubles. Whatever the SkiErg felt like, run 2 goes deliberately slower than run 1. Birmingham 2025 ran run 2 at identical pace to run 1 (5:03/km) and paid for it at the Sled Push - 5:14, 96.5th percentile. Control runs by LAP TIME, not the pace display."
+    },
+    {
+     "type": "note",
+     "text": "YGIG: resting athlete stays ON THEIR FEET in the workout zone. No kneeling, sitting or lying down. Both enter and both leave together. Take the larger share where it is cheap for you and the smaller share where it is not - Chris is a first-timer and the wall balls at the end are where a first-timer breaks."
+    },
+    {
+     "type": "note",
+     "text": "SPINAL CHECKPOINTS remain live IN THE RACE: Farmers Carry, Sandbag Lunge, Wall Balls. Symptom RPE above 2 is a hard stop and it is still a hard stop on race day. This race is not worth Birmingham."
+    },
+    {
+     "type": "note",
+     "text": "HEAT: 26-28C at 68-82% humidity with a 15:10 start. Pre-cool if there is shade and ice available. Drink at every roxzone pass rather than banking it."
+    },
+    {
+     "type": "note",
+     "text": "LOG AFTERWARDS: all eight run splits, station work times, roxzone entry/exit, three spinal checkpoint pairs, temperature, and honest notes on the transitions with Chris. The transition data is the single most valuable thing this race produces for Birmingham."
+    }
+   ]
+  },
+  "2026-09-05": {
+   "title": "Off - walk only",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 5 SEP. FULL REST. 20-40 min easy walking is good, nothing else. No stretching into flexion after a race - the discs have taken 90 minutes of loaded work."
+    },
+    {
+     "type": "note",
+     "text": "Eat and rehydrate properly. Protein 155 g minimum today."
+    },
+    {
+     "type": "note",
+     "text": "Write the race notes TODAY while they are fresh, especially the transitions and anything Chris said about pacing. Memory of a race decays within 48h and the Birmingham build is built on it."
+    }
+   ]
+  },
+  "2026-09-06": {
+   "title": "Off / optional 20-30 min shakeout",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 6 SEP. Optional 20-30 min very easy jog, HR <=140. Take it if the legs are fine, skip it without guilt if they are not. QUICK BOUNCE-BACK, NOT A DEEP DELOAD - the Birmingham build starts tomorrow and it is only eight weeks."
+    },
+    {
+     "type": "step",
+     "label": "Optional shakeout",
+     "detail": "20-30 min very easy, HR <=140",
+     "secs": 1500
+    },
+    {
+     "type": "note",
+     "text": "WEEKLY PLANNING SESSION - this one is the big one. Build w/c 7 Sep onward against the LOCKED Option B running ladder (agreed 12 Aug): w/c 7 Sep 25 km, 14 Sep 29 km, 21 Sep 33 km (incl 5x1km @ 4:55), 28 Sep 24 km deload (Preston 10k 27 Sep, FULL race effort), 5 Oct 36 km, 12 Oct 40 km peak (CTL ~39-41), then 19 and 26 Oct taper into Birmingham 31 Oct."
+    },
+    {
+     "type": "note",
+     "text": "BUILD INTO w/c 7 Sep ONWARD: (1) VO2max slot - the current block has been threshold-heavy with no VO2max work at all due to back caution, and the deleted hills session rolls into here; (2) unilateral reintroduction - split squats, single-leg calf raise, Bulgarian split squat, single-arm farmers carry, barbell RDL, now that the pre-Tenerife patterning phase is over; (3) Wednesday strength slots; (4) core moves back to Tuesday AND Thursday and starts progressing again."
+    },
+    {
+     "type": "note",
+     "text": "RE-TEST CP: 30-minute TT in w/c 7 or 14 Sep. Field data from this block (17 Aug intervals 264-293W, 24 Aug 268W at RPE 6.5) says true CP is modestly above the stored 261W. Do not update the anchor before the TT. The Preston 10k target of 4:50/km is CONDITIONAL on that TT returning high AND the 5x1km @ 4:55 session going cleanly w/c 21 Sep - otherwise the defensible target stays 5:00-5:05/km."
+    },
+    {
+     "type": "note",
+     "text": "RAMP RULE WARNING for the w/c 7 Sep build: measure the post-race ramp against the PRE-taper week (w/c 24 Aug, ~350), NOT against the taper week. Measuring off the deload week will incorrectly block a normal return to load."
+    }
+   ]
   }
  },
  "routines": {
@@ -1634,6 +2294,66 @@
     "label": "Pogo hops",
     "detail": "2 x 15. Stiff ankles, minimal knee bend, short ground contact. SKIP on easy days or if flat.",
     "secs": 40
+   }
+  ],
+  "core": [
+   {
+    "type": "note",
+    "text": "CORE / TRUNK ENDURANCE - ~16 min. Anti-movement only: resist flexion, extension, rotation and lateral flexion, never produce them. PERMANENTLY OUT with the annular tear: sit-ups, crunches, V-ups, toes-to-bar, GHD sit-ups, weighted Russian twists, loaded side bends, hanging leg raises with a rounded lumbar spine. Repeated end-range loaded lumbar flexion is the specific mechanism that drives nuclear material posteriorly through an annular defect."
+   },
+   {
+    "type": "note",
+    "text": "TIMING: not within the first hour of waking. Discs are maximally hydrated overnight and the spine is at its most flexion-vulnerable then. Mid-morning or later."
+   },
+   {
+    "type": "note",
+    "text": "PART A - McGill Big 3, descending pyramid 6 -> 4 -> 2 reps. Every rep is a 10-second hold, ~5s between reps, ~30s between sets. Log effort and symptom RPE as SEPARATE numbers per exercise. Symptom RPE above 2 during or after = hard stop, same rule as the stations."
+   },
+   {
+    "type": "step",
+    "label": "Modified curl-up - 6/4/2",
+    "detail": "Hands flat UNDER the lumbar spine, one knee bent one leg straight. Lift head and shoulders barely off the floor - you are bracing, not crunching. No spinal flexion. Swap the bent leg between sets. SPINAL CHECKPOINT.",
+    "secs": 200,
+    "rpe": true,
+    "spinal": true
+   },
+   {
+    "type": "step",
+    "label": "Side plank - 6/4/2 per side",
+    "detail": "From the knees if the full version provokes anything. Complete the full pyramid on one side, then the other. Straight line ear-to-hip, ribs down, no sagging or hitching. SPINAL CHECKPOINT.",
+    "secs": 260,
+    "rpe": true,
+    "spinal": true
+   },
+   {
+    "type": "step",
+    "label": "Bird dog - 6/4/2",
+    "detail": "Opposite arm and leg, 10s hold, alternate sides within the rep count. Broomstick-flat lumbar spine - do NOT arch to reach further. Reach long, not high. SPINAL CHECKPOINT.",
+    "secs": 220,
+    "rpe": true,
+    "spinal": true
+   },
+   {
+    "type": "note",
+    "text": "PART B - loaded anti-movement, 3 sets each. Band or cable. This is the part that progresses by load; Part A progresses by duration only."
+   },
+   {
+    "type": "step",
+    "label": "Pallof press - 3 x 8-10/side",
+    "detail": "Stand side-on to the anchor, band at sternum height. Press to full extension and hold 3 seconds resisting the rotation, then return under control. Hips square, no leaning away from the pull.",
+    "secs": 200,
+    "rpe": true
+   },
+   {
+    "type": "step",
+    "label": "Dead bug w/ overhead band - 3 x 8/side",
+    "detail": "Arms hold band tension overhead, ribs pinned down, low back flat to the floor. Lower opposite arm and leg slowly. If the back lifts off the floor, shorten the range - that is the rep limit, not a cue to push through.",
+    "secs": 160,
+    "rpe": true
+   },
+   {
+    "type": "note",
+    "text": "PROGRESSION, in this order and one at a time: (1) pyramid to 8/6/4, (2) holds 10s -> 12s, (3) more band tension on Part B. Never add external load to the Big 3. HOLD STEADY through the w/c 31 Aug deload+taper - that is not the place for a new stimulus. Progress from the Birmingham build, w/c 7 Sep."
    }
   ]
  }
