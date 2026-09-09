@@ -1,5 +1,5 @@
 {
- "week": "PLAN 24 AUG - 6 SEP 2026. CLEAN REBUILD 26 AUG. WHY: the live file had run out at 23 Aug - the sharpen week was designed on 23 Aug but never landed in the repo, so the PWA had no current week. The same rewrite also silently dropped routines.core and its references on Tue 11 and Tue 18 Aug (written 11 Aug, lost when the file was rebuilt on 16 Aug from a pre-11-Aug base). Both restored here. == WEEK OF 24-30 AUG - SHARPEN WEEK == Last week of real work before Tenerife. Target ~350 load, 26.6 km running, ACWR ~1.26. Mon 80 threshold / Tue 60 South Ribble / Wed 80 station quality / Thu 0 rest+carb anchor / Fri 15 core, no run / Sat 115 solo doubles sim / Sun 0. ACTUALS TO DATE: Mon 24 came in at ~61 load (9.83 km, 10-min mean-max 5:11/km, max HR 170) - NOT flat, so the 'cut Wednesday' rule does not fire. Tue 25 came in at 51 load (8.22 km, EF 1.10) but ran in the EVENING with HR drifting 125-161, so it does NOT close the efficiency arc. Week is tracking ~30-40 load light against plan; that is acceptable eleven days out and is not a reason to add volume. DATA FAULT ACTIVE: athletedata logged Mon 24 at dailyLoad 4.2 because the run split into two Garmin files and it counted only the 1.04 km warm-up. Weekly km under-reports by ~8.8 km. Correct manually. == WEEK OF 31 AUG - 6 SEP - COMBINED DELOAD + TENERIFE TAPER == Deliberately SHALLOW. Tenerife is a dress rehearsal, not a target race - do not taper hard into it. Mon 50 South Ribble EF arc point 3 (HR HELD FLAT AT 148, cool morning - this is the rescheduled 25 Aug job) / Tue 0 core, held steady / Wed 40 sharpener + station touches + carb anchor 475 g / Thu 15 travel + shakeout + 400 g / Fri RACE 15:10 / Sat 0 / Sun optional shakeout + planning. Target ~250-265 load, ~24 km running. Exits into the w/c 7 Sep 25 km ladder start cleanly. HOLD TRIGGERS UNCHANGED and they outrank everything above: spinal symptom RPE >2 stops the session mid-station and applies ON RACE DAY TOO; ACWR >1.3; injury index >60; two consecutive nights under 6h. RAMP CAP: <=15% default, 20% only when prior week ACWR <=1.05, injury index zero, no spinal symptom RPE >2, and sleep gate clear. OPEN ITEMS CARRIED: (1) Garmin device LTHR still reads 175, correct is 178 - scheduled Mon 31 Aug, open since 6 Aug; (2) run_km_prescribed field still missing from the PWA, flagged 16 Aug; (3) no joint session with Chris has happened - largest uncontrolled variable in Tenerife; (4) close the loop with clinician/physio on movement patterns to avoid with the annular tear. CLOSED, DO NOT REOPEN: CTL target locked 12 Aug at peak 39-41, ceiling 43 (46 is superseded); hills deleted and rolled to the post-Tenerife VO2max slot; athletedata IF bug closed 16 Aug; 15 Aug BBJ heat explanation does not hold; cycling FTP 217W workaround reverted.",
+ "week": "PLAN 9-20 SEP 2026 (w/c 7 Sep tail + w/c 14 Sep). Written 9 Sep in-thread; Sunday planning retired 8 Sep. W/C 7 SEP = 25 km (Option B rung 1): 8.07 km banked Mon 7 Sep Arona (counts as the week's quality touch - last 2 km ran at ~275W); Tue checkout/travel; Wed 9 off (night flight, sleep debt ~159 min); Thu 6 easy / Fri hinge block standalone + 3 km / Sat 8 easy / Sun off. All remaining running Zone 2. W/C 14 SEP = 29 km: Mon 30-min TT (settles CP before the 23 Sep 5x1km and Preston) / Tue core / Wed hinge block + STATION BASELINE at race volume (week 0 of the over-volume ladders, timed sets) / Thu long run 11 km easy / Fri shakeout / Sat CFG Intermediate = the week's VO2max session / Sun off. Long run sits Thursday because Wednesday carries the station work. RAMP: 25 -> 29 is +16%, over the 15% default; 20% gate needs prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, sleep gate clear (7-day mean >=380 min, no night <300). Read Sun 13 Sep evening - if the sleep gate fails, Thu 17 drops to 9 km (week = 27). STRUCTURE (8 Sep): chain rotation dropped - only 10 Oct full sim and 17 Oct half-volume chain sharpen remain. strength_lower replaced by the hinge block (spinal graded exposure, not strength). Ladder steps after the 16 Sep baseline: w/c 21 Sep step 1, w/c 28 Sep HOLD (deload + Preston 10k), w/c 5 Oct step 2, w/c 12 Oct step 3. Targets: BBJ 80 -> 120 -> 150 -> 180 m; sandbag lunge 100 -> 130 -> 165 -> 200 m @20 kg; wall balls 100 -> 175 -> 240 -> 300 @6 kg. Progression gated by spinal symptom RPE (>2 = hard stop, hold the step). Sleds = compromised-entry practice only (HR at sled start/finish). Ergs by screen targets. Expect ACWR to read hot w/c 14 Sep - CFG accessory and station work score off HR zones. Read it, don't panic. OPEN: ramp gate reads km or load - decide before w/c 21 Sep.",
  "anchors": {
   "set_on": "2026-08-16 (re-verified 2026-08-26)",
   "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
@@ -26,7 +26,7 @@
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "After Tenerife (4 Sep 2026)",
+  "next_review": "30-min TT Mon 14 Sep 2026 (cal factor 100.0 for the test, back to 101.7 after). Anchors stand if avg power lands 255-268W.",
   "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT."
  },
  "days": {
@@ -2221,6 +2221,449 @@
      "text": "RAMP RULE WARNING for the w/c 7 Sep build: measure the post-race ramp against the PRE-taper week (w/c 24 Aug, ~350), NOT against the taper week. Measuring off the deload week will incorrectly block a normal return to load."
     }
    ]
+  },
+  "2026-09-09": {
+   "title": "Off - travel recovery, walk only",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 9 SEP. Night flight home, 4 h seated, sleep debt ~159 min. Morning read was green (HRV z +1.2, RHR z -1.2, TSB +6.6) but the sleep is the governing number today. 30-40 min walk. No flexion stretching. Eat properly - back to 2,500 kcal / 155 g protein / 300 g carbs from today."
+    },
+    {
+     "type": "note",
+     "text": "WEEK SO FAR: 8.07 km banked Mon 7 Sep (Arona, last ~2 km at ~275W / HR 173-177 = this week's quality touch). 17 km left across Thu-Sun, ALL Zone 2. Tenerife session file (2026-09-04) still to write - post FC / lunge / wall ball symptom RPE if anything other than 0."
+    }
+   ]
+  },
+  "2026-09-10": {
+   "title": "Easy run 6 km",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 10 SEP. First run home. HR <=148, walk anything that takes it over. Stryd on. Nothing faster than easy - Monday's Arona finish already spent this week's intensity."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Easy run 6 km",
+     "detail": "HR <=148, ~6:15-6:40/km. Conversational.",
+     "secs": 2340
+    }
+   ]
+  },
+  "2026-09-11": {
+   "title": "HINGE BLOCK (first outing, standalone) + 3 km shakeout",
+   "rpe": "4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 11 SEP @ RAW. First loaded hinge in seven weeks, done FRESH and ALONE so it is not stacked with the station baseline on Wed 16. Purpose is a clean read on the pattern, not work. Effort and symptom RPE logged separately on both movements. ANY symptom >0 today: Sat drops to 6 km and the hinge block is SKIPPED on Wed 16 (station baseline still goes ahead at race volume)."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "8 min easy bike or row, 10 bodyweight hinges, 10 air squats, 2 x 10 m walking lunge unloaded",
+     "secs": 600
+    },
+    {
+     "type": "routine",
+     "ref": "hinge_block"
+    },
+    {
+     "type": "step",
+     "label": "Shakeout 3 km",
+     "detail": "Straight after. HR <=140, very easy. Treadmill fine.",
+     "secs": 1200
+    },
+    {
+     "type": "note",
+     "text": "POST IN THREAD: RDL effort/symptom, carry effort/symptom, next-morning back read Sat 12 (annular tears report late - the morning number is the one that counts)."
+    }
+   ]
+  },
+  "2026-09-12": {
+   "title": "Long run 8 km easy",
+   "rpe": "4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 12 SEP. HR <=148 throughout. Two clear days before Monday's TT - this run leaves nothing in the legs. If Friday's hinge block threw any symptom, 6 km not 8."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Long run 8 km",
+     "detail": "HR <=148, ~6:15-6:40/km. Flat route. Stryd on.",
+     "secs": 3120
+    },
+    {
+     "type": "note",
+     "text": "Week closes at 25 km (8.07 + 6 + 3 + 8)."
+    }
+   ]
+  },
+  "2026-09-13": {
+   "title": "Off - core optional",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 13 SEP. Full rest. Core optional, held at last week's level. Carb intake normal, protein 155 g+."
+    },
+    {
+     "type": "note",
+     "text": "RAMP GATE READ TONIGHT for w/c 14 Sep (25 -> 29 km = +16%): prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, 7-day sleep mean >=380 min AND no night <300. If the sleep gate fails, Thu 17 becomes 9 km (week = 27). Also set Stryd cal factor to 100.0 tonight for Monday's TT."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    }
+   ]
+  },
+  "2026-09-14": {
+   "title": "30-min TT - CP re-test (replaces threshold)",
+   "rpe": "8-9",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 14 SEP. Standalone 30-minute time trial. This settles CP after Tenerife and is the anchor the 23 Sep 5x1km and the Preston target hang off. Flat loop, no stops, no traffic. STRYD CAL FACTOR: 100.0 for this session, back to 101.7 afterwards. Current anchors going in: CP 261, 5:15/km, LTHR 178."
+    },
+    {
+     "type": "note",
+     "text": "EXECUTION: first 5 min at 5:15-5:20 feel, then settle into the hardest pace you can hold flat for the remaining 25. Do not bank time early - a fade in the last 10 min under-reads CP. Average HR minutes 10-30 = LTHR read. Average power for the 30 = the new CP candidate (Stryd app is authoritative, take its number not Garmin's)."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "15 min easy, HR <=148",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "Strides x4",
+     "detail": "20 s each, 60 s walk between",
+     "secs": 320
+    },
+    {
+     "type": "step",
+     "label": "30-min TT",
+     "detail": "~5.7 km at 5:10-5:15/km if CP has held. Steer by feel and power, not pace. Log avg power, avg HR mins 10-30, distance.",
+     "secs": 1800,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10 min easy jog + 5 min walk",
+     "secs": 900
+    },
+    {
+     "type": "note",
+     "text": "~10 km total. AFTER: post the Stryd avg power here. If it lands 255-268W the anchors stand. Outside that band we reset CP, threshold pace and the 23 Sep rep targets before Wednesday. NEXT MORNING: check Garmin Connect Sport HR zones - a hard effort is when the LTHR auto-detect reverts from 178."
+    }
+   ]
+  },
+  "2026-09-15": {
+   "title": "Off - core block",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 15 SEP. Off. STRUCTURAL CONSTRAINT: 05:00 rise for 06:00 coaching. Tuesday never carries quality. Judged by bedtime, not duration."
+    },
+    {
+     "type": "note",
+     "text": "CORE PROGRESSION RESUMES: pyramid back to 6-4-2 as written; add band tension on the Pallof only if last week's symptom RPE was 0 throughout."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    }
+   ]
+  },
+  "2026-09-16": {
+   "title": "Hinge block + STATION BASELINE (race volume, timed sets)",
+   "rpe": "7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 16 SEP @ RAW. WEEK 0 of the over-volume ladders. Race volume only - 80 m BBJ / 100 m lunge / 100 wall balls - in timed sets. The number that matters today is the set rate, because every ladder step from w/c 21 Sep is judged against it. EFFORT CEILING 7: CFG is in three days, this is a measurement not a session to empty. Hinge block is SKIPPED if Fri 11 threw any symptom >0."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy bike or row, then 2 x 10 m walking lunge unloaded, 10 air squats, 5 easy burpees",
+     "secs": 780
+    },
+    {
+     "type": "routine",
+     "ref": "hinge_block"
+    },
+    {
+     "type": "routine",
+     "ref": "ladder_protocol"
+    },
+    {
+     "type": "step",
+     "label": "BBJ 80 m - 4 x 20 m",
+     "detail": "Race standard: chest to floor, two-foot take-off and landing. 45 s between sets. Log time per set.",
+     "secs": 600,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Walk 3 min",
+     "detail": "Move the sandbag into position. Set the lane.",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Sandbag lunge 100 m - 4 x 25 m @ 20 kg",
+     "detail": "Trailing knee touches every rep, stand tall between. 45 s between sets. SPINAL CHECKPOINT at 50 m and at the end - symptom and effort as separate numbers.",
+     "secs": 720,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Walk 3 min",
+     "detail": "Straight to the ball. Do not sit.",
+     "secs": 180
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 100 - 4 x 25 @ 6 kg",
+     "detail": "Full depth, target every rep, no bounce catches. 45 s between sets. SPINAL CHECKPOINT at 50 and at 100. Log time per set - the set 4 vs set 1 gap is the whole point.",
+     "secs": 720,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "5 min easy bike, walk out. No flexion stretching.",
+     "secs": 300
+    },
+    {
+     "type": "note",
+     "text": "POST IN THREAD: 12 set times, hinge block RPEs, 5 spinal checkpoint pairs. That writes the w/c 21 Sep step-1 session."
+    }
+   ]
+  },
+  "2026-09-17": {
+   "title": "Long run 11 km easy + core",
+   "rpe": "4",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 17 SEP. Long run moved here because Wednesday carries the station work. Easy means easy: HR <=148 throughout, walk any hill that takes it over. Two days before CFG - this run must leave nothing in the legs. If the Sun 13 ramp gate failed on sleep: 9 km."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Long run 11 km",
+     "detail": "HR <=148, roughly 6:15-6:40/km. Conversational the whole way.",
+     "secs": 4200
+    },
+    {
+     "type": "note",
+     "text": "CORE mid-morning or later, not straight after the run. Held at Tuesday's level."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    }
+   ]
+  },
+  "2026-09-18": {
+   "title": "Shakeout 3 km + strides",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 18 SEP. Primer for CFG. Short. Carb intake up today - not a full load, CFG is 5 km of running plus stations, not a HYROX."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Shakeout 3 km",
+     "detail": "Very easy, HR <=140",
+     "secs": 1200
+    },
+    {
+     "type": "step",
+     "label": "Strides x4",
+     "detail": "20 s at ~5:00/km feel, full walk recovery",
+     "secs": 320
+    }
+   ]
+  },
+  "2026-09-19": {
+   "title": "CFG Intermediate - 6 x 800m + 6 stations + 200m finish = VO2max session",
+   "rpe": "8-9 on reps, hinge stations governed",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 19 SEP. CFG INTERMEDIATE (confirmed 5 Sep). Format: 800m run then station, x6, then 200m finish - 5.0 km running total. Stations in order: tyre flips 60m (~60 kg) / slam ball wall overs 15kg x20 / farmers walk 14kg 120m / burpee broad jumps 60m / sandbag lunges 15kg 60m / DB snatches 10kg x30 each arm. THIS IS THE WEEK'S VO2max SESSION - not extra, not a race. PRIMARY GOAL: even-paced VO2max stimulus - 6 reps inside a 5 s band, rep 6 no slower than rep 1. Reps 1-2 held at the slow end. First VO2-intensity running since 2 Jul: govern the early reps, no leaderboard."
+    },
+    {
+     "type": "note",
+     "text": "RUN TARGETS (anchors from Mon 14 TT - if CP moved, re-scale). Default CP 261W / 5:15 / LTHR 178. Reps 1-4: 275-285W (105-109% CP). ON YOUR POD THAT IS ~4:55-5:05/km, ~3:55-4:05 per 800 - NOT 4:40s. Corrected 9 Sep: the 10 Aug 5x1km ran 5:03-5:13 at 265-293W and the Preston 5:00-5:05 target is 266-272W, so 275-285W is a hair quicker than 10k pace, not a track rep. If the Mon 14 TT moves CP, re-scale the band off the new number, not this pace. Reps 5-6: free ONLY if 1-4 were in band. 200m finish: as hard as you like, nothing follows it. HR: end-of-rep HR climbs through the session and sits above 178 from rep 3 on. If it is there in rep 1 you went out too hot. STEER BY POWER, not pace. Restart rule: HR at the start of the next 800 no higher than at the end of the previous one, and settled at rep pace inside 200m. If you cannot hit rep pace by 200m the station was too fast, not the rep."
+    },
+    {
+     "type": "note",
+     "text": "STATION SPLIT. GOVERN the three hinge-from-floor stations - tyre flips, wall overs, DB snatches - none are HYROX patterns and the loaded-hinge-under-fatigue question is self-managed now: symptom RPE is the only governor. MOVE THROUGH farmers walk and lunges at a controlled pace (both well under race load - you race 2x24kg/200m and 20kg/100m). HOLD burpee broad jumps steady - biggest HR driver on the sheet and it sits before run 5. Effort RPE and spinal symptom RPE logged SEPARATELY at every station. Symptom RPE >2 at any station = stop chasing the station, walk it through, jog the remaining reps. Spinal checkpoint outranks the clock."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "15 min easy, HR <=148, then 4 x 20 s strides, 60 s walk between. Finish no more than 10 min before the start. Lap button at EVERY run/station boundary.",
+     "secs": 1220
+    },
+    {
+     "type": "step",
+     "label": "Run 1",
+     "detail": "800m @ 275-280W - SLOW END. Settle, don't race the field.",
+     "secs": 230,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Tyre flips 60m",
+     "detail": "GOVERN - the day's biggest spinal exposure. ~60kg tyre, ~45-55 flips over 60m (~8x the rep volume of your 3x6 RDL @50kg, from lower, under fatigue). Per flip: feet close, hips LOW, chest on the tyre - make it a squat-drive not a hinge - exhale on the drive, flip it over, don't catch or press it, step up to the next. Break it into blocks of 10 with 2-3 breaths between - 20-30s total cost, buys a clean back for the other five stations. Target ~3:30-4:30. Log effort + spinal RPE.",
+     "secs": 240,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2",
+     "detail": "800m @ 275-280W. Still slow end. Note first-200m pace and start HR.",
+     "secs": 230,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Slam ball wall overs 15kg x20",
+     "detail": "GOVERN. Floor hinge to overhead throw. Steady rhythm, full hip extension, don't rush the pick-up. Log effort + spinal RPE.",
+     "secs": 90,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3",
+     "detail": "800m @ 275-285W. HR should now be reaching 178+ by the finish.",
+     "secs": 230,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Farmers walk 14kg 120m",
+     "detail": "FREEBIE. Transit pace - brisk, unbroken, no sprinting. HR comes down here. Log effort + spinal RPE.",
+     "secs": 60,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4",
+     "detail": "800m @ 275-285W. Last governed rep - check spread of 1-4 is inside 5 s.",
+     "secs": 230,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Burpee broad jumps 60m",
+     "detail": "HOLD STEADY. Biggest HR driver on the sheet. Even cadence, no attacking it - run 5 still has to count as VO2 work. Log effort RPE.",
+     "secs": 150,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 5",
+     "detail": "FREE if reps 1-4 were in band, otherwise hold 280-285W.",
+     "secs": 225,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sandbag lunges 15kg 60m",
+     "detail": "MOVE THROUGH. 60% race distance at 75% race load, your best station. Standard spinal checkpoint. Log effort + spinal RPE.",
+     "secs": 120,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6",
+     "detail": "FREE. Must be no slower than rep 1.",
+     "secs": 220,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "DB snatches 10kg 30/arm",
+     "detail": "GOVERN. 60 cyclical hinges with HR pinned. Even cadence, clean hand switch at 30, no touch-and-go frenzy. Spinal RPE at 30 (switch) and 60. Log effort + spinal RPE.",
+     "secs": 150,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "200m finish",
+     "detail": "All in. Nothing follows it.",
+     "secs": 45,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool down",
+     "detail": "10-15 min easy jog + walk. No stretching into flexion.",
+     "secs": 900
+    },
+    {
+     "type": "note",
+     "text": "SECONDARY DATA off the lap button: (1) HR at the start of each 800; (2) first-200m pace of each rep; (3) per-station effort/spinal RPE pairs. 800s feed the Stryd short-duration curve - read it, don't update CP off it. NEXT MORNING (Sun 20): spinal symptom score goes in the log - annular tears report late; this is the data point that decides how hinge patterns are programmed for the rest of the Birmingham block. Also check Garmin Connect Sport HR zones for LTHR auto-detect reverting from 178. Session RPE in the PWA, not the Garmin field. 5 x 1 km @ 4:55 stays on WED 23 SEP. ACWR will read inflated this week from stations scoring off HR zones - read it, don't act on it."
+    }
+   ]
+  },
+  "2026-09-20": {
+   "title": "Off - walk only",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 20 SEP. Full rest, 20-40 min walk. No flexion stretching after loaded hinge work. Protein 155 g+. MORNING-AFTER SPINAL SYMPTOM SCORE - post it."
+    },
+    {
+     "type": "note",
+     "text": "NO SUNDAY PLANNING SESSION - retired 8 Sep. w/c 21 Sep is written in-thread off Wednesday's set times and Saturday's CFG data: Mon threshold / Wed 5x1km @ 4:55 (Preston gate) / station ladder step 1 on the non-run midweek day / Sat 26 Sep easy only (Preston 10k Sun 27). 33 km."
+    }
+   ]
   }
  },
  "routines": {
@@ -2354,6 +2797,42 @@
    {
     "type": "note",
     "text": "PROGRESSION, in this order and one at a time: (1) pyramid to 8/6/4, (2) holds 10s -> 12s, (3) more band tension on Part B. Never add external load to the Big 3. HOLD STEADY through the w/c 31 Aug deload+taper - that is not the place for a new stimulus. Progress from the Birmingham build, w/c 7 Sep."
+   }
+  ],
+  "hinge_block": [
+   {
+    "type": "note",
+    "text": "HINGE BLOCK - 15-20 min, once per week, in front of the station work (standalone on its first outing, Fri 11 Sep). This is NOT a strength session. It is a fresh, controlled dose of loaded hinge so the lunge ladder is not the only hinge exposure you get. Purpose: spinal graded exposure. Log effort and symptom RPE separately. Symptom >2 = stop the block AND drop the station session to race volume."
+   },
+   {
+    "type": "step",
+    "label": "Barbell RDL 3 x 6 @ 50 kg",
+    "detail": "Neutral spine, hinge to just below the knee, 2 s down. 50 kg is the restart weight - hold it for two weeks before adding. 90 s between sets. SPINAL CHECKPOINT.",
+    "secs": 420,
+    "rpe": true,
+    "spinal": true
+   },
+   {
+    "type": "step",
+    "label": "Single-arm farmers carry 24 kg - 3 x 40 m per side",
+    "detail": "Anti-lateral-flexion. Tall, ribs down, no lean. Swap sides without putting the bell down if grip allows. 60 s between rounds. SPINAL CHECKPOINT.",
+    "secs": 480,
+    "rpe": true,
+    "spinal": true
+   }
+  ],
+  "ladder_protocol": [
+   {
+    "type": "note",
+    "text": "OVER-VOLUME LADDER PROTOCOL - applies to every ladder session. FIXED FOR THE WHOLE BLOCK: BBJ lane 20 m out-and-back (log the lane length if RAW forces something else - a different lane is a different session). Sandbag lunge sets of 25 m. Wall ball sets of 25. Rest 45 s between sets, 3 min walk between stations. Stations in RACE ORDER: BBJ first, then lunges INTO wall balls with only the 3 min walk between - the wall balls are supposed to arrive on legs the lunges have already used."
+   },
+   {
+    "type": "note",
+    "text": "WHAT TO LOG: time per set, every set. Progress is NOT total time. Progress is total distance/reps going up while the LAST set stays within a few seconds of the FIRST. If the last set is >15% slower than the first, the volume was too high - hold this step next time rather than climbing."
+   },
+   {
+    "type": "note",
+    "text": "SPINAL RPE: effort and symptom logged separately at the HALFWAY point and the END of lunges and of wall balls, plus end of BBJ. Symptom >2 at any checkpoint = stop that station, finish nothing else loaded, and the ladder holds at the previous step. Same rule as the race."
    }
   ]
  }
