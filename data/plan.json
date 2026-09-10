@@ -1,5 +1,5 @@
 {
- "week": "PLAN 9-20 SEP 2026 (w/c 7 Sep tail + w/c 14 Sep). Written 9 Sep in-thread; Sunday planning retired 8 Sep. W/C 7 SEP = 25 km (Option B rung 1): 8.07 km banked Mon 7 Sep Arona (counts as the week's quality touch - last 2 km ran at ~275W); Tue checkout/travel; Wed 9 off (night flight, sleep debt ~159 min); Thu 6 easy / Fri hinge block standalone + 3 km / Sat 8 easy / Sun off. All remaining running Zone 2. W/C 14 SEP = 29 km: Mon 30-min TT (settles CP before the 23 Sep 5x1km and Preston) / Tue core / Wed hinge block + STATION BASELINE at race volume (week 0 of the over-volume ladders, timed sets) / Thu long run 11 km easy / Fri shakeout / Sat CFG Intermediate = the week's VO2max session / Sun off. Long run sits Thursday because Wednesday carries the station work. RAMP: 25 -> 29 is +16%, over the 15% default; 20% gate needs prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, sleep gate clear (7-day mean >=380 min, no night <300). Read Sun 13 Sep evening - if the sleep gate fails, Thu 17 drops to 9 km (week = 27). STRUCTURE (8 Sep): chain rotation dropped - only 10 Oct full sim and 17 Oct half-volume chain sharpen remain. strength_lower replaced by the hinge block (spinal graded exposure, not strength). Ladder steps after the 16 Sep baseline: w/c 21 Sep step 1, w/c 28 Sep HOLD (deload + Preston 10k), w/c 5 Oct step 2, w/c 12 Oct step 3. Targets: BBJ 80 -> 120 -> 150 -> 180 m; sandbag lunge 100 -> 130 -> 165 -> 200 m @20 kg; wall balls 100 -> 175 -> 240 -> 300 @6 kg. Progression gated by spinal symptom RPE (>2 = hard stop, hold the step). Sleds = compromised-entry practice only (HR at sled start/finish). Ergs by screen targets. Expect ACWR to read hot w/c 14 Sep - CFG accessory and station work score off HR zones. Read it, don't panic. OPEN: ramp gate reads km or load - decide before w/c 21 Sep.",
+ "week": "PLAN 9-20 SEP 2026 (w/c 7 Sep tail + w/c 14 Sep). Written 9 Sep in-thread; Sunday planning retired 8 Sep. W/C 7 SEP = 25 km (Option B rung 1): 8.07 km banked Mon 7 Sep Arona (counts as the week's quality touch - last 2 km ran at ~275W); Tue checkout/travel; Wed 9 off (night flight, sleep debt ~159 min); Thu long run 11 easy / Fri hinge block standalone + 3 km / Sat 3 easy / Sun off. All remaining running Zone 2. W/C 14 SEP = 29 km: Mon 30-min TT (settles CP before the 23 Sep 5x1km and Preston) / Tue core / Wed hinge block + STATION BASELINE at race volume (week 0 of the over-volume ladders, timed sets) / Thu long run 11 km easy / Fri shakeout / Sat CFG Intermediate = the week's VO2max session / Sun off. Long run sits Thursday because Wednesday carries the station work. RAMP: 25 -> 29 is +16%, over the 15% default; 20% gate needs prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, sleep gate clear (7-day mean >=380 min, no night <300). Read Sun 13 Sep evening - if the sleep gate fails, Thu 17 drops to 9 km (week = 27). STRUCTURE (8 Sep): chain rotation dropped - only 10 Oct full sim and 17 Oct half-volume chain sharpen remain. strength_lower replaced by the hinge block (spinal graded exposure, not strength). Ladder steps after the 16 Sep baseline: w/c 21 Sep step 1, w/c 28 Sep HOLD (deload + Preston 10k), w/c 5 Oct step 2, w/c 12 Oct step 3. Targets: BBJ 80 -> 120 -> 150 -> 180 m; sandbag lunge 100 -> 130 -> 165 -> 200 m @20 kg; wall balls 100 -> 175 -> 240 -> 300 @6 kg. Progression gated by spinal symptom RPE (>2 = hard stop, hold the step). Sleds = compromised-entry practice only (HR at sled start/finish). Ergs by screen targets. Expect ACWR to read hot w/c 14 Sep - CFG accessory and station work score off HR zones. Read it, don't panic. OPEN: ramp gate reads km or load - decide before w/c 21 Sep.",
  "anchors": {
   "set_on": "2026-08-16 (re-verified 2026-08-26)",
   "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
@@ -2237,12 +2237,12 @@
    ]
   },
   "2026-09-10": {
-   "title": "Easy run 6 km",
-   "rpe": "3",
+   "title": "Long run 11 km easy",
+   "rpe": "4",
    "blocks": [
     {
      "type": "note",
-     "text": "THU 10 SEP. First run home. HR <=148, walk anything that takes it over. Stryd on. Nothing faster than easy - Monday's Arona finish already spent this week's intensity."
+     "text": "THU 10 SEP. Long run moved here from Saturday (JJ, 10 Sep) - three clear days before Monday's TT instead of two. HR <=148 throughout, walk anything that takes it over. Stryd on. Nothing faster than easy - Monday's Arona finish already spent this week's intensity."
     },
     {
      "type": "routine",
@@ -2250,9 +2250,9 @@
     },
     {
      "type": "step",
-     "label": "Easy run 6 km",
-     "detail": "HR <=148, ~6:15-6:40/km. Conversational.",
-     "secs": 2340
+     "label": "Long run 11 km",
+     "detail": "HR <=148, ~6:15-6:40/km. Conversational the whole way. Flat route.",
+     "secs": 4200
     }
    ]
   },
@@ -2262,7 +2262,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "FRI 11 SEP @ RAW. First loaded hinge in seven weeks, done FRESH and ALONE so it is not stacked with the station baseline on Wed 16. Purpose is a clean read on the pattern, not work. Effort and symptom RPE logged separately on both movements. ANY symptom >0 today: Sat drops to 6 km and the hinge block is SKIPPED on Wed 16 (station baseline still goes ahead at race volume)."
+     "text": "FRI 11 SEP @ RAW. First loaded hinge in seven weeks, done FRESH and ALONE so it is not stacked with the station baseline on Wed 16. Purpose is a clean read on the pattern, not work. Effort and symptom RPE logged separately on both movements. ANY symptom >0 today: Sat becomes a walk and the hinge block is SKIPPED on Wed 16 (station baseline still goes ahead at race volume)."
     },
     {
      "type": "step",
@@ -2287,12 +2287,12 @@
    ]
   },
   "2026-09-12": {
-   "title": "Long run 8 km easy",
-   "rpe": "4",
+   "title": "Easy 3 km - legs loosener",
+   "rpe": "2",
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 12 SEP. HR <=148 throughout. Two clear days before Monday's TT - this run leaves nothing in the legs. If Friday's hinge block threw any symptom, 6 km not 8."
+     "text": "SAT 12 SEP. Short and easy, that's all. HR <=140. If Friday's hinge block threw any symptom >0, walk instead and post the morning back read."
     },
     {
      "type": "routine",
@@ -2300,13 +2300,13 @@
     },
     {
      "type": "step",
-     "label": "Long run 8 km",
-     "detail": "HR <=148, ~6:15-6:40/km. Flat route. Stryd on.",
-     "secs": 3120
+     "label": "Easy 3 km",
+     "detail": "HR <=140, very easy, treadmill fine.",
+     "secs": 1200
     },
     {
      "type": "note",
-     "text": "Week closes at 25 km (8.07 + 6 + 3 + 8)."
+     "text": "Week closes at 25 km (8.07 + 11 + 3 + 3)."
     }
    ]
   },
@@ -2320,7 +2320,7 @@
     },
     {
      "type": "note",
-     "text": "RAMP GATE READ TONIGHT for w/c 14 Sep (25 -> 29 km = +16%): prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, 7-day sleep mean >=380 min AND no night <300. If the sleep gate fails, Thu 17 becomes 9 km (week = 27). Also set Stryd cal factor to 100.0 tonight for Monday's TT."
+     "text": "RAMP GATE READ TONIGHT for w/c 14 Sep (25 -> 29 km = +16%): prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, 7-day sleep mean >=380 min AND no night <300. If the sleep gate fails, Thu 17 becomes 9 km (week = 27). Stryd cal factor STAYS at 101.7 for Monday - the track is the reference, so it's being tested, not reset."
     },
     {
      "type": "routine",
@@ -2334,11 +2334,11 @@
    "blocks": [
     {
      "type": "note",
-     "text": "MON 14 SEP. Standalone 30-minute time trial. This settles CP after Tenerife and is the anchor the 23 Sep 5x1km and the Preston target hang off. Flat loop, no stops, no traffic. STRYD CAL FACTOR: 100.0 for this session, back to 101.7 afterwards. Current anchors going in: CP 261, 5:15/km, LTHR 178."
+     "text": "MON 14 SEP. Standalone 30-minute time trial ON THE TRACK. This settles CP after Tenerife and is the anchor the 23 Sep 5x1km and the Preston target hang off. Lane 1, tightest line on the bends, go when it's empty. STRYD CAL FACTOR: leave at 101.7 - power is unaffected by it and the track tests the distance. Current anchors going in: CP 261, 5:15/km, LTHR 178. It is a 30-MINUTE effort, not a 5k - press lap at 12.5 laps for the 5k split if you want it, then keep going. Expect ~14-14.5 laps."
     },
     {
      "type": "note",
-     "text": "EXECUTION: first 5 min at 5:15-5:20 feel, then settle into the hardest pace you can hold flat for the remaining 25. Do not bank time early - a fade in the last 10 min under-reads CP. Average HR minutes 10-30 = LTHR read. Average power for the 30 = the new CP candidate (Stryd app is authoritative, take its number not Garmin's)."
+     "text": "WATCH SCREEN: 3 s power, lap power, lap time, HR. Nothing else, no pace. Lap button every 5:00. COUNT TRACK LAPS - distance and pace come from laps x 400, not Stryd. LADDER (5-min laps): 0-5 250-255W (too easy, on purpose; HR to ~170) / 5-10 258-262W (HR 172-176) / 10-15 262-266W (HR 176-179) / 15-20 262-266W (same number, cadence is the tell - under 174, shorten the stride) / 20-25 265-270W (HR 180-183; lap 5 is the decision point) / 25-30 270-280W (whatever's there, last 90 s empty it). Target average 262-266W. GUARDRAILS: lap 1 over 260W = went out hot, back to 255 for lap 2. Lap 2 HR over 180 at <=255W = not the day - convert to 20 min at 258-262, log as a control run, CP stays 261. FADE RULE: any 5-min lap >8W below the previous one before minute 25 = stop rising, hold that number to the end. Cadence floor 172."
     },
     {
      "type": "routine",
@@ -2359,7 +2359,7 @@
     {
      "type": "step",
      "label": "30-min TT",
-     "detail": "~5.7 km at 5:10-5:15/km if CP has held. Steer by feel and power, not pace. Log avg power, avg HR mins 10-30, distance.",
+     "detail": "Track, 30:00. ~14-14.5 laps. Steer by power ONLY. Log: avg power (Stryd app), avg HR mins 10-30, track laps, Stryd distance.",
      "secs": 1800,
      "rpe": true
     },
@@ -2371,7 +2371,7 @@
     },
     {
      "type": "note",
-     "text": "~10 km total. AFTER: post the Stryd avg power here. If it lands 255-268W the anchors stand. Outside that band we reset CP, threshold pace and the 23 Sep rep targets before Wednesday. NEXT MORNING: check Garmin Connect Sport HR zones - a hard effort is when the LTHR auto-detect reverts from 178."
+     "text": "~10 km total. AFTER: (1) Stryd avg power - if 255-268W the anchors stand; outside that band CP, threshold pace, the 23 Sep rep targets and the CFG band all reset before Wednesday. (2) Avg HR mins 10-30 = LTHR read. (3) CAL CHECK: Stryd distance vs laps x 400 + partial. Within +/-1% -> 101.7 stands. Outside -> new cal = 101.7 x (track / Stryd), applied going forward only. NEXT MORNING: check Garmin Connect Sport HR zones - a hard effort is when the LTHR auto-detect reverts from 178."
     }
    ]
   },
@@ -2527,7 +2527,7 @@
     },
     {
      "type": "note",
-     "text": "RUN TARGETS (anchors from Mon 14 TT - if CP moved, re-scale). Default CP 261W / 5:15 / LTHR 178. Reps 1-4: 275-285W (105-109% CP). ON YOUR POD THAT IS ~4:55-5:05/km, ~3:55-4:05 per 800 - NOT 4:40s. Corrected 9 Sep: the 10 Aug 5x1km ran 5:03-5:13 at 265-293W and the Preston 5:00-5:05 target is 266-272W, so 275-285W is a hair quicker than 10k pace, not a track rep. If the Mon 14 TT moves CP, re-scale the band off the new number, not this pace. Reps 5-6: free ONLY if 1-4 were in band. 200m finish: as hard as you like, nothing follows it. HR: end-of-rep HR climbs through the session and sits above 178 from rep 3 on. If it is there in rep 1 you went out too hot. STEER BY POWER, not pace. Restart rule: HR at the start of the next 800 no higher than at the end of the previous one, and settled at rep pace inside 200m. If you cannot hit rep pace by 200m the station was too fast, not the rep."
+     "text": "RUN TARGETS (anchors from Mon 14 TT - if CP moved, re-scale). Default CP 261W / 5:15 / LTHR 178. Reps 1-4: 275-285W (105-109% CP). ON YOUR POD THAT LANDS SOMEWHERE IN 5:00-5:15/km (~4:00-4:12 per 800) DEPENDING ON THE DAY - NOT 4:40s. Evidence: 10 Aug 5x1km 5:03-5:13 at 265-293W; 7 Sep Arona 262W = 5:20 and 275W = 5:15 (day 3 post-race, 18C). The POWER is the target; the pace is whatever it comes out as. If the Mon 14 TT moves CP, re-scale the band off the new number, not this pace. Reps 5-6: free ONLY if 1-4 were in band. 200m finish: as hard as you like, nothing follows it. HR: end-of-rep HR climbs through the session and sits above 178 from rep 3 on. If it is there in rep 1 you went out too hot. STEER BY POWER, not pace. Restart rule: HR at the start of the next 800 no higher than at the end of the previous one, and settled at rep pace inside 200m. If you cannot hit rep pace by 200m the station was too fast, not the rep."
     },
     {
      "type": "note",
