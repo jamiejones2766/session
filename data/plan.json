@@ -2320,7 +2320,7 @@
     },
     {
      "type": "note",
-     "text": "RAMP GATE READ TONIGHT for w/c 14 Sep (25 -> 29 km = +16%): prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, 7-day sleep mean >=380 min AND no night <300. If the sleep gate fails, Thu 17 becomes 9 km (week = 27). Stryd cal factor STAYS at 101.7 for Monday - the track is the reference, so it's being tested, not reset."
+     "text": "RAMP GATE READ TONIGHT for w/c 14 Sep (25 -> 29 km = +16%): prior-week ACWR <=1.05, injury index 0, no symptom RPE >2. SLEEP GATE (decided Fri 11 Sep): holiday nights 5-9 Sep are exogenous and EXCLUDED - read the gate off Fri 11 / Sat 12 / Sun 13 nights only. Clears if all three >=360 min and none <300. If Fri or Sat lands under 6h, the exemption is void and the standard rule applies: Thu 17 becomes 9 km (week = 27). Stryd cal factor STAYS at 101.7 for Monday - the track is the reference, so it's being tested, not reset."
     },
     {
      "type": "routine",
