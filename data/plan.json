@@ -2836,7 +2836,7 @@
   "sled_entry_rehearsal": [
    {
     "type": "note",
-    "text": "SLED-ENTRY REHEARSAL - the ski:run:sled:run drill. NOT sled conditioning and NOT a session to empty. Purpose: rehearse arriving at the sled with HR headroom and recovering on the run AFTER it. Readout is TWO HR numbers per round - HR the instant you start pushing, and HR at the START of the run after - NOT a time. RAW sled != race sled, so absolute HR won't transfer; you're training the pattern (ski easy, run controlled, arrive calm, recover on the run), not chasing a number. If you arrive at the sled hot, DO NOT chill it away - log it and fix the ski / run-2 pacing next round. Rescuing a hot entry hides the exact signal you came for. Opens the w/c 21 station day in front of the ladder, weekly thereafter."
+    "text": "SLED-ENTRY REHEARSAL - the ski:run:sled:run drill. NOT sled conditioning and NOT a session to empty. Purpose: rehearse arriving at the sled with HR headroom and recovering on the run AFTER it. Readout is TWO HR numbers per round - HR the instant you start pushing, and HR at the START of the run after - NOT a time. RAW sled != race sled, so absolute HR won't transfer; you're training the pattern (ski easy, run controlled, arrive calm, recover on the run), not chasing a number. MEASURED ARRIVAL TARGET (12 Sep ceiling test): ~158-160 into the sled - above ~160 the PUSH itself slows even though the run still recovers, and the push is the protected station. Race/rehearse BELOW 160, not the 173 run-settle ceiling. If you arrive at the sled hot, DO NOT chill it away - log it and fix the ski / run-2 pacing next round. Rescuing a hot entry hides the exact signal you came for. Opens the w/c 21 station day in front of the ladder, weekly thereafter."
    },
    {
     "type": "step",
@@ -2973,7 +2973,7 @@
    },
    {
     "type": "note",
-    "text": "READING IT: line up the 3 rounds - arrival HR vs (sled 25m time) and (metres to settle on the run after). The CEILING is the arrival HR where the sled time JUMPS and/or the run won't settle within ~150m. Race arrival target = ~10-15 bpm BELOW that ceiling. That number then sets the target for sled_entry_rehearsal - replaces the single Cardiff-141 data point with your own measured ceiling. POST: the 3 arrival HRs, 3 sled times, 3 settle reads, and I'll pull the ceiling out with you."
+    "text": "READING IT: line up the 3 rounds - arrival HR vs (sled 25m time) and (metres to settle on the run after). The CEILING is the arrival HR where the sled time JUMPS and/or the run won't settle within ~150m. Race arrival target = ~10-15 bpm BELOW that ceiling. That number then sets the target for sled_entry_rehearsal - MEASURED 12 Sep 2026: run-settle ceiling >173 (settled by ~90m even arriving 173), BUT sled-push time degrades above ~160 arrival (1:11@158 vs 1:26-1:48@172-173). Race arrival target = ~158-160 (push-protective), NOT the 173 run ceiling. Cardiff-141 retired. Re-measure sled time on race kit at the 10 Oct sim. POST: the 3 arrival HRs, 3 sled times, 3 settle reads, and I'll pull the ceiling out with you."
    }
   ]
  }
