@@ -8,5 +8,42 @@
  "back": "fine",
  "notes": "1.500m run HR 154 \nSKI 2:04/500 HR 159 \nSLED 158 START 167 FINISH \nRUN 70M HR DROPPED TO 155 FINISH 158 \n\n2. HR START 110 SKI 500M 1:52/500 ROW 250 1:42/500 SLED HR 172  RUN 80M HR DROPPED TO 165 FINISH ON 161 \n\n3. HR START 118 HARD RUN 500M SLED START 173 \nRUN 90M SETTLE TO 163 ",
  "finished": "2026-09-12T16:35:17.496Z",
- "synced": false
+ "synced": false,
+ "analysis": {
+  "session": "sled_ceiling_test (diagnostic, one-off)",
+  "back_am": "0 (Fri single-arm carry threw symptom RPE1; Sat am read 0 - governed the GO)",
+  "sled_load": "152 HYROX sled + sandbag (race push weight, open men)",
+  "garmin_activity": "24336337695 (Run mode, Stryd)",
+  "rounds": [
+   {
+    "r": 1,
+    "arrival_hr": 158,
+    "sled_lap": "#13",
+    "sled_time": "1:11",
+    "ski": "#11 2:18 watch / 2:04 screen",
+    "settle": "~70m -> 155"
+   },
+   {
+    "r": 2,
+    "arrival_hr": 172,
+    "sled_lap": "#18",
+    "sled_time": "1:48",
+    "preload": "#17 ski 1:52 + row 250 (1:42/500 pace)",
+    "settle": "~80m -> 161"
+   },
+   {
+    "r": 3,
+    "arrival_hr": 173,
+    "sled_lap": "#24",
+    "sled_time": "1:26",
+    "preload": "hard run #22 500m @ 4:52/280W, HR->176",
+    "settle": "~90m -> 163"
+   }
+  ],
+  "conclusion": "Two halves disagree, both useful. RUN-SETTLE ceiling >173 (settled by 90m even arriving 173 - strong engine). But SLED-PUSH time degrades above ~160 arrival: 1:11@158 vs 1:26-1:48@172-173. Push is the protected station (Birmingham 2025 = sled push 96.5pct off hot ski entry). RACE ARRIVAL TARGET ~158-160, not 173. Cardiff-141 retired as too conservative.",
+  "caveats": "Sled times include 12.5m turn + hand-reset faff; magnitude soft, direction firm. R2>R3 inversion (1:48 vs 1:26) likely ski+row double preload cooking more than R3 single run + lap-press noise - do not read 1:48 vs 1:26 as a real gap. Re-measure sled time on race kit at 10 Oct sim.",
+  "runs": "Cadence 170-176 across all runs (>168 floor, held under fatigue). Controlled settle runs 5:37-5:48 all <LTHR178. HR drifted 161->163->165 avg R1->R3 at constant pace (cumulative load, benign). #22 hard preload 4:52@280W strong. Ignore #10 power 343W (footpod junk).",
+  "week_volume": "~4.9km moved (runs ~4.6km); covers Sat easy km + Fri 2km makeback; week lands ~25km. Sunday full rest.",
+  "coach_added": "2026-09-12"
+ }
 }
