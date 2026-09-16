@@ -31,12 +31,12 @@
  },
  "days": {
   "2026-07-17": {
-   "title": "Comp pacing \u2014 36-min alternation",
+   "title": "Comp pacing — 36-min alternation",
    "rpe": "8-9",
    "blocks": [
     {
      "type": "note",
-     "text": "RACE RULE: runs held at 10.6 km/h \u2014 no banking. Record whole session on Garmin HIIT profile. Clock below beeps every 3:00."
+     "text": "RACE RULE: runs held at 10.6 km/h — no banking. Record whole session on Garmin HIIT profile. Clock below beeps every 3:00."
     },
     {
      "type": "interval",
@@ -53,7 +53,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d73",
+     "label": "Strides ×3",
      "detail": "30s each, 60s rest between"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
      "type": "step",
-     "label": "Sled push \u2014 152 kg",
+     "label": "Sled push — 152 kg",
      "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
      "secs": 180,
      "rpe": true
@@ -90,8 +90,8 @@
     },
     {
      "type": "step",
-     "label": "Sled pull \u2014 103 kg",
-     "detail": "Race weight. Spinal \u2014 honest RPE.",
+     "label": "Sled pull — 103 kg",
+     "detail": "Race weight. Spinal — honest RPE.",
      "secs": 180,
      "rpe": true,
      "spinal": true
@@ -118,7 +118,7 @@
     {
      "type": "step",
      "label": "Row",
-     "detail": "3:00 @ 2:04\u20132:10 /500m",
+     "detail": "3:00 @ 2:04–2:10 /500m",
      "secs": 180,
      "rpe": true
     },
@@ -130,7 +130,7 @@
     },
     {
      "type": "step",
-     "label": "Wall balls \u2014 6 kg",
+     "label": "Wall balls — 6 kg",
      "detail": "3:00. Birmingham cost you 1:47 here. Rhythm, no staring at the ball.",
      "secs": 180,
      "rpe": true
@@ -138,7 +138,7 @@
     {
      "type": "step",
      "label": "Cool down",
-     "detail": "10 min easy \u2014 do the boring bit",
+     "detail": "10 min easy — do the boring bit",
      "secs": 600
     }
    ]
@@ -149,29 +149,29 @@
    "blocks": [
     {
      "type": "note",
-     "text": "Aerobic power, not a race. Row and air bike are the flush stations \u2014 HR oscillating 145\u2013175 is the target shape."
+     "text": "Aerobic power, not a race. Row and air bike are the flush stations — HR oscillating 145–175 is the target shape."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "30 min, Garmin, HR \u2264148",
+     "detail": "30 min, Garmin, HR ≤148",
      "secs": 1800
     },
     {
      "type": "amrap",
      "mins": 30,
-     "label": "Hybrid AMRAP \u2014 tap ROUND DONE each lap",
+     "label": "Hybrid AMRAP — tap ROUND DONE each lap",
      "items": [
       "Row 500m @ 2:15",
-      "Sandbag lunge 20 kg \u00d7 10 \u25b2",
+      "Sandbag lunge 20 kg × 10 ▲",
       "Air bike 2 min",
-      "Wall balls 6 kg \u00d7 10",
-      "Sit-ups \u00d7 15"
+      "Wall balls 6 kg × 10",
+      "Sit-ups × 15"
      ]
     },
     {
      "type": "step",
-     "label": "Sandbag lunges \u2014 spinal check",
+     "label": "Sandbag lunges — spinal check",
      "detail": "One RPE for the lunges across the AMRAP",
      "rpe": true,
      "spinal": true
@@ -179,12 +179,12 @@
    ]
   },
   "2026-07-19": {
-   "title": "Long easy run \u2014 50 MIN (agreed cap)",
+   "title": "Long easy run — 50 MIN (agreed cap)",
    "rpe": "3-5",
    "blocks": [
     {
      "type": "note",
-     "text": "Repz says 60 \u2014 we agreed 50, ACWR still above band. Garmin, HR \u2264148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
+     "text": "Repz says 60 — we agreed 50, ACWR still above band. Garmin, HR ≤148, heat = slower not harder. Evening: first Sunday planning session. Sync the week's logs, open the chat, we take over from Monday."
     }
    ]
   },
@@ -194,7 +194,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "DELOAD WEEK (confirmed). 3 \u00d7 1.6 km @ 10.5 km/h (5:44/km) on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut. Corrected from 10.8 km/h on 20 Jul \u2014 Garmin/Stryd data from 13 Jul threshold session supports 5:44/km, not 5:33/km."
+     "text": "DELOAD WEEK (confirmed). 3 × 1.6 km @ 10.5 km/h (5:44/km) on the Garmin, 60-90s rest. One fewer rep than last week: intensity kept, volume cut. Corrected from 10.8 km/h on 20 Jul — Garmin/Stryd data from 13 Jul threshold session supports 5:44/km, not 5:33/km."
     }
    ]
   },
@@ -204,21 +204,21 @@
    "blocks": [
     {
      "type": "note",
-     "text": "40 min easy bike, HR under 140. Genuinely easy \u2014 deload only works if the easy days are."
+     "text": "40 min easy bike, HR under 140. Genuinely easy — deload only works if the easy days are."
     }
    ]
   },
   "2026-07-22": {
-   "title": "Compound chain intro \u2014 stations 5-8 (race weight, half volume)",
+   "title": "Compound chain intro — stations 5-8 (race weight, half volume)",
    "rpe": "7-8",
    "blocks": [
     {
      "type": "note",
-     "text": "Diagnostic session \u2014 first time chaining full race weight. Half volume throughout. This is the London cramp zone (runs 6-7-8) and the Birmingham collapse zone (lunges, wall balls). Spinal RPE (effort + symptom, separate) logged immediately after Farmers Carry, Lunge, and Wall Balls \u2014 not end of session. If symptom RPE climbs progressively across the three checkpoints, that's the chained-fatigue signal. Don't push to full volume even if it feels fine \u2014 next week's decision depends on what these three checkpoints say."
+     "text": "Diagnostic session — first time chaining full race weight. Half volume throughout. This is the London cramp zone (runs 6-7-8) and the Birmingham collapse zone (lunges, wall balls). Spinal RPE (effort + symptom, separate) logged immediately after Farmers Carry, Lunge, and Wall Balls — not end of session. If symptom RPE climbs progressively across the three checkpoints, that's the chained-fatigue signal. Don't push to full volume even if it feels fine — next week's decision depends on what these three checkpoints say."
     },
     {
      "type": "step",
-     "label": "Run \u2014 in",
+     "label": "Run — in",
      "detail": "800m controlled, not race pace",
      "secs": 480
     },
@@ -232,13 +232,13 @@
     {
      "type": "step",
      "label": "Run 6 spot",
-     "detail": "1km controlled \u2014 this is where London cramping started",
+     "detail": "1km controlled — this is where London cramping started",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Farmers Carry \u2014 2x24kg",
-     "detail": "100m (half distance), arms extended per standard. SPINAL RPE CHECK NOW \u2014 effort + symptom, separate.",
+     "label": "Farmers Carry — 2x24kg",
+     "detail": "100m (half distance), arms extended per standard. SPINAL RPE CHECK NOW — effort + symptom, separate.",
      "rpe": true,
      "spinal": true
     },
@@ -250,7 +250,7 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge \u2014 20kg",
+     "label": "Sandbag Lunge — 20kg",
      "detail": "50m (half distance), trailing knee to ground, stand tall between reps. SPINAL RPE CHECK NOW.",
      "rpe": true,
      "spinal": true
@@ -258,12 +258,12 @@
     {
      "type": "step",
      "label": "Run 8 spot",
-     "detail": "1km controlled \u2014 where London cramping fully hit",
+     "detail": "1km controlled — where London cramping fully hit",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Wall Balls \u2014 6kg",
+     "label": "Wall Balls — 6kg",
      "detail": "50 reps (half of 100), full squat hips below knees, 3.00m target. SPINAL RPE CHECK NOW.",
      "rpe": true,
      "spinal": true
@@ -271,7 +271,7 @@
    ],
    "actual": {
     "completed": true,
-    "note": "Completed as prescribed. Wall ball count uncertain \u2014 at least 45, target was 50.",
+    "note": "Completed as prescribed. Wall ball count uncertain — at least 45, target was 50.",
     "spinal_rpe": {
      "farmers_carry": {
       "effort": 6,
@@ -286,7 +286,7 @@
       "symptom": 1
      }
     },
-    "read": "No progressive symptom escalation across the three checkpoints \u2014 green light to extend volume w/c 27 Jul."
+    "read": "No progressive symptom escalation across the three checkpoints — green light to extend volume w/c 27 Jul."
    }
   },
   "2026-07-23": {
@@ -304,7 +304,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "HR \u2264148 on the Garmin. No sim this week \u2014 deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
+     "text": "HR ≤148 on the Garmin. No sim this week — deload means one hard session. Six more Fridays before Tenerife; this one costs nothing."
     }
    ]
   },
@@ -314,7 +314,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "Optional movement day. Skip freely if life intervenes \u2014 that is the point of a deload."
+     "text": "Optional movement day. Skip freely if life intervenes — that is the point of a deload."
     }
    ]
   },
@@ -328,12 +328,12 @@
     },
     {
      "type": "note",
-     "text": "HR \u2264148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening \u2014 build week generated off green numbers."
+     "text": "HR ≤148. Long-run thread idles this week, resumes +1 km/week from w/c 27 Jul. Sunday planning in the evening — build week generated off green numbers."
     }
    ]
   },
   "2026-07-27": {
-   "title": "Threshold \u2014 4 \u00d7 1.6 km (pace recalibrated)",
+   "title": "Threshold — 4 × 1.6 km (pace recalibrated)",
    "rpe": "7-8",
    "blocks": [
     {
@@ -342,15 +342,15 @@
     },
     {
      "type": "note",
-     "text": "PACE CHANGED 25 Jul. 5:44/km was too slow \u2014 disproved by the 20 Jul lap data (ran 5:41/5:34/5:36 unprompted, negative split, HR peaked 170 vs LTHR 174, self-logged RPE 4, all during a deload). New target 5:30/km. Running OUTDOORS this week, so no treadmill speed \u2014 HR governs, pace follows."
+     "text": "PACE CHANGED 25 Jul. 5:44/km was too slow — disproved by the 20 Jul lap data (ran 5:41/5:34/5:36 unprompted, negative split, HR peaked 170 vs LTHR 174, self-logged RPE 4, all during a deload). New target 5:30/km. Running OUTDOORS this week, so no treadmill speed — HR governs, pace follows."
     },
     {
      "type": "note",
-     "text": "HOW TO RUN IT: reps should FINISH at HR 168-172, hard cap 175. Start rep 1 at 5:30/km and read the HR. If rep 1 finishes at 165 and feels like RPE 6, take reps 3-4 toward 5:25. If it finishes above 175, back off to 5:35. The pace target is a starting guess, not the instruction \u2014 the HR is the instruction."
+     "text": "HOW TO RUN IT: reps should FINISH at HR 168-172, hard cap 175. Start rep 1 at 5:30/km and read the HR. If rep 1 finishes at 165 and feels like RPE 6, take reps 3-4 toward 5:25. If it finishes above 175, back off to 5:35. The pace target is a starting guess, not the instruction — the HR is the instruction."
     },
     {
      "type": "note",
-     "text": "LOG THESE: pace each rep landed at, avg power each rep, and whether rep 4 held rep 1's pace or drifted. That's what sets the real threshold number. Flattest route available \u2014 not the one with the climb at the end. Reps by distance (1.6 km), 90s standing recovery. Finish by 19:30 for the 20:00 cutoff."
+     "text": "LOG THESE: pace each rep landed at, avg power each rep, and whether rep 4 held rep 1's pace or drifted. That's what sets the real threshold number. Flattest route available — not the one with the climb at the end. Reps by distance (1.6 km), 90s standing recovery. Finish by 19:30 for the 20:00 cutoff."
     },
     {
      "type": "step",
@@ -360,7 +360,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d73",
+     "label": "Strides ×3",
      "detail": "30s each, 60s walk between"
     },
     {
@@ -368,7 +368,7 @@
      "work": 528,
      "rest": 90,
      "rounds": 4,
-     "label": "1.6 km @ ~5:30/km \u2014 HR 168-172 finishing, cap 175"
+     "label": "1.6 km @ ~5:30/km — HR 168-172 finishing, cap 175"
     },
     {
      "type": "step",
@@ -388,18 +388,18 @@
     },
     {
      "type": "note",
-     "text": "Run, not the bike, this week. After 8 hours seated the Wattbike is more hip flexion and spinal loading \u2014 upright and moving is the better stimulus on an office week. HR \u2264148 on the Garmin."
+     "text": "Run, not the bike, this week. After 8 hours seated the Wattbike is more hip flexion and spinal loading — upright and moving is the better stimulus on an office week. HR ≤148 on the Garmin."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "30 min, HR \u2264148",
+     "detail": "30 min, HR ≤148",
      "secs": 1800
     }
    ]
   },
   "2026-07-29": {
-   "title": "Compound chain \u2014 stations 5-8, race weight, 75% volume",
+   "title": "Compound chain — stations 5-8, race weight, 75% volume",
    "rpe": "7-8",
    "blocks": [
     {
@@ -408,11 +408,11 @@
     },
     {
      "type": "note",
-     "text": "Extended from half volume on the 22 Jul diagnostic (effort 6, spinal symptom 1, flat across all three checkpoints \u2014 no progressive escalation). Spinal RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls \u2014 not end of session, and effort + symptom separately. If symptom climbs across the three this time, that's the signal the extension was too early: stop the session, log it, we hold at 75% next week."
+     "text": "Extended from half volume on the 22 Jul diagnostic (effort 6, spinal symptom 1, flat across all three checkpoints — no progressive escalation). Spinal RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session, and effort + symptom separately. If symptom climbs across the three this time, that's the signal the extension was too early: stop the session, log it, we hold at 75% next week."
     },
     {
      "type": "step",
-     "label": "Run \u2014 in",
+     "label": "Run — in",
      "detail": "1 km controlled, not race pace",
      "secs": 360
     },
@@ -426,13 +426,13 @@
     {
      "type": "step",
      "label": "Run 6 spot",
-     "detail": "1 km controlled \u2014 where London cramping started",
+     "detail": "1 km controlled — where London cramping started",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Farmers Carry \u2014 2\u00d724 kg",
-     "detail": "150m, arms extended per standard. SPINAL RPE CHECK NOW \u2014 effort + symptom, separate.",
+     "label": "Farmers Carry — 2×24 kg",
+     "detail": "150m, arms extended per standard. SPINAL RPE CHECK NOW — effort + symptom, separate.",
      "rpe": true,
      "spinal": true
     },
@@ -444,7 +444,7 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge \u2014 20 kg",
+     "label": "Sandbag Lunge — 20 kg",
      "detail": "75m, trailing knee to ground, stand tall between reps, no shuffles. SPINAL RPE CHECK NOW.",
      "rpe": true,
      "spinal": true
@@ -452,12 +452,12 @@
     {
      "type": "step",
      "label": "Run 8 spot",
-     "detail": "1 km controlled \u2014 where London cramping fully hit",
+     "detail": "1 km controlled — where London cramping fully hit",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Wall Balls \u2014 6 kg",
+     "label": "Wall Balls — 6 kg",
      "detail": "75 reps, full squat hips below knees, 3.00m target. SPINAL RPE CHECK NOW.",
      "rpe": true,
      "spinal": true
@@ -474,7 +474,7 @@
    ]
   },
   "2026-07-31": {
-   "title": "Race sim \u2014 stations 1-4 (front half)",
+   "title": "Race sim — stations 1-4 (front half)",
    "rpe": "8",
    "blocks": [
     {
@@ -483,7 +483,7 @@
     },
     {
      "type": "note",
-     "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h \u2014 no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Front half this week; with Wednesday's chain you've patterned all eight stations across the week."
+     "text": "RACE RULE: runs controlled, stations attacked. Runs held at 10.6 km/h — no banking. Record on Garmin HIIT profile. Clock beeps every 3:00. Front half this week; with Wednesday's chain you've patterned all eight stations across the week."
     },
     {
      "type": "step",
@@ -493,7 +493,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d73",
+     "label": "Strides ×3",
      "detail": "30s each, 60s rest between"
     },
     {
@@ -524,7 +524,7 @@
     },
     {
      "type": "step",
-     "label": "Sled Push \u2014 152 kg",
+     "label": "Sled Push — 152 kg",
      "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
      "secs": 180,
      "rpe": true
@@ -537,8 +537,8 @@
     },
     {
      "type": "step",
-     "label": "Sled Pull \u2014 103 kg",
-     "detail": "Race weight. Spinal \u2014 honest RPE, effort + symptom separate.",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight. Spinal — honest RPE, effort + symptom separate.",
      "secs": 180,
      "rpe": true,
      "spinal": true
@@ -559,13 +559,13 @@
     {
      "type": "step",
      "label": "Cool down",
-     "detail": "10 min easy \u2014 do the boring bit",
+     "detail": "10 min easy — do the boring bit",
      "secs": 600
     }
    ]
   },
   "2026-08-01": {
-   "title": "Easy \u2014 your call",
+   "title": "Easy — your call",
    "rpe": "3-4",
    "blocks": [
     {
@@ -574,12 +574,12 @@
     },
     {
      "type": "note",
-     "text": "30 min easy run or 40 min bike, HR \u2264148. Pick by feel \u2014 the bike is fine here, it's not an office day."
+     "text": "30 min easy run or 40 min bike, HR ≤148. Pick by feel — the bike is fine here, it's not an office day."
     }
    ]
   },
   "2026-08-02": {
-   "title": "Easy run \u2014 30 min (long run moved to Sat 1 Aug)",
+   "title": "Easy run — 30 min (long run moved to Sat 1 Aug)",
    "rpe": "3-4",
    "blocks": [
     {
@@ -588,18 +588,18 @@
     },
     {
      "type": "note",
-     "text": "CHANGED: this was a 55-min long run. The long run moved to Saturday 1 Aug to clear Monday's TT slot. Keep this genuinely easy \u2014 HR under 148. Tomorrow's time trial sets the threshold anchor for the whole block and it only works on fresh legs."
+     "text": "CHANGED: this was a 55-min long run. The long run moved to Saturday 1 Aug to clear Monday's TT slot. Keep this genuinely easy — HR under 148. Tomorrow's time trial sets the threshold anchor for the whole block and it only works on fresh legs."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "30 min, HR \u2264148",
+     "detail": "30 min, HR ≤148",
      "secs": 1800
     }
    ]
   },
   "2026-08-03": {
-   "title": "30-MIN TIME TRIAL \u2014 threshold anchor",
+   "title": "30-MIN TIME TRIAL — threshold anchor",
    "rpe": "9",
    "blocks": [
     {
@@ -608,11 +608,11 @@
     },
     {
      "type": "note",
-     "text": "THE POINT: this pins LTHR and LT pace properly. Avg HR from minutes 10-30 = LTHR. Avg pace across the 30 \u2248 LT pace. Everything downstream in this block inherits these numbers, so a compromised TT is worse than no TT. No hills this week \u2014 they start w/c 10 Aug precisely so this stays clean."
+     "text": "THE POINT: this pins LTHR and LT pace properly. Avg HR from minutes 10-30 = LTHR. Avg pace across the 30 ≈ LT pace. Everything downstream in this block inherits these numbers, so a compromised TT is worse than no TT. No hills this week — they start w/c 10 Aug precisely so this stays clean."
     },
     {
      "type": "note",
-     "text": "BEFORE YOU GO: reset Stryd cal factor 101.7 \u2192 100.0. Comparability with July sessions matters less than a clean anchor. Post-session, compare Garmin distance vs Stryd app distance as the confirmation check. Chest strap on. Same 1km flat straight as 20 Jul \u2014 five turnarounds, not the 250m loop."
+     "text": "BEFORE YOU GO: reset Stryd cal factor 101.7 → 100.0. Comparability with July sessions matters less than a clean anchor. Post-session, compare Garmin distance vs Stryd app distance as the confirmation check. Chest strap on. Same 1km flat straight as 20 Jul — five turnarounds, not the 250m loop."
     },
     {
      "type": "note",
@@ -620,11 +620,11 @@
     },
     {
      "type": "note",
-     "text": "PACING: cap 250W for the first two minutes \u2014 cardiac lag is real, the 20 Jul file showed HR at 147 thirty seconds into rep 2 against a 165 steady state, taking ~150s to arrive. First km no faster than 5:40. Then HR-governed: 158-164 to min 5, 164-169 to min 10, 169-173 to min 20, 172-176 to min 27, empty the tank the last three minutes."
+     "text": "PACING: cap 250W for the first two minutes — cardiac lag is real, the 20 Jul file showed HR at 147 thirty seconds into rep 2 against a 165 steady state, taking ~150s to arrive. First km no faster than 5:40. Then HR-governed: 158-164 to min 5, 164-169 to min 10, 169-173 to min 20, 172-176 to min 27, empty the tank the last three minutes."
     },
     {
      "type": "note",
-     "text": "EXPECTED: 5.2-5.5 km, power 245W+. If you finish and could have gone harder, log that honestly \u2014 it changes how we read the number."
+     "text": "EXPECTED: 5.2-5.5 km, power 245W+. If you finish and could have gone harder, log that honestly — it changes how we read the number."
     },
     {
      "type": "step",
@@ -634,7 +634,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d74",
+     "label": "Strides ×4",
      "detail": "20s each, full recovery between",
      "secs": 240
     },
@@ -659,22 +659,22 @@
    "blocks": [
     {
      "type": "note",
-     "text": "30-40 min easy bike, HR under 140. Off feet deliberately \u2014 the week runs 26.5 run km and Wednesday is the heavy one. Genuinely easy. If this drifts into a session the week's ramp breaks."
+     "text": "30-40 min easy bike, HR under 140. Off feet deliberately — the week runs 26.5 run km and Wednesday is the heavy one. Genuinely easy. If this drifts into a session the week's ramp breaks."
     }
    ]
   },
   "2026-08-05": {
-   "title": "Off \u2014 not completed",
+   "title": "Off — not completed",
    "rpe": "0",
    "blocks": [
     {
      "type": "note",
-     "text": "Wednesday unavailable. Nothing logged in Garmin for 5 Aug. Compound chain moved to Thu 6 Aug \u2014 this day is NOT owed and no make-up session is carried forward."
+     "text": "Wednesday unavailable. Nothing logged in Garmin for 5 Aug. Compound chain moved to Thu 6 Aug — this day is NOT owed and no make-up session is carried forward."
     }
    ]
   },
   "2026-08-06": {
-   "title": "Compound chain \u2014 stations 5-8, race weight, 90% volume",
+   "title": "Compound chain — stations 5-8, race weight, 90% volume",
    "rpe": "7-8",
    "blocks": [
     {
@@ -683,15 +683,15 @@
     },
     {
      "type": "note",
-     "text": "THU 6 AUG. Moved off Wednesday (unavailable). Stays the 90% step from 75% on 29 Jul, unscaled. Wed was fully off with nothing logged, so this lands on rested legs \u2014 the best available slot for the step-up. Spinal RPE logged immediately after Farmers Carry, Sandbag Lunge and Wall Balls, effort and symptom as separate figures. If symptom RPE climbs, cut volume in-session rather than completing 90% for the number."
+     "text": "THU 6 AUG. Moved off Wednesday (unavailable). Stays the 90% step from 75% on 29 Jul, unscaled. Wed was fully off with nothing logged, so this lands on rested legs — the best available slot for the step-up. Spinal RPE logged immediately after Farmers Carry, Sandbag Lunge and Wall Balls, effort and symptom as separate figures. If symptom RPE climbs, cut volume in-session rather than completing 90% for the number."
     },
     {
      "type": "note",
-     "text": "Step up from 75% on 29 Jul. Runs stay at 1 km \u2014 they're already race spec, so 90% scales the STATIONS only. Run pace held flat: pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
+     "text": "Step up from 75% on 29 Jul. Runs stay at 1 km — they're already race spec, so 90% scales the STATIONS only. Run pace held flat: pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
     },
     {
      "type": "note",
-     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls \u2014 not end of session \u2014 effort and symptom as separate numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom climbs progressively across the three, stop and log it \u2014 that's the signal 90% was too early and we hold."
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Lunge and Wall Balls — not end of session — effort and symptom as separate numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom climbs progressively across the three, stop and log it — that's the signal 90% was too early and we hold."
     },
     {
      "type": "note",
@@ -699,7 +699,7 @@
     },
     {
      "type": "step",
-     "label": "Run \u2014 in",
+     "label": "Run — in",
      "detail": "1 km controlled, not race pace",
      "secs": 360
     },
@@ -713,13 +713,13 @@
     {
      "type": "step",
      "label": "Run 6 spot",
-     "detail": "1 km controlled \u2014 where London cramping started",
+     "detail": "1 km controlled — where London cramping started",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Farmers Carry \u2014 2\u00d724 kg",
-     "detail": "180m, arms extended per standard. Cardiff rate ~1:46. SPINAL RPE CHECK NOW \u2014 effort + symptom, separate.",
+     "label": "Farmers Carry — 2×24 kg",
+     "detail": "180m, arms extended per standard. Cardiff rate ~1:46. SPINAL RPE CHECK NOW — effort + symptom, separate.",
      "secs": 106,
      "rpe": true,
      "spinal": true
@@ -732,7 +732,7 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge \u2014 20 kg",
+     "label": "Sandbag Lunge — 20 kg",
      "detail": "90m, trailing knee to ground, stand tall between reps, no shuffles. Cardiff rate ~3:57. SPINAL RPE CHECK NOW.",
      "secs": 237,
      "rpe": true,
@@ -741,13 +741,13 @@
     {
      "type": "step",
      "label": "Run 8 spot",
-     "detail": "1 km controlled \u2014 where London cramping fully hit",
+     "detail": "1 km controlled — where London cramping fully hit",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Wall Balls \u2014 6 kg",
-     "detail": "90 reps, full squat hips below knees, 3.00m target. RACE WEIGHT 6kg \u2014 app has 9kg stored, ignore it. Cardiff rate ~6:03. SPINAL RPE CHECK NOW.",
+     "label": "Wall Balls — 6 kg",
+     "detail": "90 reps, full squat hips below knees, 3.00m target. RACE WEIGHT 6kg — app has 9kg stored, ignore it. Cardiff rate ~6:03. SPINAL RPE CHECK NOW.",
      "secs": 363,
      "rpe": true,
      "spinal": true
@@ -761,7 +761,7 @@
    ]
   },
   "2026-08-07": {
-   "title": "Easy run \u2014 25 min",
+   "title": "Easy run — 25 min",
    "rpe": "3-4",
    "blocks": [
     {
@@ -770,24 +770,24 @@
     },
     {
      "type": "note",
-     "text": "Genuinely easy, HR \u2264148. MOVED from Thursday. Sits between the chain and Saturday's race sim \u2014 this is a recovery run, not a session. Log as a RUN activity, not HIIT."
+     "text": "Genuinely easy, HR ≤148. MOVED from Thursday. Sits between the chain and Saturday's race sim — this is a recovery run, not a session. Log as a RUN activity, not HIIT."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "25 min, HR \u2264148",
+     "detail": "25 min, HR ≤148",
      "secs": 1500
     },
     {
      "type": "step",
-     "label": "Strides \u00d74",
-     "detail": "20s each, relaxed, full recovery. Absent three weeks \u2014 log them as a run so they're visible.",
+     "label": "Strides ×4",
+     "detail": "20s each, relaxed, full recovery. Absent three weeks — log them as a run so they're visible.",
      "secs": 240
     }
    ]
   },
   "2026-08-08": {
-   "title": "Race sim \u2014 stations 1-4 (front half)",
+   "title": "Race sim — stations 1-4 (front half)",
    "rpe": "8",
    "blocks": [
     {
@@ -796,7 +796,7 @@
     },
     {
      "type": "note",
-     "text": "SAT 8 AUG. Moved off Thursday \u2014 no sled access Thursday, and stations 1-4 are SkiErg / Sled Push / Sled Pull / Burpee Broad Jump, so the session cannot run without sleds. Sled push and pull remain sandbag friction-overloaded (on since 3 Jul). Athlete-calibrated by feel across 12 races as comparable to race-carpet resistance \u2014 splits are directionally usable across sessions, but not a numeric benchmark against race splits."
+     "text": "SAT 8 AUG. Moved off Thursday — no sled access Thursday, and stations 1-4 are SkiErg / Sled Push / Sled Pull / Burpee Broad Jump, so the session cannot run without sleds. Sled push and pull remain sandbag friction-overloaded (on since 3 Jul). Athlete-calibrated by feel across 12 races as comparable to race-carpet resistance — splits are directionally usable across sessions, but not a numeric benchmark against race splits."
     },
     {
      "type": "note",
@@ -804,7 +804,7 @@
     },
     {
      "type": "note",
-     "text": "RUN PACE (agreed 6 Aug): 5:25-5:35/km = 10.8-11.1 km/h on the treadmill, ~248-256W on Stryd at CP 261 (95-98%). START RUN 1 AT 10.8 (slow end). The test is run-to-run consistency, NOT the average: four flat 5:33s beats a 5:35 followed by a 5:22. Cal factor still 101.7, so Stryd reads ~1.7% long \u2014 a true 5:30 shows as ~5:24 on the pod. Steer by the treadmill setting or by power, not by Stryd pace."
+     "text": "RUN PACE (agreed 6 Aug): 5:25-5:35/km = 10.8-11.1 km/h on the treadmill, ~248-256W on Stryd at CP 261 (95-98%). START RUN 1 AT 10.8 (slow end). The test is run-to-run consistency, NOT the average: four flat 5:33s beats a 5:35 followed by a 5:22. Cal factor still 101.7, so Stryd reads ~1.7% long — a true 5:30 shows as ~5:24 on the pod. Steer by the treadmill setting or by power, not by Stryd pace."
     },
     {
      "type": "step",
@@ -814,7 +814,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d73",
+     "label": "Strides ×3",
      "detail": "30s each, 60s rest between"
     },
     {
@@ -833,7 +833,7 @@
     {
      "type": "step",
      "label": "SkiErg",
-     "detail": "3:00 steady-strong \u2014 deliberately not hard",
+     "detail": "3:00 steady-strong — deliberately not hard",
      "secs": 180,
      "rpe": true
     },
@@ -845,7 +845,7 @@
     },
     {
      "type": "step",
-     "label": "Sled Push \u2014 152 kg",
+     "label": "Sled Push — 152 kg",
      "detail": "RACE WEIGHT. The Birmingham station. Attack it.",
      "secs": 180,
      "rpe": true
@@ -858,8 +858,8 @@
     },
     {
      "type": "step",
-     "label": "Sled Pull \u2014 103 kg",
-     "detail": "Race weight. Spinal \u2014 honest RPE, effort + symptom separate.",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight. Spinal — honest RPE, effort + symptom separate.",
      "secs": 180,
      "rpe": true,
      "spinal": true
@@ -881,13 +881,13 @@
     {
      "type": "step",
      "label": "Cool down",
-     "detail": "10 min easy \u2014 do the boring bit",
+     "detail": "10 min easy — do the boring bit",
      "secs": 600
     }
    ]
   },
   "2026-08-09": {
-   "title": "Easy run \u2014 40 min",
+   "title": "Easy run — 40 min",
    "rpe": "3-4",
    "blocks": [
     {
@@ -896,18 +896,18 @@
     },
     {
      "type": "note",
-     "text": "40 min easy, HR \u2264148. Trimmed from 50 to keep the week at ~262 against a 258 ceiling. If Monday's TT went well and the week has felt fine, 50 is available \u2014 but the ramp rule wins over feel."
+     "text": "40 min easy, HR ≤148. Trimmed from 50 to keep the week at ~262 against a 258 ceiling. If Monday's TT went well and the week has felt fine, 50 is available — but the ramp rule wins over feel."
     },
     {
      "type": "step",
      "label": "Easy run",
-     "detail": "40 min, HR \u2264148",
+     "detail": "40 min, HR ≤148",
      "secs": 2400
     }
    ]
   },
   "2026-08-10": {
-   "title": "Threshold \u2014 5 \u00d7 1 km @ 5:15/km (replaces hill sprints)",
+   "title": "Threshold — 5 × 1 km @ 5:15/km (replaces hill sprints)",
    "rpe": "7-8",
    "blocks": [
     {
@@ -920,7 +920,7 @@
     },
     {
      "type": "note",
-     "text": "OUTDOOR by default \u2014 GPS plus Stryd. Treadmill is a logistics fallback only. Flat route. Cal factor stays 101.7, so Stryd reads ~1.7% long: STEER BY POWER, NOT BY STRYD PACE."
+     "text": "OUTDOOR by default — GPS plus Stryd. Treadmill is a logistics fallback only. Flat route. Cal factor stays 101.7, so Stryd reads ~1.7% long: STEER BY POWER, NOT BY STRYD PACE."
     },
     {
      "type": "note",
@@ -928,7 +928,7 @@
     },
     {
      "type": "note",
-     "text": "HARD STOP: if any rep drifts more than 8 seconds slower than rep 1, that is the last rep. Four good reps beat five with a broken one. REP 1 IS NOT THE FASTEST REP \u2014 same failure mode as the race."
+     "text": "HARD STOP: if any rep drifts more than 8 seconds slower than rep 1, that is the last rep. Four good reps beat five with a broken one. REP 1 IS NOT THE FASTEST REP — same failure mode as the race."
     },
     {
      "type": "step",
@@ -938,7 +938,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d74",
+     "label": "Strides ×4",
      "detail": "20s each, 60s walk between",
      "secs": 320
     },
@@ -947,12 +947,12 @@
      "work": 315,
      "rest": 90,
      "rounds": 5,
-     "label": "5 \u00d7 1 km @ threshold"
+     "label": "5 × 1 km @ threshold"
     },
     {
      "type": "step",
      "label": "Rep 1",
-     "detail": "1 km @ 5:15/km. Power 255-265W. HR should NOT be at 178 yet \u2014 if it is, you went out hot. Back off, do not tough it out.",
+     "detail": "1 km @ 5:15/km. Power 255-265W. HR should NOT be at 178 yet — if it is, you went out hot. Back off, do not tough it out.",
      "secs": 315,
      "rpe": true
     },
@@ -1004,7 +1004,7 @@
    ]
   },
   "2026-08-12": {
-   "title": "Compound chain \u2014 stations 5-8, race weight, 100% volume",
+   "title": "Compound chain — stations 5-8, race weight, 100% volume",
    "rpe": "8",
    "blocks": [
     {
@@ -1013,15 +1013,15 @@
     },
     {
      "type": "note",
-     "text": "WED 12 AUG. Step from 90% (6 Aug) to 100%. This is the LAST step available before Tenerife \u2014 after this the week structure goes build 5, sharpen, taper. 90% on 6 Aug produced zero spinal signal at all three checkpoints, which is the evidence this step is earned."
+     "text": "WED 12 AUG. Step from 90% (6 Aug) to 100%. This is the LAST step available before Tenerife — after this the week structure goes build 5, sharpen, taper. 90% on 6 Aug produced zero spinal signal at all three checkpoints, which is the evidence this step is earned."
     },
     {
      "type": "note",
-     "text": "Runs stay at 1 km and stay CONTROLLED \u2014 they are already race spec, so 100% scales the STATIONS only. Run pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
+     "text": "Runs stay at 1 km and stay CONTROLLED — they are already race spec, so 100% scales the STATIONS only. Run pace progression belongs on threshold days, not here. Runs controlled, stations attacked."
     },
     {
      "type": "note",
-     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls \u2014 not end of session \u2014 effort and symptom as SEPARATE numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom RPE climbs progressively across the three, cut volume in-session. There is no cost to stopping at 90% again \u2014 the step is optional, the rule is not."
+     "text": "SPINAL RPE logged IMMEDIATELY after Farmers Carry, Sandbag Lunge and Wall Balls — not end of session — effort and symptom as SEPARATE numbers. App's symptom field still has the floor defect, so free-text it: 'FC eff 6 sym 1 / SBL eff 7 sym 2 / WB eff 7 sym 1'. If symptom RPE climbs progressively across the three, cut volume in-session. There is no cost to stopping at 90% again — the step is optional, the rule is not."
     },
     {
      "type": "note",
@@ -1029,18 +1029,18 @@
     },
     {
      "type": "note",
-     "text": "STATION EXPOSURE: log minutes at race weight per station at the end. This is the number that tracks station progression \u2014 CTL cannot see it, because RSS scores station work at ~0W."
+     "text": "STATION EXPOSURE: log minutes at race weight per station at the end. This is the number that tracks station progression — CTL cannot see it, because RSS scores station work at ~0W."
     },
     {
      "type": "step",
-     "label": "Run \u2014 in",
+     "label": "Run — in",
      "detail": "1 km controlled, ~6:00, not race pace",
      "secs": 360
     },
     {
      "type": "step",
-     "label": "Row \u2014 1000m",
-     "detail": "Full race distance (up from 900m). Steady, seated throughout. Target ~5:05. Cardiff race rate was 4:35 \u2014 do NOT chase it here, this is the front of a chain not a standalone.",
+     "label": "Row — 1000m",
+     "detail": "Full race distance (up from 900m). Steady, seated throughout. Target ~5:05. Cardiff race rate was 4:35 — do NOT chase it here, this is the front of a chain not a standalone.",
      "secs": 305,
      "rpe": true
     },
@@ -1052,8 +1052,8 @@
     },
     {
      "type": "step",
-     "label": "Farmers Carry \u2014 200m @ 2x24kg",
-     "detail": "Full race distance. Arms extended. SPINAL CHECKPOINT \u2014 log effort and symptom immediately on finishing, before you start the run.",
+     "label": "Farmers Carry — 200m @ 2x24kg",
+     "detail": "Full race distance. Arms extended. SPINAL CHECKPOINT — log effort and symptom immediately on finishing, before you start the run.",
      "secs": 150,
      "rpe": true,
      "spinal": true
@@ -1066,8 +1066,8 @@
     },
     {
      "type": "step",
-     "label": "Sandbag Lunge \u2014 100m @ 20kg",
-     "detail": "Full race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT \u2014 log immediately. This is the highest-risk station on the chain.",
+     "label": "Sandbag Lunge — 100m @ 20kg",
+     "detail": "Full race distance. Trailing knee touches, stand tall between reps, no shuffles. SPINAL CHECKPOINT — log immediately. This is the highest-risk station on the chain.",
      "secs": 300,
      "rpe": true,
      "spinal": true
@@ -1080,8 +1080,8 @@
     },
     {
      "type": "step",
-     "label": "Wall Balls \u2014 100 @ 6kg",
-     "detail": "Full race distance (up from 90). Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT \u2014 log immediately. Break it into sets before form goes, not after.",
+     "label": "Wall Balls — 100 @ 6kg",
+     "detail": "Full race distance (up from 90). Hips below knees, strike the target, no bounce catches. SPINAL CHECKPOINT — log immediately. Break it into sets before form goes, not after.",
      "secs": 420,
      "rpe": true,
      "spinal": true
@@ -1095,12 +1095,12 @@
    ]
   },
   "2026-08-13": {
-   "title": "Easy run \u2014 35 min",
+   "title": "Easy run — 35 min",
    "rpe": "3-4",
    "blocks": [
     {
      "type": "note",
-     "text": "THU 13 AUG. Bumped 30 -> 35 min. Run volume is the live gap: 21.4 km last week against an aerobic-engine limiter. Flat, no strides. HR <=148 \u2014 if HR drifts above that at conversational effort, walk it back rather than pushing through."
+     "text": "THU 13 AUG. Bumped 30 -> 35 min. Run volume is the live gap: 21.4 km last week against an aerobic-engine limiter. Flat, no strides. HR <=148 — if HR drifts above that at conversational effort, walk it back rather than pushing through."
     },
     {
      "type": "step",
@@ -1111,12 +1111,12 @@
    ]
   },
   "2026-08-14": {
-   "title": "Off-feet aerobic \u2014 35 min",
+   "title": "Off-feet aerobic — 35 min",
    "rpe": "2-3",
    "blocks": [
     {
      "type": "note",
-     "text": "FRI 14 AUG. Replaces Tuesday's bike. SkiErg or Wattbike, athlete's choice. HR <=130, strictly conversational \u2014 this is aerobic volume with no impact and no spinal load, sitting 48h after the chain and 24h before the sim. If it feels like a session, it is too hard."
+     "text": "FRI 14 AUG. Replaces Tuesday's bike. SkiErg or Wattbike, athlete's choice. HR <=130, strictly conversational — this is aerobic volume with no impact and no spinal load, sitting 48h after the chain and 24h before the sim. If it feels like a session, it is too hard."
     },
     {
      "type": "note",
@@ -1131,16 +1131,16 @@
    ]
   },
   "2026-08-15": {
-   "title": "Race sim \u2014 stations 1-4, 4:00 blocks (last of this format)",
+   "title": "Race sim — stations 1-4, 4:00 blocks (last of this format)",
    "rpe": "8",
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 15 AUG. Sled access day. Sled push and pull remain sandbag friction-overloaded (since 3 Jul) \u2014 splits compare to 8 Aug and to each other, NOT to race benchmarks."
+     "text": "SAT 15 AUG. Sled access day. Sled push and pull remain sandbag friction-overloaded (since 3 Jul) — splits compare to 8 Aug and to each other, NOT to race benchmarks."
     },
     {
      "type": "note",
-     "text": "THE REVISED BIRMINGHAM MECHANISM \u2014 read this before you start. Race-file HR: Run 1 143.5 -> SkiErg 128.1 -> roxzone 120.8 -> Run 2 at 5:03/km, THE SAME PACE AS RUN 1, HR 150.8 -> Sled Push 5:14 of work against 2:59 at Cardiff -> every run after pinned 178-182. HR fell through the ski because SkiErg is upper-body and non-weight-bearing; it built a lactate cost the HR trace could not show. The ski loaded it. RUN 2 AT UNCHANGED PACE IS THE DECISION THAT SPENT IT. The sled push is where the time went."
+     "text": "THE REVISED BIRMINGHAM MECHANISM — read this before you start. Race-file HR: Run 1 143.5 -> SkiErg 128.1 -> roxzone 120.8 -> Run 2 at 5:03/km, THE SAME PACE AS RUN 1, HR 150.8 -> Sled Push 5:14 of work against 2:59 at Cardiff -> every run after pinned 178-182. HR fell through the ski because SkiErg is upper-body and non-weight-bearing; it built a lactate cost the HR trace could not show. The ski loaded it. RUN 2 AT UNCHANGED PACE IS THE DECISION THAT SPENT IT. The sled push is where the time went."
     },
     {
      "type": "note",
@@ -1148,11 +1148,11 @@
     },
     {
      "type": "note",
-     "text": "PEAK HR IS NOT THE METRIC. On 8 Aug the runs held 253-258W against CP 261 \u2014 97-99% of threshold power \u2014 and still capped at HR 162, because a 3:00 block never lets HR arrive. Peak HR here measures block length, not effort."
+     "text": "PEAK HR IS NOT THE METRIC. On 8 Aug the runs held 253-258W against CP 261 — 97-99% of threshold power — and still capped at HR 162, because a 3:00 block never lets HR arrive. Peak HR here measures block length, not effort."
     },
     {
      "type": "note",
-     "text": "SUCCESS CRITERIA, in order: (1) SLED PUSH SPLIT \u2014 the primary readout, the station that collapsed at Birmingham. (2) RESTART HR \u2014 HR at the top of run 4 no more than 6 bpm above the top of run 2. (3) FOUR RUN SPLITS INSIDE 5 SECONDS. (4) RATCHET SHAPE \u2014 you want climb-then-hold, roughly 155 -> 165 -> 170 -> 170. Climbing and still climbing at run 4 means you are rehearsing Birmingham. On 8 Aug it read 147 -> 158 -> 162 -> 162, which decelerated into a plateau at 162; the target band for a well-executed race is 168-174."
+     "text": "SUCCESS CRITERIA, in order: (1) SLED PUSH SPLIT — the primary readout, the station that collapsed at Birmingham. (2) RESTART HR — HR at the top of run 4 no more than 6 bpm above the top of run 2. (3) FOUR RUN SPLITS INSIDE 5 SECONDS. (4) RATCHET SHAPE — you want climb-then-hold, roughly 155 -> 165 -> 170 -> 170. Climbing and still climbing at run 4 means you are rehearsing Birmingham. On 8 Aug it read 147 -> 158 -> 162 -> 162, which decelerated into a plateau at 162; the target band for a well-executed race is 168-174."
     },
     {
      "type": "note",
@@ -1160,11 +1160,11 @@
     },
     {
      "type": "note",
-     "text": "RUN PACE: 5:25-5:35/km = 10.8-11.1 km/h, roughly 248-256W at CP 261. START RUN 1 AT 10.8. On 8 Aug you started at 10.98 and the two slowest runs followed \u2014 16s spread across four when the stated test was four flat."
+     "text": "RUN PACE: 5:25-5:35/km = 10.8-11.1 km/h, roughly 248-256W at CP 261. START RUN 1 AT 10.8. On 8 Aug you started at 10.98 and the two slowest runs followed — 16s spread across four when the stated test was four flat."
     },
     {
      "type": "note",
-     "text": "STATION EXPOSURE: 8 Aug logged SkiErg 3:10 / Sled Push 2:52 / Sled Pull 3:06 / BBJ 3:00 = 12:08. This week should read ~16:00. Log it \u2014 RSS scores station work at ~0W and cannot see these minutes."
+     "text": "STATION EXPOSURE: 8 Aug logged SkiErg 3:10 / Sled Push 2:52 / Sled Pull 3:06 / BBJ 3:00 = 12:08. This week should read ~16:00. Log it — RSS scores station work at ~0W and cannot see these minutes."
     },
     {
      "type": "step",
@@ -1174,7 +1174,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d73",
+     "label": "Strides ×3",
      "detail": "30s each, 60s rest between"
     },
     {
@@ -1193,19 +1193,19 @@
     {
      "type": "step",
      "label": "SkiErg",
-     "detail": "4:00 \u2014 one notch harder than 8 Aug. It will not spike your HR; that is expected and is not evidence it was easy.",
+     "detail": "4:00 — one notch harder than 8 Aug. It will not spike your HR; that is expected and is not evidence it was easy.",
      "secs": 240,
      "rpe": true
     },
     {
      "type": "step",
      "label": "Run 2",
-     "detail": "4:00 @ 10.8. HOLD 10.8 \u2014 do not lift it because the ski felt fine. This is the exact decision that broke Birmingham. Note restart HR.",
+     "detail": "4:00 @ 10.8. HOLD 10.8 — do not lift it because the ski felt fine. This is the exact decision that broke Birmingham. Note restart HR.",
      "secs": 240
     },
     {
      "type": "step",
-     "label": "Sled Push \u2014 152 kg",
+     "label": "Sled Push — 152 kg",
      "detail": "RACE WEIGHT. THE PRIMARY READOUT. Time it. This is the station that went 5:14 at Birmingham against 2:59 at Cardiff.",
      "secs": 240,
      "rpe": true
@@ -1218,8 +1218,8 @@
     },
     {
      "type": "step",
-     "label": "Sled Pull \u2014 103 kg",
-     "detail": "Race weight, standing in the box. SPINAL \u2014 effort and symptom as separate numbers.",
+     "label": "Sled Pull — 103 kg",
+     "detail": "Race weight, standing in the box. SPINAL — effort and symptom as separate numbers.",
      "secs": 240,
      "rpe": true
     },
@@ -1232,14 +1232,14 @@
     {
      "type": "step",
      "label": "Burpee Broad Jumps",
-     "detail": "4:00 continuous. Chest to ground, both feet take off and land together. SPINAL CHECKPOINT. Cheapest available race-time improvement \u2014 count reps and log the number.",
+     "detail": "4:00 continuous. Chest to ground, both feet take off and land together. SPINAL CHECKPOINT. Cheapest available race-time improvement — count reps and log the number.",
      "secs": 240,
      "rpe": true
     },
     {
      "type": "step",
      "label": "Cool down",
-     "detail": "10 min easy \u2014 do the boring bit",
+     "detail": "10 min easy — do the boring bit",
      "secs": 600
     }
    ]
@@ -1265,12 +1265,12 @@
    ]
   },
   "2026-08-17": {
-   "title": "Threshold \u2014 3 \u00d7 2 km @ 5:15/km",
+   "title": "Threshold — 3 × 2 km @ 5:15/km",
    "rpe": "7-8",
    "blocks": [
     {
      "type": "note",
-     "text": "MON 17 AUG. Build week 5. Progression from 5\u00d71 km: same total volume at threshold, longer reps, longer recovery. Longer reps are the harder version \u2014 HR arrives and stays."
+     "text": "MON 17 AUG. Build week 5. Progression from 5×1 km: same total volume at threshold, longer reps, longer recovery. Longer reps are the harder version — HR arrives and stays."
     },
     {
      "type": "note",
@@ -1284,7 +1284,7 @@
     },
     {
      "type": "step",
-     "label": "Strides \u00d74",
+     "label": "Strides ×4",
      "detail": "20s each, 60s walk between",
      "secs": 320
     },
@@ -1293,12 +1293,12 @@
      "work": 630,
      "rest": 180,
      "rounds": 3,
-     "label": "3 \u00d7 2 km @ threshold"
+     "label": "3 × 2 km @ threshold"
     },
     {
      "type": "step",
      "label": "Rep 1",
-     "detail": "2 km @ 5:15/km, 255-265W. First km deliberately at the slow end \u2014 the rep is won in the second km.",
+     "detail": "2 km @ 5:15/km, 255-265W. First km deliberately at the slow end — the rep is won in the second km.",
      "secs": 630,
      "rpe": true
     },
@@ -2397,7 +2397,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "WED 16 SEP @ RAW. WEEK 0 of the over-volume ladders. Race volume only - 80 m BBJ / 100 m lunge / 100 wall balls - in timed sets. The number that matters today is the set rate, because every ladder step from w/c 21 Sep is judged against it. EFFORT CEILING 7: CFG is in three days, this is a measurement not a session to empty. Hinge block is SKIPPED if Fri 11 threw any symptom >0."
+     "text": "WED 16 SEP @ RAW. WEEK 0 of the over-volume ladders. Race volume only - 80 m BBJ / 100 m lunge / 100 wall balls - in timed sets. The number that matters today is the set rate, because every ladder step from w/c 21 Sep is judged against it. EFFORT CEILING 7: CFG is in three days, this is a measurement not a session to empty. Hinge block RUNS: RDL 3x6 @ 50 kg + Bulgarian split squat 3x8/side BODYWEIGHT (single-arm carry dropped 11 Sep, symptom RPE 1; BSS added for unilateral leg work). BW today - CFG is 3 days out, do not seed DOMS. Symptom >2 on RDL = stop the block and drop stations to race volume."
     },
     {
      "type": "step",
@@ -2668,7 +2668,7 @@
   "prerun": [
    {
     "type": "note",
-    "text": "PRE-RUN \u2014 ~9 min, in order. Spine-neutral throughout: no standing toe touches, no seated forward folds, no supine knees-to-chest. Press START on the first step, it auto-advances the whole routine."
+    "text": "PRE-RUN — ~9 min, in order. Spine-neutral throughout: no standing toe touches, no seated forward folds, no supine knees-to-chest. Press START on the first step, it auto-advances the whole routine."
    },
    {
     "type": "step",
@@ -2691,7 +2691,7 @@
    {
     "type": "step",
     "label": "Bent-knee heel raise",
-    "detail": "15 reps, 2s lower. Soleus \u2014 takes the running load, don't skip it.",
+    "detail": "15 reps, 2s lower. Soleus — takes the running load, don't skip it.",
     "secs": 45
    },
    {
@@ -2800,7 +2800,7 @@
   "hinge_block": [
    {
     "type": "note",
-    "text": "HINGE BLOCK - 15-20 min, once per week, in front of the station work (standalone on its first outing, Fri 11 Sep). This is NOT a strength session. It is a fresh, controlled dose of loaded hinge so the lunge ladder is not the only hinge exposure you get. Purpose: spinal graded exposure. Log effort and symptom RPE separately. Symptom >2 = stop the block AND drop the station session to race volume."
+    "text": "HINGE BLOCK - 15-20 min, once per week, in front of the station work (standalone on its first outing, Fri 11 Sep). This is NOT a strength session. It is a fresh, controlled dose of loaded hinge so the lunge ladder is not the only hinge exposure you get. Purpose: spinal graded exposure. Log effort and symptom RPE separately. Symptom >2 = stop the block AND drop the station session to race volume. NOTE: single-arm carry dropped 11 Sep (symptom RPE 1) and replaced by Bulgarian split squat for unilateral leg exposure - keep the trunk out (DBs at sides only, never barbell/front-rack)."
    },
    {
     "type": "step",
@@ -2812,9 +2812,9 @@
    },
    {
     "type": "step",
-    "label": "Single-arm farmers carry 24 kg - 3 x 40 m per side",
-    "detail": "Anti-lateral-flexion. Tall, ribs down, no lean. Swap sides without putting the bell down if grip allows. 60 s between rounds. SPINAL CHECKPOINT.",
-    "secs": 480,
+    "label": "Bulgarian split squat 3 x 8 / side",
+    "detail": "Unilateral leg exposure - replaces the single-arm carry (dropped 11 Sep, symptom RPE 1: asymmetric spinal load, not race-specific). BODYWEIGHT on reintroduction - DBs at sides ONLY once BW is clean, never front-racked or barbell (keeps the trunk out). 60-90 s between sides. SPINAL CHECKPOINT.",
+    "secs": 420,
     "rpe": true,
     "spinal": true
    }
