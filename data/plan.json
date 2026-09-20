@@ -1,5 +1,5 @@
 {
- "week": "PLAN 9-20 SEP 2026 (w/c 7 Sep tail + w/c 14 Sep). Written 9 Sep in-thread; Sunday planning retired 8 Sep. W/C 7 SEP = 25 km (Option B rung 1): 8.07 km banked Mon 7 Sep Arona (counts as the week's quality touch - last 2 km ran at ~275W); Tue checkout/travel; Wed 9 off (night flight, sleep debt ~159 min); Thu long run 11 easy / Fri hinge block standalone + 3 km / Sat 3 easy / Sun off. All remaining running Zone 2. W/C 14 SEP = 29 km: Mon 30-min TT (settles CP before the 23 Sep 5x1km and Preston) / Tue core / Wed hinge block + STATION BASELINE at race volume (week 0 of the over-volume ladders, timed sets) / Thu long run 11 km easy / Fri shakeout / Sat CFG Intermediate = the week's VO2max session / Sun off. Long run sits Thursday because Wednesday carries the station work. RAMP: 25 -> 29 is +16%, over the 15% default; 20% gate needs prior-week ACWR <=1.05, injury index 0, no symptom RPE >2, sleep gate clear (7-day mean >=380 min, no night <300). Read Sun 13 Sep evening - if the sleep gate fails, Thu 17 drops to 9 km (week = 27). STRUCTURE (8 Sep): chain rotation dropped - only 10 Oct full sim and 17 Oct half-volume chain sharpen remain. strength_lower replaced by the hinge block (spinal graded exposure, not strength). Ladder steps after the 16 Sep baseline: w/c 21 Sep step 1, w/c 28 Sep HOLD (deload + Preston 10k), w/c 5 Oct step 2, w/c 12 Oct step 3. Targets: BBJ 80 -> 120 -> 150 -> 180 m; sandbag lunge 100 -> 130 -> 165 -> 200 m @20 kg; wall balls 100 -> 175 -> 240 -> 300 @6 kg. Progression gated by spinal symptom RPE (>2 = hard stop, hold the step). Sleds = compromised-entry practice only (HR at sled start/finish). Ergs by screen targets. Expect ACWR to read hot w/c 14 Sep - CFG accessory and station work score off HR zones. Read it, don't panic. OPEN: ramp gate reads km or load - decide before w/c 21 Sep. SLED WORK (added 11 Sep): sled_entry_rehearsal (weekly, opens w/c 21 station day) and sled_ceiling_test (one-off diagnostic, output calibrates the rehearsal target) added as routines. Sat 12 rewritten as a fork: back 0 = run sled_ceiling_test (fresh, standalone, replaces the loosener, week still ~25); back >0 = walk + post read, test slides to front of w/c 21. Sunday stays full rest either way.",
+ "week": "PLAN w/c 21 SEP 2026 - WEEK 1 of the station-conditioning build (6-week framework set 19 Sep; race Sat 31 Oct). KM ON MAINTAIN (agreed 20 Sep): running maintained not laddered - ~22-24 run km/wk, quality-led. Old km ladder (29->33->36->40) RETIRED - station volume climbs, run volume flat. BUILD WEEKS w/c 21 Sep / 28 Sep / 5 Oct each = 1x compound chain + 1x sled (from wk2) + 1x run quality (maintenance) + easy off-feet fill (bike/ski to spare the spine). SLED -> WEEK 2 (agreed 20 Sep): wk1 already carries 5x1km + chain + Preston. sled_ceiling_test already done 12 Sep (arrival-HR ceiling ~158-160), so wk2 sled = push/pull UNDER FATIGUE, not a re-test. WK1 LAYOUT: Mon easy bike/ski or rest / Tue rest+core (protect Wed) / Wed 5x1km @265-280W (Preston gate + clean CP re-read after 14 Sep TT ran short) / Thu rest or easy bike / Fri COMPOUND CHAIN (2 clear days before Preston) / Sat easy shakeout or rest / Sun PRESTON 10k EASY (training day, cruise, no taper, no PB). CHAIN wk1: BBJ 80m primer (race vol, not laddered - flat on 16 Sep baseline) -> Row 1000 race -> Farmers 200 @2x24 -> Lunge 130m @20 (over-vol step1, race 100) -> WB 150 @6 (over-vol step1, race 100), 4x controlled 1km runs between @ ~5:40/250W as RECOVERY not a workout. Lunge+WB carry over-volume (16 Sep baseline set4-set1 +8s lunge / +9s WB; BBJ flat). WB step-1 in-chain 150, below old standalone 175 (ball arrives pre-fatigued). Wk2/wk3 lunge+WB set off wk1 fade (provisional 165-200 / 240-300); Row/Farmers/BBJ/runs fixed. GATES: back symptom RPE separate from effort at Farmers/Lunge/WB, >2 = stop + hold step (never stalls runs/taper). ACWR 0.87 / monotony 0.95 / TSB flat / ramp -0.34 as of 20 Sep - room to add station load; expect ACWR to climb over the build, read it don't panic. 148 EASY HR CAP RETIRED (20 Sep) - easy power-governed 210-230W, HR check 158. SIM = w/c 12 Oct (wk4, runs committed 5:30-5:35). Taper wks 5-6.",
  "anchors": {
   "set_on": "2026-08-16 (re-verified 2026-08-26)",
   "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
@@ -7,7 +7,7 @@
   "threshold_pace_sec_per_km": 315,
   "threshold_pace_display": "5:15/km",
   "lthr_bpm": 178,
-  "easy_run_hr_cap_bpm": 148,
+  "easy_run_hr_cap_bpm": 158,
   "stryd_cal_factor": 101.7,
   "cycling_ftp_watts": 210,
   "cycling_ftp_source": "user (217W workaround reverted - closed, do not re-raise)",
@@ -27,7 +27,8 @@
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
   "next_review": "30-min TT Mon 14 Sep 2026 (cal factor 100.0 for the test, back to 101.7 after). Anchors stand if avg power lands 255-268W.",
-  "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT."
+  "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT.",
+  "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged)."
  },
  "days": {
   "2026-07-17": {
@@ -2662,6 +2663,196 @@
      "text": "NO SUNDAY PLANNING SESSION - retired 8 Sep. w/c 21 Sep is written in-thread off Wednesday's set times and Saturday's CFG data: Mon threshold / Wed 5x1km @ 4:55 (Preston gate) / station ladder step 1 on the non-run midweek day / Sat 26 Sep easy only (Preston 10k Sun 27). 33 km."
     }
    ]
+  },
+  "2026-09-21": {
+   "title": "Easy off-feet (bike/ski) or rest",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 21 SEP. Week 1 of the station build. Off-feet aerobic fill to spare the spine and protect Wednesday's CP read. NO run today - running is on MAINTAIN this block (~22-24 km/wk), not laddered. 148 HR cap RETIRED (see anchors): easy is power-governed 210-230 W, HR is a check only (back off only if HR>158 AND power>230 together)."
+    },
+    {
+     "type": "step",
+     "label": "Easy bike or SkiErg Z2",
+     "detail": "30-40 min, conversational, nothing structured. Or full rest if the legs need it after the CFG week.",
+     "secs": 2100
+    }
+   ]
+  },
+  "2026-09-22": {
+   "title": "Rest / core (protect Wed)",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 22 SEP. Rest or very easy. Wednesday's 5x1km is the clean CP re-read + Preston gate and it needs fresh-ish legs to be valid - nothing loaded today. Optional core + mobility only."
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    }
+   ]
+  },
+  "2026-09-23": {
+   "title": "5x1km threshold (Preston gate + CP re-read)",
+   "rpe": "7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 23 SEP. The clean CP ceiling read the 14 Sep TT couldn't give (ran short at 24:39, auto-lap left on). Anchor by POWER, not pace: 5x1km @ 265-280 W (~101-107% CP 261), pace will land ~5:05-5:15/km watch - do NOT chase the 4:55 in the old note. 90 s jog recoveries. AUTO-LAP OFF, manual lap per rep. Stryd power authority, not GPS. PRESTON GATE: reps holding 265 W+ with HR settling toward 178 and the last rep not fading = CP 261 confirmed (nudge up only if clearly easy). Week's run quality - do not add volume around it."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10-15 min easy + 4 strides. Confirm Stryd power live and matching the app before rep 1.",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "5 x 1km @ 265-280 W",
+     "detail": "90 s jog between. Hold the band by power; let pace be the output (~5:05-5:15/km watch). Log power, HR and pace per rep.",
+     "secs": 1800,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cooldown",
+     "detail": "10 min easy jog. Post-run: Stryd distance vs reps for the cal sanity check (101.7 held).",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-09-24": {
+   "title": "Rest or easy bike Z2",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 24 SEP. Recovery. Rest, or easy bike/ski Z2 ~30 min off-feet. Chain is tomorrow and Preston is Sunday - keep today clear, no run."
+    },
+    {
+     "type": "step",
+     "label": "Optional easy bike/ski Z2",
+     "detail": "30 min conversational, or full rest.",
+     "secs": 1800
+    }
+   ]
+  },
+  "2026-09-25": {
+   "title": "COMPOUND CHAIN wk1 (stations 5-8 + BBJ pre-fatigue)",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 25 SEP @ RAW. Week 1 compound chain - Birmingham's back-half collapse zone in one session, 2 clear days before Preston. Race sequence, race weight. BBJ opens as a pre-fatigue primer (race volume, not a target). Row + Farmers held at race volume. Lunge + Wall Balls carry the over-volume (the two faders). Runs between are RECOVERY (~5:40/km, ~250 W, HR <=165), not a workout. Expect ~50-60 min. Back symptom RPE separate from effort at Farmers/Lunge/WB."
+    },
+    {
+     "type": "routine",
+     "ref": "compound_chain"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "800 m easy + 10 air squats, 10 WB to target, 2x10 m walking lunge, 200 m row build.",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "BBJ 80 m (pre-fatigue primer)",
+     "detail": "Race standard: chest to floor, two-foot take-off + landing. Race volume - NOT laddered. Puts one loaded station in the legs before the chain proper.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 1 km (controlled)",
+     "detail": "~5:40/km, ~250 W, HR <=165. Settle back onto it fast out of the station.",
+     "secs": 340
+    },
+    {
+     "type": "step",
+     "label": "Row 1000 m @ race",
+     "detail": "~4:40 screen, controlled - do NOT empty it, three stations still to come.",
+     "secs": 280
+    },
+    {
+     "type": "step",
+     "label": "Run 1 km (controlled)",
+     "detail": "~5:40/km, ~250 W.",
+     "secs": 340
+    },
+    {
+     "type": "step",
+     "label": "Farmers 200 m @ 2x24 kg",
+     "detail": "Arms extended, unbroken if grip holds. Symptom + effort as separate numbers.",
+     "secs": 200,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 1 km (controlled)",
+     "detail": "~5:40/km, ~250 W.",
+     "secs": 340
+    },
+    {
+     "type": "step",
+     "label": "Lunge 130 m @ 20 kg (over-volume step 1)",
+     "detail": "Race is 100 m - this is step 1. Trailing knee every rep, stand tall between. SPINAL CHECKPOINT at 65 m and end.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 1 km (controlled)",
+     "detail": "~5:40/km, ~250 W.",
+     "secs": 340
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 150 @ 6 kg (over-volume step 1)",
+     "detail": "Race is 100 - step 1, arriving pre-fatigued (that's the point). Full depth, target every rep. SPINAL CHECKPOINT at 75 and 150. Log total time + whether the last third held.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    }
+   ]
+  },
+  "2026-09-26": {
+   "title": "Easy shakeout or rest (Preston tomorrow)",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 26 SEP. Easy shakeout 2-3 km, power-governed 210-230 W, HR check 158 - or rest. Legs clear for Preston."
+    },
+    {
+     "type": "step",
+     "label": "Optional easy shakeout",
+     "detail": "2-3 km, 210-230 W, HR check only. Or rest.",
+     "secs": 900
+    }
+   ]
+  },
+  "2026-09-27": {
+   "title": "PRESTON 10k - EASY / training day",
+   "rpe": "6",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 27 SEP. Preston 10k = TRAINING DAY, not a race. Cruise it - easy/steady ~230-245 W, HR comfortable and NOT near LTHR, no PB attempt, no taper taken. Engine read only. Measured course: expect watch pace ~2% slow vs the gantry clock (Stryd cal 101.7 held) - go off effort, don't chase the Stryd time. Note back symptom if anything flares."
+    },
+    {
+     "type": "step",
+     "label": "Preston 10k easy/steady",
+     "detail": "~230-245 W, conversational-hard at most. Let HR sit where it sits under the power cap.",
+     "secs": 3300,
+     "rpe": true
+    }
+   ]
   }
  },
  "routines": {
@@ -2974,6 +3165,28 @@
    {
     "type": "note",
     "text": "READING IT: line up the 3 rounds - arrival HR vs (sled 25m time) and (metres to settle on the run after). The CEILING is the arrival HR where the sled time JUMPS and/or the run won't settle within ~150m. Race arrival target = ~10-15 bpm BELOW that ceiling. That number then sets the target for sled_entry_rehearsal - MEASURED 12 Sep 2026: run-settle ceiling >173 (settled by ~90m even arriving 173), BUT sled-push time degrades above ~160 arrival (1:11@158 vs 1:26-1:48@172-173). Race arrival target = ~158-160 (push-protective), NOT the 173 run ceiling. Cardiff-141 retired. Re-measure sled time on race kit at the 10 Oct sim. POST: the 3 arrival HRs, 3 sled times, 3 settle reads, and I'll pull the ceiling out with you."
+   }
+  ],
+  "compound_chain": [
+   {
+    "type": "note",
+    "text": "COMPOUND CHAIN - the Birmingham back-half collapse zone in one session. Stations 5-8 in RACE ORDER at RACE WEIGHT, with a BBJ pre-fatigue primer up front and controlled 1 km runs between. Run these stations RACE-STYLE (unbroken where possible, race-broken if you must) - this is NOT the standalone ladder's 45 s-rest timed sets. The difficulty comes from the sequence and the accumulating fatigue, not from big single-station rest blocks."
+   },
+   {
+    "type": "note",
+    "text": "WHAT CLIMBS vs WHAT IS FIXED (all 3 build weeks, w/c 21 Sep / 28 Sep / 5 Oct): Row 1000, Farmers 200 m @ 2x24, BBJ 80 m primer, and the 4x controlled 1 km runs are FIXED. Only LUNGE and WALL BALLS carry the over-volume and climb - they are the two that faded on the 16 Sep baseline (set4-set1: lunge +8 s, WB +9 s; BBJ was flat, so it stays race-volume as a primer, not a target)."
+   },
+   {
+    "type": "note",
+    "text": "THE RUNS ARE RECOVERY, NOT A WORKOUT. ~5:40/km, ~250 W, HR <= ~165. Do not race them - they exist to make the stations arrive on tired legs and to rehearse settling back to pace after a station. If you find yourself pushing the runs, you have the session backwards."
+   },
+   {
+    "type": "note",
+    "text": "SPINAL GATE: symptom RPE logged SEPARATELY from effort at Farmers, Lunge (halfway + end) and Wall Balls (halfway + end). Symptom >2 at any checkpoint = stop that station, finish nothing else loaded, and the chain HOLDS at the previous step next week. Same rule as the race. A flare stalls STATION progression only - never the runs, never the taper."
+   },
+   {
+    "type": "note",
+    "text": "PROGRESSION: log total time per station + whether the last third holds vs the first. Lunge/WB targets across the 3 weeks - wk1 lunge 130 m / WB 150 (committed); wk2 and wk3 set OFF wk1's actual fade (provisional lunge 165->200, WB 240->300). Last third >15% slower than the first, or symptom RPE >2, = HOLD the step rather than climbing. WB step-1 is 150 in-chain - deliberately below the old standalone ladder's 175, because the ball now arrives pre-fatigued from the whole chain."
    }
   ]
  }
