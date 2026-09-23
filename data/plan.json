@@ -1,9 +1,9 @@
 {
  "week": "PLAN w/c 21 SEP 2026 - WEEK 1 of the station-conditioning build (6-week framework set 19 Sep; race Sat 31 Oct). KM ON MAINTAIN (agreed 20 Sep): running maintained not laddered - ~22-24 run km/wk, quality-led. Old km ladder (29->33->36->40) RETIRED - station volume climbs, run volume flat. BUILD WEEKS w/c 21 Sep / 28 Sep / 5 Oct each = 1x compound chain + 1x sled (from wk2) + 1x run quality (maintenance) + easy off-feet fill (bike/ski to spare the spine). SLED -> WEEK 2 (agreed 20 Sep): wk1 already carries 5x1km + chain + Preston. sled_ceiling_test already done 12 Sep (arrival-HR ceiling ~158-160), so wk2 sled = push/pull UNDER FATIGUE, not a re-test. WK1 LAYOUT: Mon easy bike/ski or rest / Tue rest+core (protect Wed) / Wed 5x1km @265-280W (Preston gate + clean CP re-read after 14 Sep TT ran short) / Thu rest or easy bike / Fri COMPOUND CHAIN (2 clear days before Preston) / Sat easy shakeout or rest / Sun PRESTON 10k EASY (training day, cruise, no taper, no PB). CHAIN wk1: BBJ 80m primer (race vol, not laddered - flat on 16 Sep baseline) -> Row 1000 race -> Farmers 200 @2x24 -> Lunge 130m @20 (over-vol step1, race 100) -> WB 150 @6 (over-vol step1, race 100), 4x controlled 1km runs between @ ~5:40/250W as RECOVERY not a workout. Lunge+WB carry over-volume (16 Sep baseline set4-set1 +8s lunge / +9s WB; BBJ flat). WB step-1 in-chain 150, below old standalone 175 (ball arrives pre-fatigued). Wk2/wk3 lunge+WB set off wk1 fade (provisional 165-200 / 240-300); Row/Farmers/BBJ/runs fixed. GATES: back symptom RPE separate from effort at Farmers/Lunge/WB, >2 = stop + hold step (never stalls runs/taper). ACWR 0.87 / monotony 0.95 / TSB flat / ramp -0.34 as of 20 Sep - room to add station load; expect ACWR to climb over the build, read it don't panic. 148 EASY HR CAP RETIRED (20 Sep) - easy power-governed 210-230W, HR check 158. SIM = w/c 12 Oct (wk4, runs committed 5:30-5:35). Taper wks 5-6.",
  "anchors": {
-  "set_on": "2026-08-16 (re-verified 2026-08-26)",
-  "source": "3 Aug 2026 30-min TT; confirmed live as IF-engine basis on the 16 Aug run (derived_metrics.basis: run_cp_watts 261, threshold_pace_sec_per_km 315). Field-validated 10 Aug (5x1km @ 5:13/5:12/5:11/5:11/5:03, HR 162-178, 265-293W).",
-  "stryd_cp_watts": 261,
+  "set_on": "2026-09-23 (CP 261->266; pace anchor 315/5:15 watch held)",
+  "source": "CP 266 from convergence of four reads: 14 Sep TT ~267W (truncated), Stryd auto-CP 268, 23 Sep .fit CP 266, and the 23 Sep 5x1km (276/281/283/289/298 W negative-split build into wind, HR sub-LTHR through rep 4, RPE 7) - 261 ruled out low. Pace anchor UNCHANGED at 315 (5:15/km watch, ~5:07 true): the ~2 percent CP bump does not move it and the reps sat at/above threshold power, consistent with 5:15 watch = threshold. Confirm pace on next clean 30-min TT. IF computed from run_cp_watts (power), not pace.",
+  "stryd_cp_watts": 266,
   "threshold_pace_sec_per_km": 315,
   "threshold_pace_display": "5:15/km",
   "lthr_bpm": 178,
@@ -16,7 +16,8 @@
     217,
     237,
     245,
-    300
+    300,
+    261
    ],
    "pace_per_km": [
     "5:22",
@@ -26,7 +27,7 @@
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "30-min TT Mon 14 Sep 2026 (cal factor 100.0 for the test, back to 101.7 after). Anchors stand if avg power lands 255-268W.",
+  "next_review": "Clean 30-min TT to re-confirm CP and pace; interim CP 266 stands through Preston and into the w/c 12 Oct sim.",
   "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT.",
   "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged)."
  },
@@ -2720,6 +2721,10 @@
      "label": "Cooldown",
      "detail": "10 min easy jog. Post-run: Stryd distance vs reps for the cal sanity check (101.7 held).",
      "secs": 600
+    },
+    {
+     "type": "note",
+     "text": "RESULT (23 Sep): 5x1km NEGATIVE-SPLIT build, NOT the flat hold prescribed - 276/281/283/289/298 W; pace(watch) 5:08/5:01/4:57/4:51/4:38 (~2 percent faster true); HR avg 156/161/167/171/177, max 184 rep 5. HR sub-LTHR through rep 4, power ROSE every rep. Fought a variable headwind throughout (surging to hold watts), so effort ran higher than the averages: athlete RPE 7 (.fit logged 4 - Garmin RPE defect again, PWA/verbal is authority). Feel 5/5. TE 4.3, load 267.6. Laps accurate 0.98-1.03 km despite no distance field. OUTCOME: CP 261->266 (see anchors). Flat-hold stability read not produced (built instead), but 261 clearly ruled out; 4 reads converge high-260s. Wind + interval recoveries both argue the conservative end -> 266 not higher. Garmin activity 24471567013."
     }
    ]
   },
