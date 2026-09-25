@@ -1,0 +1,93 @@
+{
+ "date": "2026-09-25",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-09-25:6",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354395345
+  },
+  {
+   "key": "2026-09-25:7",
+   "label": "BBJ 80 m (pre-fatigue primer)",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1790354396020
+  },
+  {
+   "key": "2026-09-25:8",
+   "label": "Run 1 km (controlled)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354400772
+  },
+  {
+   "key": "2026-09-25:9",
+   "label": "Row 1000 m @ race",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354401738
+  },
+  {
+   "key": "2026-09-25:10",
+   "label": "Run 1 km (controlled)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354402731
+  },
+  {
+   "key": "2026-09-25:11",
+   "label": "Farmers 200 m @ 2x24 kg",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1790354403605
+  },
+  {
+   "key": "2026-09-25:12",
+   "label": "Run 1 km (controlled)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354407948
+  },
+  {
+   "key": "2026-09-25:13",
+   "label": "Lunge 130 m @ 20 kg (over-volume step 1)",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1790354408798
+  },
+  {
+   "key": "2026-09-25:14",
+   "label": "Run 1 km (controlled)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790354411952
+  },
+  {
+   "key": "2026-09-25:15",
+   "label": "Wall balls 150 @ 6 kg (over-volume step 1)",
+   "spinal": true,
+   "rpe": 10,
+   "sym": 0,
+   "t": 1790354412477
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Lane 5 of 12.5m burpees was 3:30 \n\n100wb was 6:20\n\nI gave up at 130 wb.... The decided to finish so the last split is the remainder of the WB ",
+ "finished": "2026-09-25T16:41:23.457Z",
+ "synced": false
+}
