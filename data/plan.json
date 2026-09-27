@@ -1,9 +1,9 @@
 {
- "week": "PLAN w/c 21 SEP 2026 - WEEK 1 of the station-conditioning build (6-week framework set 19 Sep; race Sat 31 Oct). KM ON MAINTAIN (agreed 20 Sep): running maintained not laddered - ~22-24 run km/wk, quality-led. Old km ladder (29->33->36->40) RETIRED - station volume climbs, run volume flat. BUILD WEEKS w/c 21 Sep / 28 Sep / 5 Oct each = 1x compound chain + 1x sled (from wk2) + 1x run quality (maintenance) + easy off-feet fill (bike/ski to spare the spine). SLED -> WEEK 2 (agreed 20 Sep): wk1 already carries 5x1km + chain + Preston. sled_ceiling_test already done 12 Sep (arrival-HR ceiling ~158-160), so wk2 sled = push/pull UNDER FATIGUE, not a re-test. WK1 LAYOUT: Mon easy bike/ski or rest / Tue rest+core (protect Wed) / Wed 5x1km @265-280W (Preston gate + clean CP re-read after 14 Sep TT ran short) / Thu rest or easy bike / Fri COMPOUND CHAIN (2 clear days before Preston) / Sat easy shakeout or rest / Sun PRESTON 10k EASY (training day, cruise, no taper, no PB). CHAIN wk1: BBJ 80m primer (race vol, not laddered - flat on 16 Sep baseline) -> Row 1000 race -> Farmers 200 @2x24 -> Lunge 130m @20 (over-vol step1, race 100) -> WB 150 @6 (over-vol step1, race 100), 4x controlled 1km runs between @ ~5:40/250W as RECOVERY not a workout. Lunge+WB carry over-volume (16 Sep baseline set4-set1 +8s lunge / +9s WB; BBJ flat). WB step-1 in-chain 150, below old standalone 175 (ball arrives pre-fatigued). Wk2/wk3 lunge+WB set off wk1 fade (provisional 165-200 / 240-300); Row/Farmers/BBJ/runs fixed. GATES: back symptom RPE separate from effort at Farmers/Lunge/WB, >2 = stop + hold step (never stalls runs/taper). ACWR 0.87 / monotony 0.95 / TSB flat / ramp -0.34 as of 20 Sep - room to add station load; expect ACWR to climb over the build, read it don't panic. 148 EASY HR CAP RETIRED (20 Sep) - easy power-governed 210-230W, HR check 158. SIM = w/c 12 Oct (wk4, runs committed 5:30-5:35). Taper wks 5-6.",
+ "week": "PLAN w/c 28 SEP 2026 - WEEK 2 of the station-conditioning build (race Sat 31 Oct). SIM = SAT 10 OCT (locked 23 Sep; supersedes the old 'w/c 12 Oct' line) - w/c 12 Oct = half-volume sharpener / corrective, taper w/c 19 + 26 Oct. This is the LAST compound chain before the sim. ANCHORS RESET 27 Sep: CP 292 (Stryd auto after Preston 49:35 chip, 288 W ~50 min), LTHR 178 confirmed, max HR 194; sim run power ~255-260 W (~88% CP) for 5:30-5:35. LOAD 27 Sep: pooled ACWR 1.4 (chain + race back to back), CTL 29.1, ramp +1.46 - REPEAT week 1, do not step up. KM ON MAINTAIN ~23-25. LAYOUT: Mon rest/easy bike + core / Tue hinge block + sled under fatigue (RAW, runs = 2 laps of 253 m) / Wed easy bike 40 (off feet) / Thu threshold 3x10 @ 280-288 W (CP 292 check, outdoor) / Fri rest or easy bike / Sat COMPOUND CHAIN wk2 (moved from Fri, agreed 27 Sep; runs = 4 laps) / Sun easy run 35-40 or rest + planning. No hard sessions on consecutive days. CHAIN wk2 HOLDS: Lunge 130 m with first 62.5 m in ~3:00 (rate target; wk1 3:30), WB 150 with planned 10-15 s break at 100 (wk1 last third ~25% slow). Exits from Farmers + Lunge <=25 s (wk1 36/38 s). GATES unchanged: back symptom RPE separate from effort, >2 = stop + hold (stalls stations only, never runs/taper). Easy runs power-governed 210-230 W, HR check 158.",
  "anchors": {
-  "set_on": "2026-09-23 (CP 261->266; pace anchor 315/5:15 watch held)",
-  "source": "CP 266 from convergence of four reads: 14 Sep TT ~267W (truncated), Stryd auto-CP 268, 23 Sep .fit CP 266, and the 23 Sep 5x1km (276/281/283/289/298 W negative-split build into wind, HR sub-LTHR through rep 4, RPE 7) - 261 ruled out low. Pace anchor UNCHANGED at 315 (5:15/km watch, ~5:07 true): the ~2 percent CP bump does not move it and the reps sat at/above threshold power, consistent with 5:15 watch = threshold. Confirm pace on next clean 30-min TT. IF computed from run_cp_watts (power), not pace.",
-  "stryd_cp_watts": 266,
+  "set_on": "2026-09-27 (CP 266->292 after Preston 10k; LTHR 178 confirmed; max HR 194)",
+  "source": "CP 292 = Stryd auto-CP after Preston 10k 27 Sep: chip 49:35, avg 288 W / NP 289 for ~50 min, on legs 2 days off the wk1 chain (not tapered), hilly (96 m) and windy (17.5 km/h mean). Hill/wind watts are real work, so NOT discounted for CP. Adopted 27 Sep. Verification: Thu 1 Oct 3x10 @ 280-288 W - HR >182 in rep 2 at <=285 W drops the TRAINING anchor to 285. LTHR 178 confirmed on steady effort (km 3-6 at 174-177, 45-min best HR 177.6).",
+  "stryd_cp_watts": 292,
   "threshold_pace_sec_per_km": 315,
   "threshold_pace_display": "5:15/km",
   "lthr_bpm": 178,
@@ -17,7 +17,9 @@
     237,
     245,
     300,
-    261
+    261,
+    266,
+    270
    ],
    "pace_per_km": [
     "5:22",
@@ -27,9 +29,12 @@
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "Clean 30-min TT to re-confirm CP and pace; interim CP 266 stands through Preston and into the w/c 12 Oct sim.",
+  "next_review": "Thu 1 Oct 3x10 threshold confirms CP 292 for training; full sim Sat 10 Oct is the next race-format read.",
   "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT.",
-  "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged)."
+  "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged).",
+  "max_hr_bpm": 194,
+  "threshold_pace_note": "PACE ANCHOR 315 (5:15 watch) IS STALE - kept only until Thu 1 Oct. Preston: ~4:58/km at LTHR on road with Stryd ~true. Review after Thu's threshold session; IF is power-based so this does not affect load/IF.",
+  "stryd_cal_note": "Cal 101.7 HELD. Preston road: Stryd within 0.2% at mile 5, 9.99 km at finish -> on ROAD watch pace ~= true pace. The 14 Sep track '1.9% short' (~7.5 m/lap) matches running lane 2 (+7.7 m/lap) - likely a lane artefact. DROP the ~2% watch->true adjustment on roads. Optional lane-1 lap-counted check post-Birmingham only."
  },
  "days": {
   "2026-07-17": {
@@ -2856,6 +2861,298 @@
      "detail": "~230-245 W, conversational-hard at most. Let HR sit where it sits under the power cap.",
      "secs": 3300,
      "rpe": true
+    }
+   ]
+  },
+  "2026-09-28": {
+   "title": "Rest or easy bike 30 min + core (post-Preston)",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 28 SEP. Day after Preston (chip 49:35, 288 W for ~50 min). Pooled ACWR 1.4 after chain + race back to back - expected, eases by midweek. Morning: log back symptom (race-day check) + HRV/RHR."
+    },
+    {
+     "type": "step",
+     "label": "Easy bike 30 min (optional)",
+     "detail": "HR <=145. Or full rest - both fine.",
+     "secs": 1800
+    },
+    {
+     "type": "routine",
+     "ref": "core"
+    }
+   ]
+  },
+  "2026-09-29": {
+   "title": "Hinge block + sled under fatigue (RAW)",
+   "rpe": "6-7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 29 SEP @ RAW. GATE: if legs still race-sore or HRV clearly below baseline, SWAP with Wed (easy bike). Hinge block first, then sled rehearsal. RAW run lap = 253 m: every run below is 2 LAPS (506 m) - count laps, steer on LAP-AVERAGE power (turns make live power/pace jumpy)."
+    },
+    {
+     "type": "step",
+     "label": "RDL 3 x 6",
+     "detail": "55 kg if BOTH previous hinge outings were symptom 0, else hold 50 kg. Neutral spine, 2 s down, 90 s between sets. SPINAL CHECKPOINT.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Bulgarian split squat 3 x 8 / side",
+     "detail": "Bodyweight, or DBs at sides ONLY if BW was clean. Never front-rack/barbell. SPINAL CHECKPOINT.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Warm-up 10 min easy + 3 x 20 s strides",
+     "detail": "HR <=148.",
+     "secs": 720
+    },
+    {
+     "type": "note",
+     "text": "3 ROUNDS, continuous within a round, 2-3 min walk between rounds. READOUT = HR at the instant you start each sled + HR at the start of the run after. Arrive hot? Log it, do NOT cool down to rescue it."
+    },
+    {
+     "type": "step",
+     "label": "SkiErg 500 m - controlled",
+     "detail": "Damper 6, ~1:55-2:05. Off composed, not gasping.",
+     "secs": 120,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 laps (506 m) @ 255-260 W",
+     "detail": "Birmingham run power (~88% CP 292).",
+     "secs": 170,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled push 25 m (2 x 12.5) - race intent",
+     "detail": "Race weight if RAW loads it (152 kg incl sled), else log load. LOG ARRIVAL HR - target <=158-160.",
+     "secs": 60,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 laps (506 m) @ 255-260 W",
+     "detail": "LOG HR at the start of this run.",
+     "secs": 170,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled pull 25 m - race intent",
+     "detail": "Race weight if possible (103 kg incl sled), else log load. LOG ARRIVAL HR. SPINAL CHECKPOINT.",
+     "secs": 75,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cool-down 5-10 min easy",
+     "detail": "",
+     "secs": 450
+    }
+   ]
+  },
+  "2026-09-30": {
+   "title": "Easy bike 40 min (off feet)",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 30 SEP. Off-feet aerobic fill - protects Thu threshold and spares the spine."
+    },
+    {
+     "type": "step",
+     "label": "Bike 40 min Z2",
+     "detail": "HR <=150, conversational.",
+     "secs": 2400
+    }
+   ]
+  },
+  "2026-10-01": {
+   "title": "Threshold 3 x 10 min @ 280-288 W (CP 292 check)",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 1 OCT. OUTDOOR, FLAT. Stryd read ~true on road at Preston (0.2% short over 8 km), so watch pace = true pace. Steer on POWER. Purpose: maintain threshold AND confirm Stryd auto-CP 292 as the training anchor before the 10 Oct sim."
+    },
+    {
+     "type": "routine",
+     "ref": "prerun"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up 12 min @ 210-230 W + 4 x 20 s strides",
+     "detail": "",
+     "secs": 840
+    },
+    {
+     "type": "step",
+     "label": "Rep 1: 10 min @ 280-288 W",
+     "detail": "96-99% CP 292. Do NOT open above 288.",
+     "secs": 600,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Jog 2 min @ 200-220 W",
+     "detail": "",
+     "secs": 120
+    },
+    {
+     "type": "step",
+     "label": "Rep 2: 10 min @ 280-288 W",
+     "detail": "CHECK: HR <=178 by end of rep.",
+     "secs": 600,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Jog 2 min @ 200-220 W",
+     "detail": "",
+     "secs": 120
+    },
+    {
+     "type": "step",
+     "label": "Rep 3: 10 min @ 280-288 W",
+     "detail": "CHECK: HR <=182 by end; power >= rep 1.",
+     "secs": 600,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool-down 10 min easy",
+     "detail": "",
+     "secs": 600
+    },
+    {
+     "type": "note",
+     "text": "DECISION: HR >182 during rep 2 at <=285 W = 292 runs hot for training -> training anchor 285, sim run power recalculated. Otherwise 292 CONFIRMED into the sim."
+    }
+   ]
+  },
+  "2026-10-02": {
+   "title": "Rest or easy bike 30 min",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 2 OCT. Chain moved to Saturday (agreed 27 Sep) so nothing hard sits on consecutive days."
+    },
+    {
+     "type": "step",
+     "label": "Easy bike 30 min (optional)",
+     "detail": "HR <=145.",
+     "secs": 1800
+    }
+   ]
+  },
+  "2026-10-03": {
+   "title": "COMPOUND CHAIN wk2 (last chain before the 10 Oct sim)",
+   "rpe": "8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 3 OCT @ RAW. Same structure as wk1 for comparability. HOLDS from wk1: Lunge 130 m (RATE target, not distance) and WB 150 (last third faded ~25%). Runs = 4 LAPS (1,012 m) of the 253 m lap - count laps. Power 240-245 W kept ABSOLUTE for wk1 comparability (~84% of CP 292 = true recovery). HR <=165 from lap 2. Steer on lap-average power. Back symptom separate from effort at Farmers/Lunge/WB; >2 = stop + hold."
+    },
+    {
+     "type": "routine",
+     "ref": "compound_chain"
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "800 m easy + 10 air squats, 10 WB to target, 2x10 m walking lunge, 200 m row build.",
+     "secs": 600
+    },
+    {
+     "type": "step",
+     "label": "BBJ 80 m (pre-fatigue primer)",
+     "detail": "Race standard. Race volume.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 laps @ 240-245 W",
+     "detail": "HR <=165 from lap 2.",
+     "secs": 345
+    },
+    {
+     "type": "step",
+     "label": "Row 1000 m",
+     "detail": "~4:40 screen, controlled.",
+     "secs": 280
+    },
+    {
+     "type": "step",
+     "label": "Run 4 laps @ 240-245 W",
+     "detail": "",
+     "secs": 345
+    },
+    {
+     "type": "step",
+     "label": "Farmers 200 m @ 2x24 kg",
+     "detail": "Arms extended. Symptom + effort separate. EXIT <=25 s (wk1 36 s).",
+     "secs": 200,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 laps @ 240-245 W",
+     "detail": "",
+     "secs": 345
+    },
+    {
+     "type": "step",
+     "label": "Lunge 130 m @ 20 kg - RATE target",
+     "detail": "First 62.5 m (5 lengths) in ~3:00 (wk1 3:30). LOG the 62.5 m split. SPINAL CHECKPOINT at 62.5 m and 130 m. EXIT <=25 s (wk1 38 s).",
+     "secs": 450,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 laps @ 240-245 W",
+     "detail": "",
+     "secs": 345
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 150 @ 6 kg - planned break at 100",
+     "detail": "Full depth, target every rep. PLANNED 10-15 s reset at rep 100 (wk1 dipped 101-130). LOG clock at 50/100/150. SPINAL CHECKPOINT at 75 and 150. Last third >15% slower than first = hold.",
+     "secs": 540,
+     "rpe": true,
+     "spinal": true
+    }
+   ]
+  },
+  "2026-10-04": {
+   "title": "Easy run 35-40 min or rest + weekly planning",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 4 OCT. Planning day: build the 10 Oct full sim + w/c 5 Oct taper-in off Thu's CP verdict and Sat's chain."
+    },
+    {
+     "type": "step",
+     "label": "Easy run 35-40 min @ 210-230 W",
+     "detail": "HR check 158 (back off only if HR>158 AND power>230 together).",
+     "secs": 2250
     }
    ]
   }
