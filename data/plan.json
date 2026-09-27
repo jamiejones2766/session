@@ -1,11 +1,11 @@
 {
- "week": "PLAN w/c 28 SEP 2026 - WEEK 2 of the station-conditioning build (race Sat 31 Oct). SIM = SAT 10 OCT (locked 23 Sep; supersedes the old 'w/c 12 Oct' line) - w/c 12 Oct = half-volume sharpener / corrective, taper w/c 19 + 26 Oct. This is the LAST compound chain before the sim. ANCHORS RESET 27 Sep: CP 292 (Stryd auto after Preston 49:35 chip, 288 W ~50 min), LTHR 178 confirmed, max HR 194; sim run power ~255-260 W (~88% CP) for 5:30-5:35. LOAD 27 Sep: pooled ACWR 1.4 (chain + race back to back), CTL 29.1, ramp +1.46 - REPEAT week 1, do not step up. KM ON MAINTAIN ~23-25. LAYOUT: Mon rest/easy bike + core / Tue hinge block + sled under fatigue (RAW, runs = 2 laps of 253 m) / Wed easy bike 40 (off feet) / Thu threshold 3x10 @ 280-288 W (CP 292 check, outdoor) / Fri rest or easy bike / Sat COMPOUND CHAIN wk2 (moved from Fri, agreed 27 Sep; runs = 4 laps) / Sun easy run 35-40 or rest + planning. No hard sessions on consecutive days. CHAIN wk2 HOLDS: Lunge 130 m with first 62.5 m in ~3:00 (rate target; wk1 3:30), WB 150 with planned 10-15 s break at 100 (wk1 last third ~25% slow). Exits from Farmers + Lunge <=25 s (wk1 36/38 s). GATES unchanged: back symptom RPE separate from effort, >2 = stop + hold (stalls stations only, never runs/taper). Easy runs power-governed 210-230 W, HR check 158.",
+ "week": "PLAN w/c 28 SEP 2026 - WEEK 2 of the station-conditioning build (race Sat 31 Oct). SIM = SAT 10 OCT (locked 23 Sep; supersedes the old 'w/c 12 Oct' line) - w/c 12 Oct = half-volume sharpener / corrective, taper w/c 19 + 26 Oct. This is the LAST compound chain before the sim. ANCHORS RESET 27 Sep: CP 292 (Stryd auto after Preston 49:35 chip, 288 W ~50 min), LTHR 178 confirmed, max HR 194; sim run power ~255-260 W (~88% CP) for 5:30-5:35. LOAD 27 Sep: pooled ACWR 1.4 (chain + race back to back), CTL 29.1, ramp +1.46 - REPEAT week 1, do not step up. KM ON MAINTAIN ~23-25. LAYOUT: Mon rest/easy bike + core / Tue hinge block + sled under fatigue (RAW, runs = 2 laps of 253 m) / Wed easy bike 40 (off feet) / Thu threshold 3x10 @ 280-288 W (maintenance, outdoor - CP check dropped 27 Sep) / Fri rest or easy bike / Sat COMPOUND CHAIN wk2 (moved from Fri, agreed 27 Sep; runs = 4 laps) / Sun easy run 35-40 or rest + planning. No hard sessions on consecutive days. CHAIN wk2 HOLDS: Lunge 130 m with first 62.5 m in ~3:00 (rate target; wk1 3:30), WB 150 with planned 10-15 s break at 100 (wk1 last third ~25% slow). Exits from Farmers + Lunge <=25 s (wk1 36/38 s). GATES unchanged: back symptom RPE separate from effort, >2 = stop + hold (stalls stations only, never runs/taper). Easy runs power-governed 210-230 W, HR check 158.",
  "anchors": {
-  "set_on": "2026-09-27 (CP 266->292 after Preston 10k; LTHR 178 confirmed; max HR 194)",
+  "set_on": "2026-09-27 (CP 266->292 after Preston 10k; threshold pace 5:15->5:00; LTHR 178 confirmed; max HR 194)",
   "source": "CP 292 = Stryd auto-CP after Preston 10k 27 Sep: chip 49:35, avg 288 W / NP 289 for ~50 min, on legs 2 days off the wk1 chain (not tapered), hilly (96 m) and windy (17.5 km/h mean). Hill/wind watts are real work, so NOT discounted for CP. Adopted 27 Sep. Verification: Thu 1 Oct 3x10 @ 280-288 W - HR >182 in rep 2 at <=285 W drops the TRAINING anchor to 285. LTHR 178 confirmed on steady effort (km 3-6 at 174-177, 45-min best HR 177.6).",
   "stryd_cp_watts": 292,
-  "threshold_pace_sec_per_km": 315,
-  "threshold_pace_display": "5:15/km",
+  "threshold_pace_sec_per_km": 300,
+  "threshold_pace_display": "5:00/km",
   "lthr_bpm": 178,
   "easy_run_hr_cap_bpm": 158,
   "stryd_cal_factor": 101.7,
@@ -25,16 +25,17 @@
     "5:22",
     "5:44",
     "5:45",
-    "6:05"
+    "6:05",
+    "5:15"
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "Thu 1 Oct 3x10 threshold confirms CP 292 for training; full sim Sat 10 Oct is the next race-format read.",
+  "next_review": "No further CP/pace checks before Birmingham. Full sim Sat 10 Oct is the next race-format read (runs 5:30-5:35 / ~255-260 W).",
   "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT.",
   "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged).",
   "max_hr_bpm": 194,
-  "threshold_pace_note": "PACE ANCHOR 315 (5:15 watch) IS STALE - kept only until Thu 1 Oct. Preston: ~4:58/km at LTHR on road with Stryd ~true. Review after Thu's threshold session; IF is power-based so this does not affect load/IF.",
-  "stryd_cal_note": "Cal 101.7 HELD. Preston road: Stryd within 0.2% at mile 5, 9.99 km at finish -> on ROAD watch pace ~= true pace. The 14 Sep track '1.9% short' (~7.5 m/lap) matches running lane 2 (+7.7 m/lap) - likely a lane artefact. DROP the ~2% watch->true adjustment on roads. Optional lane-1 lap-counted check post-Birmingham only."
+  "stryd_cal_note": "Cal 101.7 HELD. Preston road: Stryd within 0.2% at mile 5, 9.99 km at finish -> on ROAD watch pace ~= true pace. The 14 Sep track '1.9% short' (~7.5 m/lap) matches running lane 2 (+7.7 m/lap) - likely a lane artefact. DROP the ~2% watch->true adjustment on roads. Optional lane-1 lap-counted check post-Birmingham only.",
+  "threshold_pace_source": "Reset 27 Sep from Preston 10k: km 3-6 ~4:58/km at HR 174-177 (LTHR 178), road, Stryd ~true (watch = ground). IF is power-based, so this affects pace prescriptions only."
  },
  "days": {
   "2026-07-17": {
@@ -2980,12 +2981,12 @@
    ]
   },
   "2026-10-01": {
-   "title": "Threshold 3 x 10 min @ 280-288 W (CP 292 check)",
+   "title": "Threshold 3 x 10 min @ 280-288 W (maintenance)",
    "rpe": "7-8",
    "blocks": [
     {
      "type": "note",
-     "text": "THU 1 OCT. OUTDOOR, FLAT. Stryd read ~true on road at Preston (0.2% short over 8 km), so watch pace = true pace. Steer on POWER. Purpose: maintain threshold AND confirm Stryd auto-CP 292 as the training anchor before the 10 Oct sim."
+     "text": "THU 1 OCT. OUTDOOR, FLAT. Week's run-quality slot - threshold MAINTENANCE, not a test (CP 292 stands; decided 27 Sep - Preston was the real read, the sim on 10 Oct is the next one). Steer on POWER; watch pace = true pace on road."
     },
     {
      "type": "routine",
@@ -3000,7 +3001,7 @@
     {
      "type": "step",
      "label": "Rep 1: 10 min @ 280-288 W",
-     "detail": "96-99% CP 292. Do NOT open above 288.",
+     "detail": "Do NOT open above 288.",
      "secs": 600,
      "rpe": true
     },
@@ -3013,7 +3014,7 @@
     {
      "type": "step",
      "label": "Rep 2: 10 min @ 280-288 W",
-     "detail": "CHECK: HR <=178 by end of rep.",
+     "detail": "",
      "secs": 600,
      "rpe": true
     },
@@ -3026,7 +3027,7 @@
     {
      "type": "step",
      "label": "Rep 3: 10 min @ 280-288 W",
-     "detail": "CHECK: HR <=182 by end; power >= rep 1.",
+     "detail": "",
      "secs": 600,
      "rpe": true
     },
@@ -3038,7 +3039,7 @@
     },
     {
      "type": "note",
-     "text": "DECISION: HR >182 during rep 2 at <=285 W = 292 runs hot for training -> training anchor 285, sim run power recalculated. Otherwise 292 CONFIRMED into the sim."
+     "text": "If it feels clearly harder than it should, ease to ~275-280 W for the remaining reps. In-session judgement only - no anchor change."
     }
    ]
   },
