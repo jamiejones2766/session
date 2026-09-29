@@ -1,0 +1,61 @@
+{
+ "date": "2026-09-29",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-09-29:3",
+   "label": "Warm-up 10 min easy + 3 x 20 s strides",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1790698187904
+  },
+  {
+   "key": "2026-09-29:5",
+   "label": "SkiErg 500 m - controlled",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1790698189243
+  },
+  {
+   "key": "2026-09-29:6",
+   "label": "Run 2 laps (506 m) @ 255-260 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1790698194332
+  },
+  {
+   "key": "2026-09-29:7",
+   "label": "Sled push 25 m (2 x 12.5) - race intent",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1790698196728
+  },
+  {
+   "key": "2026-09-29:8",
+   "label": "Run 2 laps (506 m) @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1790698200268
+  },
+  {
+   "key": "2026-09-29:9",
+   "label": "Sled pull 25 m - race intent",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1790698203666
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Trainers need to go. Was slipping on both push and pull \n\nRd 1 \nPush arrival 156\nRun after push 160 \nPull arrival 157 \nPull finish 164 (thought this may be useful) \n\nRd2 \n159 \n162\n159\n165\n\nRd3 \n163\n164\n160\n164 \n\nWorth noting, 1:55 / 2:05 ski is too much. Needs to be more 2:05 / 2:10",
+ "finished": "2026-09-29T16:12:26.770Z",
+ "synced": false
+}
