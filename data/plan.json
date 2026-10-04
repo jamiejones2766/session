@@ -1,5 +1,5 @@
 {
- "week": "PLAN w/c 28 SEP 2026 - WEEK 2 of the station-conditioning build (race Sat 31 Oct). SIM = SAT 10 OCT (locked 23 Sep; supersedes the old 'w/c 12 Oct' line) - w/c 12 Oct = half-volume sharpener / corrective, taper w/c 19 + 26 Oct. This is the LAST compound chain before the sim. ANCHORS RESET 27 Sep: CP 292 (Stryd auto after Preston 49:35 chip, 288 W ~50 min), LTHR 178 confirmed, max HR 194; sim run power ~255-260 W (~88% CP) for 5:30-5:35. LOAD 27 Sep: pooled ACWR 1.4 (chain + race back to back), CTL 29.1, ramp +1.46 - REPEAT week 1, do not step up. KM ON MAINTAIN ~23-25. LAYOUT: Mon rest/easy bike + core / Tue hinge block + sled under fatigue (RAW, runs = 2 laps of 253 m) / Wed easy bike 40 (off feet) / Thu threshold 3x10 @ 280-288 W (maintenance, outdoor - CP check dropped 27 Sep) / Fri rest or easy bike / Sat COMPOUND CHAIN wk2 (moved from Fri, agreed 27 Sep; runs = 4 laps) / Sun easy run 35-40 or rest + planning. No hard sessions on consecutive days. CHAIN wk2 HOLDS: Lunge 130 m with first 62.5 m in ~3:00 (rate target; wk1 3:30), WB 150 with planned 10-15 s break at 100 (wk1 last third ~25% slow). Exits from Farmers + Lunge <=25 s (wk1 36/38 s). GATES unchanged: back symptom RPE separate from effort, >2 = stop + hold (stalls stations only, never runs/taper). Easy runs power-governed 210-230 W, HR check 158.",
+ "week": "PLAN w/c 5 OCT 2026 - WEEK 3 of the station-conditioning build (race Sat 31 Oct). SIM = FRI 9 OCT (moved from Sat 10 Oct on 3 Oct: Sat 10 + Sun 11 not available, work night out Wed 7; START TIME TBC). Fallback if Fri fails: Tue 13 Oct. w/c 12 Oct = half-volume sharpener / corrective, taper w/c 19 + 26 Oct. LOAD: pooled ACWR ~1.3-1.6 after Sat 3 chain (inflated by HR-zone scoring of station work) - lightened week, no new intensity. RUN KM ~13-14 this week, BELOW the 22-24 maintain band by design (sim carries the load); km marker picks up again w/c 12 Oct. No threshold this week: last one Thu 1 Oct verified CP 292. LAYOUT: Sun 4 easy run / Mon bike 40 (off feet) / Tue hinge block + 2 rounds ski-run-sled (RAW) / Wed work night out, no session / Thu rest + kit check + normal high-carb + early night / Fri FULL SIM (first use of Garmin RUN profile with lap presses) / Sat-Sun nothing required, log back next morning. SLEEP GATE for the sim: 7-night mean >=380 min AND no night <300 min in the prior 7 - Wed night falls inside that window, keep it capped and have Thu early. Back symptom RPE logged separately from effort; >2 = stop that station and hold.",
  "anchors": {
   "set_on": "2026-09-27 (CP 266->292 after Preston 10k; threshold pace 5:15->5:00; LTHR 178 confirmed; max HR 194)",
   "source": "CP 292 = Stryd auto-CP after Preston 10k 27 Sep: chip 49:35, avg 288 W / NP 289 for ~50 min, on legs 2 days off the wk1 chain (not tapered), hilly (96 m) and windy (17.5 km/h mean). Hill/wind watts are real work, so NOT discounted for CP. Adopted 27 Sep. Verification: Thu 1 Oct 3x10 @ 280-288 W - HR >182 in rep 2 at <=285 W drops the TRAINING anchor to 285. LTHR 178 confirmed on steady effort (km 3-6 at 174-177, 45-min best HR 177.6).",
@@ -30,7 +30,7 @@
    ],
    "note": "get_performance_estimates reports ~5:32/km - that is its own 90-day curve estimate, NOT the stored anchor. Ignore it. Cycling FTP must never be applied to running IF."
   },
-  "next_review": "No further CP/pace checks before Birmingham. Full sim Sat 10 Oct is the next race-format read (runs 5:30-5:35 / ~255-260 W).",
+  "next_review": "No further CP/pace checks before Birmingham. Full sim Fri 9 Oct (moved from Sat 10) is the next race-format read (runs 5:30-5:35 / ~255-260 W).",
   "basis_drift_warning": "CHECKED 26 AUG: athletedata derived_metrics.basis on both the 24 Aug and 25 Aug runs now reports threshold_pace_sec_per_km = 332 (5:32/km), NOT the 315 (5:15/km) confirmed live on 16 Aug. That is the tool's 90-day pace-curve estimate reasserting itself over the stored anchor. IT DOES NOT AFFECT IF on these sessions - intensity_factor_source reads 'run_power' and run_cp_watts is still 261, so IF is computed from Stryd power and is correct. But do not read 332 as an anchor change and do not let it propagate into pace prescriptions. THE ANCHOR REMAINS 315 s/km until the post-Tenerife 30-min TT.",
   "easy_run_rule": "Power 210-230 W governs easy runs. HR is a CHECK only: back off ONLY if HR>158 AND power>230 W together (genuine over-effort). 148 hard cap RETIRED 20 Sep - early-phase heat-drift guard, superseded by the power rule (agreed 10 Sep). True Z2 ceiling 158 (Thu 17 Sep: avg 145/max 156 at flat 220-235 W, decoupling 3.5% - textbook coupled Z2 a strict 148 would have false-flagged).",
   "max_hr_bpm": 194,
@@ -3156,6 +3156,291 @@
      "secs": 2250
     }
    ]
+  },
+  "2026-10-05": {
+   "title": "Easy bike 40 min Z2 (off feet)",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 5 OCT. Off-feet aerobic fill after Sat's chain. No running load this day - ACWR is elevated and the sim is Fri 9."
+    },
+    {
+     "type": "step",
+     "label": "Bike 40 min Z2",
+     "detail": "HR <=150, conversational.",
+     "secs": 2400
+    }
+   ]
+  },
+  "2026-10-06": {
+   "title": "Hinge block + ski:run:sled (RAW) - 2 rounds",
+   "rpe": "6-7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 6 OCT @ RAW. Station day, held - no climb in the ladders, no new load. Now 3 days before the sim (not 4), so: sleds at RACE INTENT and STOP AFTER ROUND 2. GATE: Wed is now a work night out, so there is no bike day to swap into - if legs still race-sore or HRV clearly below baseline, do 1 round and log it. Hinge block first, then sled rehearsal. RAW run lap = 253 m: every run is 2 LAPS (506 m) - count laps, steer on LAP-AVERAGE power."
+    },
+    {
+     "type": "step",
+     "label": "RDL 3 x 6",
+     "detail": "Same load as Tue 29 Sep: 55 kg only if BOTH previous hinge outings were symptom 0, else 50 kg. Neutral spine, 2 s down, 90 s between sets. SPINAL CHECKPOINT after each set. Symptom >2 stops the block.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Bulgarian split squat 3 x 8 / side",
+     "detail": "Same load as last time (bodyweight, or DBs at sides only if BW was clean). Never front-rack/barbell. SPINAL CHECKPOINT.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Warm-up 10 min easy + 3 x 20 s strides",
+     "detail": "HR <=148.",
+     "secs": 720
+    },
+    {
+     "type": "note",
+     "text": "2 ROUNDS, continuous within a round, 2-3 min walk between rounds. READOUT = HR at the instant you start each sled + HR at the start of the run after. Arrive hot? Log it, do NOT cool down to rescue it."
+    },
+    {
+     "type": "step",
+     "label": "SkiErg 500 m - controlled",
+     "detail": "Damper 6, ~1:55-2:05. Off composed, not gasping.",
+     "secs": 120,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 laps (506 m) @ 255-260 W",
+     "detail": "Birmingham run power (~88% CP 292).",
+     "secs": 170,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled push 25 m (2 x 12.5) - race intent",
+     "detail": "Race weight if RAW loads it (152 kg incl sled), else log load. LOG ARRIVAL HR - target <=158-160.",
+     "secs": 60,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 laps (506 m) @ 255-260 W",
+     "detail": "LOG HR at the start of this run.",
+     "secs": 170,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled pull 25 m - race intent",
+     "detail": "Race weight if possible (103 kg incl sled), else log load. LOG ARRIVAL HR. SPINAL CHECKPOINT.",
+     "secs": 75,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "note",
+     "text": "Repeat the block above for round 2, then stop. No round 3."
+    },
+    {
+     "type": "step",
+     "label": "Cool-down 5-10 min easy",
+     "detail": "",
+     "secs": 450
+    }
+   ]
+  },
+  "2026-10-07": {
+   "title": "Rest (work night out)",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 7 OCT. Work night out, no session. SLEEP GATE: this night sits inside the 7-night window before the Fri sim - one night under 300 min fails the gate. Keep the night capped and make sure Thu is early."
+    }
+   ]
+  },
+  "2026-10-08": {
+   "title": "Rest + kit check + early night (day before sim)",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 8 OCT. Rest. The transition-rehearsal idea was dropped - Tuesday's ski:run:sled drill covers it, and a filler session here has no job. Kit check: sandbag, kettlebells, wall ball, chip, Garmin on RUN profile. Normal high-carb eating (sim is run untapered, no carb load - agreed 2 Oct). Early night."
+    }
+   ]
+  },
+  "2026-10-09": {
+   "title": "FULL SIM - Birmingham format (moved from Sat 10)",
+   "rpe": "8-9",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 9 OCT @ RAW. START TIME TBC. Untapered, no carb load: this is a durability read on the finished block. Race-morning breakfast rehearsal only works if the start is near the Birmingham wave time; a later start still tests in-race fuelling. FIRST USE OF THE GARMIN RUN PROFILE for a chain: auto-lap OFF, auto-pause OFF, press LAP at the start AND end of every station so transitions come out as their own laps, one data screen with 3 s power / HR / lap time. REHEARSE THE LAP PRESSES IN THE WARM-UP. Check Stryd CP (292) is set for the Run profile before you start (the 25 Sep IF bug used cycling FTP when run CP was missing)."
+    },
+    {
+     "type": "note",
+     "text": "ORDER: Run 1, SkiErg, Run 2, Sled push, Run 3, Sled pull, Run 4, BBJ, Run 5, Row, Run 6, Farmers, Run 7, Lunges, Run 8, Wall balls. RUNS = 4 laps (1,012 m) each at 255-260 W LAP-AVERAGE (~5:30-5:35/km). If a lap goes over 262 W, back off. HR is logged, not governed. The job is to hold back when it feels easy - runs controlled, stations attacked. Timers below are approximate; the targets are in the details."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up as for a race",
+     "detail": "10 min easy + strides + a few reps of the first station. Rehearse lap presses.",
+     "secs": 840
+    },
+    {
+     "type": "step",
+     "label": "Run 1 - 4 laps @ 255-260 W",
+     "detail": "Lap-average power. Back off if any lap >262 W.",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "SkiErg 1000 m",
+     "detail": "Screen target ~4:25, damper 6. Lap press at start and end.",
+     "secs": 265,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 - 4 laps @ 255-260 W",
+     "detail": "",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled push 50 m (4 x 12.5) @ 152 kg incl sled",
+     "detail": "Race weight and standard. Log arrival HR. SPINAL CHECKPOINT.",
+     "secs": 150,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3 - 4 laps @ 255-260 W",
+     "detail": "Log HR at the start of the run.",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled pull 50 m (4 x 12.5) @ 103 kg incl sled",
+     "detail": "Race weight and standard. SPINAL CHECKPOINT.",
+     "secs": 270,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 - 4 laps @ 255-260 W",
+     "detail": "",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "BBJ 80 m",
+     "detail": "Race standard. RAW lane turns make this read slow against race. SPINAL CHECKPOINT at the end.",
+     "secs": 330,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 5 - 4 laps @ 255-260 W",
+     "detail": "",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Row 1000 m",
+     "detail": "Screen target 4:30-4:35, damper 6.",
+     "secs": 280,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6 - 4 laps @ 255-260 W",
+     "detail": "",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Farmers 200 m @ 2 x 24 kg",
+     "detail": "Arms extended. Symptom and effort logged separately. EXIT <=25 s. SPINAL CHECKPOINT.",
+     "secs": 150,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7 - 4 laps @ 255-260 W",
+     "detail": "",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sandbag lunges 100 m @ 20 kg",
+     "detail": "Trailing knee touches every rep. Log the first-62.5 m split. EXIT <=25 s. SPINAL CHECKPOINT at halfway and end. RAW lane turns make this read slow against race.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 8 - 4 laps @ 255-260 W",
+     "detail": "Speed up only if there is something genuinely left.",
+     "secs": 335,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 100 @ 6 kg",
+     "detail": "Full depth, target every rep. Log clock at 25/50/75/100. SPINAL CHECKPOINT at 50 and 100.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "note",
+     "text": "LOG: every station time (compare with Cardiff; absolute seconds are venue-dependent), roxzone/transition laps from the lap presses, HR at the start of each sled and each run after, effort RPE and SYMPTOM RPE separately after every loaded station. Symptom >2 = stop that station and do nothing else loaded. Fuelling per the Birmingham plan, timed and logged. Re-measure the sled on race kit."
+    },
+    {
+     "type": "note",
+     "text": "GO / NO-GO Fri morning: 7-night sleep mean >=380 min with no night <300; fewer than 2 nights <6 h; no spinal symptom RPE >2 this week; back signal clear. ACWR will probably read above 1.3 - station-heavy weeks inflate it via HR-zone scoring, so read it but it does not veto the sim on its own."
+    }
+   ]
+  },
+  "2026-10-10": {
+   "title": "Nothing required (morning after sim)",
+   "rpe": "1",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 10 OCT. Sim slot moved to Fri 9 - nothing required today. MORNING: log back symptom (next-morning check) + HRV/RHR."
+    }
+   ]
+  },
+  "2026-10-11": {
+   "title": "Nothing required",
+   "rpe": "1",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 11 OCT. Nothing required. Easy movement only if you want it. w/c 12 Oct restarts the km marker and the half-volume sharpener / corrective."
+    }
+   ]
   }
  },
  "routines": {
@@ -3467,7 +3752,7 @@
    },
    {
     "type": "note",
-    "text": "READING IT: line up the 3 rounds - arrival HR vs (sled 25m time) and (metres to settle on the run after). The CEILING is the arrival HR where the sled time JUMPS and/or the run won't settle within ~150m. Race arrival target = ~10-15 bpm BELOW that ceiling. That number then sets the target for sled_entry_rehearsal - MEASURED 12 Sep 2026: run-settle ceiling >173 (settled by ~90m even arriving 173), BUT sled-push time degrades above ~160 arrival (1:11@158 vs 1:26-1:48@172-173). Race arrival target = ~158-160 (push-protective), NOT the 173 run ceiling. Cardiff-141 retired. Re-measure sled time on race kit at the 10 Oct sim. POST: the 3 arrival HRs, 3 sled times, 3 settle reads, and I'll pull the ceiling out with you."
+    "text": "READING IT: line up the 3 rounds - arrival HR vs (sled 25m time) and (metres to settle on the run after). The CEILING is the arrival HR where the sled time JUMPS and/or the run won't settle within ~150m. Race arrival target = ~10-15 bpm BELOW that ceiling. That number then sets the target for sled_entry_rehearsal - MEASURED 12 Sep 2026: run-settle ceiling >173 (settled by ~90m even arriving 173), BUT sled-push time degrades above ~160 arrival (1:11@158 vs 1:26-1:48@172-173). Race arrival target = ~158-160 (push-protective), NOT the 173 run ceiling. Cardiff-141 retired. Re-measure sled time on race kit at the 9 Oct sim (moved from 10 Oct). POST: the 3 arrival HRs, 3 sled times, 3 settle reads, and I'll pull the ceiling out with you."
    }
   ],
   "compound_chain": [
