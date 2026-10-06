@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-06",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-06:3",
+   "label": "Warm-up 10 min easy + 3 x 20 s strides",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1791305369733
+  },
+  {
+   "key": "2026-10-06:5",
+   "label": "SkiErg 500 m - controlled",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791305371549
+  },
+  {
+   "key": "2026-10-06:6",
+   "label": "Run 2 laps (506 m) @ 255-260 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1791305373614
+  },
+  {
+   "key": "2026-10-06:7",
+   "label": "Sled push 25 m (2 x 12.5) - race intent",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1791305375287
+  },
+  {
+   "key": "2026-10-06:8",
+   "label": "Run 2 laps (506 m) @ 255-260 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1791305377825
+  },
+  {
+   "key": "2026-10-06:9",
+   "label": "Sled pull 25 m - race intent",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1791305379880
+  },
+  {
+   "key": "2026-10-06:11",
+   "label": "Cool-down 5-10 min easy",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1791305384185
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Rd 1 \npre sled 155 \nPost sled 155\nPre pull 156 \nPost pull 155 \n\nRd 2 (messed up here I did a 500m run before the ski) \nPre sled 161 \nPost sled 161 \nPre pull 160 \nPost pull 163",
+ "finished": "2026-10-06T16:51:21.421Z",
+ "synced": false
+}
