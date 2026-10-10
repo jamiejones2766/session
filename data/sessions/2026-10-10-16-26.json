@@ -1,0 +1,141 @@
+{
+ "date": "2026-10-10",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-09:3",
+   "label": "Run 1 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1791649514608
+  },
+  {
+   "key": "2026-10-09:4",
+   "label": "SkiErg 1000 m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649517766
+  },
+  {
+   "key": "2026-10-09:5",
+   "label": "Run 2 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649520141
+  },
+  {
+   "key": "2026-10-09:6",
+   "label": "Sled push 50 m (4 x 12.5) @ 152 kg incl sled",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1791649523950
+  },
+  {
+   "key": "2026-10-09:7",
+   "label": "Run 3 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649527726
+  },
+  {
+   "key": "2026-10-09:8",
+   "label": "Sled pull 50 m (4 x 12.5) @ 103 kg incl sled",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1791649530014
+  },
+  {
+   "key": "2026-10-09:9",
+   "label": "Run 4 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649533081
+  },
+  {
+   "key": "2026-10-09:10",
+   "label": "BBJ 80 m",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1791649535698
+  },
+  {
+   "key": "2026-10-09:11",
+   "label": "Run 5 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649538902
+  },
+  {
+   "key": "2026-10-09:12",
+   "label": "Row 1000 m",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649542566
+  },
+  {
+   "key": "2026-10-09:13",
+   "label": "Run 6 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1791649544334
+  },
+  {
+   "key": "2026-10-09:14",
+   "label": "Farmers 200 m @ 2 x 24 kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1791649546354
+  },
+  {
+   "key": "2026-10-09:15",
+   "label": "Run 7 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1791649550184
+  },
+  {
+   "key": "2026-10-09:16",
+   "label": "Sandbag lunges 100 m @ 20 kg",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1791649551747
+  },
+  {
+   "key": "2026-10-09:17",
+   "label": "Run 8 - 4 laps @ 255-260 W",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1791649555378
+  },
+  {
+   "key": "2026-10-09:18",
+   "label": "Wall balls 100 @ 6 kg",
+   "spinal": true,
+   "rpe": 10,
+   "sym": 0,
+   "t": 1791649557147
+  }
+ ],
+ "pauses": [],
+ "rpe": 8,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-10-10T16:26:04.662Z",
+ "synced": false
+}
