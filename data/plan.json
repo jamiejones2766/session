@@ -3457,42 +3457,16 @@
    ]
   },
   "2026-10-13": {
-   "title": "Run probe @ RAW - 3 x 1 km @ 257 W then 3 x 1 km @ 262 W",
-   "rpe": "7",
+   "title": "DONE (off-plan): easy run with client, progressive finish - probe moved to Thu 15",
+   "rpe": "",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 13 OCT @ RAW (4 laps of 256.5 m = 1,026 m per rep; count laps, steer on LAP-AVERAGE power). PURPOSE: the sim showed 255-259 W (~5:31/km, ~88% CP) held for all 8 runs with 1.1% decoupling and HR plateau 172-174 on the last stations. This asks whether +5 s/km (~262 W, ~5:25/km) is available as a back-half option in the race. It is an execution probe, NOT a CP check (27 Sep decision stands). Race plan stays 5:30-5:35 unless this says otherwise."
-    },
-    {
-     "type": "step",
-     "label": "Warm-up 10 min easy + 4 x 20 s strides",
-     "detail": "Easy is power-governed 210-230 W; HR is a check only.",
-     "secs": 720
-    },
-    {
-     "type": "step",
-     "label": "3 x 4 laps @ 255-259 W",
-     "detail": "Race run power. 2 min easy jog between reps. Log lap-average power, HR at the end of lap 4, RPE.",
-     "secs": 1260,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "3 x 4 laps @ 262 W (+/- 2)",
-     "detail": "2 min easy jog between reps. Same logging. Do NOT chase more than 264 W on any lap.",
-     "secs": 1260,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Cool-down 10 min easy",
-     "detail": "",
-     "secs": 600
+     "text": "TUE 13 OCT, Preston road, ran with a client instead of the RAW probe (Garmin 24711972770). 6.29 km, 36:51, 5:51/km, HR avg 150 / max 176; watch zones 75% Z3, 18% Z4. Progressive: steady-portion first half ~147 bpm ~6:10/km, second half ~159 bpm ~5:33/km, decoupling -1.4% (coupled). Mean-max inside the run: last 20 min 5:40/km, 256 W, HR 157; last 10 min 5:17/km, 275 W; last 5 min 5:02/km, 289 W, HR 171 (JJ chose to speed up; CP anchor 292 W). Wind W ~17 kph, gusts 32, mostly cross. Back symptom 0. No lap data. Load 38 (TSS-eq), Garmin Exercise Load 144.7."
     },
     {
      "type": "note",
-     "text": "READ: if reps 4-6 sit at HR <=165 and RPE <=7, 262 W (~5:25/km) is a legitimate option for runs 5-8 on the day (decision point: run 5, HR under ~168 and legs fresh). Otherwise hold the plan. These thresholds are a proposal - adjust after seeing the HR."
+     "text": "CONTEXT: Mon/Tue sleep 286 / 307 min (two nights <6h; 286 fails the <300 single-night gate), RHR 49 (z +2.2), HRV not yet written. By the Mon gate this was a 257 W-only morning anyway, so the swap cost nothing. NOT a probe result: not run as reps with recoveries. Only soft read: 256 W for 20 min at HR 157, inside the <=165 back-half gate."
     }
    ]
   },
@@ -3570,19 +3544,42 @@
    ]
   },
   "2026-10-15": {
-   "title": "Easy run ~6 km (km marker) - optional",
-   "rpe": "3",
+   "title": "Run probe @ RAW - 3 x 1 km @ 257 W then 3 x 1 km @ 262 W (moved from Tue 13)",
+   "rpe": "7",
    "blocks": [
     {
      "type": "note",
-     "text": "THU 15 OCT. PURPOSE: keep the running band (~22 km this week) into the taper; nothing else. Power-governed 210-230 W, HR is a check only (back off only if HR >158 AND power >230 together). Drop it if Wed's symptom RPE was above 1 or HRV is clearly low - this is the first thing to cut."
+     "text": "THU 15 OCT @ RAW (moved from Tue 13, which became an easy run with a client with a progressive finish). GO/NO-GO the morning of: Wed 14 symptom RPE <=1 on every checkpoint, HRV within ~1 SD of baseline (63) and RHR not >1.5 SD above (44.5), sleep not back to <6h. If any fail, swap to an easy ~6 km @ 210-230 W (HR check only) or drop it; the km marker is the first thing to cut. Thu sits between Wed's BBJ/lunge session and Sat 17's chain, so if the legs are heavy from Wed's lunges, take the easy run, not the probe. ORIGINAL BRIEF: TUE 13 OCT @ RAW (4 laps of 256.5 m = 1,026 m per rep; count laps, steer on LAP-AVERAGE power). PURPOSE: the sim showed 255-259 W (~5:31/km, ~88% CP) held for all 8 runs with 1.1% decoupling and HR plateau 172-174 on the last stations. This asks whether +5 s/km (~262 W, ~5:25/km) is available as a back-half option in the race. It is an execution probe, NOT a CP check (27 Sep decision stands). Race plan stays 5:30-5:35 unless this says otherwise."
     },
     {
      "type": "step",
-     "label": "Easy run ~6 km @ 210-230 W",
-     "detail": "No strides, no surges.",
-     "secs": 2160,
+     "label": "Warm-up 10 min easy + 4 x 20 s strides",
+     "detail": "Easy is power-governed 210-230 W; HR is a check only.",
+     "secs": 720
+    },
+    {
+     "type": "step",
+     "label": "3 x 4 laps @ 255-259 W",
+     "detail": "Race run power. 2 min easy jog between reps. Log lap-average power, HR at the end of lap 4, RPE.",
+     "secs": 1260,
      "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "3 x 4 laps @ 262 W (+/- 2)",
+     "detail": "2 min easy jog between reps. Same logging. Do NOT chase more than 264 W on any lap.",
+     "secs": 1260,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Cool-down 10 min easy",
+     "detail": "",
+     "secs": 600
+    },
+    {
+     "type": "note",
+     "text": "READ: if reps 4-6 sit at HR <=165 and RPE <=7, 262 W (~5:25/km) is a legitimate option for runs 5-8 on the day (decision point: run 5, HR under ~168 and legs fresh). Otherwise hold the plan. These thresholds are a proposal - adjust after seeing the HR."
     }
    ]
   },
