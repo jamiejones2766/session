@@ -3758,12 +3758,12 @@
    ]
   },
   "2026-10-20": {
-   "title": "Race-rhythm run - 5 x 1 km @ 257 W (was 4)",
+   "title": "Race-rhythm run - 5 x 1 km @ 257 W, outdoors (was 4)",
    "rpe": "6-7",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 20 OCT @ RAW (4 laps = 1,026 m per rep). PURPOSE: race rhythm plus a little extra volume; nothing is being proved, last run quality before race week. All five reps 255-259 W (the 13 Oct probe was not run, so no 262 W rep). RUN-2 RULE: on 17 Oct run 2 ran 265 W / 5:21 vs run 1 247 W / 5:37 - the wrong way round and above the band. Rep 2 is not faster than rep 1; lap-average power, back off if any lap >262 W. ~9-10 km total."
+     "text": "TUE 20 OCT, OUTDOORS (flat route, JJ's call 17 Oct: no RAW trip just for this). PURPOSE: race rhythm plus a little extra volume; nothing is being proved, last run quality before race week. 5 x 1 km, all reps 255-259 W (the 13 Oct probe was not run, so no 262 W rep). STEER BY POWER, not pace: wind moves pace, not watts, and on road watch pace is true pace so pace is an output to log. Auto-lap OFF, manual lap per rep, use lap-average power and back off if any rep averages >262 W. RUN-2 RULE: on 17 Oct run 2 ran 265 W / 5:21 vs run 1 247 W / 5:37, the wrong way round and above the band. Rep 2 is not faster than rep 1. ~9-10 km total."
     },
     {
      "type": "step",
@@ -3776,13 +3776,17 @@
      "work": 330,
      "rest": 120,
      "rounds": 5,
-     "label": "5 x 4 laps @ 255-259 W, 2 min easy jog between"
+     "label": "5 x 1 km @ 255-259 W, 2 min easy jog between"
     },
     {
      "type": "step",
      "label": "Cool-down",
      "detail": "10 min easy",
      "secs": 600
+    },
+    {
+     "type": "note",
+     "text": "LOG: pace and lap-average power per rep, HR at the end of each rep (strap), RPE."
     }
    ]
   },
