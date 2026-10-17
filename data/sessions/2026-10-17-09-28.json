@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-17",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-17:1",
+   "label": "Warm-up as for a race",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792229255556
+  },
+  {
+   "key": "2026-10-17:2",
+   "label": "Run 1 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792229256450
+  },
+  {
+   "key": "2026-10-17:3",
+   "label": "SkiErg 500 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792229259302
+  },
+  {
+   "key": "2026-10-17:4",
+   "label": "Run 2 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1792229260886
+  },
+  {
+   "key": "2026-10-17:5",
+   "label": "Sled push 25 m (2 x 12.5) @ 152 kg incl sled",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1792229262637
+  },
+  {
+   "key": "2026-10-17:6",
+   "label": "Run 3 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792229265147
+  },
+  {
+   "key": "2026-10-17:7",
+   "label": "Sled pull 25 m (2 x 12.5) @ 103 kg incl sled",
+   "spinal": true,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792229266569
+  },
+  {
+   "key": "2026-10-17:8",
+   "label": "Run 4 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792229268533
+  },
+  {
+   "key": "2026-10-17:9",
+   "label": "BBJ 80 m (6.4 lengths) - lap every length",
+   "spinal": true,
+   "rpe": 8,
+   "sym": null,
+   "t": 1792229269804
+  },
+  {
+   "key": "2026-10-17:10",
+   "label": "Run 5 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792229271744
+  },
+  {
+   "key": "2026-10-17:11",
+   "label": "Row 500 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792229272312
+  },
+  {
+   "key": "2026-10-17:12",
+   "label": "Run 6 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1792229274088
+  },
+  {
+   "key": "2026-10-17:13",
+   "label": "Farmers 100 m @ 2 x 24 kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1792229276674
+  },
+  {
+   "key": "2026-10-17:14",
+   "label": "Run 7 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1792229280739
+  },
+  {
+   "key": "2026-10-17:15",
+   "label": "Sandbag lunges 100 m @ 20 kg (8 lengths) - lap every length",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1792229282939
+  },
+  {
+   "key": "2026-10-17:16",
+   "label": "Run 8 - 2 laps @ 255-259 W",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1792229286811
+  },
+  {
+   "key": "2026-10-17:17",
+   "label": "Wall balls 50 @ 6 kg",
+   "spinal": true,
+   "rpe": 8,
+   "sym": null,
+   "t": 1792229288599
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-10-17T09:28:15.061Z",
+ "synced": false
+}
