@@ -1,5 +1,5 @@
 {
- "week": "PLAN w/c 12 OCT 2026 - SHARPENER / CORRECTIVE WEEK (race Sat 31 Oct). SIM DONE Sat 10 Oct @ RAW: 1:24:35 (runs 45:44 @ 255-259 W, ~5:31/km on 1,027-1,052 m laps; stations 38:52 lapped arch to arch). BBJ 6:52 and lunges 6:20 were the two stations over plan (+1:02 / +0:55); sleds, pull, wall balls were well under Birmingham 2025. Sim morning readings: RHR 49 (z +2.2), HRV 54 (z -1.3), 6h32 sleep - an under-recovered start, so Sat 17 is a rested re-read of BBJ + lunges. RAW lanes are 12.5 m (BBJ 6.4 lengths, lunges 8): compare BBJ/lunges as s/m, not set time. LAYOUT: Sun 11 off / Mon 12 off / Tue 13 run probe (3 x 1 km @ 257 W + 3 x 1 km @ 262 W) / Wed 14 BBJ + lunge corrective (ladder step 3: BBJ 150 m, lunges ~165 m) + hinge block / Thu 15 easy run (km marker) / Fri 16 off / Sat 17 half-volume chain with BBJ 80 m + lunges 100 m at full distance, lapped per length / Sun 18 off. TAPER w/c 19 Oct (~65-70% volume, last stimulus Wed 21) and w/c 26 Oct (~40%, carb load 28/29/30). LOAD (athletedata, 10 Oct): CTL 30.8 / ATL 34.1 / ACWR 0.91 / load flag 10; sleep gate clear (7-night mean 401 min, min 329). Back symptom RPE logged separately from effort; >2 at any station = stop that station and hold the step.",
+ "week": "PLAN w/c 12 OCT 2026 - SHARPENER / CORRECTIVE WEEK (race Sat 31 Oct). SIM DONE Sat 10 Oct @ RAW: 1:24:35 (runs 45:44 @ 255-259 W, ~5:31/km on 1,027-1,052 m laps; stations 38:52 lapped arch to arch). BBJ 6:52 and lunges 6:20 were the two stations over plan (+1:02 / +0:55); sleds, pull, wall balls were well under Birmingham 2025. Sim morning readings: RHR 49 (z +2.2), HRV 54 (z -1.3), 6h32 sleep - an under-recovered start, so Sat 17 is a rested re-read of BBJ + lunges. RAW lanes are 12.5 m (BBJ 6.4 lengths, lunges 8): compare BBJ/lunges as s/m, not set time. LAYOUT: Sun 11 off / Mon 12 off / Tue 13 run probe (3 x 1 km @ 257 W + 3 x 1 km @ 262 W) / Wed 14 BBJ + lunge corrective (ladder step 3: BBJ 150 m, lunges ~165 m) + hinge block / Thu 15 easy run (km marker) / Fri 16 off / Sat 17 half-volume chain with BBJ 80 m + lunges 100 m at full distance, lapped per length / Sun 18 off. ONE-WEEK TAPER (decided 17 Oct): w/c 19 Oct is a normal maintenance week capped ~22 run km (15% over w/c 5 Oct's 19.3 km; w/c 12 Oct's 11.1 km was a miss, not a baseline), added volume EASY ONLY, no step 4 on BBJ/lunges, no long run, nothing above 262 W; race week w/c 26 Oct (~40%, carb load 28/29/30) is the only taper. LOAD (athletedata, 10 Oct): CTL 30.8 / ATL 34.1 / ACWR 0.91 / load flag 10; sleep gate clear (7-night mean 401 min, min 329). Back symptom RPE logged separately from effort; >2 at any station = stop that station and hold the step.",
  "anchors": {
   "set_on": "2026-09-27 (CP 266->292 after Preston 10k; threshold pace 5:15->5:00; LTHR 178 confirmed; max HR 194)",
   "source": "CP 292 = Stryd auto-CP after Preston 10k 27 Sep: chip 49:35, avg 288 W / NP 289 for ~50 min, on legs 2 days off the wk1 chain (not tapered), hilly (96 m) and windy (17.5 km/h mean). Hill/wind watts are real work, so NOT discounted for CP. Adopted 27 Sep. Verification: Thu 1 Oct 3x10 @ 280-288 W - HR >182 in rep 2 at <=285 W drops the TRAINING anchor to 285. LTHR 178 confirmed on steady effort (km 3-6 at 174-177, 45-min best HR 177.6).",
@@ -3737,109 +3737,141 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SUN 18 OCT. Nothing required. MORNING: back symptom + HRV/RHR. w/c 19 Oct is taper: volume ~65-70% of w/c 12 Oct, intensity kept."
+     "text": "SUN 18 OCT. Nothing required. MORNING: back symptom + HRV/RHR. w/c 19 Oct is a normal maintenance week (one-week taper decided 17 Oct): ~22 run km ceiling, easy volume only, intensity unchanged. Race week is the only taper."
     }
    ]
   },
   "2026-10-19": {
-   "title": "Off",
-   "rpe": "0-1",
+   "title": "Easy bike 35 min (off-feet volume)",
+   "rpe": "2",
    "blocks": [
     {
      "type": "note",
-     "text": "MON 19 OCT. Nothing required. Taper week 1."
+     "text": "MON 19 OCT. Restructured 17 Oct to a ONE-WEEK TAPER: this week is a normal maintenance week, race week (w/c 26 Oct, ~40%) is the only taper. Ceiling ~22 run km (15% over w/c 5 Oct's 19.3 km, post-dip logic; 11.1 km in w/c 12 Oct was a miss). Added volume is EASY ONLY. Off-feet today so run km stay under the cap. MORNING: back symptom + HRV/RHR. SLEEP GATE for the week: 7-night mean >=380 min and no night <300; if it fails, Thu drops to 4 km and Sat stays 20 min. w/c 12 Oct averaged 6h21 over 5 nights, so this is the live risk."
+    },
+    {
+     "type": "step",
+     "label": "Easy bike",
+     "detail": "35 min Z2, HR <=145, conversational. Not run km.",
+     "secs": 2100
     }
    ]
   },
   "2026-10-20": {
-   "title": "Race-rhythm run - 4 x 1 km @ 257 W",
+   "title": "Race-rhythm run - 5 x 1 km @ 257 W (was 4)",
    "rpe": "6-7",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 20 OCT @ RAW (4 laps = 1,026 m per rep). PURPOSE: keep race rhythm with minimal fatigue, nothing proved. If the Tue 13 probe said 262 W is available, do ONE rep at 262 W (rep 4) to rehearse the shift; otherwise all four at 255-259 W."
+     "text": "TUE 20 OCT @ RAW (4 laps = 1,026 m per rep). PURPOSE: race rhythm plus a little extra volume; nothing is being proved, last run quality before race week. All five reps 255-259 W (the 13 Oct probe was not run, so no 262 W rep). RUN-2 RULE: on 17 Oct run 2 ran 265 W / 5:21 vs run 1 247 W / 5:37 - the wrong way round and above the band. Rep 2 is not faster than rep 1; lap-average power, back off if any lap >262 W. ~9-10 km total."
     },
     {
      "type": "step",
-     "label": "Warm-up 10 min easy + 4 x 20 s strides",
-     "detail": "",
-     "secs": 720
+     "label": "Warm-up",
+     "detail": "10 min easy + 4 x 20 s strides. Easy is 210-230 W; HR check only.",
+     "secs": 780
+    },
+    {
+     "type": "interval",
+     "work": 330,
+     "rest": 120,
+     "rounds": 5,
+     "label": "5 x 4 laps @ 255-259 W, 2 min easy jog between"
     },
     {
      "type": "step",
-     "label": "4 x 4 laps @ 255-259 W",
-     "detail": "2 min easy jog between reps. Lap-average power; back off if any lap >262 W.",
-     "secs": 1480,
-     "rpe": true
-    },
-    {
-     "type": "step",
-     "label": "Cool-down 10 min easy",
-     "detail": "",
+     "label": "Cool-down",
+     "detail": "10 min easy",
      "secs": 600
     }
    ]
   },
   "2026-10-21": {
-   "title": "BBJ + lunge - last stimulus (short) + hinge block",
+   "title": "BBJ + lunge at step-3 volume (last loaded station day) + hinge block (RAW)",
    "rpe": "6-7",
    "blocks": [
     {
      "type": "note",
-     "text": "WED 21 OCT @ RAW. LAST LOADED STATION WORK before Birmingham (10 days out). PURPOSE: keep BBJ rhythm and lunge pace sharp at reduced volume; no climbing, no new load. Same gate as 14 Oct. Symptom RPE >2 = stop that station."
+     "text": "WED 21 OCT @ RAW. LAST LOADED STATION WORK before Birmingham (10 days out). PURPOSE: a rehearsal at last Wednesday's volume (BBJ 150 m, lunges ~162 m), not a new dose - NO step 4 (BBJ 180 / lunges 200). BBJ and lunges are the stations that cost time and the spinal exposure sits there; there is no adaptation window left to reward a bigger dose. GATE (17 Oct chain, my lap read): BBJ 80 m 5:28 vs <=5:53 target (met; 10 Oct sim was 6:52), lunges 100 m 5:45 vs <=5:40 (5 s over; last length 54 s vs 35-46 s earlier, so the fade is at the end). Symptom RPE on unlogged stations is taken as 0 (standing rule). Symptom RPE >2 on any station = stop that station and do nothing else loaded. If lunge set 6 is >15% slower than set 1, hold and do not add the last 12.5 m."
     },
     {
      "type": "step",
      "label": "Warm-up 10 min easy bike or row",
      "detail": "Then 2 x 12.5 m walking lunge unloaded, 10 air squats, 5 easy burpees, 2 broad jumps stuck.",
-     "secs": 720
+     "secs": 780
     },
     {
      "type": "step",
-     "label": "RDL 2 x 6 (same load as 14 Oct)",
-     "detail": "Neutral spine, 2 s down, 90 s between sets. SPINAL CHECKPOINT.",
-     "secs": 300,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "Bulgarian split squat 2 x 8 / side (same load)",
-     "detail": "Never front-rack/barbell. SPINAL CHECKPOINT.",
-     "secs": 300,
-     "rpe": true,
-     "spinal": true
-    },
-    {
-     "type": "step",
-     "label": "BBJ - 4 x 1 length (12.5 m), start every 1:30",
-     "detail": "Target <=55 s per length, spread within 5 s. Lap every length.",
+     "label": "RDL 2 x 6",
+     "detail": "Same load as 14 Oct. Neutral spine, 2 s down, 90 s between sets. SPINAL CHECKPOINT.",
      "secs": 360,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Bulgarian split squat 2 x 8 / side",
+     "detail": "Same load as last time. Never front-rack/barbell. SPINAL CHECKPOINT.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "BBJ A - 6 x 1 length (12.5 m), start every 1:30",
+     "detail": "Lap every length. Target <=55 s per length (17 Oct ran ~48 s), spread within 5 s. Fade >8 s by length 6 = rhythm, not strength. Chest to floor, two-foot take-off and landing.",
+     "secs": 540,
      "rpe": true
     },
     {
+     "type": "note",
+     "text": "3 min walk."
+    },
+    {
      "type": "step",
-     "label": "Sandbag lunges - 2 x 25 m @ 20 kg, 90 s rest",
-     "detail": "Target <=1:25 per set. SPINAL CHECKPOINT at the end.",
-     "secs": 240,
+     "label": "BBJ B - 2 x 3 lengths (37.5 m) continuous, 90 s rest",
+     "detail": "Target <=2:45 per set. Total BBJ 150 m. SPINAL CHECKPOINT at the end (symptom and effort separate).",
+     "secs": 480,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "note",
+     "text": "3 min walk. Lunges arrive on legs the BBJ has used."
+    },
+    {
+     "type": "step",
+     "label": "Sandbag lunges - 6 x 25 m + 1 x 12.5 m @ 20 kg (162.5 m), 45 s rest",
+     "detail": "Target <=1:25 per 25 m set. LOG TIME PER SET and per length. Trailing knee touches every rep, stand tall between. SPINAL CHECKPOINT at ~80 m and at the end.",
+     "secs": 780,
      "rpe": true,
      "spinal": true
     },
     {
      "type": "step",
      "label": "Cool-down 5-10 min easy",
-     "detail": "",
+     "detail": "No flexion stretching.",
      "secs": 450
+    },
+    {
+     "type": "note",
+     "text": "LOG: BBJ time per length (A) and per set (B), lunge time per set, effort RPE and symptom RPE separately, HR at the start of BBJ B and lunge set 1 (strap)."
     }
    ]
   },
   "2026-10-22": {
-   "title": "Easy run ~4 km - optional",
+   "title": "Easy run 5 km",
    "rpe": "2-3",
    "blocks": [
     {
      "type": "note",
-     "text": "THU 22 OCT. Optional: easy ~4 km @ 210-230 W, HR a check only. Skip if legs are flat."
+     "text": "THU 22 OCT. Easy 5 km @ 210-230 W, HR check only (was optional 4 km). Pure volume, no strides. If the Mon-Wed sleep gate failed (7-night mean <380 min or any night <300), drop to 4 km or skip. Skip if legs are flat after Wednesday's lunges."
+    },
+    {
+     "type": "step",
+     "label": "Easy run",
+     "detail": "5 km @ 210-230 W",
+     "secs": 1860
     }
    ]
   },
@@ -3854,18 +3886,24 @@
    ]
   },
   "2026-10-24": {
-   "title": "Easy 20 min + 4 strides",
-   "rpe": "2",
+   "title": "Easy 45 min + 4 strides",
+   "rpe": "2-3",
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 24 OCT. Not a chain day (only 10 and 17 Oct were viable). Easy 20 min @ 210-230 W then 4 x 20 s strides; nothing else."
+     "text": "SAT 24 OCT (7 days out). Not a chain day. Easy 45 min @ 210-230 W, then 4 x 20 s strides. About 7 km. This is the extra-volume lever for the week: easy only, nothing longer, no race-pace finish (the Birmingham 2025 mechanism was an 18 km long run with a race-pace finish). If the sleep gate failed, keep it at 20 min."
     },
     {
      "type": "step",
-     "label": "Easy 20 min + 4 x 20 s strides",
-     "detail": "",
-     "secs": 1500
+     "label": "Easy run",
+     "detail": "45 min @ 210-230 W, HR check only",
+     "secs": 2700
+    },
+    {
+     "type": "step",
+     "label": "Strides x4",
+     "detail": "20 s each, full walk recovery",
+     "secs": 320
     }
    ]
   },
