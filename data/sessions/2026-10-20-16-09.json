@@ -1,0 +1,29 @@
+{
+ "date": "2026-10-20",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-20:1",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792512577637
+  },
+  {
+   "key": "2026-10-20:3",
+   "label": "Cool-down",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792512579991
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-10-20T16:09:46.584Z",
+ "synced": false
+}
