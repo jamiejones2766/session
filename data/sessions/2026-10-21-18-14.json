@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-21",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-21:1",
+   "label": "Warm-up 10 min easy bike or row",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792606462364
+  },
+  {
+   "key": "2026-10-21:4",
+   "label": "BBJ A - 6 x 1 length (12.5 m), start every 1:30",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1792606464777
+  },
+  {
+   "key": "2026-10-21:6",
+   "label": "BBJ B - 2 x 3 lengths (37.5 m) continuous, 90 s rest",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1792606469799
+  },
+  {
+   "key": "2026-10-21:8",
+   "label": "Sandbag lunges - 6 x 25 m + 1 x 12.5 m @ 20 kg (162.5 m), 45 s rest",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1792606480434
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-10-21T18:14:49.278Z",
+ "synced": false
+}
