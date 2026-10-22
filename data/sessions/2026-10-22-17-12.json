@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-22",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-22:1",
+   "label": "Easy run",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1792689113501
+  }
+ ],
+ "pauses": [],
+ "rpe": 5,
+ "back": "fine",
+ "notes": "",
+ "finished": "2026-10-22T17:12:00.968Z",
+ "synced": false
+}
