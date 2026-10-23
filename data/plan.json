@@ -3938,39 +3938,126 @@
    ]
   },
   "2026-10-27": {
-   "title": "Primer @ RAW (<=25 min)",
-   "rpe": "5",
+   "title": "Tune-up @ RAW (8 x 250 m run + station)",
+   "rpe": "5-6",
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 27 OCT @ RAW. PURPOSE: activation only. Nothing loaded to fatigue; if anything feels off, stop - this session proves nothing. Symptom RPE >2 = stop."
+     "text": "TUE 27 OCT @ RAW. REPLACES the activation primer. Tune-up format from pre-Cardiff: 8 x (250 m run + station), shortened stations. PURPOSE: rehearsal of run/roxzone/station rhythm, nothing else. No fitness is built 4 days out. Finish fresh. Symptom RPE >2 on lunges = stop, drop the lunges and finish the rest. Roughly 20 min of work (estimate from the 1:24:45 sheet paces)."
+    },
+    {
+     "type": "note",
+     "text": "MEASURE: time the walk from arch to equipment and back at each station (stopwatch lap or note the Garmin lap split). That is the open unknown in the roxzone allowance. Runs at 5:35-5:40/km only, no race pace."
     },
     {
      "type": "step",
-     "label": "Warm-up 8 min easy",
-     "detail": "",
-     "secs": 480
+     "label": "Warm-up 5 min easy + mobility",
+     "detail": "First 250 m run is also part of the warm-up.",
+     "secs": 300
     },
     {
      "type": "step",
-     "label": "BBJ 3 x 25 m (2 lengths) at race rhythm",
-     "detail": "Controlled, 90 s rest. Chest to floor, two-foot landing.",
-     "secs": 360,
+     "label": "Run 1: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "SkiErg 300 m",
+     "detail": "Race rhythm, not a test. Drop to 200 m if you want to trim time.",
+     "secs": 85,
      "rpe": true
     },
     {
      "type": "step",
-     "label": "Lunges 2 x 25 m @ 20 kg",
-     "detail": "Controlled, 90 s rest. SPINAL CHECKPOINT at the end.",
-     "secs": 240,
+     "label": "Run 2: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Sled push 1 lane @ race weight",
+     "detail": "Smooth, one lane.",
+     "secs": 25,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Sled pull 1 lane @ race weight",
+     "detail": "Smooth, one lane.",
+     "secs": 30,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "BBJ 25 m (2 lengths)",
+     "detail": "Race rhythm. Chest to floor, two-foot landing.",
+     "secs": 105,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 5: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Row 300 m",
+     "detail": "Race rhythm, not a test. Drop to 200 m to trim time.",
+     "secs": 90,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 6: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Farmers carry 40 m",
+     "detail": "Race weight.",
+     "secs": 30,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 7: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Lunges 30 m @ 20 kg",
+     "detail": "Controlled. SPINAL CHECKPOINT: log symptom RPE separately from effort. >2 = stop.",
+     "secs": 95,
      "rpe": true,
      "spinal": true
     },
     {
      "type": "step",
-     "label": "Sled push 25 m @ race weight + sled pull 25 m @ race weight",
-     "detail": "One each, smooth.",
-     "secs": 180,
+     "label": "Run 8: 250 m (1 RAW lap)",
+     "detail": "5:35-5:40/km (about 1:24-1:25). Controlled. Treat the walk to the equipment as part of the run.",
+     "secs": 85
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 25",
+     "detail": "Race ball weight. Break early on purpose if needed; practise the plan, do not hang on.",
+     "secs": 95,
      "rpe": true
     },
     {
