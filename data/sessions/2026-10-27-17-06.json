@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-27",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-10-27:2",
+   "label": "Warm-up 5 min easy + mobility",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120694001
+  },
+  {
+   "key": "2026-10-27:3",
+   "label": "Run 1: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120694806
+  },
+  {
+   "key": "2026-10-27:4",
+   "label": "SkiErg 300 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1793120695540
+  },
+  {
+   "key": "2026-10-27:5",
+   "label": "Run 2: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120697600
+  },
+  {
+   "key": "2026-10-27:6",
+   "label": "Sled push 1 lane @ race weight",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1793120698519
+  },
+  {
+   "key": "2026-10-27:7",
+   "label": "Run 3: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120699936
+  },
+  {
+   "key": "2026-10-27:8",
+   "label": "Sled pull 1 lane @ race weight",
+   "spinal": false,
+   "rpe": 5,
+   "sym": null,
+   "t": 1793120700861
+  },
+  {
+   "key": "2026-10-27:9",
+   "label": "Run 4: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120703958
+  },
+  {
+   "key": "2026-10-27:10",
+   "label": "BBJ 25 m (2 lengths)",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1793120705258
+  },
+  {
+   "key": "2026-10-27:11",
+   "label": "Run 5: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120707058
+  },
+  {
+   "key": "2026-10-27:12",
+   "label": "Row 300 m",
+   "spinal": false,
+   "rpe": 5,
+   "sym": null,
+   "t": 1793120707921
+  },
+  {
+   "key": "2026-10-27:13",
+   "label": "Run 6: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120710117
+  },
+  {
+   "key": "2026-10-27:14",
+   "label": "Farmers carry 40 m",
+   "spinal": false,
+   "rpe": 5,
+   "sym": null,
+   "t": 1793120710992
+  },
+  {
+   "key": "2026-10-27:15",
+   "label": "Run 7: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120712709
+  },
+  {
+   "key": "2026-10-27:16",
+   "label": "Lunges 30 m @ 20 kg",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1793120713574
+  },
+  {
+   "key": "2026-10-27:17",
+   "label": "Run 8: 250 m (1 RAW lap)",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1793120716276
+  },
+  {
+   "key": "2026-10-27:18",
+   "label": "Wall balls 25",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1793120717210
+  }
+ ],
+ "pauses": [],
+ "rpe": 6,
+ "back": "fine",
+ "notes": "5.5 tors effort \n300m ski \n1 lane push race weight \n1 lane pull race weight \n50m Bbj \n300m row \n80m fc \n35m lunge \n30 wb ",
+ "finished": "2026-10-27T17:06:24.409Z",
+ "synced": false
+}
