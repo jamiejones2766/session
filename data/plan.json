@@ -1,5 +1,5 @@
 {
- "week": "PLAN w/c 12 OCT 2026 - SHARPENER / CORRECTIVE WEEK (race Sat 31 Oct). SIM DONE Sat 10 Oct @ RAW: 1:24:35 (runs 45:44 @ 255-259 W, ~5:31/km on 1,027-1,052 m laps; stations 38:52 lapped arch to arch). BBJ 6:52 and lunges 6:20 were the two stations over plan (+1:02 / +0:55); sleds, pull, wall balls were well under Birmingham 2025. Sim morning readings: RHR 49 (z +2.2), HRV 54 (z -1.3), 6h32 sleep - an under-recovered start, so Sat 17 is a rested re-read of BBJ + lunges. RAW lanes are 12.5 m (BBJ 6.4 lengths, lunges 8): compare BBJ/lunges as s/m, not set time. LAYOUT: Sun 11 off / Mon 12 off / Tue 13 run probe (3 x 1 km @ 257 W + 3 x 1 km @ 262 W) / Wed 14 BBJ + lunge corrective (ladder step 3: BBJ 150 m, lunges ~165 m) + hinge block / Thu 15 easy run (km marker) / Fri 16 off / Sat 17 half-volume chain with BBJ 80 m + lunges 100 m at full distance, lapped per length / Sun 18 off. ONE-WEEK TAPER (decided 17 Oct): w/c 19 Oct is a normal maintenance week capped ~22 run km (15% over w/c 5 Oct's 19.3 km; w/c 12 Oct's 11.1 km was a miss, not a baseline), added volume EASY ONLY, no step 4 on BBJ/lunges, no long run, nothing above 262 W; race week w/c 26 Oct (~40%, carb load 28/29/30) is the only taper. LOAD (athletedata, 10 Oct): CTL 30.8 / ATL 34.1 / ACWR 0.91 / load flag 10; sleep gate clear (7-night mean 401 min, min 329). Back symptom RPE logged separately from effort; >2 at any station = stop that station and hold the step.",
+ "week": "PLAN w/c 2 NOV 2026 - RAW ROX PREP (race Sat 14 Nov, Imperial Preston, solo). Birmingham done Sat 31 Oct: 1:26:39, effort 9, spinal symptom 0 at lunges and wall balls. 1 Nov readings: HRV 33 (z -4.0), RHR 49, respiratory rate 15.6, sleep 4h04: HOLD flags tripped (2 nights <6h), sleep gate not clear; JJ chose to train from Tue 3 Nov, strength/hinge work dropped by choice. Morning-read cut rule applies to every session. Run lap targets per ~256 m: 1:18 / 1:20 / 1:20 / 1:22 / 1:20. Bike: 25 cal in ~1:25, 50 cal in ~2:50. Snatch and sled weights TBC with the gym.\n\nPREVIOUS WEEK NOTE (w/c 12 Oct, kept for reference): PLAN w/c 12 OCT 2026 - SHARPENER / CORRECTIVE WEEK (race Sat 31 Oct). SIM DONE Sat 10 Oct @ RAW: 1:24:35 (runs 45:44 @ 255-259 W, ~5:31/km on 1,027-1,052 m laps; stations 38:52 lapped arch to arch). BBJ 6:52 and lunges 6:20 were the two stations over plan (+1:02 / +0:55); sleds, pull, wall balls were well under Birmingham 2025. Sim morning readings: RHR 49 (z +2.2), HRV 54 (z -1.3), 6h32 sleep - an under-recovered start, so Sat 17 is a rested re-read of BBJ + lunges. RAW lanes are 12.5 m (BBJ 6.4 lengths, lunges 8): compare BBJ/lunges as s/m, not set time. LAYOUT: Sun 11 off / Mon 12 off / Tue 13 run probe (3 x 1 km @ 257 W + 3 x 1 km @ 262 W) / Wed 14 BBJ + lunge corrective (ladder step 3: BBJ 150 m, lunges ~165 m) + hinge block / Thu 15 easy run (km marker) / Fri 16 off / Sat 17 half-volume chain with BBJ 80 m + lunges 100 m at full distance, lapped per length / Sun 18 off. ONE-WEEK TAPER (decided 17 Oct): w/c 19 Oct is a normal maintenance week capped ~22 run km (15% over w/c 5 Oct's 19.3 km; w/c 12 Oct's 11.1 km was a miss, not a baseline), added volume EASY ONLY, no step 4 on BBJ/lunges, no long run, nothing above 262 W; race week w/c 26 Oct (~40%, carb load 28/29/30) is the only taper. LOAD (athletedata, 10 Oct): CTL 30.8 / ATL 34.1 / ACWR 0.91 / load flag 10; sleep gate clear (7-night mean 401 min, min 329). Back symptom RPE logged separately from effort; >2 at any station = stop that station and hold the step.",
  "anchors": {
   "set_on": "2026-09-27 (CP 266->292 after Preston 10k; threshold pace 5:15->5:00; LTHR 178 confirmed; max HR 194)",
   "source": "CP 292 = Stryd auto-CP after Preston 10k 27 Sep: chip 49:35, avg 288 W / NP 289 for ~50 min, on legs 2 days off the wk1 chain (not tapered), hilly (96 m) and windy (17.5 km/h mean). Hill/wind watts are real work, so NOT discounted for CP. Adopted 27 Sep. Verification: Thu 1 Oct 3x10 @ 280-288 W - HR >182 in rep 2 at <=285 W drops the TRAINING anchor to 285. LTHR 178 confirmed on steady effort (km 3-6 at 174-177, 45-min best HR 177.6).",
@@ -4117,6 +4117,386 @@
     {
      "type": "note",
      "text": "SAT 31 OCT. Target sub-1:28 (PB 1:25:29 is the good-day outcome). RUNS CONTROLLED, STATIONS ATTACKED. Runs 5:30-5:35/km actual pace (~255-259 W, ~88% CP 292); run 2 deliberately ~5 s/km slower than run 1 (Birmingham 2025 pacing error). SkiErg ~4:25 screen (~4:42 chip), Row 4:30-4:35 screen (~5:00-5:05 chip): conservative on purpose to save legs for the sled push. Option to confirm after the 13 Oct probe: at run 5, if HR is under ~168 and the legs are fresh, 5:25-5:30 for runs 5-8 (worth ~39 s). Back symptom RPE >2 at Farmers, Lunges, Wall Balls = adjust and hold, same rule as training. Fuelling per the carb load 28/29/30 Oct plan; gels in-race."
+    }
+   ]
+  },
+  "2026-11-02": {
+   "title": "Shakeout 25 min",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 2 NOV. Day after Birmingham (1:26:39). PURPOSE: flush the legs, nothing else. HR under 144 (run Z1). Run or bike, your choice. No strides. 1 Nov readings: HRV 33 (z -4.0), RHR 49, respiratory rate 15.6 (z +4.8), sleep 4h04 (check Connect for a second block). If respiratory rate and RHR are still high this morning, that points at illness rather than race fatigue - say so before Tuesday."
+    },
+    {
+     "type": "step",
+     "label": "Easy 25 min",
+     "detail": "HR under 144.",
+     "secs": 1500,
+     "rpe": true
+    }
+   ]
+  },
+  "2026-11-03": {
+   "title": "RAW ROX prep - bike pacing + bike into sled",
+   "rpe": "7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 3 NOV. RAW ROX is Sat 14 Nov (Imperial Preston). Hinge/strength work skipped by choice; time goes on race-specific effort. PURPOSE: learn the bike rate you can hold, then feel bike straight into sled push (the pairing that cost you in March). HOLD flags were tripped on 1 Nov (2 nights <6h, sleep gate not clear); JJ chose to train from Tuesday. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = do the warm-up and halve the main set. Spinal symptom RPE >2 at any station = stop that station. Missing symptom log = 0. BIKE IN PLAIN TERMS: the console shows cals. Race target is 50 cal in about 2:50, so 25 cal in about 1:25 (~17.5 cal/min). Ignore wrist HR on the bike. Glance at cals at 10, 20 and 25. If you are ahead of 1:25 at 25 cal, you are going too hard."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy + 5 light snatches + 10 light swings (back touch-up).",
+     "secs": 720,
+     "rpe": true
+    },
+    {
+     "type": "note",
+     "text": "PART A - bike rate. 6 x 25 cal. Aim each rep at ~1:25 (17.5 cal/min). 90 s easy rest between. Log the time of each rep. If rep 6 is more than 5 s slower than rep 1, 17.5 cal/min is too high for race day."
+    },
+    {
+     "type": "step",
+     "label": "Bike 6 x 25 cal @ ~1:25 each",
+     "detail": "90 s rest between reps. Log time per rep.",
+     "secs": 1000,
+     "rpe": true
+    },
+    {
+     "type": "note",
+     "text": "PART B - bike into sled. 4 rounds. 25 cal at the same ~1:25, then straight off the bike into a 20 m sled push at race weight (weight TBC with the gym; use 152 kg incl sled if unknown). 3 min rest between rounds. Log HR the instant you start pushing and HR at the end of the push. Purpose is to feel the transition, not to empty yourself."
+    },
+    {
+     "type": "step",
+     "label": "Bike 25 cal + sled push 20 m x 4",
+     "detail": "3 min rest between rounds. Log HR at sled start and sled end.",
+     "secs": 1200,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cooldown",
+     "detail": "10 min easy.",
+     "secs": 600
+    }
+   ]
+  },
+  "2026-11-04": {
+   "title": "RAW ROX prep - runs off station pairs",
+   "rpe": "7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 4 NOV. RAW ROX layout is run, two stations, run, two stations (5 runs, 10 stations). PURPOSE: test whether 1:20 per 250 m lap holds when you arrive off two stations. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = do the warm-up and halve the main set. Spinal symptom RPE >2 at any station = stop that station. Missing symptom log = 0."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy + 3 strides.",
+     "secs": 720
+    },
+    {
+     "type": "note",
+     "text": "5 rounds. Each round: 250 m run at 1:20, then 20 sandbag lunges @20 kg, then 20 step-ups @12.5 kg, 2 min rest. Press lap at start and end of the run. If round 5 run is within 3 s of round 1, aim for 1:18 on runs 2, 3 and 5 on race day. If it fades more, keep the race table (1:18 / 1:20 / 1:20 / 1:22 / 1:20)."
+    },
+    {
+     "type": "step",
+     "label": "5 x (250 m @ 1:20 + 20 lunges @20 kg + 20 step-ups @12.5 kg)",
+     "detail": "2 min rest between rounds. Log each run lap time.",
+     "secs": 1500,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cooldown",
+     "detail": "5-10 min easy.",
+     "secs": 420
+    }
+   ]
+  },
+  "2026-11-05": {
+   "title": "Easy aerobic 30-40 min (or off)",
+   "rpe": "3",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 5 NOV. PURPOSE: keep the legs ticking over, not training. Easy Z2, HR under 158 (easy run cap). If the morning read is poor, take it off. No hinge block this week by choice."
+    },
+    {
+     "type": "step",
+     "label": "Easy Z2 30-40 min",
+     "detail": "HR under 158.",
+     "secs": 2100,
+     "rpe": true
+    }
+   ]
+  },
+  "2026-11-06": {
+   "title": "Rest",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 6 NOV. Rest. Sleep is the priority: the sleep gate (7-night mean >=380 min, no night <300) needs to be clear before Saturday's chain."
+    }
+   ]
+  },
+  "2026-11-07": {
+   "title": "RAW ROX half-volume chain (race order)",
+   "rpe": "7-8",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 7 NOV. PURPOSE: first look at snatches and swings at volume, bike into sled once under fatigue, and the run-lap targets in race order. Half the reps everywhere; full 250 m runs. Press lap at every station mat. Log spinal symptom RPE SEPARATELY from effort at lunges, line-overs, snatches, swings and wall balls. Snatch weight and sled weight TBC with the gym. BIKE IN PLAIN TERMS: the console shows cals. Race target is 50 cal in about 2:50, so 25 cal in about 1:25 (~17.5 cal/min). Ignore wrist HR on the bike. Glance at cals at 10, 20 and 25. If you are ahead of 1:25 at 25 cal, you are going too hard."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up as for a race",
+     "detail": "10 min easy + strides + a few reps of the first station.",
+     "secs": 720
+    },
+    {
+     "type": "step",
+     "label": "Run 1 - 250 m @ 1:18",
+     "detail": "Fresh. Do not go faster.",
+     "secs": 78,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "SkiErg 500 m",
+     "detail": "Composed, not gasping.",
+     "secs": 140,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sandbag lunges 25 @20 kg",
+     "detail": "Spinal checkpoint at the end.",
+     "secs": 150,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 2 - 250 m @ 1:20",
+     "detail": "",
+     "secs": 80,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Row 500 m",
+     "detail": "",
+     "secs": 150,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Weighted step-ups 25 @12.5 kg",
+     "detail": "",
+     "secs": 110,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Run 3 - 250 m @ 1:20",
+     "detail": "This run goes before the bike. Protect it.",
+     "secs": 80,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Assault bike 25 cal @ ~1:25",
+     "detail": "Check cals at 10, 20, 25.",
+     "secs": 90,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Sled push 40 m at race weight",
+     "detail": "Straight off the bike. Log HR at start and end. Spinal checkpoint.",
+     "secs": 75,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 4 - 250 m @ 1:22",
+     "detail": "Compromised run: after bike and sled.",
+     "secs": 82,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Burpee line-overs 25",
+     "detail": "Spinal checkpoint at the end.",
+     "secs": 90,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Snatch 25 at race weight",
+     "detail": "Spinal checkpoint at the end.",
+     "secs": 90,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Run 5 - 250 m @ 1:20",
+     "detail": "",
+     "secs": 80,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "KB swings 25 @16 kg",
+     "detail": "Spinal checkpoint at the end.",
+     "secs": 60,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Wall balls 25 @6 kg",
+     "detail": "Spinal checkpoint at the end.",
+     "secs": 100,
+     "rpe": true,
+     "spinal": true
+    }
+   ]
+  },
+  "2026-11-08": {
+   "title": "Rest",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SUN 8 NOV. Off."
+    }
+   ]
+  },
+  "2026-11-09": {
+   "title": "Off or easy 30 min",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "MON 9 NOV. Off, or easy 30 min if the legs want it. HR under 144."
+    }
+   ]
+  },
+  "2026-11-10": {
+   "title": "RAW ROX sharpener - bike into sled x2",
+   "rpe": "7",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "TUE 10 NOV. Last real session. PURPOSE: a second look at bike into sled, and race-pace short runs. About 40 min total. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = do the warm-up and halve the main set. Spinal symptom RPE >2 at any station = stop that station. Missing symptom log = 0. BIKE IN PLAIN TERMS: the console shows cals. Race target is 50 cal in about 2:50, so 25 cal in about 1:25 (~17.5 cal/min). Ignore wrist HR on the bike. Glance at cals at 10, 20 and 25. If you are ahead of 1:25 at 25 cal, you are going too hard."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "10 min easy + 3 strides.",
+     "secs": 720
+    },
+    {
+     "type": "step",
+     "label": "Bike 25 cal @ ~1:25 + sled push 40 m x 2",
+     "detail": "4 min rest between rounds. Log HR at sled start and end. Spinal checkpoint.",
+     "secs": 900,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Runs 2 x 250 m @ 1:22",
+     "detail": "Keep it at race-effort 1:22, no faster.",
+     "secs": 600,
+     "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Snatch 3 x 10",
+     "detail": "Technique only, light, spinal checkpoint.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cooldown",
+     "detail": "5 min easy.",
+     "secs": 300
+    }
+   ]
+  },
+  "2026-11-11": {
+   "title": "Easy 20 min + strides",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "WED 11 NOV. PURPOSE: stay sharp. 20 min easy then 4 x 15 s strides."
+    },
+    {
+     "type": "step",
+     "label": "Easy 20 min",
+     "detail": "",
+     "secs": 1200
+    },
+    {
+     "type": "step",
+     "label": "Strides 4 x 15 s",
+     "detail": "Relaxed fast, full recovery.",
+     "secs": 300
+    }
+   ]
+  },
+  "2026-11-12": {
+   "title": "Rest",
+   "rpe": "0",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "THU 12 NOV. Rest. Kit check."
+    }
+   ]
+  },
+  "2026-11-13": {
+   "title": "Shakeout 15 min + strides",
+   "rpe": "2",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "FRI 13 NOV. 15 min shakeout + 3 strides. Normal carbs, early bed. Check start time and heat."
+    },
+    {
+     "type": "step",
+     "label": "Shakeout 15 min",
+     "detail": "",
+     "secs": 900
+    },
+    {
+     "type": "step",
+     "label": "Strides 3 x 15 s",
+     "detail": "",
+     "secs": 240
+    }
+   ]
+  },
+  "2026-11-14": {
+   "title": "RACE DAY - RAW ROX (solo), Imperial Preston",
+   "rpe": "9",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "SAT 14 NOV. 5 x 250 m runs, 10 stations in pairs: Run 1 > Ski 1000 m + Lunges x50 @20 kg > Run 2 > Row 1000 m + Step-ups x50 @12.5 kg > Run 3 > Bike x50 cal + Sled push 40 m > Run 4 > Burpee line-overs x50 + Snatch x50 > Run 5 > KB swings x50 @16 kg + Wall balls x50 @6 kg. March result 39:11 (clean & press, not snatch). Working estimate 37-39 if recovered, 39-41 if not. RUN LAP TARGETS (~256 m): 1:18 / 1:20 / 1:20 / 1:22 / 1:20, with run 5 faster only if the swings and wall balls are not at risk (guesses, no 250 m data off station pairs; Wed 4 test may move them). BIKE 50 cal in ~2:50 (~17.5 cal/min), by cals, ignore wrist HR. Press lap at every mat for splits. Spinal symptom RPE >2 at lunges, line-overs, snatch, swings or wall balls = adjust. Runs controlled, stations attacked."
     }
    ]
   }
