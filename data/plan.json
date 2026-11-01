@@ -4148,7 +4148,7 @@
     {
      "type": "step",
      "label": "Warm-up",
-     "detail": "10 min easy + 5 light snatches + 10 light swings (back touch-up).",
+     "detail": "10 min easy + 4 light one-arm snatches per side + 10 light swings (back touch-up).",
      "secs": 720,
      "rpe": true
     },
@@ -4340,8 +4340,8 @@
     },
     {
      "type": "step",
-     "label": "Snatch 25 @ ~20 kg",
-     "detail": "Spinal checkpoint at the end.",
+     "label": "Snatch 25 total @ ~20 kg, one arm (13 right / 12 left)",
+     "detail": "Half of the race 50 (25 each arm). Use the same arm-switch pattern you plan to race (e.g. 5 per arm, alternating). Spinal checkpoint at the end; one-arm overhead load is asymmetric.",
      "secs": 90,
      "rpe": true,
      "spinal": true
@@ -4422,8 +4422,8 @@
     },
     {
      "type": "step",
-     "label": "Snatch 3 x 10",
-     "detail": "Technique only, light, spinal checkpoint.",
+     "label": "Snatch 3 x 5 each arm @ ~20 kg",
+     "detail": "Technique only, smooth, stop well short of fatigue. Spinal checkpoint.",
      "secs": 420,
      "rpe": true,
      "spinal": true
@@ -4496,7 +4496,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 14 NOV. 5 x 250 m runs, 10 stations in pairs: Run 1 > Ski 1000 m + Lunges x50 @20 kg > Run 2 > Row 1000 m + Step-ups x50 @12.5 kg > Run 3 > Bike x50 cal + Sled push 40 m > Run 4 > Burpee line-overs x50 + Snatch x50 > Run 5 > KB swings x50 @16 kg + Wall balls x50 @6 kg. March result 39:11 (clean & press, not snatch). Working estimate 37-39 if recovered, 39-41 if not. RUN LAP TARGETS (~256 m): 1:18 / 1:20 / 1:20 / 1:22 / 1:20, with run 5 faster only if the swings and wall balls are not at risk (guesses, no 250 m data off station pairs; Wed 4 test may move them). BIKE 50 cal in ~2:50: hold ~69 RPM (check ~17-18 cal/min on the console in the warm-up), ignore wrist HR. Press lap at every mat for splits. Spinal symptom RPE >2 at lunges, line-overs, snatch, swings or wall balls = adjust. Runs controlled, stations attacked."
+     "text": "SAT 14 NOV. 5 x 250 m runs, 10 stations in pairs: Run 1 > Ski 1000 m + Lunges x50 @20 kg > Run 2 > Row 1000 m + Step-ups x50 @12.5 kg > Run 3 > Bike x50 cal + Sled push 40 m > Run 4 > Burpee line-overs x50 + Snatch x50 (one arm, 25 each side, ~20 kg) > Run 5 > KB swings x50 @16 kg + Wall balls x50 @6 kg. March result 39:11 (clean & press, not snatch). Working estimate 37-39 if recovered, 39-41 if not. RUN LAP TARGETS (~256 m): 1:18 / 1:20 / 1:20 / 1:22 / 1:20, with run 5 faster only if the swings and wall balls are not at risk (guesses, no 250 m data off station pairs; Wed 4 test may move them). BIKE 50 cal in ~2:50: hold ~69 RPM (check ~17-18 cal/min on the console in the warm-up), ignore wrist HR. Press lap at every mat for splits. Spinal symptom RPE >2 at lunges, line-overs, snatch, swings or wall balls = adjust. Runs controlled, stations attacked."
     }
    ]
   }
