@@ -1,0 +1,141 @@
+{
+ "date": "2026-11-07",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-11-07:1",
+   "label": "Warm-up as for a race",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1794050491370
+  },
+  {
+   "key": "2026-11-07:2",
+   "label": "Run 1 - 250 m @ 1:18",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1794050492130
+  },
+  {
+   "key": "2026-11-07:3",
+   "label": "SkiErg 500 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1794050496060
+  },
+  {
+   "key": "2026-11-07:4",
+   "label": "Sandbag lunges 25 @20 kg",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1794050497660
+  },
+  {
+   "key": "2026-11-07:5",
+   "label": "Run 2 - 250 m @ 1:20",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1794050500115
+  },
+  {
+   "key": "2026-11-07:6",
+   "label": "Row 500 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1794050501331
+  },
+  {
+   "key": "2026-11-07:7",
+   "label": "Weighted step-ups 25 @12.5 kg",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1794050502977
+  },
+  {
+   "key": "2026-11-07:8",
+   "label": "Run 3 - 250 m @ 1:20",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1794050505261
+  },
+  {
+   "key": "2026-11-07:9",
+   "label": "Assault bike 50 cal @ 65 RPM (~3:19)",
+   "spinal": false,
+   "rpe": 10,
+   "sym": null,
+   "t": 1794050506820
+  },
+  {
+   "key": "2026-11-07:10",
+   "label": "Sled push 50 m (4 lengths) @ 150 kg",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1794050509679
+  },
+  {
+   "key": "2026-11-07:11",
+   "label": "Run 4 - 250 m @ 1:22",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1794050512746
+  },
+  {
+   "key": "2026-11-07:12",
+   "label": "Burpee line-overs 25",
+   "spinal": true,
+   "rpe": 9,
+   "sym": 0,
+   "t": 1794050514638
+  },
+  {
+   "key": "2026-11-07:13",
+   "label": "Snatch 25 total @ 15 kg, one arm (13 right / 12 left)",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1794050517538
+  },
+  {
+   "key": "2026-11-07:14",
+   "label": "Run 5 - 250 m @ 1:20",
+   "spinal": false,
+   "rpe": 8,
+   "sym": null,
+   "t": 1794050520189
+  },
+  {
+   "key": "2026-11-07:15",
+   "label": "KB swings 25 @16 kg",
+   "spinal": true,
+   "rpe": 6,
+   "sym": 0,
+   "t": 1794050521788
+  },
+  {
+   "key": "2026-11-07:16",
+   "label": "Wall balls 25 @6 kg",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1794050524618
+  }
+ ],
+ "pauses": [],
+ "rpe": 8,
+ "back": "fine",
+ "notes": "65 rpm too high atm for me on bike. 50 cals took 4:33 ",
+ "finished": "2026-11-07T11:22:39.082Z",
+ "synced": false
+}
