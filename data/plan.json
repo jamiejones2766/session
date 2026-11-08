@@ -4377,17 +4377,45 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SUN 8 NOV. Off."
+     "text": "SUN 8 NOV. Off. SAT 7 RESULT (Garmin HIIT, 40:38 incl. warm-up; Garmin laps are the source of truth, the PWA-logged run laps differed and JJ did not type them): runs 1:17 / 1:19 / 1:19 / 1:25 / 1:28 (fade began after the bike+sled block, R7 7:04). Bike 50 cal @ 65 RPM took 4:33 at effort 10 (planned ~3:19): 65 was too hot, JJ's read. Paired blocks: ski+lunges 3:18, row+step-ups 3:47, bike+sled 7:04, burpees+snatch 4:58, swings+wall balls 2:23. Snatches and swings felt easy; the burpee line-overs were the slow station. Faff in the chain about 90 s (JJ). Race format changes from Jane (8 Nov): step-ups are 10 kg (not 12.5) and the burpees are plain burpees (chest to floor, a jump, no clap), not line-overs; all else on the flyer unchanged."
     }
    ]
   },
   "2026-11-09": {
-   "title": "Off or easy 30 min",
-   "rpe": "2",
+   "title": "Burpee technique (plain burpees)",
+   "rpe": "6",
    "blocks": [
     {
      "type": "note",
-     "text": "MON 9 NOV. Off, or easy 30 min if the legs want it. HR under 144."
+     "text": "MON 9 NOV. PURPOSE: find the real per-rep rate for the race burpee (chest to floor, a jump, no clap) and fix the movement; Sat 7 line-overs ran ~8-9 s/rep and are not a clean read of the race movement. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = swap for off or easy 30 min, HR under 144. Spinal symptom RPE >2 on any set = stop. Missing symptom log = 0. Film side-on. Cues: drop (do not lower) to the floor, chest touches then press, hips and chest rise together, feet in wide and quick, small jump, steady cadence, breathe on the stand-up."
+    },
+    {
+     "type": "step",
+     "label": "Warm-up",
+     "detail": "8 min easy + a few slow burpees.",
+     "secs": 480
+    },
+    {
+     "type": "step",
+     "label": "Burpees 3 x 5 slow, filmed",
+     "detail": "Side-on video. Check chest touch and the hip/chest rise.",
+     "secs": 300,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Burpees 5 x 10 @ race cadence",
+     "detail": "45-60 s rest between sets. Time every set, log s/rep and the symptom RPE per set.",
+     "secs": 900,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
+     "label": "Cooldown",
+     "detail": "5 min easy walk.",
+     "secs": 300
     }
    ]
   },
@@ -4397,7 +4425,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "TUE 10 NOV. Last real session. PURPOSE: a second look at bike into sled, and race-pace short runs. About 40 min total. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = do the warm-up and halve the main set. Spinal symptom RPE >2 at any station = stop that station. Missing symptom log = 0. BIKE IN PLAIN TERMS: Tue 3 test showed 69 RPM (~17.7 cal/min) fades when repeated: 6 x 25 cal, cal reached at 1:25 went 24 / 25 / - / 23 / 22 / 22, so 69 is too hot for a continuous 50 (JJ's call, agreed 3 Nov). WORKING RATE ~65 RPM = ~15 cal/min, 50 cal in ~3:19 (modelled from the RAW 1 Sep table, exponent 2.68; the console is the check, not the model). Checkpoints at 65 RPM: 10 cal ~0:40, 20 cal ~1:19, 30 cal ~1:59, 40 cal ~2:39, 50 cal ~3:19. 64 RPM = ~3:27, 66 RPM = ~3:11. Ignore wrist HR. In the warm-up hold 65 RPM for 60 s and check the console reads ~15 cal/min; if it doesn't (different bike), adjust RPM until it does. Sled is 50 m = 4 lengths of the 12.5 m track."
+     "text": "UPDATE 8 NOV (supersedes the 65 RPM figures below): Sat 7 went out at 65 RPM and 50 cal took 4:33 at effort 10, so 65 was too hot for a continuous 50. JJ's call: target 62 RPM, about 13 cal/min, 50 cal ~3:50 (25 cal ~1:55). Checkpoints at 62: 10 cal ~0:46, 20 ~1:32, 30 ~2:18, 40 ~3:04, 50 ~3:50 (cube-law estimate from Sat 7 and the RAW table; the console is the check). Race cap: 62 RPM for the first 25 cal. Burpees are plain burpees. ORIGINAL NOTE: TUE 10 NOV. Last real session. PURPOSE: a second look at bike into sled, and race-pace short runs. About 40 min total. Morning-read rule: HRV <45, RHR >=50 or respiratory rate still >14.5 = do the warm-up and halve the main set. Spinal symptom RPE >2 at any station = stop that station. Missing symptom log = 0. BIKE IN PLAIN TERMS: Tue 3 test showed 69 RPM (~17.7 cal/min) fades when repeated: 6 x 25 cal, cal reached at 1:25 went 24 / 25 / - / 23 / 22 / 22, so 69 is too hot for a continuous 50 (JJ's call, agreed 3 Nov). WORKING RATE ~65 RPM = ~15 cal/min, 50 cal in ~3:19 (modelled from the RAW 1 Sep table, exponent 2.68; the console is the check, not the model). Checkpoints at 65 RPM: 10 cal ~0:40, 20 cal ~1:19, 30 cal ~1:59, 40 cal ~2:39, 50 cal ~3:19. 64 RPM = ~3:27, 66 RPM = ~3:11. Ignore wrist HR. In the warm-up hold 65 RPM for 60 s and check the console reads ~15 cal/min; if it doesn't (different bike), adjust RPM until it does. Sled is 50 m = 4 lengths of the 12.5 m track."
     },
     {
      "type": "step",
@@ -4407,8 +4435,8 @@
     },
     {
      "type": "step",
-     "label": "Bike 25 cal @ 65 RPM (~1:40) + sled push 50 m (4 lengths) x 2",
-     "detail": "4 min rest between rounds. Use the RPM Sat 7 confirmed (65, or 64 if the 50 cal faded). Log HR at sled start and end. Spinal checkpoint.",
+     "label": "Bike 25 cal @ 62 RPM (~1:55) + sled push 50 m (4 lengths) x 2",
+     "detail": "4 min rest between rounds. Use 62 RPM (JJ's call 8 Nov). Log HR at sled start and end. Spinal checkpoint.",
      "secs": 900,
      "rpe": true,
      "spinal": true
@@ -4419,6 +4447,14 @@
      "detail": "Keep it at race-effort 1:22, no faster.",
      "secs": 600,
      "rpe": true
+    },
+    {
+     "type": "step",
+     "label": "Burpees 3 x 10 @ race cadence",
+     "detail": "Use the cadence found Mon 9. 45-60 s rest. Time each set. Spinal checkpoint.",
+     "secs": 420,
+     "rpe": true,
+     "spinal": true
     },
     {
      "type": "step",
@@ -4496,7 +4532,7 @@
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 14 NOV. 5 x 250 m runs, 10 stations in pairs: Run 1 > Ski 1000 m + Lunges x50 @20 kg > Run 2 > Row 1000 m + Step-ups x50 @12.5 kg > Run 3 > Bike x50 cal + Sled push 40 m > Run 4 > Burpee line-overs x50 + Snatch x50 (one arm, 25 each side, 15 kg) > Run 5 > KB swings x50 @16 kg + Wall balls x50 @6 kg. March result 39:11 (clean & press, not snatch). Working estimate 37-39 if recovered, 39-41 if not. RUN LAP TARGETS (~256 m): 1:18 / 1:20 / 1:20 / 1:22 / 1:20, with run 5 faster only if the swings and wall balls are not at risk (guesses, no 250 m data off station pairs; Wed 4 test may move them). BIKE 50 cal in ~3:20: hold ~65 RPM (check ~15 cal/min on the console in the warm-up; Sat 7 50 cal confirms or moves it, 64 if it fades), ignore wrist HR. Slower than the earlier 2:50 plan by design: 69 RPM faded over repeated 25s on Tue 3. Press lap at every mat for splits. Spinal symptom RPE >2 at lunges, line-overs, snatch, swings or wall balls = adjust. Runs controlled, stations attacked."
+     "text": "SAT 14 NOV. 5 x 250 m runs, 10 stations in pairs: Run 1 > Ski 1000 m + Lunges x50 @20 kg > Run 2 > Row 1000 m + Step-ups x50 @10 kg > Run 3 > Bike x50 cal + Sled push 40 m > Run 4 > Burpees x50 (chest to floor, a jump, no clap) + Snatch x50 (one arm, 25 each side, 15 kg) > Run 5 > KB swings x50 @16 kg + Wall balls x50 @6 kg. March result 39:11 (clean & press, not snatch). Working estimate 37-39 if recovered, 39-41 if not. RUN LAP TARGETS (~256 m): 1:18 / 1:20 / 1:20 / 1:22 / 1:20, with run 5 faster only if the swings and wall balls are not at risk (guesses, no 250 m data off station pairs; Wed 4 test may move them). BIKE 50 cal in ~3:20: hold ~65 RPM (check ~15 cal/min on the console in the warm-up; Sat 7 50 cal confirms or moves it, 64 if it fades), ignore wrist HR. Slower than the earlier 2:50 plan by design: 69 RPM faded over repeated 25s on Tue 3. Press lap at every mat for splits. Spinal symptom RPE >2 at lunges, burpees, snatch, swings or wall balls = adjust. Runs controlled, stations attacked. UPDATE 8 NOV: Sat 7 50 cal at 65 RPM took 4:33 (effort 10); JJ's target is now 62 RPM for the first 25 cal (~3:50 for 50). Garmin run laps Sat 7: 1:17 / 1:19 / 1:19 / 1:25 / 1:28. Step-ups 10 kg and plain burpees per Jane (8 Nov)."
     }
    ]
   }
