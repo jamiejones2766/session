@@ -1,0 +1,69 @@
+{
+ "date": "2026-11-21",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-11-21:1",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795265867929
+  },
+  {
+   "key": "2026-11-21:2",
+   "label": "Run 1 km @ 5:30 + SkiErg 500 m",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1795265868420
+  },
+  {
+   "key": "2026-11-21:3",
+   "label": "Run 1 km @ 5:30 + Sled push 25 m",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1795265870175
+  },
+  {
+   "key": "2026-11-21:4",
+   "label": "Run 1 km @ 5:30 + Sled pull 25 m",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1795265873921
+  },
+  {
+   "key": "2026-11-21:5",
+   "label": "Run 1 km @ 5:30 + Burpee broad jumps 40 m",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1795265877667
+  },
+  {
+   "key": "2026-11-21:6",
+   "label": "Run 1 km @ 5:30 + Wall balls x 50",
+   "spinal": true,
+   "rpe": 7,
+   "sym": null,
+   "t": 1795265880696
+  },
+  {
+   "key": "2026-11-21:7",
+   "label": "Cooldown",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795265882713
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Did 30 on 30 off on ski 4x \nSled push pushed half way rested for 20 and went again \n\nSled pull I pulled to half way rested rested for 20 then pulled to the end , twice \n\nBbj I times 6 jumps which was 30s (about 10m) and did this 4x \n\nWallballs was 10 in 25s with 25s rest x5",
+ "finished": "2026-11-21T12:59:44.840Z",
+ "synced": false
+}
