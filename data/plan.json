@@ -4666,12 +4666,12 @@
    ]
   },
   "2026-11-21": {
-   "title": "Doubles brick - 4 x (1 km + half-volume station)",
+   "title": "Doubles brick - 5 x (1 km + half-volume station)",
    "rpe": "7",
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 21 NOV. PURPOSE: 5:30/km running off doubles-sized station efforts, with a changeover gap. 4 rounds: 1 km at 5:30, then one station at half volume in race order, 30 s walk between station and the next run to mimic a changeover. Lap every run. Morning-read rule: HRV <45 or RHR >=50 = shorten or halve the main set. Spinal symptom RPE >2 at any movement = stop that movement. Missing symptom log = 0."
+     "text": "SAT 21 NOV. Changed by JJ on the day: SkiErg and sled push kept, sled pull added, row removed, 50 wall balls added; burpee broad jumps left in. PURPOSE: 5:30/km running off doubles-sized station efforts, with a changeover gap. 5 rounds: 1 km at 5:30, then one station at half volume in race order, 30 s walk between station and the next run to mimic a changeover. Lap every run. Morning read 21 Nov: HRV 54, RHR 51 (rule: HRV <45 or RHR >=50 = shorten or halve the main set). Spinal symptom RPE >2 at any movement = stop that movement. Missing symptom log = 0."
     },
     {
      "type": "step",
@@ -4696,6 +4696,14 @@
     },
     {
      "type": "step",
+     "label": "Run 1 km @ 5:30 + Sled pull 25 m",
+     "detail": "Race weight. Log HR at sled start and end. Spinal checkpoint. 30 s walk.",
+     "secs": 510,
+     "rpe": true,
+     "spinal": true
+    },
+    {
+     "type": "step",
      "label": "Run 1 km @ 5:30 + Burpee broad jumps 40 m",
      "detail": "Lap per length. Spinal checkpoint. 30 s walk.",
      "secs": 540,
@@ -4704,10 +4712,11 @@
     },
     {
      "type": "step",
-     "label": "Run 1 km @ 5:30 + Row 500 m",
-     "detail": "Screen pace as Birmingham.",
-     "secs": 540,
-     "rpe": true
+     "label": "Run 1 km @ 5:30 + Wall balls x 50",
+     "detail": "6 kg. Log the set breaks. Spinal checkpoint.",
+     "secs": 510,
+     "rpe": true,
+     "spinal": true
     },
     {
      "type": "step",
