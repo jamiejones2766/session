@@ -4727,12 +4727,19 @@
    ]
   },
   "2026-11-22": {
-   "title": "Rest + planning",
-   "rpe": "0",
+   "title": "Z2 run 45 min",
+   "rpe": "3",
    "blocks": [
     {
      "type": "note",
-     "text": "SUN 22 NOV. Rest. Plan w/c 23 Nov: same shape, plus a session with the Excel doubles partner if one can be arranged (changeovers on ski, row, wall balls; agree station split and who sets run pace)."
+     "text": "SUN 22 NOV. Added by JJ 21 Nov (was rest). PURPOSE: aerobic run volume, the biggest gap since Birmingham (two outdoor runs in three weeks before this weekend). Keep it truly easy the day after the brick. Targets: HR under 150, hard cap 158; power 215-235 W; pace is whatever that gives (about 6:10-6:30/km). Morning-read rule: HRV <45 or RHR >=50 = cut to 30 min. Monday 23 Nov becomes rest."
+    },
+    {
+     "type": "step",
+     "label": "Z2 run 45 min",
+     "detail": "Flat route. HR under 150, cap 158. 215-235 W. Walk 30 s if HR passes 158 and will not settle.",
+     "secs": 2700,
+     "rpe": true
     }
    ]
   }
