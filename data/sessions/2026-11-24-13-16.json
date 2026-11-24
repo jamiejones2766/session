@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-24",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-11-24:1",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795525790000
+  },
+  {
+   "key": "2026-11-24:2",
+   "label": "4 x (2 RAW laps + burpee broad jumps 2 x 12.5 m)",
+   "spinal": true,
+   "rpe": null,
+   "sym": 0,
+   "t": 1795525791000
+  },
+  {
+   "key": "2026-11-24:3",
+   "label": "2 x (2 RAW laps + sandbag lunges 25 m)",
+   "spinal": true,
+   "rpe": null,
+   "sym": 0,
+   "t": 1795525792000
+  },
+  {
+   "key": "2026-11-24:4",
+   "label": "Cooldown",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795525793000
+  }
+ ],
+ "pauses": [],
+ "rpe": 6.5,
+ "back": "fine",
+ "notes": "Logged in chat with Claude (session was not in the PWA). Strength block (RDL, split squats) dropped by JJ; replaced with high-HR station entries. Back symptom 0. Runs felt really good, a bit too quick on most, slowed towards the end. BBJ felt good: 12.5 m per set (RAW lane length) with 20 s rest between the two sets, so 100 m total. Lunges spiked HR. Garmin HIIT 25183707600, 39:58, avg HR 148, max 174. Lap times: 2-lap runs 2:45 / 2:37 / 2:38 / 2:41 / 2:45 / 2:44 (target 2:44). BBJ rounds (25 m incl. 20 s rest) 1:31 / 1:27 / 1:25 / 1:22. Lunges 25 m in 1:04 and 1:04.",
+ "finished": "2026-11-24T13:16:00.000Z",
+ "synced": false
+}
