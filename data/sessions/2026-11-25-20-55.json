@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-25",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-11-25:1",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795640086281
+  },
+  {
+   "key": "2026-11-25:2",
+   "label": "5 x 1 km @ 5:10-5:15",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1795640087348
+  },
+  {
+   "key": "2026-11-25:3",
+   "label": "Cooldown",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795640089931
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Double pressed map after run 4 so had to pause for the rest before run5 \n\nWas hard to get pace do went off of power after run 1",
+ "finished": "2026-11-25T20:55:25.405Z",
+ "synced": false
+}
