@@ -4841,12 +4841,12 @@
    ]
   },
   "2026-11-28": {
-   "title": "Doubles brick - row, farmers, lunges, wall balls",
+   "title": "Doubles brick - BBJ, farmers, lunges, wall balls",
    "rpe": "7",
    "blocks": [
     {
      "type": "note",
-     "text": "SAT 28 NOV. PURPOSE: the three stations not tested on 21 Nov (row, farmers, lunges) at doubles-sized half volume, and wall balls off a run this time. Runs and stations are separate steps. 30 s walk after each station to mimic a changeover. Morning-read rule: HRV <45 or RHR >=50 = shorten or halve the main set. Spinal symptom RPE >2 at any movement = stop that movement. Missing symptom log = 0."
+     "text": "SAT 28 NOV. CHANGED ON THE DAY (JJ, 28 Nov): row swapped for BBJ 40 m. PURPOSE: farmers and lunges (not tested on 21 Nov) at doubles-sized half volume, BBJ off a run, and wall balls off a run this time. Runs and stations are separate steps. 30 s walk after each station to mimic a changeover. Morning-read rule: HRV <45 or RHR >=50 = shorten or halve the main set. Spinal symptom RPE >2 at any movement = stop that movement. Missing symptom log = 0."
     },
     {
      "type": "step",
@@ -4863,10 +4863,11 @@
     },
     {
      "type": "step",
-     "label": "Row 500 m",
-     "detail": "2 x 250 m with 30 s rest between (changeover). Birmingham screen pace or a touch quicker. Then 30 s walk before the next run.",
-     "secs": 210,
-     "rpe": true
+     "label": "Burpee broad jumps 40 m",
+     "detail": "4 x 10 m, 30 s rest between (changeover). Swapped in for the row 28 Nov (JJ's call). Spinal checkpoint. Then 30 s walk before the next run.",
+     "secs": 160,
+     "rpe": true,
+     "spinal": true
     },
     {
      "type": "step",
