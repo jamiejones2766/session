@@ -21,10 +21,10 @@
   },
   {
    "key": "2026-11-28:3",
-   "label": "Row 500 m",
-   "spinal": false,
-   "rpe": 5,
-   "sym": null,
+   "label": "Burpee broad jumps 40 m",
+   "spinal": true,
+   "rpe": 6.6,
+   "sym": 0,
    "t": 1795894153759
   },
   {
@@ -87,7 +87,7 @@
  "pauses": [],
  "rpe": 7,
  "back": "fine",
- "notes": "Row wasn't swapped for Burpees. They were zero on the back 6.6 rpe ",
+ "notes": "Row wasn't swapped for Burpees. They were zero on the back 6.6 rpe | Corrected 28 Nov: step 3 was BBJ 40 m (4 x 10 m), not row. Effort 6.6, symptom 0. Wall balls done with shorter rests than planned (50 in 2:52).",
  "finished": "2026-11-28T19:30:01.446Z",
  "synced": false
 }
