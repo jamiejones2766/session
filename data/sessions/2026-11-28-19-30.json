@@ -1,0 +1,93 @@
+{
+ "date": "2026-11-28",
+ "sets": [],
+ "rounds": [],
+ "steps": [
+  {
+   "key": "2026-11-28:1",
+   "label": "Warm-up",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795894150505
+  },
+  {
+   "key": "2026-11-28:2",
+   "label": "Run 1 - 4 RAW laps",
+   "spinal": false,
+   "rpe": 6,
+   "sym": null,
+   "t": 1795894151188
+  },
+  {
+   "key": "2026-11-28:3",
+   "label": "Row 500 m",
+   "spinal": false,
+   "rpe": 5,
+   "sym": null,
+   "t": 1795894153759
+  },
+  {
+   "key": "2026-11-28:4",
+   "label": "Run 2 - 4 RAW laps",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1795894155901
+  },
+  {
+   "key": "2026-11-28:5",
+   "label": "Farmers carry 100 m",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1795894157943
+  },
+  {
+   "key": "2026-11-28:6",
+   "label": "Run 3 - 4 RAW laps",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1795894161514
+  },
+  {
+   "key": "2026-11-28:7",
+   "label": "Sandbag lunges 50 m",
+   "spinal": true,
+   "rpe": 8,
+   "sym": 0,
+   "t": 1795894163532
+  },
+  {
+   "key": "2026-11-28:8",
+   "label": "Run 4 - 4 RAW laps",
+   "spinal": false,
+   "rpe": 7,
+   "sym": null,
+   "t": 1795894165857
+  },
+  {
+   "key": "2026-11-28:9",
+   "label": "Wall balls x 50",
+   "spinal": true,
+   "rpe": 7,
+   "sym": 0,
+   "t": 1795894167882
+  },
+  {
+   "key": "2026-11-28:10",
+   "label": "Cooldown",
+   "spinal": false,
+   "rpe": null,
+   "sym": null,
+   "t": 1795894173392
+  }
+ ],
+ "pauses": [],
+ "rpe": 7,
+ "back": "fine",
+ "notes": "Row wasn't swapped for Burpees. They were zero on the back 6.6 rpe ",
+ "finished": "2026-11-28T19:30:01.446Z",
+ "synced": false
+}
